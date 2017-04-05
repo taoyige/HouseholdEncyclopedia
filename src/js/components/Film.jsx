@@ -1,0 +1,88 @@
+import React from 'react';
+
+import SubNavigation from './SubNavigation.jsx';
+import Global from '../Global.jsx';
+import { fetchData } from '../utils.jsx';
+
+import Footer from './Footer.jsx';
+
+import film1 from '../../json/film1.json';
+import film2 from '../../json/film2.json';
+import film3 from '../../json/film3.json';
+
+const data = [film1, film2, film3];
+
+class Film extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      films: [],
+    };
+  } 
+
+  componentWillReceiveProps () {
+    let category = this.props.params.category;
+    for(let i=0; i<Global.FILM_CATEGORY.length; i++){
+      let item = Global.FILM_CATEGORY[i];
+      if(item.category == category){
+        // fetchData(item.baseURL, {}, (data) => {
+        //   console.log(data);
+        //   this.setState({
+        //     films: data.subjects
+        //   })
+        // });
+        this.setState({
+          films: data[i].subjects
+        })
+      }
+    }
+  }
+
+  render () {
+     return (
+      <div className="container">
+        <div className="row">
+          <SubNavigation category={ Global.FILM } list={ Global.FILM_CATEGORY }/>
+          <div className="col-sm-7 col-sm-offset-2 col-md-9 col-md-offset-1 list-content">
+            <ul>
+              {
+                this.state.films.map((item, index) => {
+                  let casts = '';
+                  for(let i=0; i<item.casts.length; i++){
+                    casts += item.casts[i].name + ' ';
+                  }
+                  let directors = '';
+                  for(let i=0; i<item.directors.length; i++){
+                    directors += item.directors[i].name + ' ';
+                  }
+                  return (
+                    <li key={index} className="list-item">
+                      <div className="media">
+                        <div className="media-left">
+                          <a href="#">
+                            <img className="media-object dd" src={item.images.small} alt={item.title}>
+                            </img>
+                          </a>
+                        </div>
+                        <div className="media-body item-body">
+                          <a className="title">{item.title}</a>
+                          <p className="ellipsis">年份:{item.year}</p>
+                          <p>演员:{casts}</p>
+                          <p>导演:{directors}</p>
+                        </div>
+                      </div>
+                    </li>
+                  )
+                })
+              }
+            </ul>
+          </div>
+          <Footer/>
+        </div>
+      </div>
+    )
+  }
+
+}
+
+export default Film;

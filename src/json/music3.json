@@ -1,0 +1,244 @@
+{
+    "count": 3,
+    "start": 0,
+    "total": 35,
+    "musics": [
+        {
+            "rating": {
+                "max": 10,
+                "average": "8.4",
+                "numRaters": 4123,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "薛之谦"
+                }
+            ],
+            "alt_title": "",
+            "image": "https://img1.doubanio.com/spic/s28105787.jpg",
+            "tags": [
+                {
+                    "count": 911,
+                    "name": "薛之谦"
+                },
+                {
+                    "count": 424,
+                    "name": "华语"
+                },
+                {
+                    "count": 310,
+                    "name": "内地"
+                },
+                {
+                    "count": 284,
+                    "name": "流行"
+                },
+                {
+                    "count": 247,
+                    "name": "2015"
+                },
+                {
+                    "count": 174,
+                    "name": "Pop"
+                },
+                {
+                    "count": 170,
+                    "name": "国语"
+                },
+                {
+                    "count": 157,
+                    "name": "男歌手"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/26393566/",
+            "attrs": {
+                "publisher": [
+                    "海蝶音乐"
+                ],
+                "singer": [
+                    "薛之谦"
+                ],
+                "version": [
+                    "EP"
+                ],
+                "pubdate": [
+                    "2015-06-05"
+                ],
+                "title": [
+                    "绅士"
+                ],
+                "media": [
+                    "CD+DVD"
+                ],
+                "tracks": [
+                    "1.绅士\n2.演员\n3.下雨了"
+                ],
+                "discs": [
+                    "2"
+                ]
+            },
+            "title": "绅士",
+            "alt": "https://music.douban.com/subject/26393566/",
+            "id": "26393566"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": "7.3",
+                "numRaters": 2739,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "薛之谦"
+                }
+            ],
+            "alt_title": "",
+            "image": "https://img1.doubanio.com/spic/s28903779.jpg",
+            "tags": [
+                {
+                    "count": 653,
+                    "name": "薛之谦"
+                },
+                {
+                    "count": 293,
+                    "name": "华语"
+                },
+                {
+                    "count": 238,
+                    "name": "流行"
+                },
+                {
+                    "count": 232,
+                    "name": "2016"
+                },
+                {
+                    "count": 229,
+                    "name": "内地"
+                },
+                {
+                    "count": 164,
+                    "name": "男歌手"
+                },
+                {
+                    "count": 157,
+                    "name": "男声"
+                },
+                {
+                    "count": 134,
+                    "name": "Pop"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/26838056/",
+            "attrs": {
+                "publisher": [
+                    "海蝶音乐"
+                ],
+                "singer": [
+                    "薛之谦"
+                ],
+                "version": [
+                    "专辑"
+                ],
+                "pubdate": [
+                    "2016-07-18"
+                ],
+                "title": [
+                    "初学者"
+                ],
+                "media": [
+                    "CD"
+                ],
+                "tracks": [
+                    "1.初学者\n2.刚刚好\n3.我好像在哪见过你\n4.演员\n5.绅士\n6.一半\n7.小孩\n8.Stay here\n9.花儿和少年\n10.下雨了"
+                ],
+                "discs": [
+                    "1"
+                ]
+            },
+            "title": "初学者",
+            "alt": "https://music.douban.com/subject/26838056/",
+            "id": "26838056"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": "7.4",
+                "numRaters": 1757,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "薛之谦"
+                }
+            ],
+            "alt_title": "",
+            "image": "https://img1.doubanio.com/spic/s2174238.jpg",
+            "tags": [
+                {
+                    "count": 494,
+                    "name": "薛之谦"
+                },
+                {
+                    "count": 181,
+                    "name": "内地"
+                },
+                {
+                    "count": 107,
+                    "name": "Pop"
+                },
+                {
+                    "count": 100,
+                    "name": "流行"
+                },
+                {
+                    "count": 99,
+                    "name": "认真的雪"
+                },
+                {
+                    "count": 80,
+                    "name": "华语"
+                },
+                {
+                    "count": 59,
+                    "name": "大陆"
+                },
+                {
+                    "count": 55,
+                    "name": "2006"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/1795183/",
+            "attrs": {
+                "publisher": [
+                    "广东音像出版社"
+                ],
+                "singer": [
+                    "薛之谦"
+                ],
+                "version": [
+                    "专辑"
+                ],
+                "pubdate": [
+                    "2006"
+                ],
+                "title": [
+                    "薛之谦"
+                ],
+                "media": [
+                    "CD"
+                ],
+                "tracks": [
+                    "1. 王子归来\n2. 认真的雪\n3. 红尘女子\n4. 爱不走\n5. 快乐帮\n6. 我的SHOW (友情合唱:君君)\n7. 黄色枫叶\n8. 钗头凤\n9. MEMORY\n10. 我的SHOW (伴奏)"
+                ],
+                "discs": [
+                    "1"
+                ]
+            },
+            "title": "薛之谦",
+            "alt": "https://music.douban.com/subject/1795183/",
+            "id": "1795183"
+        }
+    ]
+}

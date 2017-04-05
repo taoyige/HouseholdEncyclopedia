@@ -1,0 +1,254 @@
+{
+    "count": 3,
+    "start": 0,
+    "total": 408,
+    "books": [
+        {
+            "rating": {
+                "max": 10,
+                "numRaters": 150,
+                "average": "7.4",
+                "min": 0
+            },
+            "subtitle": "性格卡片",
+            "author": [
+                "巴金"
+            ],
+            "pubdate": "2006",
+            "tags": [
+                {
+                    "count": 34,
+                    "name": "萌芽50年精华本",
+                    "title": "萌芽50年精华本"
+                },
+                {
+                    "count": 25,
+                    "name": "萌芽",
+                    "title": "萌芽"
+                },
+                {
+                    "count": 23,
+                    "name": "散文",
+                    "title": "散文"
+                },
+                {
+                    "count": 9,
+                    "name": "性格卡片",
+                    "title": "性格卡片"
+                },
+                {
+                    "count": 8,
+                    "name": "中国",
+                    "title": "中国"
+                },
+                {
+                    "count": 6,
+                    "name": "文艺青年型",
+                    "title": "文艺青年型"
+                },
+                {
+                    "count": 5,
+                    "name": "青春",
+                    "title": "青春"
+                },
+                {
+                    "count": 4,
+                    "name": "散文随笔",
+                    "title": "散文随笔"
+                }
+            ],
+            "origin_title": "",
+            "image": "https://img5.doubanio.com/mpic/s1681066.jpg",
+            "binding": "简裝本",
+            "translator": [],
+            "catalog": "",
+            "pages": "345",
+            "images": {
+                "small": "https://img5.doubanio.com/spic/s1681066.jpg",
+                "large": "https://img5.doubanio.com/lpic/s1681066.jpg",
+                "medium": "https://img5.doubanio.com/mpic/s1681066.jpg"
+            },
+            "alt": "https://book.douban.com/subject/1783520/",
+            "id": "1783520",
+            "publisher": "二十一世纪出版社",
+            "isbn10": "7539133600",
+            "isbn13": "9787539133607",
+            "title": "萌芽50年精华本-散文诗歌卷",
+            "url": "https://api.douban.com/v2/book/1783520",
+            "alt_title": "",
+            "author_intro": "",
+            "summary": "为了纪念《萌芽》创刊50周年，我们选编了“《萌芽》50年精华本”，集中展示《萌芽》50年来发表的优秀作品。这套精华本分“小说卷”四本、“纪实文学卷”一本、“散文诗歌卷”一本，内容均按作品发表年代编排。从中，可以读出社会50年流变的轨迹。我们把这套书献给50年来《萌芽》的读者们，正是几代读者的关心和支持，《萌芽》才得以保持青春活力。\r\n\r\n  《萌芽》50岁了，依然还是萌芽。年轻的血液奔涌，使得《萌芽》永远年轻。《萌芽》创刊50周年之际，本书特精选韩寒、舒婷、巴金等作家的散文和诗歌，集成此精华本，奉献给广大读者。",
+            "series": {
+                "id": "8337",
+                "title": "《萌芽》50年精华本"
+            },
+            "price": "29.8"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "numRaters": 16,
+                "average": "7.7",
+                "min": 0
+            },
+            "subtitle": "马基雅维利全集",
+            "author": [
+                "(意)马基雅维利"
+            ],
+            "pubdate": "2013-1",
+            "tags": [
+                {
+                    "count": 24,
+                    "name": "马基雅维利",
+                    "title": "马基雅维利"
+                },
+                {
+                    "count": 9,
+                    "name": "政治哲学",
+                    "title": "政治哲学"
+                },
+                {
+                    "count": 8,
+                    "name": "外国文学",
+                    "title": "外国文学"
+                },
+                {
+                    "count": 4,
+                    "name": "文学",
+                    "title": "文学"
+                },
+                {
+                    "count": 3,
+                    "name": "意大利@Niccolò_Machiavelli",
+                    "title": "意大利@Niccolò_Machiavelli"
+                },
+                {
+                    "count": 3,
+                    "name": "诗歌",
+                    "title": "诗歌"
+                },
+                {
+                    "count": 3,
+                    "name": "文艺",
+                    "title": "文艺"
+                },
+                {
+                    "count": 2,
+                    "name": "散文",
+                    "title": "散文"
+                }
+            ],
+            "origin_title": "",
+            "image": "https://img3.doubanio.com/mpic/s24510165.jpg",
+            "binding": "精装",
+            "translator": [
+                "徐卫翔",
+                "刘儒庭",
+                "胡维"
+            ],
+            "catalog": "导言（胡维）\n戏剧\n安德罗斯女子\n曼陀罗\n克莉齐娅\n诗歌\n十年纪\n十年纪　第一\n十年纪　第二\n金驴记\n歌四章\n论机运\n论忘恩负义\n论野心\n论机会\n狂欢节之歌\n一　被逐出天国的魔鬼之歌\n二　绝望的恋人与女郎之歌\n三　蒙福精灵之歌\n四　隐士之歌\n五　松果贩之歌\n六　江湖术士之歌\n散诗一组\n致贝尔纳多先生\n歌谣\n牧歌一章\n八行短诗\n十四行诗\n小夜曲\n致朱利亚诺·迪·洛伦佐·德·梅迪奇\n致同一位\n巴尔贝拉的祈求\n致巴尔贝拉\n短句二则\n散文\n贝尔法哥\n玩乐协会章程\n劝忏悔\n非洲迫害史\n佛罗伦萨人物品格\n杂谚\n关于语言的对话\n卡斯特鲁乔·卡斯特拉卡尼传\n编后记",
+            "pages": "439",
+            "images": {
+                "small": "https://img3.doubanio.com/spic/s24510165.jpg",
+                "large": "https://img3.doubanio.com/lpic/s24510165.jpg",
+                "medium": "https://img3.doubanio.com/mpic/s24510165.jpg"
+            },
+            "alt": "https://book.douban.com/subject/11597360/",
+            "id": "11597360",
+            "publisher": "吉林出版集团有限责任公司",
+            "isbn10": "754637944X",
+            "isbn13": "9787546379449",
+            "title": "戏剧·诗歌·散文",
+            "url": "https://api.douban.com/v2/book/11597360",
+            "alt_title": "",
+            "author_intro": "",
+            "summary": "《马基雅维利全集:戏剧•诗歌•散文》收集了尼科洛•马基雅维利的文学作品，展示了文学艺术家马基雅维利，小说家马基雅维利，剧作家马基雅维利，诗人马基雅维利等，其中的曼陀罗等早已成为众所周知的名著，更有不少名著为首次译出中文本，堪称饕餮盛宴。",
+            "series": {
+                "id": "6633",
+                "title": "马基雅维利全集"
+            },
+            "price": "98.00元"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "numRaters": 110,
+                "average": "9.3",
+                "min": 0
+            },
+            "subtitle": "",
+            "author": [
+                "鲁迅"
+            ],
+            "pubdate": "2011-1",
+            "tags": [
+                {
+                    "count": 40,
+                    "name": "鲁迅",
+                    "title": "鲁迅"
+                },
+                {
+                    "count": 19,
+                    "name": "诗歌",
+                    "title": "诗歌"
+                },
+                {
+                    "count": 17,
+                    "name": "散文",
+                    "title": "散文"
+                },
+                {
+                    "count": 14,
+                    "name": "中国文学",
+                    "title": "中国文学"
+                },
+                {
+                    "count": 11,
+                    "name": "经典",
+                    "title": "经典"
+                },
+                {
+                    "count": 8,
+                    "name": "随笔散文",
+                    "title": "随笔散文"
+                },
+                {
+                    "count": 8,
+                    "name": "文学",
+                    "title": "文学"
+                },
+                {
+                    "count": 6,
+                    "name": "中国",
+                    "title": "中国"
+                }
+            ],
+            "origin_title": "",
+            "image": "https://img1.doubanio.com/mpic/s6269717.jpg",
+            "binding": "",
+            "translator": [],
+            "catalog": "朝花夕拾  小引  狗·猫·鼠  阿长与《山海经》  《二十四孝图》  五猖会  无常  从百草园到三味书屋  父亲的病  琐记  藤野先生  范爱农  后记野草  题辞  秋夜  影的告别  求乞者  我的失恋  复仇  复仇(其二)  希望  雪  风筝  好的故事  过客  死火  狗的驳诘  失掉的好地狱  墓碣文  颓败线的颤动  立论  死后  这样的战士  聪明人和傻子和奴才  腊叶  淡淡的血痕中  一觉诗歌  旧体诗  新体诗其他散文汇编  春末闲谈  灯下漫笔  杂忆  随感录四十  随感录四十九  随感录六十六生命  的路  智识即罪恶  为“俄国歌剧团”  牺牲谟  长城  记念刘和珍君  小杂感  再谈香港  怎么写(夜记之一)  在钟楼上(夜记之二)  看司徒乔君的画  我和《语丝》的始终  为了忘却的记念  看萧和“看萧的人们”记  火  家庭为中国之基本  现代史  夜颂  “抄靶子”  别一个窃火者  晨凉漫记  秋夜纪游  新秋杂识(一)  文床秋梦  新秋杂识(三)  喝茶  看变戏法  “派”与“海派”  北人与南人  过年  清明时节  玩具  零食  看书琐记  看书琐记(二)  奇怪  看书琐记(三)  中秋二愿  《看图识字》  忆韦素园君  忆刘半农君  从孩子的照相说起  运命  拿破仑与隋那  病后杂谈  病后杂谈之余  阿金  隐士  人生识字胡涂始  在现代中国的孔夫子  “靠天吃饭”  萧红作《生死场》序  陀思妥夫斯基的事  我要骗人  白莽作《孩儿塔》序  关于太炎先生二三事  因太炎先生而想起的二三事  我的第一个师父  半夏小集  “这也是生活”……  死  女吊  记“杨树达”君的袭来  关于杨君袭来事件的辩证  中山先生逝世后一周年  今春的两种感想  上海所感  自言自语  无题  我的种痘  死所",
+            "pages": "489",
+            "images": {
+                "small": "https://img1.doubanio.com/spic/s6269717.jpg",
+                "large": "https://img1.doubanio.com/lpic/s6269717.jpg",
+                "medium": "https://img1.doubanio.com/mpic/s6269717.jpg"
+            },
+            "alt": "https://book.douban.com/subject/3880500/",
+            "id": "3880500",
+            "publisher": "北京燕山",
+            "isbn10": "7540220805",
+            "isbn13": "9787540220808",
+            "title": "鲁迅散文诗歌全集",
+            "url": "https://api.douban.com/v2/book/3880500",
+            "alt_title": "",
+            "author_intro": "",
+            "summary": "《鲁迅散文诗歌全集》包括了狗·猫·鼠、阿长与《山海经》、《二十四孝图》、五猖会、无常、从百草园到三味书屋、父亲的病、琐记、藤野先生、范爱农等。",
+            "series": {
+                "id": "12043",
+                "title": "鲁迅作品系列"
+            },
+            "price": "25.00元"
+        }
+    ]
+}

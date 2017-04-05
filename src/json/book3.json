@@ -1,0 +1,233 @@
+{
+    "count": 3,
+    "start": 0,
+    "total": 17,
+    "books": [
+        {
+            "rating": {
+                "max": 10,
+                "numRaters": 51,
+                "average": "7.8",
+                "min": 0
+            },
+            "subtitle": "",
+            "author": [
+                "丹尼尔・史普博"
+            ],
+            "pubdate": "2004-2-1",
+            "tags": [
+                {
+                    "count": 93,
+                    "name": "经济学",
+                    "title": "经济学"
+                },
+                {
+                    "count": 16,
+                    "name": "经济",
+                    "title": "经济"
+                },
+                {
+                    "count": 10,
+                    "name": "寓言",
+                    "title": "寓言"
+                },
+                {
+                    "count": 9,
+                    "name": "新制度经济学",
+                    "title": "新制度经济学"
+                },
+                {
+                    "count": 8,
+                    "name": "市场失灵",
+                    "title": "市场失灵"
+                },
+                {
+                    "count": 8,
+                    "name": "自由",
+                    "title": "自由"
+                },
+                {
+                    "count": 7,
+                    "name": "经济学的著名寓言--市场失灵的神话",
+                    "title": "经济学的著名寓言--市场失灵的神话"
+                },
+                {
+                    "count": 5,
+                    "name": "美国",
+                    "title": "美国"
+                }
+            ],
+            "origin_title": "Famous Fables of Economics",
+            "image": "https://img3.doubanio.com/mpic/s1175593.jpg",
+            "binding": "平装",
+            "translator": [
+                "余晖等"
+            ],
+            "catalog": "中文版序言\n导论：经济学寓言和公共政策\n第一章 经济学中的灯塔\n第二章 公共产品的民间提供？美国早期的收费公路公司\n第三章 蜜蜂的寓言：一项经济调查\n第四章 键盘的寓言\n第五章 Beta，Macintosh和其他离奇传说\n第六章 英国的公路和铁路煤炭运输：“愚蠢的短尾巴小煤车”的效率\n第七章 通用汽车公司收购费雪车体公司案\n第八章 费雪车体的寓言\n第九章 分成租佃制\n第十章 掠夺性降价：标准石油（N.J.）的例子\n第十一章 重新审视美洲铝业：提高竞争对手的成本并不能够改变问题的结论\n第十二章 自由轮船商学到了多少？一个旧案例中的新证据\n第十三章 金融传奇",
+            "pages": "359",
+            "images": {
+                "small": "https://img3.doubanio.com/spic/s1175593.jpg",
+                "large": "https://img3.doubanio.com/lpic/s1175593.jpg",
+                "medium": "https://img3.doubanio.com/mpic/s1175593.jpg"
+            },
+            "alt": "https://book.douban.com/subject/1005416/",
+            "id": "1005416",
+            "publisher": "上海人民出版社",
+            "isbn10": "7208048797",
+            "isbn13": "9787208048799",
+            "title": "经济学的著名寓言：市场失灵的神话",
+            "url": "https://api.douban.com/v2/book/1005416",
+            "alt_title": "Famous Fables of Economics",
+            "author_intro": "",
+            "summary": "本书是由诸多经济学家的著名论文选编而成的论文集。这些论文探讨了经济学领域的市场失灵现象，对经济学领域耳熟能详的寓言进行了重新检验，这些寓言一直被用来证明某个经济学理论或现象，从而对政府政策的制定产生了很大的影响。本书收录的论文对这些寓言进行了严谨的考察，发现它们实质上是不准确的，甚至是谬误，这有助于人们更好地理解经济学理论如何应用于社会实践，以及如何看待现实社会中的经济现象和经济政策。\n本书辑录的论文是当代经济史上大师级学者的经典之作，对于经济学的老师和学生而言，这是一本极有价值的参考书。",
+            "price": "38.00"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "numRaters": 9,
+                "average": "0.0",
+                "min": 0
+            },
+            "subtitle": "",
+            "pubdate": "1979",
+            "image": "https://img5.doubanio.com/mpic/s3236246.jpg",
+            "binding": "平装",
+            "images": {
+                "small": "https://img5.doubanio.com/spic/s3236246.jpg",
+                "large": "https://img5.doubanio.com/lpic/s3236246.jpg",
+                "medium": "https://img5.doubanio.com/mpic/s3236246.jpg"
+            },
+            "alt": "https://book.douban.com/subject/2979008/",
+            "id": "2979008",
+            "title": "古代神话寓言选读",
+            "author_intro": "",
+            "tags": [
+                {
+                    "count": 2,
+                    "name": "童年",
+                    "title": "童年"
+                },
+                {
+                    "count": 2,
+                    "name": "儿时读物",
+                    "title": "儿时读物"
+                },
+                {
+                    "count": 2,
+                    "name": "启蒙读物（童年记忆）",
+                    "title": "启蒙读物（童年记忆）"
+                },
+                {
+                    "count": 2,
+                    "name": "神话",
+                    "title": "神话"
+                },
+                {
+                    "count": 1,
+                    "name": "中国",
+                    "title": "中国"
+                },
+                {
+                    "count": 1,
+                    "name": "童书",
+                    "title": "童书"
+                },
+                {
+                    "count": 1,
+                    "name": "私藏书",
+                    "title": "私藏书"
+                },
+                {
+                    "count": 1,
+                    "name": "王子藏书",
+                    "title": "王子藏书"
+                }
+            ],
+            "origin_title": "",
+            "price": "0.20元",
+            "translator": [
+                "谭家健"
+            ],
+            "catalog": "",
+            "pages": "90",
+            "publisher": "中国少年儿童出版社",
+            "isbn10": "SH10056-415",
+            "alt_title": "",
+            "url": "https://api.douban.com/v2/book/2979008",
+            "author": [],
+            "summary": ""
+        },
+        {
+            "rating": {
+                "max": 10,
+                "numRaters": 0,
+                "average": "0.0",
+                "min": 0
+            },
+            "subtitle": "",
+            "author": [
+                "胡怀琛"
+            ],
+            "pubdate": "2013-2-1",
+            "tags": [
+                {
+                    "count": 1,
+                    "name": "*北京·知识产权出版社*",
+                    "title": "*北京·知识产权出版社*"
+                },
+                {
+                    "count": 1,
+                    "name": "M",
+                    "title": "M"
+                },
+                {
+                    "count": 1,
+                    "name": "学术史",
+                    "title": "学术史"
+                },
+                {
+                    "count": 1,
+                    "name": "工具书",
+                    "title": "工具书"
+                },
+                {
+                    "count": 1,
+                    "name": "民俗学",
+                    "title": "民俗学"
+                },
+                {
+                    "count": 1,
+                    "name": "近代",
+                    "title": "近代"
+                }
+            ],
+            "origin_title": "",
+            "image": "https://img1.doubanio.com/mpic/s28601759.jpg",
+            "binding": "平装",
+            "translator": [],
+            "catalog": "中国寓言研究\n第一章 何谓寓言\n第二章 寓言的效用如何\n第三章 全世界寓言的产生地印度、希腊、中国\n第四章 中国寓言产生的时代\n第五章 战国前後寓言的传播\n第六章 汉魏以後寓言的变迁\n第七章 汉魏以来的韵文的寓言\n第八章 近二十年来寓言的复活\n中国神话\n黄帝游华胥国\n龙伯国大人钓鳌\n穆天子见西王母\n后羿射日与嫦娥奔月\n女娲补天\n愚公移山\n斑竹的来历\n蚕的来历\n穿胸国\n风生兽和火浣布\n左元放的幻术\n细腰\n狐狸与华表\n园客\n懒妇\n紫姑神\n杨宝救黄雀\n丁令威化鹤\n端午吃粽子的来历\n鹅笼书生\n牵牛织女的故事\n吴刚砍桂树\n月下老人\n锺馗吃鬼\n蚂蚁国\n编後记",
+            "pages": "114",
+            "images": {
+                "small": "https://img1.doubanio.com/spic/s28601759.jpg",
+                "large": "https://img1.doubanio.com/lpic/s28601759.jpg",
+                "medium": "https://img1.doubanio.com/mpic/s28601759.jpg"
+            },
+            "alt": "https://book.douban.com/subject/24713686/",
+            "id": "24713686",
+            "publisher": "知识产权出版社",
+            "isbn10": "7513015082",
+            "isbn13": "9787513015080",
+            "title": "中国寓言与神话",
+            "url": "https://api.douban.com/v2/book/24713686",
+            "alt_title": "",
+            "author_intro": "胡怀琛(1886～1938年)，原名有忭，字季仁；后名怀琛，字寄尘。安徽泾县人。30年代寓亚尔培路步高里(今陕西南路287弄)。自幼习诗，厌科举。清光绪二十四年(1898年)游学上海，后任《神州日报》编辑。清宣统二年(1910年)，加入南社。与柳亚子共主《警报》、《太平洋报》笔政，并相交相知，义结金兰。民国5年(1916年)辞京奉铁路科员职，执教沪上大学，兼卖文为生。民国21年，被聘为上海市通志馆编纂。早晚伏案，十分勤苦。其时，搜集整理一批上海地方史志珍贵资料并予初步研究，卓有贡献。抗战爆发，通志馆暂时解散。面对时局，忧国忧民，逝于胃疾。其对新旧体诗歌和儿童诗歌均有成就，所评“宋诗如西洋油画，善刻划；唐诗如中国水墨山水，善写意”，被学术界视为公论。著有《大江集》《新诗概说》《中国文学史概要》《国学概论》《南社始末》等。",
+            "summary": "",
+            "series": {
+                "id": "18424",
+                "title": "民国文存"
+            },
+            "price": "CNY 30.00"
+        }
+    ]
+}

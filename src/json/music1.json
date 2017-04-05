@@ -1,0 +1,244 @@
+{
+    "count": 3,
+    "start": 0,
+    "total": 200,
+    "musics": [
+        {
+            "rating": {
+                "max": 10,
+                "average": "9.2",
+                "numRaters": 69618,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "周杰伦"
+                }
+            ],
+            "alt_title": "Fantasy",
+            "image": "https://img3.doubanio.com/spic/s3750422.jpg",
+            "tags": [
+                {
+                    "count": 17018,
+                    "name": "周杰伦"
+                },
+                {
+                    "count": 6513,
+                    "name": "范特西"
+                },
+                {
+                    "count": 4881,
+                    "name": "台湾"
+                },
+                {
+                    "count": 3954,
+                    "name": "Jay"
+                },
+                {
+                    "count": 3421,
+                    "name": "R&B"
+                },
+                {
+                    "count": 2607,
+                    "name": "流行"
+                },
+                {
+                    "count": 2316,
+                    "name": "华语"
+                },
+                {
+                    "count": 1874,
+                    "name": "pop"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/1403307/",
+            "attrs": {
+                "publisher": [
+                    "BMG"
+                ],
+                "singer": [
+                    "周杰伦"
+                ],
+                "version": [
+                    "专辑"
+                ],
+                "pubdate": [
+                    "2001-09-14"
+                ],
+                "title": [
+                    "范特西"
+                ],
+                "media": [
+                    "CD"
+                ],
+                "tracks": [
+                    "1. 爱在西元前\n2. 爸我回来了\n3. 简单爱\n4. 忍者\n5. 开不了口\n6. 上海一九四三\n7. 对不起\n8. 威廉古堡\n9. 双截棍\n10. 安静"
+                ],
+                "discs": [
+                    "1"
+                ]
+            },
+            "title": "范特西",
+            "alt": "https://music.douban.com/subject/1403307/",
+            "id": "1403307"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": "8.1",
+                "numRaters": 48564,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "周杰伦"
+                }
+            ],
+            "alt_title": "",
+            "image": "https://img5.doubanio.com/spic/s3737076.jpg",
+            "tags": [
+                {
+                    "count": 11992,
+                    "name": "周杰伦"
+                },
+                {
+                    "count": 4353,
+                    "name": "七里香"
+                },
+                {
+                    "count": 3753,
+                    "name": "台湾"
+                },
+                {
+                    "count": 2598,
+                    "name": "Jay"
+                },
+                {
+                    "count": 1963,
+                    "name": "R&B"
+                },
+                {
+                    "count": 1833,
+                    "name": "流行"
+                },
+                {
+                    "count": 1713,
+                    "name": "Pop"
+                },
+                {
+                    "count": 1524,
+                    "name": "华语"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/1401853/",
+            "attrs": {
+                "publisher": [
+                    "上海声像出版社"
+                ],
+                "singer": [
+                    "周杰伦"
+                ],
+                "version": [
+                    "专辑"
+                ],
+                "pubdate": [
+                    "2004"
+                ],
+                "title": [
+                    "七里香"
+                ],
+                "media": [
+                    "CD"
+                ],
+                "tracks": [
+                    "1. 我的地盘\n2. 七里香\n3. 借口\n4. 外婆\n5. 将军\n6. 搁浅\n7. 乱舞春秋\n8. 困兽之斗\n9. 园游会\n10. 止战之殇"
+                ],
+                "discs": [
+                    "1"
+                ]
+            },
+            "title": "七里香",
+            "alt": "https://music.douban.com/subject/1401853/",
+            "id": "1401853"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": "8.5",
+                "numRaters": 47226,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "周杰伦"
+                }
+            ],
+            "alt_title": "葉惠美",
+            "image": "https://img3.doubanio.com/spic/s1425762.jpg",
+            "tags": [
+                {
+                    "count": 16777215,
+                    "name": "JAY"
+                },
+                {
+                    "count": 16777214,
+                    "name": "jay"
+                },
+                {
+                    "count": 11522,
+                    "name": "周杰伦"
+                },
+                {
+                    "count": 3729,
+                    "name": "叶惠美"
+                },
+                {
+                    "count": 3724,
+                    "name": "台湾"
+                },
+                {
+                    "count": 2296,
+                    "name": "Jay"
+                },
+                {
+                    "count": 1994,
+                    "name": "R&B"
+                },
+                {
+                    "count": 1751,
+                    "name": "流行"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/1406522/",
+            "attrs": {
+                "publisher": [
+                    "Sony Music"
+                ],
+                "singer": [
+                    "周杰伦"
+                ],
+                "version": [
+                    "专辑"
+                ],
+                "pubdate": [
+                    "2003-07-31"
+                ],
+                "title": [
+                    "叶惠美"
+                ],
+                "media": [
+                    "CD"
+                ],
+                "tracks": [
+                    "01、以父之名\n02、儒夫\n03、晴天\n04、三年二班\n05、东风破\n06、你听得到\n07、同一种调调\n08、她的睫毛\n09、爱情悬崖\n10、梯田\n11、双刀"
+                ],
+                "discs": [
+                    "1"
+                ]
+            },
+            "title": "叶惠美",
+            "alt": "https://music.douban.com/subject/1406522/",
+            "id": "1406522"
+        }
+    ]
+}

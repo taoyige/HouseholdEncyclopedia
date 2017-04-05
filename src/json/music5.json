@@ -1,0 +1,244 @@
+{
+    "count": 3,
+    "start": 0,
+    "total": 164,
+    "musics": [
+        {
+            "rating": {
+                "max": 10,
+                "average": "9.1",
+                "numRaters": 7995,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "楊千嬅"
+                }
+            ],
+            "alt_title": "Greatest Hits",
+            "image": "https://img1.doubanio.com/spic/s4102447.jpg",
+            "tags": [
+                {
+                    "count": 1872,
+                    "name": "杨千嬅"
+                },
+                {
+                    "count": 1046,
+                    "name": "粤语"
+                },
+                {
+                    "count": 728,
+                    "name": "香港"
+                },
+                {
+                    "count": 495,
+                    "name": "楊千嬅"
+                },
+                {
+                    "count": 304,
+                    "name": "千嬅盛放"
+                },
+                {
+                    "count": 254,
+                    "name": "精选"
+                },
+                {
+                    "count": 211,
+                    "name": "时光是这样被悄悄带走的"
+                },
+                {
+                    "count": 190,
+                    "name": "2009"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/4933831/",
+            "attrs": {
+                "publisher": [
+                    "正东唱片"
+                ],
+                "singer": [
+                    "楊千嬅"
+                ],
+                "version": [
+                    "选集"
+                ],
+                "pubdate": [
+                    "2009-12-04"
+                ],
+                "title": [
+                    "千嬅盛放"
+                ],
+                "media": [
+                    "CD"
+                ],
+                "tracks": [
+                    "CD1\n1. 狼来了\n2. 再见二丁目\n3. 直觉\n4. 友谊万岁\n5. 手信\n6. 数你\n7. 大激想\n8. 因为所以(毕氏定理)\n9. 爱人\n10. 抬起我的头来\n11. 夏天的故事\n12. 冰点\n13. 木偶奇遇记\n14. 最后的歌\n15. 少女的祈祷\n16. 如果东京不快乐\n17. 可人儿\nCD2\n1. 姊妹\n2. 野孩子\n3. 悲歌之王\n4. 假如让我说下去\n5. 河童\n6. 杨千嬅 (变身Remix版)\n7. 闪灵\n8. 勇\n9. 向左走向右走\n10. 小飞侠 –杨千嬅 / 蔡德才\n11. 可惜我是水瓶座\n12. 笑中有泪\n13. 我是羊\n14. 飞女正传\n15. 稀客\n16. 咬唇\n17. 寒舍\nCD3\n1. 小星星\n2. 自由行\n3. 小城大事\n4. 处处吻\n5. 炼金术\n6. 烈女\n7. 简爱\n8. 长信不如短讯(长痛不如短痛)\n9. 花与爱丽斯\n10. 超龄\n11. 火红火热–杨千嬅/梁汉文/ 郑中基/ 何韵诗\n12. 我的醉爱\n13. 大傻\n14. 我的生存之道\n15. 芬梨道上\n16. 郎来了(ROSE)\n17. 滚 - 杨千嬅/梁汉文"
+                ],
+                "discs": [
+                    "3"
+                ]
+            },
+            "title": "千嬅盛放",
+            "alt": "https://music.douban.com/subject/4933831/",
+            "id": "4933831"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": "8.4",
+                "numRaters": 5052,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "杨千嬅"
+                }
+            ],
+            "alt_title": "",
+            "image": "https://img1.doubanio.com/spic/s7050529.jpg",
+            "tags": [
+                {
+                    "count": 1559,
+                    "name": "杨千嬅"
+                },
+                {
+                    "count": 805,
+                    "name": "香港"
+                },
+                {
+                    "count": 600,
+                    "name": "楊千嬅"
+                },
+                {
+                    "count": 492,
+                    "name": "粵語"
+                },
+                {
+                    "count": 435,
+                    "name": "粤语"
+                },
+                {
+                    "count": 382,
+                    "name": "2012"
+                },
+                {
+                    "count": 291,
+                    "name": "pop"
+                },
+                {
+                    "count": 277,
+                    "name": "火鸟"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/10454374/",
+            "attrs": {
+                "publisher": [
+                    "華星唱片"
+                ],
+                "singer": [
+                    "杨千嬅"
+                ],
+                "version": [
+                    "专辑"
+                ],
+                "pubdate": [
+                    "2012-01-18"
+                ],
+                "title": [
+                    "火鸟"
+                ],
+                "media": [
+                    "CD+DVD"
+                ],
+                "tracks": [
+                    "CD Tracks List\n1. 火鳥\n2. 白天鵝\n3. 知更\n4. 孔雀\n5. 金絲雀\n6.  深息\n7. 翅膀下的風\n8. 裊裊\nDVD Tracks List\n1. 火鳥 (MV)\n2. 白天鵝 (MV)"
+                ],
+                "discs": [
+                    "2"
+                ]
+            },
+            "title": "火鸟",
+            "alt": "https://music.douban.com/subject/10454374/",
+            "id": "10454374"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": "8.0",
+                "numRaters": 4747,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "杨千嬅"
+                }
+            ],
+            "alt_title": "Me, Myself & Miriam",
+            "image": "https://img5.doubanio.com/spic/s4497276.jpg",
+            "tags": [
+                {
+                    "count": 970,
+                    "name": "杨千嬅"
+                },
+                {
+                    "count": 603,
+                    "name": "香港"
+                },
+                {
+                    "count": 474,
+                    "name": "楊千嬅"
+                },
+                {
+                    "count": 432,
+                    "name": "粤语"
+                },
+                {
+                    "count": 266,
+                    "name": "2010"
+                },
+                {
+                    "count": 171,
+                    "name": "pop"
+                },
+                {
+                    "count": 143,
+                    "name": "EP"
+                },
+                {
+                    "count": 96,
+                    "name": "女声"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/5314318/",
+            "attrs": {
+                "publisher": [
+                    "华星唱片"
+                ],
+                "singer": [
+                    "杨千嬅"
+                ],
+                "version": [
+                    "EP"
+                ],
+                "pubdate": [
+                    "2010-07-23"
+                ],
+                "title": [
+                    "Home"
+                ],
+                "media": [
+                    "CD"
+                ],
+                "tracks": [
+                    "斗零踭"
+                ],
+                "discs": [
+                    "1"
+                ]
+            },
+            "title": "Home",
+            "alt": "https://music.douban.com/subject/5314318/",
+            "id": "5314318"
+        }
+    ]
+}

@@ -1,0 +1,245 @@
+{
+    "count": 3,
+    "start": 0,
+    "total": 200,
+    "musics": [
+        {
+            "rating": {
+                "max": 10,
+                "average": "7.3",
+                "numRaters": 1818,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "容祖儿"
+                }
+            ],
+            "alt_title": "",
+            "image": "https://img3.doubanio.com/spic/s2609723.jpg",
+            "tags": [
+                {
+                    "count": 520,
+                    "name": "容祖儿"
+                },
+                {
+                    "count": 280,
+                    "name": "小小"
+                },
+                {
+                    "count": 237,
+                    "name": "香港"
+                },
+                {
+                    "count": 83,
+                    "name": "pop"
+                },
+                {
+                    "count": 81,
+                    "name": "流行"
+                },
+                {
+                    "count": 69,
+                    "name": "2007"
+                },
+                {
+                    "count": 58,
+                    "name": "女歌手"
+                },
+                {
+                    "count": 49,
+                    "name": "女声"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/2141057/",
+            "attrs": {
+                "publisher": [
+                    "英皇娱乐"
+                ],
+                "singer": [
+                    "容祖儿"
+                ],
+                "pubdate": [
+                    "2007-07-06"
+                ],
+                "title": [
+                    "小小"
+                ],
+                "media": [
+                    "CD"
+                ],
+                "tracks": [
+                    "01. 曙凤蝶\n02. 小小\n03. 在你的左右\n04. 怎么走\n05. 牛奶\n06. 没关系\n07. 花开的时候\n08. 天方夜谭\n09. 间接伤害\n10. 解语花(韩剧 黄真伊 主题曲)"
+                ],
+                "discs": [
+                    "1"
+                ]
+            },
+            "title": "小小",
+            "alt": "https://music.douban.com/subject/2141057/",
+            "id": "2141057"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": "7.2",
+                "numRaters": 1560,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "容祖儿"
+                },
+                {
+                    "name": "Joey Yung"
+                }
+            ],
+            "alt_title": "",
+            "image": "https://img3.doubanio.com/spic/s4452083.jpg",
+            "tags": [
+                {
+                    "count": 404,
+                    "name": "容祖儿"
+                },
+                {
+                    "count": 237,
+                    "name": "粤语"
+                },
+                {
+                    "count": 203,
+                    "name": "香港"
+                },
+                {
+                    "count": 116,
+                    "name": "2010"
+                },
+                {
+                    "count": 88,
+                    "name": "EP"
+                },
+                {
+                    "count": 59,
+                    "name": "pop"
+                },
+                {
+                    "count": 28,
+                    "name": "HK"
+                },
+                {
+                    "count": 26,
+                    "name": "空港"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/5041799/",
+            "attrs": {
+                "publisher": [
+                    "EEG"
+                ],
+                "singer": [
+                    "容祖儿",
+                    "Joey Yung"
+                ],
+                "version": [
+                    "EP"
+                ],
+                "pubdate": [
+                    "2010-08-20"
+                ],
+                "title": [
+                    "空港"
+                ],
+                "media": [
+                    "CD"
+                ],
+                "tracks": [
+                    "CD\n1.空港\n2.破相\n3.飞\n4.绿野仙踪(“百老滙”广告歌)\n5.星图\nDVD\n1.破相 MV\n2.绿野仙踪 MV (“百老滙”广告歌MV)"
+                ],
+                "discs": [
+                    "1"
+                ]
+            },
+            "title": "空港",
+            "alt": "https://music.douban.com/subject/5041799/",
+            "id": "5041799"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": "7.7",
+                "numRaters": 1312,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "容祖兒"
+                }
+            ],
+            "alt_title": "",
+            "image": "https://img5.doubanio.com/spic/s6939436.jpg",
+            "tags": [
+                {
+                    "count": 373,
+                    "name": "容祖儿"
+                },
+                {
+                    "count": 230,
+                    "name": "香港"
+                },
+                {
+                    "count": 216,
+                    "name": "粤语"
+                },
+                {
+                    "count": 104,
+                    "name": "2011"
+                },
+                {
+                    "count": 77,
+                    "name": "pop"
+                },
+                {
+                    "count": 56,
+                    "name": "JOEY&JOEY"
+                },
+                {
+                    "count": 45,
+                    "name": "HK"
+                },
+                {
+                    "count": 39,
+                    "name": "女声"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/6848207/",
+            "attrs": {
+                "publisher": [
+                    "英皇娱乐"
+                ],
+                "singer": [
+                    "容祖兒"
+                ],
+                "version": [
+                    "专辑"
+                ],
+                "pubdate": [
+                    "2011-09-23"
+                ],
+                "title": [
+                    "Joey & Joey"
+                ],
+                "media": [
+                    "CD+DVD"
+                ],
+                "tracks": [
+                    "01.蜉蝣(作曲：Kelvin Avon, Katrina Russ/填词：周耀辉)\n02.13点 (作曲：艺琛/作词: 黄伟文)\n03.恋人未满(作曲：Eric Kwok/填词：林若宁)\n04.澎湃 (作曲：C.Y. Kong/作词：陈咏谦)\n05.花千树(作曲：Mattew Tisher/ Andrew Ang/填词：黄伟文)\n06.垂涎(作曲：方皓玟/填词：蓝奕邦)\n07.马赛克(作曲：Randy Chow/填词：周耀辉)\n08.墙纸(作曲：方大同/填词：黄伟文)\n09.𤷪(作曲：Alexander Bard, Anthony Galatis, Mark Frisch、填词：小克)(OT: Voodoo Eyes)\n10. 山口百惠(作曲：艺琛/填词：林宝)\n11. 最后情人(国)(作曲:mattew tisher andrew ang/填词:施人诚)"
+                ],
+                "discs": [
+                    "2"
+                ]
+            },
+            "title": "Joey & Joey",
+            "alt": "https://music.douban.com/subject/6848207/",
+            "id": "6848207"
+        }
+    ]
+}

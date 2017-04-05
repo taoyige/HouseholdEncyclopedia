@@ -1,0 +1,244 @@
+{
+    "count": 3,
+    "start": 0,
+    "total": 200,
+    "musics": [
+        {
+            "rating": {
+                "max": 10,
+                "average": "8.3",
+                "numRaters": 29395,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "陈奕迅"
+                }
+            ],
+            "alt_title": "Don't Want to Let Go",
+            "image": "https://img5.doubanio.com/spic/s3146476.jpg",
+            "tags": [
+                {
+                    "count": 8469,
+                    "name": "陈奕迅"
+                },
+                {
+                    "count": 3415,
+                    "name": "Eason"
+                },
+                {
+                    "count": 2583,
+                    "name": "不想放手"
+                },
+                {
+                    "count": 2504,
+                    "name": "香港"
+                },
+                {
+                    "count": 1347,
+                    "name": "Pop"
+                },
+                {
+                    "count": 952,
+                    "name": "2008"
+                },
+                {
+                    "count": 804,
+                    "name": "流行"
+                },
+                {
+                    "count": 680,
+                    "name": "陳奕迅"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/3088329/",
+            "attrs": {
+                "publisher": [
+                    "新藝寶"
+                ],
+                "singer": [
+                    "陈奕迅"
+                ],
+                "version": [
+                    "专辑"
+                ],
+                "pubdate": [
+                    "2008-06-30"
+                ],
+                "title": [
+                    "不想放手"
+                ],
+                "media": [
+                    "CD"
+                ],
+                "tracks": [
+                    "1. 27 Seconds (Music box of \"然後怎樣\")\n2. 路...一直都在\n3. 獨居動物\n4. 倒帶人生\n5. Aren't You Glad\n6. 7\n7. 不要說話\n8. 漂亮小姐\n9. 臭美\n10. 土星環\n11. 然後怎樣\n12. Hidden Message"
+                ],
+                "discs": [
+                    "1"
+                ]
+            },
+            "title": "不想放手",
+            "alt": "https://music.douban.com/subject/3088329/",
+            "id": "3088329"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": "9.4",
+                "numRaters": 34924,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "陈奕迅"
+                }
+            ],
+            "alt_title": "",
+            "image": "https://img5.doubanio.com/spic/s3169796.jpg",
+            "tags": [
+                {
+                    "count": 8250,
+                    "name": "陈奕迅"
+                },
+                {
+                    "count": 2653,
+                    "name": "七"
+                },
+                {
+                    "count": 2383,
+                    "name": "eason"
+                },
+                {
+                    "count": 2341,
+                    "name": "香港"
+                },
+                {
+                    "count": 945,
+                    "name": "POP"
+                },
+                {
+                    "count": 938,
+                    "name": "流行"
+                },
+                {
+                    "count": 934,
+                    "name": "华语"
+                },
+                {
+                    "count": 740,
+                    "name": "精选"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/1406094/",
+            "attrs": {
+                "publisher": [
+                    "EEG"
+                ],
+                "singer": [
+                    "陈奕迅"
+                ],
+                "version": [
+                    "选集"
+                ],
+                "pubdate": [
+                    "2003-11-20"
+                ],
+                "title": [
+                    "七"
+                ],
+                "media": [
+                    "CD"
+                ],
+                "tracks": [
+                    "DISK 1\n1 圣诞结\n2 Shall we talk\n3 寂寞让你更快乐\n4 K歌之王\n5 想哭\n6 爱是怀疑\n7 十年\n8 不如这样\n9 谢谢侬\nDISK 2\n1 你的背包\n2 低等动物\n3 男人的错\n4 Last order\n5 没有手机的日子\n6 要你的\n7 全世界失眠\n8 兄妹\n9 我们都寂寞"
+                ],
+                "discs": [
+                    "2"
+                ]
+            },
+            "title": "七",
+            "alt": "https://music.douban.com/subject/1406094/",
+            "id": "1406094"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": "8.5",
+                "numRaters": 35755,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "陈奕迅"
+                }
+            ],
+            "alt_title": "H3M",
+            "image": "https://img3.doubanio.com/spic/s3666735.jpg",
+            "tags": [
+                {
+                    "count": 7989,
+                    "name": "陈奕迅"
+                },
+                {
+                    "count": 3660,
+                    "name": "Eason"
+                },
+                {
+                    "count": 2909,
+                    "name": "香港"
+                },
+                {
+                    "count": 2681,
+                    "name": "粤语"
+                },
+                {
+                    "count": 1378,
+                    "name": "H3M"
+                },
+                {
+                    "count": 1339,
+                    "name": "Pop"
+                },
+                {
+                    "count": 1042,
+                    "name": "2009"
+                },
+                {
+                    "count": 851,
+                    "name": "陳奕迅"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/3603814/",
+            "attrs": {
+                "publisher": [
+                    "环球"
+                ],
+                "singer": [
+                    "陈奕迅"
+                ],
+                "version": [
+                    "专辑"
+                ],
+                "pubdate": [
+                    "2009-03-23"
+                ],
+                "title": [
+                    "H³M"
+                ],
+                "media": [
+                    "CD"
+                ],
+                "tracks": [
+                    "01. Allegro, Opus 3.3 a.m. （曲：Gary Tong，词：小克）\n02. 还有甚么可以送给你 （曲：Davy Chan，词：周耀辉）\n03. 于心有愧（曲：锺达茵，词：林夕）\n04. 今天只做一件事 （曲：Joey Tang／舒文，词：周耀辉）\n05. 一个旅人（原名：单身旅程，曲：雷有辉，词：余绍祺）\n06. 七百年后（曲：柳重言，词：林若宁）\n07. Life Goes On （曲：孙伟明，词：Dash＠Mr.）\n08. 太阳照常升起（曲：黄仲贤，词：林夕）\n09. 不来也不去（曲：C.Y. Kong，词：林夕）\n10. 沙龙（曲：陈奕迅，词：黄伟文）"
+                ],
+                "discs": [
+                    "1"
+                ]
+            },
+            "title": "H³M",
+            "alt": "https://music.douban.com/subject/3603814/",
+            "id": "3603814"
+        }
+    ]
+}

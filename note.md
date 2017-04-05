@@ -1,0 +1,3 @@
+## 引入bootstrap
+> 没有通过webpack引入bootstrap的样式和字体文件，而是直接在build目录下面拷贝对应的资源文件，然后在index页面直接引入
+> 在webpack中合并第三方库文件时，bootstrap报错说找不到jQuery，由于不知道bootstrap默认找的是不是全局的jQuery，所以最后决定直接在build/js目录下直接新建lib文件夹用于存放jQuery，bootstrap等js文件

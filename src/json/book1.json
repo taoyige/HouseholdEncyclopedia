@@ -1,0 +1,226 @@
+{
+    "count": 3,
+    "start": 0,
+    "total": 17852,
+    "books": [
+        {
+            "rating": {
+                "max": 10,
+                "numRaters": 54,
+                "average": "7.6",
+                "min": 0
+            },
+            "subtitle": "",
+            "author": [
+                "曾尹郁"
+            ],
+            "pubdate": "2006-1",
+            "tags": [
+                {
+                    "count": 11,
+                    "name": "校园",
+                    "title": "校园"
+                },
+                {
+                    "count": 8,
+                    "name": "80后",
+                    "title": "80后"
+                },
+                {
+                    "count": 8,
+                    "name": "曾尹郁",
+                    "title": "曾尹郁"
+                },
+                {
+                    "count": 7,
+                    "name": "童话",
+                    "title": "童话"
+                },
+                {
+                    "count": 6,
+                    "name": "青春",
+                    "title": "青春"
+                },
+                {
+                    "count": 6,
+                    "name": "爱情",
+                    "title": "爱情"
+                },
+                {
+                    "count": 3,
+                    "name": "小说",
+                    "title": "小说"
+                },
+                {
+                    "count": 3,
+                    "name": "STORY",
+                    "title": "STORY"
+                }
+            ],
+            "origin_title": "",
+            "image": "https://img3.doubanio.com/mpic/s5642690.jpg",
+            "binding": "简裝本",
+            "translator": [],
+            "catalog": "",
+            "pages": "288",
+            "images": {
+                "small": "https://img3.doubanio.com/spic/s5642690.jpg",
+                "large": "https://img3.doubanio.com/lpic/s5642690.jpg",
+                "medium": "https://img3.doubanio.com/mpic/s5642690.jpg"
+            },
+            "alt": "https://book.douban.com/subject/1505596/",
+            "id": "1505596",
+            "publisher": "上海人民出版社",
+            "isbn10": "7208060258",
+            "isbn13": "9787208060258",
+            "title": "童话",
+            "url": "https://api.douban.com/v2/book/1505596",
+            "alt_title": "",
+            "author_intro": "",
+            "summary": "个少年几乎一直是着，端着杯什么料坐在我们身边讲述一个《童话》的故事，狡黠的他用无数个圈套吸引读者去看这些笑而又温情脉脉的情节：少年的单恋，青梅竹马，善良的不良少年，成长告白。他把局布好，在我们笑得无法自制的时候，的笑容却突然消失，残酷地将一个个天真的人扔入了悲伤的境地，决然的放弃，被迫，骗，眼泪，以及死。在我们认为这部小说太过于残酷而不能用童话命名，他却又是一个放肆的转折，从无尽的黑色里寻出一片阳光，一个破涕为笑的童话。",
+            "price": "18.00元"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "numRaters": 0,
+                "average": "0.0",
+                "min": 0
+            },
+            "subtitle": "",
+            "author": [
+                "《世界经典童话》编委会编著 编"
+            ],
+            "pubdate": "2011-1",
+            "tags": [
+                {
+                    "count": 3,
+                    "name": "儿童文学",
+                    "title": "儿童文学"
+                },
+                {
+                    "count": 3,
+                    "name": "童话",
+                    "title": "童话"
+                },
+                {
+                    "count": 2,
+                    "name": "经典",
+                    "title": "经典"
+                },
+                {
+                    "count": 1,
+                    "name": "世界",
+                    "title": "世界"
+                }
+            ],
+            "origin_title": "",
+            "image": "https://img3.doubanio.com/mpic/s26658913.jpg",
+            "binding": "",
+            "translator": [
+                "童话-作品集-世界 注释"
+            ],
+            "catalog": "",
+            "pages": "696",
+            "images": {
+                "small": "https://img3.doubanio.com/spic/s26658913.jpg",
+                "large": "https://img3.doubanio.com/lpic/s26658913.jpg",
+                "medium": "https://img3.doubanio.com/mpic/s26658913.jpg"
+            },
+            "alt": "https://book.douban.com/subject/10727363/",
+            "id": "10727363",
+            "publisher": "",
+            "isbn10": "7206080006",
+            "isbn13": "9787206080005",
+            "title": "世界经典童话",
+            "url": "https://api.douban.com/v2/book/10727363",
+            "alt_title": "",
+            "author_intro": "",
+            "summary": "",
+            "price": "399.00元"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "numRaters": 34702,
+                "average": "9.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "author": [
+                "（丹麦）安徒生"
+            ],
+            "pubdate": "1997-08",
+            "tags": [
+                {
+                    "count": 6348,
+                    "name": "童话",
+                    "title": "童话"
+                },
+                {
+                    "count": 4676,
+                    "name": "安徒生",
+                    "title": "安徒生"
+                },
+                {
+                    "count": 2523,
+                    "name": "外国文学",
+                    "title": "外国文学"
+                },
+                {
+                    "count": 1734,
+                    "name": "经典",
+                    "title": "经典"
+                },
+                {
+                    "count": 1269,
+                    "name": "儿童文学",
+                    "title": "儿童文学"
+                },
+                {
+                    "count": 1003,
+                    "name": "安徒生童话",
+                    "title": "安徒生童话"
+                },
+                {
+                    "count": 986,
+                    "name": "安徒生童话故事集",
+                    "title": "安徒生童话故事集"
+                },
+                {
+                    "count": 738,
+                    "name": "名著",
+                    "title": "名著"
+                }
+            ],
+            "origin_title": "",
+            "image": "https://img3.doubanio.com/mpic/s1034062.jpg",
+            "binding": "精装",
+            "translator": [
+                "叶君健"
+            ],
+            "catalog": "目 次\n海的女儿\n邻居们\n夜莺\n丑小鸭\n她是一个废物\n豌豆上的公主\n打火匣\n皇帝的新装\n顽皮孩子\n野天鹅\n凤凰\n柳树下的梦\n衬衫领子\n小鬼和小商人\n世上最美丽的一朵玫瑰花\n天鹅的窠\n甲虫\n小意达的花儿\n完全是真的\n雪人\n树精\n拇指姑娘\n区别\n园丁和主人\n最后的珠子\n纸牌\n笨汉汉斯\n坚定的锡兵\n新世纪的女神\n老头子做事总不会错\n雏菊\n冰姑娘\n飞箱\n卖火柴的小女孩\n安琪儿\n幸运的套鞋\n光荣的荆棘路\n牧羊女和扫烟囱的人\n单身汉的睡帽\n蝴蝶\n夏日痴\n一个贵族和他的女儿们\n癞蛤蟆\n沙丘的故事\n一枚银毫\n烂布片\n开门的钥匙\n两个海岛\n谁是最幸运的\n没有画的画册\n",
+            "pages": "550",
+            "images": {
+                "small": "https://img3.doubanio.com/spic/s1034062.jpg",
+                "large": "https://img3.doubanio.com/lpic/s1034062.jpg",
+                "medium": "https://img3.doubanio.com/mpic/s1034062.jpg"
+            },
+            "alt": "https://book.douban.com/subject/1046209/",
+            "id": "1046209",
+            "publisher": "人民文学出版社",
+            "isbn10": "7020017711",
+            "isbn13": "9787020017713",
+            "title": "安徒生童话故事集",
+            "url": "https://api.douban.com/v2/book/1046209",
+            "alt_title": "",
+            "author_intro": "安徒生是丹麦19世纪著名童话作家，世界文学童话创始人。他生于欧登塞城一个贫苦鞋匠家庭，早年在慈善学校读过书，当过学徒工。受父亲和民间口头文学影响，他自幼酷爱文学。\n“为了争取未来的一代”，安徒生决定给孩子写童话，出版了《讲给孩子们听的故事》。此后数年，每年圣诞节都出版一本这样的童话集。其后又不断发表新作，直到1872年因患癌症才逐渐搁笔。近40年间，共计写了童话168篇。\n安徒生的创作可分早、中、晚三个时期。早期童话多充满绮丽的幻想、乐观的精神，体现现实主义和浪漫主义相结合的特点。代表作有《打火匣》、《小意达的花儿》、《拇指姑娘》、《海的女儿》、《野天鹅》、《丑小鸭》等。中期童话，幻想成分减弱，现实成分相对增强。在鞭挞丑恶、歌颂善良中，表现了对美好生活的执着追求，也流露了缺乏信心的忧郁情绪。代表作有《卖火柴的小女孩》、《白雪皇后》、《影子》、《一滴水》、《母亲的故事》、《演木偶戏的人》等。晚期童话比中期更加面对现实，着力描写底层民众的悲苦命运，揭露社会生活的阴冷、黑暗和人间的不平。作品基调低沉。代表作有《柳树下的梦》、《她是一个废物》、《单身汉的睡帽》、《幸运的贝儿》等。",
+            "summary": "",
+            "series": {
+                "id": "4146",
+                "title": "世界文学名著文库"
+            },
+            "price": "25.00"
+        }
+    ]
+}

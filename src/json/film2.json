@@ -1,0 +1,212 @@
+{
+    "count": 3,
+    "start": 0,
+    "total": 88,
+    "subjects": [
+        {
+            "rating": {
+                "max": 10,
+                "average": 6.4,
+                "stars": "35",
+                "min": 0
+            },
+            "genres": [
+                "动作",
+                "科幻",
+                "犯罪"
+            ],
+            "title": "攻壳机动队",
+            "casts": [
+                {
+                    "alt": "https://movie.douban.com/celebrity/1054453/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/37050.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/37050.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/37050.jpg"
+                    },
+                    "name": "斯嘉丽·约翰逊",
+                    "id": "1054453"
+                },
+                {
+                    "alt": "https://movie.douban.com/celebrity/1032805/",
+                    "avatars": {
+                        "small": "https://img1.doubanio.com/img/celebrity/small/1366032638.59.jpg",
+                        "large": "https://img1.doubanio.com/img/celebrity/large/1366032638.59.jpg",
+                        "medium": "https://img1.doubanio.com/img/celebrity/medium/1366032638.59.jpg"
+                    },
+                    "name": "皮鲁·埃斯贝克",
+                    "id": "1032805"
+                },
+                {
+                    "alt": "https://movie.douban.com/celebrity/1000090/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/36790.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/36790.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/36790.jpg"
+                    },
+                    "name": "迈克尔·皮特",
+                    "id": "1000090"
+                }
+            ],
+            "collect_count": 3026,
+            "original_title": "Ghost in the Shell",
+            "subtype": "movie",
+            "directors": [
+                {
+                    "alt": "https://movie.douban.com/celebrity/1320096/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/52315.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/52315.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/52315.jpg"
+                    },
+                    "name": "鲁伯特·桑德斯",
+                    "id": "1320096"
+                }
+            ],
+            "year": "2017",
+            "images": {
+                "small": "https://img3.doubanio.com/view/movie_poster_cover/ipst/public/p2441265742.jpg",
+                "large": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2441265742.jpg",
+                "medium": "https://img3.doubanio.com/view/movie_poster_cover/spst/public/p2441265742.jpg"
+            },
+            "alt": "https://movie.douban.com/subject/25818101/",
+            "id": "25818101"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": 8.4,
+                "stars": "45",
+                "min": 0
+            },
+            "genres": [
+                "喜剧",
+                "动画"
+            ],
+            "title": "麦兜·当当伴我心",
+            "casts": [
+                {
+                    "alt": "https://movie.douban.com/celebrity/1050076/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/34830.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/34830.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/34830.jpg"
+                    },
+                    "name": "黄秋生",
+                    "id": "1050076"
+                },
+                {
+                    "alt": "https://movie.douban.com/celebrity/1127819/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/1354430265.42.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/1354430265.42.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/1354430265.42.jpg"
+                    },
+                    "name": "吴君如",
+                    "id": "1127819"
+                },
+                {
+                    "alt": "https://movie.douban.com/celebrity/1274477/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/1468487353.74.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/1468487353.74.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/1468487353.74.jpg"
+                    },
+                    "name": "胡歌",
+                    "id": "1274477"
+                }
+            ],
+            "collect_count": 90774,
+            "original_title": "麥兜‧噹噹伴我心",
+            "subtype": "movie",
+            "directors": [
+                {
+                    "alt": "https://movie.douban.com/celebrity/1304710/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/35544.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/35544.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/35544.jpg"
+                    },
+                    "name": "谢立文",
+                    "id": "1304710"
+                }
+            ],
+            "year": "2012",
+            "images": {
+                "small": "https://img3.doubanio.com/view/movie_poster_cover/ipst/public/p1607672765.jpg",
+                "large": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p1607672765.jpg",
+                "medium": "https://img3.doubanio.com/view/movie_poster_cover/spst/public/p1607672765.jpg"
+            },
+            "alt": "https://movie.douban.com/subject/10772258/",
+            "id": "10772258"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": 7.3,
+                "stars": "40",
+                "min": 0
+            },
+            "genres": [
+                "剧情"
+            ],
+            "title": "一念无明",
+            "casts": [
+                {
+                    "alt": "https://movie.douban.com/celebrity/1002862/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/1161.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/1161.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/1161.jpg"
+                    },
+                    "name": "曾志伟",
+                    "id": "1002862"
+                },
+                {
+                    "alt": "https://movie.douban.com/celebrity/1041510/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/802.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/802.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/802.jpg"
+                    },
+                    "name": "余文乐",
+                    "id": "1041510"
+                },
+                {
+                    "alt": "https://movie.douban.com/celebrity/1319116/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/50861.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/50861.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/50861.jpg"
+                    },
+                    "name": "方皓玟",
+                    "id": "1319116"
+                }
+            ],
+            "collect_count": 441,
+            "original_title": "一念無明",
+            "subtype": "movie",
+            "directors": [
+                {
+                    "alt": "https://movie.douban.com/celebrity/1324490/",
+                    "avatars": {
+                        "small": "https://img1.doubanio.com/img/celebrity/small/59259.jpg",
+                        "large": "https://img1.doubanio.com/img/celebrity/large/59259.jpg",
+                        "medium": "https://img1.doubanio.com/img/celebrity/medium/59259.jpg"
+                    },
+                    "name": "黄进",
+                    "id": "1324490"
+                }
+            ],
+            "year": "2016",
+            "images": {
+                "small": "https://img3.doubanio.com/view/movie_poster_cover/ipst/public/p2452970761.jpg",
+                "large": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2452970761.jpg",
+                "medium": "https://img3.doubanio.com/view/movie_poster_cover/spst/public/p2452970761.jpg"
+            },
+            "alt": "https://movie.douban.com/subject/26704590/",
+            "id": "26704590"
+        }
+    ],
+    "title": "即将上映的电影"
+}

@@ -1,0 +1,224 @@
+{
+    "count": 3,
+    "start": 0,
+    "total": 24,
+    "subjects": [
+        {
+            "rating": {
+                "max": 10,
+                "average": 6.6,
+                "stars": "35",
+                "min": 0
+            },
+            "genres": [
+                "犯罪",
+                "悬疑"
+            ],
+            "title": "嫌疑人X的献身",
+            "casts": [
+                {
+                    "alt": "https://movie.douban.com/celebrity/1314544/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/1444998211.72.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/1444998211.72.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/1444998211.72.jpg"
+                    },
+                    "name": "王凯",
+                    "id": "1314544"
+                },
+                {
+                    "alt": "https://movie.douban.com/celebrity/1323723/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/1416748988.73.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/1416748988.73.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/1416748988.73.jpg"
+                    },
+                    "name": "张鲁一",
+                    "id": "1323723"
+                },
+                {
+                    "alt": "https://movie.douban.com/celebrity/1005214/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/36663.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/36663.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/36663.jpg"
+                    },
+                    "name": "林心如",
+                    "id": "1005214"
+                }
+            ],
+            "collect_count": 42103,
+            "original_title": "嫌疑人X的献身",
+            "subtype": "movie",
+            "directors": [
+                {
+                    "alt": "https://movie.douban.com/celebrity/1050540/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/27354.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/27354.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/27354.jpg"
+                    },
+                    "name": "苏有朋",
+                    "id": "1050540"
+                }
+            ],
+            "year": "2017",
+            "images": {
+                "small": "https://img3.doubanio.com/view/movie_poster_cover/ipst/public/p2448676053.jpg",
+                "large": "https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2448676053.jpg",
+                "medium": "https://img3.doubanio.com/view/movie_poster_cover/spst/public/p2448676053.jpg"
+            },
+            "alt": "https://movie.douban.com/subject/26606743/",
+            "id": "26606743"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": 6.9,
+                "stars": "35",
+                "min": 0
+            },
+            "genres": [
+                "动作",
+                "奇幻",
+                "冒险"
+            ],
+            "title": "金刚：骷髅岛",
+            "casts": [
+                {
+                    "alt": "https://movie.douban.com/celebrity/1004596/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/35625.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/35625.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/35625.jpg"
+                    },
+                    "name": "汤姆·希德勒斯顿",
+                    "id": "1004596"
+                },
+                {
+                    "alt": "https://movie.douban.com/celebrity/1027194/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/1392029372.12.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/1392029372.12.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/1392029372.12.jpg"
+                    },
+                    "name": "布丽·拉尔森",
+                    "id": "1027194"
+                },
+                {
+                    "alt": "https://movie.douban.com/celebrity/1054408/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/31870.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/31870.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/31870.jpg"
+                    },
+                    "name": "塞缪尔·杰克逊",
+                    "id": "1054408"
+                }
+            ],
+            "collect_count": 67174,
+            "original_title": "Kong: Skull Island",
+            "subtype": "movie",
+            "directors": [
+                {
+                    "alt": "https://movie.douban.com/celebrity/1326532/",
+                    "avatars": {
+                        "small": "https://img1.doubanio.com/img/celebrity/small/1359526353.7.jpg",
+                        "large": "https://img1.doubanio.com/img/celebrity/large/1359526353.7.jpg",
+                        "medium": "https://img1.doubanio.com/img/celebrity/medium/1359526353.7.jpg"
+                    },
+                    "name": "乔丹·沃格特-罗伯茨",
+                    "id": "1326532"
+                }
+            ],
+            "year": "2017",
+            "images": {
+                "small": "https://img1.doubanio.com/view/movie_poster_cover/ipst/public/p2436030518.jpg",
+                "large": "https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2436030518.jpg",
+                "medium": "https://img1.doubanio.com/view/movie_poster_cover/spst/public/p2436030518.jpg"
+            },
+            "alt": "https://movie.douban.com/subject/26309788/",
+            "id": "26309788"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": 6.6,
+                "stars": "35",
+                "min": 0
+            },
+            "genres": [
+                "剧情",
+                "动作",
+                "犯罪"
+            ],
+            "title": "非凡任务",
+            "casts": [
+                {
+                    "alt": "https://movie.douban.com/celebrity/1276105/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/1403053084.22.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/1403053084.22.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/1403053084.22.jpg"
+                    },
+                    "name": "黄轩",
+                    "id": "1276105"
+                },
+                {
+                    "alt": "https://movie.douban.com/celebrity/1274291/",
+                    "avatars": {
+                        "small": "https://img1.doubanio.com/img/celebrity/small/8898.jpg",
+                        "large": "https://img1.doubanio.com/img/celebrity/large/8898.jpg",
+                        "medium": "https://img1.doubanio.com/img/celebrity/medium/8898.jpg"
+                    },
+                    "name": "段奕宏",
+                    "id": "1274291"
+                },
+                {
+                    "alt": "https://movie.douban.com/celebrity/1330484/",
+                    "avatars": {
+                        "small": "https://img1.doubanio.com/img/celebrity/small/1372053646.57.jpg",
+                        "large": "https://img1.doubanio.com/img/celebrity/large/1372053646.57.jpg",
+                        "medium": "https://img1.doubanio.com/img/celebrity/medium/1372053646.57.jpg"
+                    },
+                    "name": "郎月婷",
+                    "id": "1330484"
+                }
+            ],
+            "collect_count": 11165,
+            "original_title": "非凡任务",
+            "subtype": "movie",
+            "directors": [
+                {
+                    "alt": "https://movie.douban.com/celebrity/1126158/",
+                    "avatars": {
+                        "small": "https://img1.doubanio.com/img/celebrity/small/3547.jpg",
+                        "large": "https://img1.doubanio.com/img/celebrity/large/3547.jpg",
+                        "medium": "https://img1.doubanio.com/img/celebrity/medium/3547.jpg"
+                    },
+                    "name": "麦兆辉",
+                    "id": "1126158"
+                },
+                {
+                    "alt": "https://movie.douban.com/celebrity/1307639/",
+                    "avatars": {
+                        "small": "https://img3.doubanio.com/img/celebrity/small/19591.jpg",
+                        "large": "https://img3.doubanio.com/img/celebrity/large/19591.jpg",
+                        "medium": "https://img3.doubanio.com/img/celebrity/medium/19591.jpg"
+                    },
+                    "name": "潘耀明",
+                    "id": "1307639"
+                }
+            ],
+            "year": "2017",
+            "images": {
+                "small": "https://img1.doubanio.com/view/movie_poster_cover/ipst/public/p2453197648.jpg",
+                "large": "https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2453197648.jpg",
+                "medium": "https://img1.doubanio.com/view/movie_poster_cover/spst/public/p2453197648.jpg"
+            },
+            "alt": "https://movie.douban.com/subject/26616690/",
+            "id": "26616690"
+        }
+    ],
+    "title": "正在上映的电影-北京"
+}
