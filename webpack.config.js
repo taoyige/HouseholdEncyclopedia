@@ -15,7 +15,7 @@ module.exports = {
     bundle1: __dirname + '/src/js/app.jsx',
     bundle2: __dirname + '/src/js/main2.jsx',
     // 需要合并的第三方库在这里指定
-    vendor: ['react', 'react-dom', 'react-router']
+    // vendor: ['react', 'react-dom', 'react-router']
   },
   output: {
     path: __dirname + '/build',
@@ -51,16 +51,16 @@ module.exports = {
   },
   plugins: [
     // 将bundle1和bundle2文件的相同代码提取到bundle文件中
-    new CommonsChunkPlugin({
-      name: 'common',
-      chunks: ['bundle1', 'bundle2'],
-      filename: 'js/bundle.js',
-    }),
+    // new CommonsChunkPlugin({
+    //   name: 'common',
+    //   chunks: ['bundle1', 'bundle2'],
+    //   filename: 'js/bundle.js',
+    // }),
     // 将使用到的全部第三方的库提取到同一个文件vendor
-    new CommonsChunkPlugin({
-      name: 'vendor', 
-      filename: 'js/vendor.js'
-    }),
+    // new CommonsChunkPlugin({
+    //   name: 'vendor', 
+    //   filename: 'js/vendor.js'
+    // }),
     new HtmlWebpackPlugin({
       template: __dirname + "/src/index.html"
     }),
