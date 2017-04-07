@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 import SubNavigation from './SubNavigation.jsx';
 import Global from '../Global.jsx';
 import { fetchData } from '../utils.jsx';
 
 import Footer from './Footer.jsx';
+import BackToTop from './BackToTop.jsx';
 
 import music1 from '../../json/music1.json';
 import music2 from '../../json/music2.json';
@@ -57,13 +59,13 @@ class Music extends React.Component {
                     <li key={index} className="list-item">
                       <div className="media">
                         <div className="media-left">
-                          <a href="#">
+                          <Link to={`/music_details/${item.id}`}>
                             <img className="media-object dd" src={item.image} alt={item.title}>
                             </img>
-                          </a>
+                          </Link>
                         </div>
                         <div className="media-body item-body">
-                          <a className="title">{item.title}</a>
+                          <Link to={`/music_details/${item.id}`} className="title">{item.title}</Link>
                           <p className="ellipsis">标签:{tags}</p>
                           <p>发行年份:{item.attrs.pubdate}</p>
                           <p className="ellipsis">专辑音乐:{item.attrs.tracks[0]}</p>
@@ -76,6 +78,7 @@ class Music extends React.Component {
             </ul>
           </div>
           <Footer/>
+          <BackToTop/>
         </div>
       </div>
     )  

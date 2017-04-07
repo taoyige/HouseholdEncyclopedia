@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 import SubNavigation from './SubNavigation.jsx';
 import Global from '../Global.jsx';
@@ -59,13 +60,13 @@ class Book extends React.Component {
                     <li key={index} className="list-item">
                       <div className="media">
                         <div className="media-left">
-                          <a href="#">
+                          <Link to={`/book_details/${item.id}`}>
                             <img className="media-object dd" src={item.image} alt={item.title}>
                             </img>
-                          </a>
+                          </Link>
                         </div>
                         <div className="media-body item-body">
-                          <a className="title">{item.title}</a>
+                          <Link to={`/book_details/${item.id}`} className="title">{item.title}</Link>
                           <p className="ellipsis">标签:{tags}</p>
                           <p>作者:{item.author}</p>
                           <p>出版社:{item.publisher}</p>

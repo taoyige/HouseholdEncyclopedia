@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 import SubNavigation from './SubNavigation.jsx';
 import Global from '../Global.jsx';
 import { fetchData } from '../utils.jsx';
 
 import Footer from './Footer.jsx';
+import BackToTop from './BackToTop.jsx';
 
 import film1 from '../../json/film1.json';
 import film2 from '../../json/film2.json';
@@ -59,13 +61,13 @@ class Film extends React.Component {
                     <li key={index} className="list-item">
                       <div className="media">
                         <div className="media-left">
-                          <a href="#">
+                          <Link to={`/film_details/${item.id}`}>
                             <img className="media-object dd" src={item.images.small} alt={item.title}>
                             </img>
-                          </a>
+                          </Link>
                         </div>
                         <div className="media-body item-body">
-                          <a className="title">{item.title}</a>
+                          <Link to={`/film_details/${item.id}`} className="title">{item.title}</Link>
                           <p className="ellipsis">年份:{item.year}</p>
                           <p>演员:{casts}</p>
                           <p>导演:{directors}</p>
@@ -78,6 +80,7 @@ class Film extends React.Component {
             </ul>
           </div>
           <Footer/>
+          <BackToTop/>
         </div>
       </div>
     )

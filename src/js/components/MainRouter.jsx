@@ -10,6 +10,10 @@ import Music from './Music.jsx';
 import Film from './Film.jsx';
 import Category from './Category.jsx';
 
+import BookDetails from './BookDetails.jsx';
+import MusicDetails from './MusicDetails.jsx';
+import FilmDetails from './FilmDetails.jsx';
+
 class MainRouter extends React.Component {
 
   render () {
@@ -18,6 +22,9 @@ class MainRouter extends React.Component {
         <Route path="book(/:category)" component={Book}/>
         <Route path="music(/:category)" component={Music}/>
         <Route path="film(/:category)" component={Film}/>
+        <Route path="book_details/:id" component={BookDetails}/>
+        <Route path="music_details/:id" component={MusicDetails}/>
+        <Route path="film_details/:id" component={FilmDetails}/>
       </Route>;
     return <Router routes={routes} history={hashHistory}/>;
   }
