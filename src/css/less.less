@@ -160,6 +160,13 @@ body {
   padding: 10px;
 }
 
+/**
+ * 脚注
+ */
+.footer-fixed {
+  position: fixed;
+}
+
 
 /**
  * 文本过长省略
@@ -197,3 +204,81 @@ body {
   color: #fff;
 }
 
+
+
+/**
+ * 类型细节样式
+ */
+.details {
+
+}
+
+.details img {
+  width: 360px;
+  height: 480px;
+}
+
+
+/**
+ * 自定义巨幕样式
+ */
+.details-jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eee;
+  position: relative;
+}
+.details-jumbotron h1,
+.details-jumbotron .h1 {
+  color: inherit;
+}
+.details-jumbotron p {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 200;
+}
+.details-jumbotron > hr {
+  border-top-color: #d5d5d5;
+}
+.container .details-jumbotron,
+.container-fluid .details-jumbotron {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+.details-jumbotron .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .details-jumbotron {
+    padding-top: 30px;
+    padding-bottom: 12px;
+  }
+  .container .details-jumbotron,
+  .container-fluid .details-jumbotron {
+    padding-right: 60px;
+    padding-left: 12px;
+  }
+  .details-jumbotron h1,
+  .details-jumbotron .h1 {
+    font-size: 48px;
+  }
+}
+
+.details-jumbotron .btn-focus {
+  color: #fff;
+  background-color: @mainColor;
+}
+
+.details-jumbotron .badge-details {
+  background-color: @mainColor;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.details-jumbotron .text-bold {
+  font-weight: 700;
+}

@@ -25,6 +25,10 @@ const FILM_CATEGORY = [
   { name: 'TOP250', category: 'top250', baseURL: 'https://api.douban.com/v2/movie/top250?start=0&count=3&' },
 ]
 
+const BOOK_DETAILS_BASE_URL = 'https://api.douban.com/v2/book/';
+const MUSIC_DETAILS_BASE_URL = 'https://api.douban.com/v2/music/';
+const FILM_DETAILS_BASE_URL = 'https://api.douban.com/v2/movie/subject/';
+
 const Global = { 
   BOOK,
   MUSIC,
@@ -32,6 +36,9 @@ const Global = {
   BOOK_CATEGORY,
   MUSIC_CATEGORY,
   FILM_CATEGORY,
+  BOOK_DETAILS_BASE_URL,
+  MUSIC_DETAILS_BASE_URL,
+  FILM_DETAILS_BASE_URL,
 }
 
 export default Global;
