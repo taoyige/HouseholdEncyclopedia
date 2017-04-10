@@ -10,7 +10,7 @@ class BackToTop extends React.Component {
 
   render () {
     return (
-      <div id="backToTop" className="back-to-top hidden-sm">
+      <div id="backToTop" className="back-to-top hidden-sm hidden-xs">
       	<a href="javascript:;" title="回到顶部" onClick={this.handleClickBackToTop}>
       		<span className="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
       	</a>

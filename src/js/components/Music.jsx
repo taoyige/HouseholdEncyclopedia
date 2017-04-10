@@ -47,7 +47,7 @@ class Music extends React.Component {
       <div className="container">
         <div className="row">
           <SubNavigation category={ Global.MUSIC } list={ Global.MUSIC_CATEGORY }/>
-          <div className="col-sm-7 col-sm-offset-2 col-md-9 col-md-offset-1 list-content">
+          <div className="col-xs-12 col-sm-9 col-sm-offset-2 col-md-7 col-md-offset-1 list-content">
             <ul>
               {
                 this.state.musics.map((item, index) => {
