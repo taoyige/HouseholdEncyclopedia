@@ -4,8 +4,20 @@
 import React from 'react';
 import { IndexLink, Link } from 'react-router';
 import Global from '../Global.jsx';
+import { hashHistory } from 'react-router'
 
 class Navigation extends React.Component {
+
+  handleSearchSubmit (e) {
+    e.preventDefault();
+    let key = e.target.childNodes[0].value;
+    if(key) {
+      const path = `search/${key}`;
+      hashHistory.push(path);
+      e.target.childNodes[0].value = '';
+    }
+  }
+
   render () {
     return (
       <nav className="navbar navbar-default navbar-fixed-top">
@@ -50,6 +62,9 @@ class Navigation extends React.Component {
               <li><a href="../navbar/">登录</a></li>
               <li><a href="../navbar-static-top/">注册</a></li>
             </ul>
+            <form className="navbar-form navbar-right" onSubmit={this.handleSearchSubmit}>
+              <input type="text" className="form-control" placeholder="搜索..."></input>
+            </form>
           </div>
         </div>
       </nav>

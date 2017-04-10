@@ -26,7 +26,7 @@ class MusicDetails extends React.Component {
     };
   }
 
-  componentWillReceiveProps () {
+  componentWillMount () {
     let that = this;
     let id = this.props.params.id;
     let url = Global.MUSIC_DETAILS_BASE_URL + id;

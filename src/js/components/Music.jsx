@@ -24,7 +24,7 @@ class Music extends React.Component {
     };
   } 
 
-  componentWillReceiveProps () {
+  componentWillMount () {
     let category = this.props.params.category;
     for(let i=0; i<Global.MUSIC_CATEGORY.length; i++){
       let item = Global.MUSIC_CATEGORY[i];

@@ -25,7 +25,7 @@ class Book extends React.Component {
     };
   } 
 
-  componentWillReceiveProps () {
+  componentWillMount () {
     let category = this.props.params.category;
     for(let i=0; i<Global.BOOK_CATEGORY.length; i++){
       let item = Global.BOOK_CATEGORY[i];

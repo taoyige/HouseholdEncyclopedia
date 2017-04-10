@@ -22,7 +22,7 @@ class Film extends React.Component {
     };
   } 
 
-  componentWillReceiveProps () {
+  componentWillMount () {
     let category = this.props.params.category;
     for(let i=0; i<Global.FILM_CATEGORY.length; i++){
       let item = Global.FILM_CATEGORY[i];
