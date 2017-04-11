@@ -26,6 +26,14 @@ class Book extends React.Component {
   } 
 
   componentWillMount () {
+    this.initBooks();
+  }
+
+  componentWillReceiveProps (nextProps) {
+    this.initBooks();
+  }
+
+  initBooks () {
     let category = this.props.params.category;
     for(let i=0; i<Global.BOOK_CATEGORY.length; i++){
       let item = Global.BOOK_CATEGORY[i];
@@ -48,7 +56,7 @@ class Book extends React.Component {
       <div className="container">
         <div className="row">
           <SubNavigation category={ Global.BOOK } list={ Global.BOOK_CATEGORY }/>
-          <div className="col-xs-12 col-sm-9 col-sm-offset-2 col-md-7 col-md-offset-1 list-content">
+          <div className="col-xs-12 col-sm-9 col-sm-offset-2 col-md-8 col-md-offset-1 list-content">
             <ul>
               {
                 this.state.books.map((item, index) => {
@@ -85,6 +93,7 @@ class Book extends React.Component {
     )
   }
 
+  
 }
 
 export default Book;
