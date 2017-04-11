@@ -29,6 +29,10 @@ const BOOK_DETAILS_BASE_URL = 'https://api.douban.com/v2/book/';
 const MUSIC_DETAILS_BASE_URL = 'https://api.douban.com/v2/music/';
 const FILM_DETAILS_BASE_URL = 'https://api.douban.com/v2/movie/subject/';
 
+const BOOK_SEARCH_BASE_URL = 'https://api.douban.com/v2/book/search';
+const MUSIC_SEARCH_BASE_URL = 'https://api.douban.com/v2/music/search';
+const FILM_SEARCH_BASE_URL = 'https://api.douban.com/v2/movie/search';
+
 const Global = { 
   BOOK,
   MUSIC,
@@ -39,6 +43,9 @@ const Global = {
   BOOK_DETAILS_BASE_URL,
   MUSIC_DETAILS_BASE_URL,
   FILM_DETAILS_BASE_URL,
+  BOOK_SEARCH_BASE_URL,
+  MUSIC_SEARCH_BASE_URL,
+  FILM_SEARCH_BASE_URL,
 }
 
 export default Global;

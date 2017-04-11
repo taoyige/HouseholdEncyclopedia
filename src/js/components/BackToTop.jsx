@@ -1,10 +1,8 @@
 import React from 'react';
-import $ from 'jquery';
 
 class BackToTop extends React.Component {
 
 	handleClickBackToTop (e) {
-    // $(document.body).css(top, 0);
     document.body.scrollTop = 0;
   }
 
