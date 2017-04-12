@@ -6,7 +6,19 @@ import { IndexLink, Link } from 'react-router';
 import Global from '../Global.jsx';
 import { hashHistory } from 'react-router'
 
+import Login from './Login.jsx';
+
 class Navigation extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      books: [],
+      showLogin: true,
+    };
+
+    this.handleLoginClick = this.handleLoginClick.bind(this);
+    this.handleCloseClick = this.handleCloseClick.bind(this);
+  } 
 
   handleSearchSubmit (e) {
     e.preventDefault();
@@ -16,6 +28,19 @@ class Navigation extends React.Component {
       hashHistory.push(path);
       e.target.childNodes[0].value = '';
     }
+  }
+
+  handleLoginClick (e) {
+    e.preventDefault();
+    this.setState({
+      showLogin: true
+    })
+  }
+
+  handleCloseClick (e) {
+    this.setState({
+      showLogin: false
+    })
   }
 
   render () {
@@ -60,7 +85,7 @@ class Navigation extends React.Component {
               </li>
             </ul>
             <ul className="nav navbar-nav navbar-right">
-              <li><a href="../navbar/">登录</a></li>
+              <li><a onClick={this.handleLoginClick}>登录</a></li>
               <li><a href="../navbar-static-top/">注册</a></li>
             </ul>
             <form className="navbar-form navbar-right" onSubmit={this.handleSearchSubmit}>
@@ -69,6 +94,7 @@ class Navigation extends React.Component {
           </div>
           </div>
         </div>
+        <Login showLogin={this.state.showLogin} handleCloseClick={this.handleCloseClick}/>
       </nav>
     )
   }

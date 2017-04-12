@@ -2,6 +2,10 @@
  * 主题颜色
  */
 @mainColor: #428bca;
+/**
+ * active主题颜色
+ */
+@mainColor_active: #428bba;
 
 body {
   padding-top: 70px;
@@ -274,7 +278,7 @@ body {
 .details-jumbotron .btn-focus:hover,
 .details-jumbotron .btn-focus:focus{
   color: #fff;
-  background-color: #428bba;
+  background-color: @mainColor_active;
 }
 
 .details-jumbotron .badge-details {
@@ -403,4 +407,51 @@ body {
     transform: scaleY(1.0);
     -webkit-transform: scaleY(1.0);
   }
+}
+
+/**
+ * 登录样式
+ */
+.login {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.login .mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.25);
+}
+
+.login .content {
+  width: 450px;
+  height: 250px;
+  margin-top: -200px;
+  margin-left: -225px;
+  padding: 45px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 1px #555;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+.login .content button {
+  margin-right: 10px;
+}
+
+.login .content .close-login {
+  font-size: 20px;
+  color: @mainColor;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.login .content .close-login:hover {
+  color: @mainColor_active;
 }
