@@ -140,7 +140,7 @@ class Search extends React.Component {
                               <Link to={`/music_details/${item.id}`} className="title">{item.title}</Link>
                               <p className="ellipsis">标签:{tags}</p>
                               <p>发行年份:{item.attrs.pubdate}</p>
-                              <p className="ellipsis">专辑音乐:{item.attrs.tracks[0]}</p>
+                              <p className="ellipsis">专辑音乐:{item.attrs.tracks!==undefined ? item.attrs.tracks[0] : '无'}</p>
                             </div>
                           </div>
                         </li>

@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 253);
+/******/ 	return __webpack_require__(__webpack_require__.s = 254);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -5511,7 +5511,7 @@ Object.defineProperty(exports, "__esModule", {
 var BOOK = 'book';
 var MUSIC = 'music';
 var FILM = 'film';
-var BOOK_CATEGORY = [{ name: '童话', category: 'fairy_tale', baseURL: 'https://api.douban.com/v2/book/search?q=童话&start=0&count=3&' }, { name: '小说', category: 'novel', baseURL: 'https://api.douban.com/v2/book/search?q=小说&start=0&count=3&' }, { name: '寓言神话', category: 'fable_myth', baseURL: 'https://api.douban.com/v2/book/search?q=寓言神话&start=0&count=3&' }, { name: '散文诗歌', category: 'prose_poetry', baseURL: 'https://api.douban.com/v2/book/search?q=散文诗歌&start=0&count=3&' }, { name: '名人传记', category: 'biography', baseURL: 'https://api.douban.com/v2/book/search?q=名人传记&start=0&count=3&' }];
+var BOOK_CATEGORY = [{ name: '童话', category: 'fairy_tale', baseURL: 'https://api.douban.com/v2/book/search?tag=童话&start=0&count=3&' }, { name: '小说', category: 'novel', baseURL: 'https://api.douban.com/v2/book/search?tag=小说&start=0&count=3&' }, { name: '寓言神话', category: 'fable_myth', baseURL: 'https://api.douban.com/v2/book/search?tag=寓言神话&start=0&count=3&' }, { name: '散文诗歌', category: 'prose_poetry', baseURL: 'https://api.douban.com/v2/book/search?tag=散文诗歌&start=0&count=3&' }, { name: '名人传记', category: 'biography', baseURL: 'https://api.douban.com/v2/book/search?tag=名人传记&start=0&count=3&' }];
 var MUSIC_CATEGORY = [{ name: '周杰伦', category: 'Jay_Chou', baseURL: 'https://api.douban.com/v2/music/search?tag=周杰伦&start=0&count=3&' }, { name: '陈奕迅', category: 'Eason_Chan', baseURL: 'https://api.douban.com/v2/music/search?tag=陈奕迅&start=0&count=3&' }, { name: '薛之谦', category: 'Joker_Xue', baseURL: 'https://api.douban.com/v2/music/search?tag=薛之谦&start=0&count=3&' }, { name: '容祖儿', category: 'Joey_Yung', baseURL: 'https://api.douban.com/v2/music/search?tag=容祖儿&start=0&count=3&' }, { name: '杨千嬅', category: 'Miriam_Yeung', baseURL: 'https://api.douban.com/v2/music/search?tag=杨千嬅&start=0&count=3&' }];
 var FILM_CATEGORY = [{ name: '正在热映', category: 'in_theaters', baseURL: 'https://api.douban.com/v2/movie/in_theaters?start=0&count=3&' }, { name: '即将上映', category: 'coming_soon', baseURL: 'https://api.douban.com/v2/movie/coming_soon?start=0&count=3&' }, { name: 'TOP250', category: 'top250', baseURL: 'https://api.douban.com/v2/movie/top250?start=0&count=3&' }];
 
@@ -13801,9 +13801,9 @@ exports.default = createMemoryHistory;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(268);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(270);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(276);
 
 
 
@@ -26918,12 +26918,12 @@ module.exports = function (str) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(248);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(287);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(286);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(285);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(247);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(250);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createStore", function() { return __WEBPACK_IMPORTED_MODULE_0__createStore__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "combineReducers", function() { return __WEBPACK_IMPORTED_MODULE_1__combineReducers__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "bindActionCreators", function() { return __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__["a"]; });
@@ -26951,2887 +26951,6 @@ if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' 
 
 /***/ }),
 /* 242 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(274);
-
-
-/** Built-in value references. */
-var Symbol = __WEBPACK_IMPORTED_MODULE_0__root_js__["a" /* default */].Symbol;
-
-/* harmony default export */ __webpack_exports__["a"] = (Symbol);
-
-
-/***/ }),
-/* 243 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_Subscription__ = __webpack_require__(283);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__ = __webpack_require__(245);
-/* harmony export (immutable) */ __webpack_exports__["a"] = connectAdvanced;
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-
-
-
-
-
-
-
-var hotReloadingVersion = 0;
-var dummyState = {};
-function noop() {}
-function makeSelectorStateful(sourceSelector, store) {
-  // wrap the selector in an object that tracks its results between runs.
-  var selector = {
-    run: function runComponentSelector(props) {
-      try {
-        var nextProps = sourceSelector(store.getState(), props);
-        if (nextProps !== selector.props || selector.error) {
-          selector.shouldComponentUpdate = true;
-          selector.props = nextProps;
-          selector.error = null;
-        }
-      } catch (error) {
-        selector.shouldComponentUpdate = true;
-        selector.error = error;
-      }
-    }
-  };
-
-  return selector;
-}
-
-function connectAdvanced(
-/*
-  selectorFactory is a func that is responsible for returning the selector function used to
-  compute new props from state, props, and dispatch. For example:
-     export default connectAdvanced((dispatch, options) => (state, props) => ({
-      thing: state.things[props.thingId],
-      saveThing: fields => dispatch(actionCreators.saveThing(props.thingId, fields)),
-    }))(YourComponent)
-   Access to dispatch is provided to the factory so selectorFactories can bind actionCreators
-  outside of their selector as an optimization. Options passed to connectAdvanced are passed to
-  the selectorFactory, along with displayName and WrappedComponent, as the second argument.
-   Note that selectorFactory is responsible for all caching/memoization of inbound and outbound
-  props. Do not use connectAdvanced directly without memoizing results between calls to your
-  selector, otherwise the Connect component will re-render on every state or props change.
-*/
-selectorFactory) {
-  var _contextTypes, _childContextTypes;
-
-  var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
-      _ref$getDisplayName = _ref.getDisplayName,
-      getDisplayName = _ref$getDisplayName === undefined ? function (name) {
-    return 'ConnectAdvanced(' + name + ')';
-  } : _ref$getDisplayName,
-      _ref$methodName = _ref.methodName,
-      methodName = _ref$methodName === undefined ? 'connectAdvanced' : _ref$methodName,
-      _ref$renderCountProp = _ref.renderCountProp,
-      renderCountProp = _ref$renderCountProp === undefined ? undefined : _ref$renderCountProp,
-      _ref$shouldHandleStat = _ref.shouldHandleStateChanges,
-      shouldHandleStateChanges = _ref$shouldHandleStat === undefined ? true : _ref$shouldHandleStat,
-      _ref$storeKey = _ref.storeKey,
-      storeKey = _ref$storeKey === undefined ? 'store' : _ref$storeKey,
-      _ref$withRef = _ref.withRef,
-      withRef = _ref$withRef === undefined ? false : _ref$withRef,
-      connectOptions = _objectWithoutProperties(_ref, ['getDisplayName', 'methodName', 'renderCountProp', 'shouldHandleStateChanges', 'storeKey', 'withRef']);
-
-  var subscriptionKey = storeKey + 'Subscription';
-  var version = hotReloadingVersion++;
-
-  var contextTypes = (_contextTypes = {}, _contextTypes[storeKey] = __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__["a" /* storeShape */], _contextTypes[subscriptionKey] = __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__["b" /* subscriptionShape */], _contextTypes);
-  var childContextTypes = (_childContextTypes = {}, _childContextTypes[subscriptionKey] = __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__["b" /* subscriptionShape */], _childContextTypes);
-
-  return function wrapWithConnect(WrappedComponent) {
-    __WEBPACK_IMPORTED_MODULE_1_invariant___default()(typeof WrappedComponent == 'function', 'You must pass a component to the function returned by ' + ('connect. Instead received ' + JSON.stringify(WrappedComponent)));
-
-    var wrappedComponentName = WrappedComponent.displayName || WrappedComponent.name || 'Component';
-
-    var displayName = getDisplayName(wrappedComponentName);
-
-    var selectorFactoryOptions = _extends({}, connectOptions, {
-      getDisplayName: getDisplayName,
-      methodName: methodName,
-      renderCountProp: renderCountProp,
-      shouldHandleStateChanges: shouldHandleStateChanges,
-      storeKey: storeKey,
-      withRef: withRef,
-      displayName: displayName,
-      wrappedComponentName: wrappedComponentName,
-      WrappedComponent: WrappedComponent
-    });
-
-    var Connect = function (_Component) {
-      _inherits(Connect, _Component);
-
-      function Connect(props, context) {
-        _classCallCheck(this, Connect);
-
-        var _this = _possibleConstructorReturn(this, _Component.call(this, props, context));
-
-        _this.version = version;
-        _this.state = {};
-        _this.renderCount = 0;
-        _this.store = props[storeKey] || context[storeKey];
-        _this.propsMode = Boolean(props[storeKey]);
-        _this.setWrappedInstance = _this.setWrappedInstance.bind(_this);
-
-        __WEBPACK_IMPORTED_MODULE_1_invariant___default()(_this.store, 'Could not find "' + storeKey + '" in either the context or props of ' + ('"' + displayName + '". Either wrap the root component in a <Provider>, ') + ('or explicitly pass "' + storeKey + '" as a prop to "' + displayName + '".'));
-
-        _this.initSelector();
-        _this.initSubscription();
-        return _this;
-      }
-
-      Connect.prototype.getChildContext = function getChildContext() {
-        var _ref2;
-
-        // If this component received store from props, its subscription should be transparent
-        // to any descendants receiving store+subscription from context; it passes along
-        // subscription passed to it. Otherwise, it shadows the parent subscription, which allows
-        // Connect to control ordering of notifications to flow top-down.
-        var subscription = this.propsMode ? null : this.subscription;
-        return _ref2 = {}, _ref2[subscriptionKey] = subscription || this.context[subscriptionKey], _ref2;
-      };
-
-      Connect.prototype.componentDidMount = function componentDidMount() {
-        if (!shouldHandleStateChanges) return;
-
-        // componentWillMount fires during server side rendering, but componentDidMount and
-        // componentWillUnmount do not. Because of this, trySubscribe happens during ...didMount.
-        // Otherwise, unsubscription would never take place during SSR, causing a memory leak.
-        // To handle the case where a child component may have triggered a state change by
-        // dispatching an action in its componentWillMount, we have to re-run the select and maybe
-        // re-render.
-        this.subscription.trySubscribe();
-        this.selector.run(this.props);
-        if (this.selector.shouldComponentUpdate) this.forceUpdate();
-      };
-
-      Connect.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
-        this.selector.run(nextProps);
-      };
-
-      Connect.prototype.shouldComponentUpdate = function shouldComponentUpdate() {
-        return this.selector.shouldComponentUpdate;
-      };
-
-      Connect.prototype.componentWillUnmount = function componentWillUnmount() {
-        if (this.subscription) this.subscription.tryUnsubscribe();
-        this.subscription = null;
-        this.notifyNestedSubs = noop;
-        this.store = null;
-        this.selector.run = noop;
-        this.selector.shouldComponentUpdate = false;
-      };
-
-      Connect.prototype.getWrappedInstance = function getWrappedInstance() {
-        __WEBPACK_IMPORTED_MODULE_1_invariant___default()(withRef, 'To access the wrapped instance, you need to specify ' + ('{ withRef: true } in the options argument of the ' + methodName + '() call.'));
-        return this.wrappedInstance;
-      };
-
-      Connect.prototype.setWrappedInstance = function setWrappedInstance(ref) {
-        this.wrappedInstance = ref;
-      };
-
-      Connect.prototype.initSelector = function initSelector() {
-        var sourceSelector = selectorFactory(this.store.dispatch, selectorFactoryOptions);
-        this.selector = makeSelectorStateful(sourceSelector, this.store);
-        this.selector.run(this.props);
-      };
-
-      Connect.prototype.initSubscription = function initSubscription() {
-        if (!shouldHandleStateChanges) return;
-
-        // parentSub's source should match where store came from: props vs. context. A component
-        // connected to the store via props shouldn't use subscription from context, or vice versa.
-        var parentSub = (this.propsMode ? this.props : this.context)[subscriptionKey];
-        this.subscription = new __WEBPACK_IMPORTED_MODULE_3__utils_Subscription__["a" /* default */](this.store, parentSub, this.onStateChange.bind(this));
-
-        // `notifyNestedSubs` is duplicated to handle the case where the component is  unmounted in
-        // the middle of the notification loop, where `this.subscription` will then be null. An
-        // extra null check every change can be avoided by copying the method onto `this` and then
-        // replacing it with a no-op on unmount. This can probably be avoided if Subscription's
-        // listeners logic is changed to not call listeners that have been unsubscribed in the
-        // middle of the notification loop.
-        this.notifyNestedSubs = this.subscription.notifyNestedSubs.bind(this.subscription);
-      };
-
-      Connect.prototype.onStateChange = function onStateChange() {
-        this.selector.run(this.props);
-
-        if (!this.selector.shouldComponentUpdate) {
-          this.notifyNestedSubs();
-        } else {
-          this.componentDidUpdate = this.notifyNestedSubsOnComponentDidUpdate;
-          this.setState(dummyState);
-        }
-      };
-
-      Connect.prototype.notifyNestedSubsOnComponentDidUpdate = function notifyNestedSubsOnComponentDidUpdate() {
-        // `componentDidUpdate` is conditionally implemented when `onStateChange` determines it
-        // needs to notify nested subs. Once called, it unimplements itself until further state
-        // changes occur. Doing it this way vs having a permanent `componentDidMount` that does
-        // a boolean check every time avoids an extra method call most of the time, resulting
-        // in some perf boost.
-        this.componentDidUpdate = undefined;
-        this.notifyNestedSubs();
-      };
-
-      Connect.prototype.isSubscribed = function isSubscribed() {
-        return Boolean(this.subscription) && this.subscription.isSubscribed();
-      };
-
-      Connect.prototype.addExtraProps = function addExtraProps(props) {
-        if (!withRef && !renderCountProp && !(this.propsMode && this.subscription)) return props;
-        // make a shallow copy so that fields added don't leak to the original selector.
-        // this is especially important for 'ref' since that's a reference back to the component
-        // instance. a singleton memoized selector would then be holding a reference to the
-        // instance, preventing the instance from being garbage collected, and that would be bad
-        var withExtras = _extends({}, props);
-        if (withRef) withExtras.ref = this.setWrappedInstance;
-        if (renderCountProp) withExtras[renderCountProp] = this.renderCount++;
-        if (this.propsMode && this.subscription) withExtras[subscriptionKey] = this.subscription;
-        return withExtras;
-      };
-
-      Connect.prototype.render = function render() {
-        var selector = this.selector;
-        selector.shouldComponentUpdate = false;
-
-        if (selector.error) {
-          throw selector.error;
-        } else {
-          return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2_react__["createElement"])(WrappedComponent, this.addExtraProps(selector.props));
-        }
-      };
-
-      return Connect;
-    }(__WEBPACK_IMPORTED_MODULE_2_react__["Component"]);
-
-    Connect.WrappedComponent = WrappedComponent;
-    Connect.displayName = displayName;
-    Connect.childContextTypes = childContextTypes;
-    Connect.contextTypes = contextTypes;
-    Connect.propTypes = contextTypes;
-
-    if (process.env.NODE_ENV !== 'production') {
-      Connect.prototype.componentWillUpdate = function componentWillUpdate() {
-        // We are hot reloading!
-        if (this.version !== version) {
-          this.version = version;
-          this.initSelector();
-
-          if (this.subscription) this.subscription.tryUnsubscribe();
-          this.initSubscription();
-          if (shouldHandleStateChanges) this.subscription.trySubscribe();
-        }
-      };
-    }
-
-    return __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics___default()(Connect, WrappedComponent);
-  };
-}
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
-
-/***/ }),
-/* 244 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(246);
-/* harmony export (immutable) */ __webpack_exports__["b"] = wrapMapToPropsConstant;
-/* unused harmony export getDependsOnOwnProps */
-/* harmony export (immutable) */ __webpack_exports__["a"] = wrapMapToPropsFunc;
-
-
-function wrapMapToPropsConstant(getConstant) {
-  return function initConstantSelector(dispatch, options) {
-    var constant = getConstant(dispatch, options);
-
-    function constantSelector() {
-      return constant;
-    }
-    constantSelector.dependsOnOwnProps = false;
-    return constantSelector;
-  };
-}
-
-// dependsOnOwnProps is used by createMapToPropsProxy to determine whether to pass props as args
-// to the mapToProps function being wrapped. It is also used by makePurePropsSelector to determine
-// whether mapToProps needs to be invoked when props have changed.
-// 
-// A length of one signals that mapToProps does not depend on props from the parent component.
-// A length of zero is assumed to mean mapToProps is getting args via arguments or ...args and
-// therefore not reporting its length accurately..
-function getDependsOnOwnProps(mapToProps) {
-  return mapToProps.dependsOnOwnProps !== null && mapToProps.dependsOnOwnProps !== undefined ? Boolean(mapToProps.dependsOnOwnProps) : mapToProps.length !== 1;
-}
-
-// Used by whenMapStateToPropsIsFunction and whenMapDispatchToPropsIsFunction,
-// this function wraps mapToProps in a proxy function which does several things:
-// 
-//  * Detects whether the mapToProps function being called depends on props, which
-//    is used by selectorFactory to decide if it should reinvoke on props changes.
-//    
-//  * On first call, handles mapToProps if returns another function, and treats that
-//    new function as the true mapToProps for subsequent calls.
-//    
-//  * On first call, verifies the first result is a plain object, in order to warn
-//    the developer that their mapToProps function is not returning a valid result.
-//    
-function wrapMapToPropsFunc(mapToProps, methodName) {
-  return function initProxySelector(dispatch, _ref) {
-    var displayName = _ref.displayName;
-
-    var proxy = function mapToPropsProxy(stateOrDispatch, ownProps) {
-      return proxy.dependsOnOwnProps ? proxy.mapToProps(stateOrDispatch, ownProps) : proxy.mapToProps(stateOrDispatch);
-    };
-
-    // allow detectFactoryAndVerify to get ownProps
-    proxy.dependsOnOwnProps = true;
-
-    proxy.mapToProps = function detectFactoryAndVerify(stateOrDispatch, ownProps) {
-      proxy.mapToProps = mapToProps;
-      proxy.dependsOnOwnProps = getDependsOnOwnProps(mapToProps);
-      var props = proxy(stateOrDispatch, ownProps);
-
-      if (typeof props === 'function') {
-        proxy.mapToProps = props;
-        proxy.dependsOnOwnProps = getDependsOnOwnProps(props);
-        props = proxy(stateOrDispatch, ownProps);
-      }
-
-      if (process.env.NODE_ENV !== 'production') __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__["a" /* default */])(props, displayName, methodName);
-
-      return props;
-    };
-
-    return proxy;
-  };
-}
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
-
-/***/ }),
-/* 245 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return subscriptionShape; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return storeShape; });
-
-
-var subscriptionShape = __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].shape({
-  trySubscribe: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].func.isRequired,
-  tryUnsubscribe: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].func.isRequired,
-  notifyNestedSubs: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].func.isRequired,
-  isSubscribed: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].func.isRequired
-});
-
-var storeShape = __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].shape({
-  subscribe: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].func.isRequired,
-  dispatch: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].func.isRequired,
-  getState: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].func.isRequired
-});
-
-/***/ }),
-/* 246 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(139);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__warning__ = __webpack_require__(212);
-/* harmony export (immutable) */ __webpack_exports__["a"] = verifyPlainObject;
-
-
-
-function verifyPlainObject(value, displayName, methodName) {
-  if (!__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__["a" /* default */])(value)) {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__warning__["a" /* default */])(methodName + '() in ' + displayName + ' must return a plain object. Instead received ' + value + '.');
-  }
-}
-
-/***/ }),
-/* 247 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = compose;
-/**
- * Composes single-argument functions from right to left. The rightmost
- * function can take multiple arguments as it provides the signature for
- * the resulting composite function.
- *
- * @param {...Function} funcs The functions to compose.
- * @returns {Function} A function obtained by composing the argument functions
- * from right to left. For example, compose(f, g, h) is identical to doing
- * (...args) => f(g(h(...args))).
- */
-
-function compose() {
-  for (var _len = arguments.length, funcs = Array(_len), _key = 0; _key < _len; _key++) {
-    funcs[_key] = arguments[_key];
-  }
-
-  if (funcs.length === 0) {
-    return function (arg) {
-      return arg;
-    };
-  }
-
-  if (funcs.length === 1) {
-    return funcs[0];
-  }
-
-  var last = funcs[funcs.length - 1];
-  var rest = funcs.slice(0, -1);
-  return function () {
-    return rest.reduceRight(function (composed, f) {
-      return f(composed);
-    }, last.apply(undefined, arguments));
-  };
-}
-
-/***/ }),
-/* 248 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(139);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(288);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_symbol_observable__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ActionTypes; });
-/* harmony export (immutable) */ __webpack_exports__["a"] = createStore;
-
-
-
-/**
- * These are private action types reserved by Redux.
- * For any unknown actions, you must return the current state.
- * If the current state is undefined, you must return the initial state.
- * Do not reference these action types directly in your code.
- */
-var ActionTypes = {
-  INIT: '@@redux/INIT'
-};
-
-/**
- * Creates a Redux store that holds the state tree.
- * The only way to change the data in the store is to call `dispatch()` on it.
- *
- * There should only be a single store in your app. To specify how different
- * parts of the state tree respond to actions, you may combine several reducers
- * into a single reducer function by using `combineReducers`.
- *
- * @param {Function} reducer A function that returns the next state tree, given
- * the current state tree and the action to handle.
- *
- * @param {any} [preloadedState] The initial state. You may optionally specify it
- * to hydrate the state from the server in universal apps, or to restore a
- * previously serialized user session.
- * If you use `combineReducers` to produce the root reducer function, this must be
- * an object with the same shape as `combineReducers` keys.
- *
- * @param {Function} enhancer The store enhancer. You may optionally specify it
- * to enhance the store with third-party capabilities such as middleware,
- * time travel, persistence, etc. The only store enhancer that ships with Redux
- * is `applyMiddleware()`.
- *
- * @returns {Store} A Redux store that lets you read the state, dispatch actions
- * and subscribe to changes.
- */
-function createStore(reducer, preloadedState, enhancer) {
-  var _ref2;
-
-  if (typeof preloadedState === 'function' && typeof enhancer === 'undefined') {
-    enhancer = preloadedState;
-    preloadedState = undefined;
-  }
-
-  if (typeof enhancer !== 'undefined') {
-    if (typeof enhancer !== 'function') {
-      throw new Error('Expected the enhancer to be a function.');
-    }
-
-    return enhancer(createStore)(reducer, preloadedState);
-  }
-
-  if (typeof reducer !== 'function') {
-    throw new Error('Expected the reducer to be a function.');
-  }
-
-  var currentReducer = reducer;
-  var currentState = preloadedState;
-  var currentListeners = [];
-  var nextListeners = currentListeners;
-  var isDispatching = false;
-
-  function ensureCanMutateNextListeners() {
-    if (nextListeners === currentListeners) {
-      nextListeners = currentListeners.slice();
-    }
-  }
-
-  /**
-   * Reads the state tree managed by the store.
-   *
-   * @returns {any} The current state tree of your application.
-   */
-  function getState() {
-    return currentState;
-  }
-
-  /**
-   * Adds a change listener. It will be called any time an action is dispatched,
-   * and some part of the state tree may potentially have changed. You may then
-   * call `getState()` to read the current state tree inside the callback.
-   *
-   * You may call `dispatch()` from a change listener, with the following
-   * caveats:
-   *
-   * 1. The subscriptions are snapshotted just before every `dispatch()` call.
-   * If you subscribe or unsubscribe while the listeners are being invoked, this
-   * will not have any effect on the `dispatch()` that is currently in progress.
-   * However, the next `dispatch()` call, whether nested or not, will use a more
-   * recent snapshot of the subscription list.
-   *
-   * 2. The listener should not expect to see all state changes, as the state
-   * might have been updated multiple times during a nested `dispatch()` before
-   * the listener is called. It is, however, guaranteed that all subscribers
-   * registered before the `dispatch()` started will be called with the latest
-   * state by the time it exits.
-   *
-   * @param {Function} listener A callback to be invoked on every dispatch.
-   * @returns {Function} A function to remove this change listener.
-   */
-  function subscribe(listener) {
-    if (typeof listener !== 'function') {
-      throw new Error('Expected listener to be a function.');
-    }
-
-    var isSubscribed = true;
-
-    ensureCanMutateNextListeners();
-    nextListeners.push(listener);
-
-    return function unsubscribe() {
-      if (!isSubscribed) {
-        return;
-      }
-
-      isSubscribed = false;
-
-      ensureCanMutateNextListeners();
-      var index = nextListeners.indexOf(listener);
-      nextListeners.splice(index, 1);
-    };
-  }
-
-  /**
-   * Dispatches an action. It is the only way to trigger a state change.
-   *
-   * The `reducer` function, used to create the store, will be called with the
-   * current state tree and the given `action`. Its return value will
-   * be considered the **next** state of the tree, and the change listeners
-   * will be notified.
-   *
-   * The base implementation only supports plain object actions. If you want to
-   * dispatch a Promise, an Observable, a thunk, or something else, you need to
-   * wrap your store creating function into the corresponding middleware. For
-   * example, see the documentation for the `redux-thunk` package. Even the
-   * middleware will eventually dispatch plain object actions using this method.
-   *
-   * @param {Object} action A plain object representing “what changed”. It is
-   * a good idea to keep actions serializable so you can record and replay user
-   * sessions, or use the time travelling `redux-devtools`. An action must have
-   * a `type` property which may not be `undefined`. It is a good idea to use
-   * string constants for action types.
-   *
-   * @returns {Object} For convenience, the same action object you dispatched.
-   *
-   * Note that, if you use a custom middleware, it may wrap `dispatch()` to
-   * return something else (for example, a Promise you can await).
-   */
-  function dispatch(action) {
-    if (!__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__["a" /* default */])(action)) {
-      throw new Error('Actions must be plain objects. ' + 'Use custom middleware for async actions.');
-    }
-
-    if (typeof action.type === 'undefined') {
-      throw new Error('Actions may not have an undefined "type" property. ' + 'Have you misspelled a constant?');
-    }
-
-    if (isDispatching) {
-      throw new Error('Reducers may not dispatch actions.');
-    }
-
-    try {
-      isDispatching = true;
-      currentState = currentReducer(currentState, action);
-    } finally {
-      isDispatching = false;
-    }
-
-    var listeners = currentListeners = nextListeners;
-    for (var i = 0; i < listeners.length; i++) {
-      listeners[i]();
-    }
-
-    return action;
-  }
-
-  /**
-   * Replaces the reducer currently used by the store to calculate the state.
-   *
-   * You might need this if your app implements code splitting and you want to
-   * load some of the reducers dynamically. You might also need this if you
-   * implement a hot reloading mechanism for Redux.
-   *
-   * @param {Function} nextReducer The reducer for the store to use instead.
-   * @returns {void}
-   */
-  function replaceReducer(nextReducer) {
-    if (typeof nextReducer !== 'function') {
-      throw new Error('Expected the nextReducer to be a function.');
-    }
-
-    currentReducer = nextReducer;
-    dispatch({ type: ActionTypes.INIT });
-  }
-
-  /**
-   * Interoperability point for observable/reactive libraries.
-   * @returns {observable} A minimal observable of state changes.
-   * For more information, see the observable proposal:
-   * https://github.com/zenparsing/es-observable
-   */
-  function observable() {
-    var _ref;
-
-    var outerSubscribe = subscribe;
-    return _ref = {
-      /**
-       * The minimal observable subscription method.
-       * @param {Object} observer Any object that can be used as an observer.
-       * The observer object should have a `next` method.
-       * @returns {subscription} An object with an `unsubscribe` method that can
-       * be used to unsubscribe the observable from the store, and prevent further
-       * emission of values from the observable.
-       */
-      subscribe: function subscribe(observer) {
-        if (typeof observer !== 'object') {
-          throw new TypeError('Expected the observer to be an object.');
-        }
-
-        function observeState() {
-          if (observer.next) {
-            observer.next(getState());
-          }
-        }
-
-        observeState();
-        var unsubscribe = outerSubscribe(observeState);
-        return { unsubscribe: unsubscribe };
-      }
-    }, _ref[__WEBPACK_IMPORTED_MODULE_1_symbol_observable___default.a] = function () {
-      return this;
-    }, _ref;
-  }
-
-  // When a store is created, an "INIT" action is dispatched so that every
-  // reducer returns their initial state. This effectively populates
-  // the initial state tree.
-  dispatch({ type: ActionTypes.INIT });
-
-  return _ref2 = {
-    dispatch: dispatch,
-    subscribe: subscribe,
-    getState: getState,
-    replaceReducer: replaceReducer
-  }, _ref2[__WEBPACK_IMPORTED_MODULE_1_symbol_observable___default.a] = observable, _ref2;
-}
-
-/***/ }),
-/* 249 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = warning;
-/**
- * Prints a warning in the console if it exists.
- *
- * @param {String} message The warning message.
- * @returns {void}
- */
-function warning(message) {
-  /* eslint-disable no-console */
-  if (typeof console !== 'undefined' && typeof console.error === 'function') {
-    console.error(message);
-  }
-  /* eslint-enable no-console */
-  try {
-    // This error was thrown as a convenience so that if you enable
-    // "break on all exceptions" in your console,
-    // it would pause the execution at this line.
-    throw new Error(message);
-    /* eslint-disable no-empty */
-  } catch (e) {}
-  /* eslint-enable no-empty */
-}
-
-/***/ }),
-/* 250 */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1,eval)("this");
-} catch(e) {
-	// This works if the window reference is available
-	if(typeof window === "object")
-		g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-/* 251 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _MainRouter = __webpack_require__(261);
-
-var _MainRouter2 = _interopRequireDefault(_MainRouter);
-
-var _Footer = __webpack_require__(115);
-
-var _Footer2 = _interopRequireDefault(_Footer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * 整个应用的父组件，包括了导航条，主体内容和脚注
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
-
-var App = function (_React$Component) {
-  _inherits(App, _React$Component);
-
-  function App() {
-    _classCallCheck(this, App);
-
-    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
-  }
-
-  _createClass(App, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(_MainRouter2.default, null);
-    }
-  }]);
-
-  return App;
-}(_react2.default.Component);
-
-exports.default = App;
-
-/***/ }),
-/* 252 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(276);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(243);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(277);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
-
-
-
-
-
-
-/***/ }),
-/* 253 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(114);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _redux = __webpack_require__(241);
-
-var _reactRedux = __webpack_require__(252);
-
-var _App = __webpack_require__(251);
-
-var _App2 = _interopRequireDefault(_App);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-__webpack_require__(112); /**
-                              * 程序主入口，包括引用，渲染组件。
-                              */
-
-__webpack_require__(113);
-
-var render = function render() {
-  _reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('app'));
-};
-
-render();
-
-/***/ }),
-/* 254 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(34);
-
-var _SubNavigation = __webpack_require__(118);
-
-var _SubNavigation2 = _interopRequireDefault(_SubNavigation);
-
-var _Global = __webpack_require__(43);
-
-var _Global2 = _interopRequireDefault(_Global);
-
-var _utils = __webpack_require__(44);
-
-var _Footer = __webpack_require__(115);
-
-var _Footer2 = _interopRequireDefault(_Footer);
-
-var _BackToTop = __webpack_require__(117);
-
-var _BackToTop2 = _interopRequireDefault(_BackToTop);
-
-var _book = __webpack_require__(292);
-
-var _book2 = _interopRequireDefault(_book);
-
-var _book3 = __webpack_require__(293);
-
-var _book4 = _interopRequireDefault(_book3);
-
-var _book5 = __webpack_require__(294);
-
-var _book6 = _interopRequireDefault(_book5);
-
-var _book7 = __webpack_require__(295);
-
-var _book8 = _interopRequireDefault(_book7);
-
-var _book9 = __webpack_require__(296);
-
-var _book10 = _interopRequireDefault(_book9);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var data = [_book2.default, _book4.default, _book6.default, _book8.default, _book10.default];
-
-var Book = function (_React$Component) {
-  _inherits(Book, _React$Component);
-
-  function Book(props) {
-    _classCallCheck(this, Book);
-
-    var _this = _possibleConstructorReturn(this, (Book.__proto__ || Object.getPrototypeOf(Book)).call(this, props));
-
-    _this.state = {
-      books: []
-    };
-    return _this;
-  }
-
-  _createClass(Book, [{
-    key: 'componentWillMount',
-    value: function componentWillMount() {
-      this.initBooks();
-    }
-  }, {
-    key: 'componentWillReceiveProps',
-    value: function componentWillReceiveProps(nextProps) {
-      this.initBooks();
-    }
-  }, {
-    key: 'initBooks',
-    value: function initBooks() {
-      var category = this.props.params.category;
-      for (var i = 0; i < _Global2.default.BOOK_CATEGORY.length; i++) {
-        var item = _Global2.default.BOOK_CATEGORY[i];
-        if (item.category == category) {
-          // fetchData(item.baseURL, {}, (data) => {
-          //   console.log(data);
-          //   this.setState({
-          //     books: data.books
-          //   })
-          // });
-          this.setState({
-            books: data[i].books
-          });
-        }
-      }
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'container' },
-        _react2.default.createElement(
-          'div',
-          { className: 'row' },
-          _react2.default.createElement(_SubNavigation2.default, { category: _Global2.default.BOOK, list: _Global2.default.BOOK_CATEGORY }),
-          _react2.default.createElement(
-            'div',
-            { className: 'col-xs-12 col-sm-9 col-sm-offset-2 col-md-8 col-md-offset-1 list-content' },
-            _react2.default.createElement(
-              'ul',
-              null,
-              this.state.books.map(function (item, index) {
-                var tags = '';
-                for (var i = 0; i < item.tags.length; i++) {
-                  tags += item.tags[i].name + ' ';
-                }
-                return _react2.default.createElement(
-                  'li',
-                  { key: index, className: 'list-item' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'media' },
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'media-left' },
-                      _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/book_details/' + item.id },
-                        _react2.default.createElement('img', { className: 'media-object dd', src: item.image, alt: item.title })
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'media-body item-body' },
-                      _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/book_details/' + item.id, className: 'title' },
-                        item.title
-                      ),
-                      _react2.default.createElement(
-                        'p',
-                        { className: 'ellipsis' },
-                        '\u6807\u7B7E:',
-                        tags
-                      ),
-                      _react2.default.createElement(
-                        'p',
-                        null,
-                        '\u4F5C\u8005:',
-                        item.author
-                      ),
-                      _react2.default.createElement(
-                        'p',
-                        null,
-                        '\u51FA\u7248\u793E:',
-                        item.publisher
-                      )
-                    )
-                  )
-                );
-              })
-            )
-          ),
-          _react2.default.createElement(_Footer2.default, null),
-          _react2.default.createElement(_BackToTop2.default, null)
-        )
-      );
-    }
-  }]);
-
-  return Book;
-}(_react2.default.Component);
-
-exports.default = Book;
-
-/***/ }),
-/* 255 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _utils = __webpack_require__(44);
-
-var _Global = __webpack_require__(43);
-
-var _Global2 = _interopRequireDefault(_Global);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var BookDetails = function (_React$Component) {
-  _inherits(BookDetails, _React$Component);
-
-  function BookDetails(props) {
-    _classCallCheck(this, BookDetails);
-
-    var _this = _possibleConstructorReturn(this, (BookDetails.__proto__ || Object.getPrototypeOf(BookDetails)).call(this, props));
-
-    _this.state = {
-      book: {
-        rating: {
-          numRaters: 0
-        },
-        title: '',
-        images: {
-          large: ''
-        },
-        author: [],
-        tags: []
-      }
-    };
-    return _this;
-  }
-
-  _createClass(BookDetails, [{
-    key: 'componentWillMount',
-    value: function componentWillMount() {
-      var that = this;
-      var id = this.props.params.id;
-      var url = _Global2.default.BOOK_DETAILS_BASE_URL + id;
-      (0, _utils.fetchData)(url, {}, function (data) {
-        console.log(data);
-        that.setState({
-          book: data
-        });
-      });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var book = this.state.book;
-      var author = '';
-      for (var i = 0; i < book.author.length; i++) {
-        author += book.author[i] + ' ';
-      }
-      var tags = '';
-      for (var _i = 0; _i < book.tags.length; _i++) {
-        tags += book.tags[_i].name + ' ';
-      }
-      return _react2.default.createElement(
-        'div',
-        { className: 'container details' },
-        _react2.default.createElement(
-          'div',
-          { className: 'details-jumbotron' },
-          _react2.default.createElement(
-            'div',
-            { className: 'media' },
-            _react2.default.createElement(
-              'div',
-              { className: 'media-left' },
-              _react2.default.createElement(
-                'a',
-                { href: '#' },
-                _react2.default.createElement('img', { className: 'media-object', src: book.images.large, alt: book.title })
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'media-body' },
-              _react2.default.createElement(
-                'span',
-                { className: 'badge badge-details' },
-                _react2.default.createElement('span', { className: 'glyphicon glyphicon-thumbs-up', 'aria-hidden': 'true' }),
-                _react2.default.createElement(
-                  'span',
-                  { title: '\u6536\u85CF\u6570' },
-                  '\xA0',
-                  book.rating.numRaters
-                )
-              ),
-              _react2.default.createElement(
-                'h1',
-                null,
-                book.title
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'text-bold' },
-                  '\u6807\u7B7E\uFF1A'
-                ),
-                tags
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'text-bold' },
-                  '\u4F5C\u8005\uFF1A'
-                ),
-                author
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'text-bold' },
-                  '\u51FA\u7248\u65E5\u671F\uFF1A'
-                ),
-                book.pubdate
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'text-bold' },
-                  '\u603B\u9875\u6570\uFF1A'
-                ),
-                book.pages
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'text-bold' },
-                  '\u552E\u4EF7\uFF1A'
-                ),
-                book.price
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'text-bold' },
-                  '\u51FA\u7248\u793E\uFF1A'
-                ),
-                book.publisher
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'text-bold' },
-                  '\u6458\u8981\uFF1A'
-                ),
-                book.summary
-              ),
-              _react2.default.createElement(
-                'button',
-                { className: 'btn btn-focus btn-lg' },
-                '\u5173\xA0\xA0\u6CE8'
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return BookDetails;
-}(_react2.default.Component);
-
-exports.default = BookDetails;
-
-/***/ }),
-/* 256 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Category = function (_React$Component) {
-  _inherits(Category, _React$Component);
-
-  function Category() {
-    _classCallCheck(this, Category);
-
-    return _possibleConstructorReturn(this, (Category.__proto__ || Object.getPrototypeOf(Category)).apply(this, arguments));
-  }
-
-  _createClass(Category, [{
-    key: 'render',
-    value: function render() {
-      var category = this.props.params.category;
-    }
-  }]);
-
-  return Category;
-}(_react2.default.Component);
-
-exports.default = Category;
-
-/***/ }),
-/* 257 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(34);
-
-var _SubNavigation = __webpack_require__(118);
-
-var _SubNavigation2 = _interopRequireDefault(_SubNavigation);
-
-var _Global = __webpack_require__(43);
-
-var _Global2 = _interopRequireDefault(_Global);
-
-var _utils = __webpack_require__(44);
-
-var _Footer = __webpack_require__(115);
-
-var _Footer2 = _interopRequireDefault(_Footer);
-
-var _BackToTop = __webpack_require__(117);
-
-var _BackToTop2 = _interopRequireDefault(_BackToTop);
-
-var _film = __webpack_require__(297);
-
-var _film2 = _interopRequireDefault(_film);
-
-var _film3 = __webpack_require__(298);
-
-var _film4 = _interopRequireDefault(_film3);
-
-var _film5 = __webpack_require__(299);
-
-var _film6 = _interopRequireDefault(_film5);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var data = [_film2.default, _film4.default, _film6.default];
-
-var Film = function (_React$Component) {
-  _inherits(Film, _React$Component);
-
-  function Film(props) {
-    _classCallCheck(this, Film);
-
-    var _this = _possibleConstructorReturn(this, (Film.__proto__ || Object.getPrototypeOf(Film)).call(this, props));
-
-    _this.state = {
-      films: []
-    };
-    return _this;
-  }
-
-  _createClass(Film, [{
-    key: 'componentWillMount',
-    value: function componentWillMount() {
-      this.initFilms();
-    }
-  }, {
-    key: 'componentWillReceiveProps',
-    value: function componentWillReceiveProps() {
-      this.initFilms();
-    }
-  }, {
-    key: 'initFilms',
-    value: function initFilms() {
-      var category = this.props.params.category;
-      for (var i = 0; i < _Global2.default.FILM_CATEGORY.length; i++) {
-        var item = _Global2.default.FILM_CATEGORY[i];
-        if (item.category == category) {
-          // fetchData(item.baseURL, {}, (data) => {
-          //   console.log(data);
-          //   this.setState({
-          //     films: data.subjects
-          //   })
-          // });
-          this.setState({
-            films: data[i].subjects
-          });
-        }
-      }
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'container' },
-        _react2.default.createElement(
-          'div',
-          { className: 'row' },
-          _react2.default.createElement(_SubNavigation2.default, { category: _Global2.default.FILM, list: _Global2.default.FILM_CATEGORY }),
-          _react2.default.createElement(
-            'div',
-            { className: 'col-xs-12 col-sm-9 col-sm-offset-2 col-md-8 col-md-offset-1 list-content' },
-            _react2.default.createElement(
-              'ul',
-              null,
-              this.state.films.map(function (item, index) {
-                var casts = '';
-                for (var i = 0; i < item.casts.length; i++) {
-                  casts += item.casts[i].name + ' ';
-                }
-                var directors = '';
-                for (var _i = 0; _i < item.directors.length; _i++) {
-                  directors += item.directors[_i].name + ' ';
-                }
-                return _react2.default.createElement(
-                  'li',
-                  { key: index, className: 'list-item' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'media' },
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'media-left' },
-                      _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/film_details/' + item.id },
-                        _react2.default.createElement('img', { className: 'media-object dd', src: item.images.small, alt: item.title })
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'media-body item-body' },
-                      _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/film_details/' + item.id, className: 'title' },
-                        item.title
-                      ),
-                      _react2.default.createElement(
-                        'p',
-                        { className: 'ellipsis' },
-                        '\u5E74\u4EFD:',
-                        item.year
-                      ),
-                      _react2.default.createElement(
-                        'p',
-                        null,
-                        '\u6F14\u5458:',
-                        casts
-                      ),
-                      _react2.default.createElement(
-                        'p',
-                        null,
-                        '\u5BFC\u6F14:',
-                        directors
-                      )
-                    )
-                  )
-                );
-              })
-            )
-          ),
-          _react2.default.createElement(_Footer2.default, null),
-          _react2.default.createElement(_BackToTop2.default, null)
-        )
-      );
-    }
-  }]);
-
-  return Film;
-}(_react2.default.Component);
-
-exports.default = Film;
-
-/***/ }),
-/* 258 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _utils = __webpack_require__(44);
-
-var _Global = __webpack_require__(43);
-
-var _Global2 = _interopRequireDefault(_Global);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var FilmDetails = function (_React$Component) {
-  _inherits(FilmDetails, _React$Component);
-
-  function FilmDetails(props) {
-    _classCallCheck(this, FilmDetails);
-
-    var _this = _possibleConstructorReturn(this, (FilmDetails.__proto__ || Object.getPrototypeOf(FilmDetails)).call(this, props));
-
-    _this.state = {
-      film: {
-        reviews_count: 0,
-        wish_count: 0,
-        year: '',
-        images: { large: '' },
-        title: '',
-        countries: [],
-        genres: [],
-        casts: [],
-        summary: '',
-        directors: [{ name: '' }],
-        ratings_count: 0
-      }
-    };
-    return _this;
-  }
-
-  _createClass(FilmDetails, [{
-    key: 'componentWillMount',
-    value: function componentWillMount() {
-      var that = this;
-      var id = this.props.params.id;
-      var url = _Global2.default.FILM_DETAILS_BASE_URL + id;
-      (0, _utils.fetchData)(url, {}, function (data) {
-        console.log(data);
-        that.setState({
-          film: data
-        });
-      });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var film = this.state.film;
-      var casts = '';
-      for (var i = 0; i < film.casts.length; i++) {
-        casts += film.casts[i].name + ' ';
-      }
-      var genres = '';
-      for (var _i = 0; _i < film.genres.length; _i++) {
-        genres += film.genres[_i] + ' ';
-      }
-      return _react2.default.createElement(
-        'div',
-        { className: 'container details' },
-        _react2.default.createElement(
-          'div',
-          { className: 'details-jumbotron' },
-          _react2.default.createElement(
-            'div',
-            { className: 'media' },
-            _react2.default.createElement(
-              'div',
-              { className: 'media-left' },
-              _react2.default.createElement(
-                'a',
-                { href: '#' },
-                _react2.default.createElement('img', { className: 'media-object', src: film.images.large, alt: film.title })
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'media-body' },
-              _react2.default.createElement(
-                'span',
-                { className: 'badge badge-details' },
-                _react2.default.createElement('span', { className: 'glyphicon glyphicon-thumbs-up', 'aria-hidden': 'true' }),
-                _react2.default.createElement(
-                  'span',
-                  { title: '\u6536\u85CF\u6570' },
-                  '\xA0',
-                  film.ratings_count
-                )
-              ),
-              _react2.default.createElement(
-                'h1',
-                null,
-                film.title
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'text-bold' },
-                  '\u5BFC\u6F14\uFF1A'
-                ),
-                film.directors[0].name
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'text-bold' },
-                  '\u6F14\u5458\uFF1A'
-                ),
-                casts
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'text-bold' },
-                  '\u4E0A\u6620\u65E5\u671F\uFF1A'
-                ),
-                film.year
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'text-bold' },
-                  '\u7C7B\u578B\uFF1A'
-                ),
-                genres
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'text-bold' },
-                  '\u6458\u8981\uFF1A'
-                ),
-                film.summary
-              ),
-              _react2.default.createElement(
-                'button',
-                { className: 'btn btn-focus btn-lg' },
-                '\u5173\xA0\xA0\u6CE8'
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return FilmDetails;
-}(_react2.default.Component);
-
-exports.default = FilmDetails;
-
-/***/ }),
-/* 259 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Home = function (_React$Component) {
-  _inherits(Home, _React$Component);
-
-  function Home() {
-    _classCallCheck(this, Home);
-
-    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
-  }
-
-  _createClass(Home, [{
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "div",
-        { className: "container" },
-        _react2.default.createElement(
-          "h1",
-          null,
-          "Home"
-        )
-      );
-    }
-  }]);
-
-  return Home;
-}(_react2.default.Component);
-
-exports.default = Home;
-
-/***/ }),
-/* 260 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Navigation = __webpack_require__(264);
-
-var _Navigation2 = _interopRequireDefault(_Navigation);
-
-var _reactRouter = __webpack_require__(34);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * 路由入口组件
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * 包括了导航栏组件和主体组件
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
-var Main = function (_React$Component) {
-  _inherits(Main, _React$Component);
-
-  function Main() {
-    _classCallCheck(this, Main);
-
-    return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
-  }
-
-  _createClass(Main, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(_Navigation2.default, null),
-        this.props.children
-      );
-    }
-  }]);
-
-  return Main;
-}(_react2.default.Component);
-
-exports.default = Main;
-
-/***/ }),
-/* 261 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(34);
-
-var _Main = __webpack_require__(260);
-
-var _Main2 = _interopRequireDefault(_Main);
-
-var _Home = __webpack_require__(259);
-
-var _Home2 = _interopRequireDefault(_Home);
-
-var _Book = __webpack_require__(254);
-
-var _Book2 = _interopRequireDefault(_Book);
-
-var _Music = __webpack_require__(262);
-
-var _Music2 = _interopRequireDefault(_Music);
-
-var _Film = __webpack_require__(257);
-
-var _Film2 = _interopRequireDefault(_Film);
-
-var _Category = __webpack_require__(256);
-
-var _Category2 = _interopRequireDefault(_Category);
-
-var _Search = __webpack_require__(265);
-
-var _Search2 = _interopRequireDefault(_Search);
-
-var _BookDetails = __webpack_require__(255);
-
-var _BookDetails2 = _interopRequireDefault(_BookDetails);
-
-var _MusicDetails = __webpack_require__(263);
-
-var _MusicDetails2 = _interopRequireDefault(_MusicDetails);
-
-var _FilmDetails = __webpack_require__(258);
-
-var _FilmDetails2 = _interopRequireDefault(_FilmDetails);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * 路由
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
-
-var MainRouter = function (_React$Component) {
-  _inherits(MainRouter, _React$Component);
-
-  function MainRouter() {
-    _classCallCheck(this, MainRouter);
-
-    return _possibleConstructorReturn(this, (MainRouter.__proto__ || Object.getPrototypeOf(MainRouter)).apply(this, arguments));
-  }
-
-  _createClass(MainRouter, [{
-    key: 'render',
-    value: function render() {
-      var routes = _react2.default.createElement(
-        _reactRouter.Route,
-        { path: '/', component: _Main2.default },
-        _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
-        _react2.default.createElement(_reactRouter.Route, { path: 'book(/:category)', component: _Book2.default }),
-        _react2.default.createElement(_reactRouter.Route, { path: 'music(/:category)', component: _Music2.default }),
-        _react2.default.createElement(_reactRouter.Route, { path: 'film(/:category)', component: _Film2.default }),
-        _react2.default.createElement(_reactRouter.Route, { path: 'book_details/:id', component: _BookDetails2.default, onEnter: function onEnter(nextState, replace) {
-            console.log(nextState);
-          } }),
-        _react2.default.createElement(_reactRouter.Route, { path: 'music_details/:id', component: _MusicDetails2.default }),
-        _react2.default.createElement(_reactRouter.Route, { path: 'film_details/:id', component: _FilmDetails2.default }),
-        _react2.default.createElement(_reactRouter.Route, { path: 'search/:key', component: _Search2.default })
-      );
-      return _react2.default.createElement(_reactRouter.Router, { routes: routes, history: _reactRouter.hashHistory });
-    }
-  }]);
-
-  return MainRouter;
-}(_react2.default.Component);
-
-exports.default = MainRouter;
-
-/***/ }),
-/* 262 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(34);
-
-var _SubNavigation = __webpack_require__(118);
-
-var _SubNavigation2 = _interopRequireDefault(_SubNavigation);
-
-var _Global = __webpack_require__(43);
-
-var _Global2 = _interopRequireDefault(_Global);
-
-var _utils = __webpack_require__(44);
-
-var _Footer = __webpack_require__(115);
-
-var _Footer2 = _interopRequireDefault(_Footer);
-
-var _BackToTop = __webpack_require__(117);
-
-var _BackToTop2 = _interopRequireDefault(_BackToTop);
-
-var _music = __webpack_require__(300);
-
-var _music2 = _interopRequireDefault(_music);
-
-var _music3 = __webpack_require__(301);
-
-var _music4 = _interopRequireDefault(_music3);
-
-var _music5 = __webpack_require__(302);
-
-var _music6 = _interopRequireDefault(_music5);
-
-var _music7 = __webpack_require__(303);
-
-var _music8 = _interopRequireDefault(_music7);
-
-var _music9 = __webpack_require__(304);
-
-var _music10 = _interopRequireDefault(_music9);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var data = [_music2.default, _music4.default, _music6.default, _music8.default, _music10.default];
-
-var Music = function (_React$Component) {
-  _inherits(Music, _React$Component);
-
-  function Music(props) {
-    _classCallCheck(this, Music);
-
-    var _this = _possibleConstructorReturn(this, (Music.__proto__ || Object.getPrototypeOf(Music)).call(this, props));
-
-    _this.state = {
-      musics: []
-    };
-    return _this;
-  }
-
-  _createClass(Music, [{
-    key: 'componentWillMount',
-    value: function componentWillMount() {
-      this.initMusics();
-    }
-  }, {
-    key: 'componentWillReceiveProps',
-    value: function componentWillReceiveProps() {
-      this.initMusics();
-    }
-  }, {
-    key: 'initMusics',
-    value: function initMusics() {
-      var category = this.props.params.category;
-      for (var i = 0; i < _Global2.default.MUSIC_CATEGORY.length; i++) {
-        var item = _Global2.default.MUSIC_CATEGORY[i];
-        if (item.category == category) {
-          // fetchData(item.baseURL, {}, (data) => {
-          //   console.log(data);
-          //   this.setState({
-          //     musics: data.musics
-          //   })
-          // });
-          this.setState({
-            musics: data[i].musics
-          });
-        }
-      }
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'container' },
-        _react2.default.createElement(
-          'div',
-          { className: 'row' },
-          _react2.default.createElement(_SubNavigation2.default, { category: _Global2.default.MUSIC, list: _Global2.default.MUSIC_CATEGORY }),
-          _react2.default.createElement(
-            'div',
-            { className: 'col-xs-12 col-sm-9 col-sm-offset-2 col-md-8 col-md-offset-1 list-content' },
-            _react2.default.createElement(
-              'ul',
-              null,
-              this.state.musics.map(function (item, index) {
-                var tags = '';
-                for (var i = 0; i < item.tags.length; i++) {
-                  tags += item.tags[i].name + ' ';
-                }
-                return _react2.default.createElement(
-                  'li',
-                  { key: index, className: 'list-item' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'media' },
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'media-left' },
-                      _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/music_details/' + item.id },
-                        _react2.default.createElement('img', { className: 'media-object dd', src: item.image, alt: item.title })
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'media-body item-body' },
-                      _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/music_details/' + item.id, className: 'title' },
-                        item.title
-                      ),
-                      _react2.default.createElement(
-                        'p',
-                        { className: 'ellipsis' },
-                        '\u6807\u7B7E:',
-                        tags
-                      ),
-                      _react2.default.createElement(
-                        'p',
-                        null,
-                        '\u53D1\u884C\u5E74\u4EFD:',
-                        item.attrs.pubdate
-                      ),
-                      _react2.default.createElement(
-                        'p',
-                        { className: 'ellipsis' },
-                        '\u4E13\u8F91\u97F3\u4E50:',
-                        item.attrs.tracks[0]
-                      )
-                    )
-                  )
-                );
-              })
-            )
-          ),
-          _react2.default.createElement(_Footer2.default, null),
-          _react2.default.createElement(_BackToTop2.default, null)
-        )
-      );
-    }
-  }]);
-
-  return Music;
-}(_react2.default.Component);
-
-exports.default = Music;
-
-/***/ }),
-/* 263 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _utils = __webpack_require__(44);
-
-var _Global = __webpack_require__(43);
-
-var _Global2 = _interopRequireDefault(_Global);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var MusicDetails = function (_React$Component) {
-  _inherits(MusicDetails, _React$Component);
-
-  function MusicDetails(props) {
-    _classCallCheck(this, MusicDetails);
-
-    var _this = _possibleConstructorReturn(this, (MusicDetails.__proto__ || Object.getPrototypeOf(MusicDetails)).call(this, props));
-
-    _this.state = {
-      music: {
-        rating: {
-          numRaters: 0
-        },
-        title: '',
-        image: '',
-        summary: '',
-        author: [],
-        tags: [],
-        attrs: {
-          pubdate: [''],
-          tracks: [''],
-          publisher: ['']
-        }
-      }
-    };
-    return _this;
-  }
-
-  _createClass(MusicDetails, [{
-    key: 'componentWillMount',
-    value: function componentWillMount() {
-      var that = this;
-      var id = this.props.params.id;
-      var url = _Global2.default.MUSIC_DETAILS_BASE_URL + id;
-      (0, _utils.fetchData)(url, {}, function (data) {
-        console.log(data);
-        that.setState({
-          music: data
-        });
-      });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var music = this.state.music;
-      var author = '';
-      for (var i = 0; i < music.author.length; i++) {
-        author += music.author[i].name + ' ';
-      }
-      var tags = '';
-      for (var _i = 0; _i < music.tags.length; _i++) {
-        tags += music.tags[_i].name + ' ';
-      }
-      return _react2.default.createElement(
-        'div',
-        { className: 'container details' },
-        _react2.default.createElement(
-          'div',
-          { className: 'details-jumbotron' },
-          _react2.default.createElement(
-            'div',
-            { className: 'media' },
-            _react2.default.createElement(
-              'div',
-              { className: 'media-left' },
-              _react2.default.createElement(
-                'a',
-                { href: '#' },
-                _react2.default.createElement('img', { className: 'media-object', src: music.image, alt: music.title })
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'media-body' },
-              _react2.default.createElement(
-                'span',
-                { className: 'badge badge-details' },
-                _react2.default.createElement('span', { className: 'glyphicon glyphicon-thumbs-up', 'aria-hidden': 'true' }),
-                _react2.default.createElement(
-                  'span',
-                  { title: '\u6536\u85CF\u6570' },
-                  '\xA0',
-                  music.rating.numRaters
-                )
-              ),
-              _react2.default.createElement(
-                'h1',
-                null,
-                music.title
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'text-bold' },
-                  '\u6807\u7B7E\uFF1A'
-                ),
-                tags
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'text-bold' },
-                  '\u4F5C\u8005\uFF1A'
-                ),
-                author
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'text-bold' },
-                  '\u51FA\u7248\u65E5\u671F\uFF1A'
-                ),
-                music.attrs.pubdate[0]
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'text-bold' },
-                  '\u51FA\u7248\u5546\uFF1A'
-                ),
-                music.attrs.publisher[0]
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'text-bold' },
-                  '\u6458\u8981\uFF1A'
-                ),
-                music.summary
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  { className: 'text-bold' },
-                  '\u4E13\u8F91\u97F3\u4E50\uFF1A'
-                ),
-                music.attrs.tracks[0]
-              ),
-              _react2.default.createElement(
-                'button',
-                { className: 'btn btn-focus btn-lg' },
-                '\u5173\xA0\xA0\u6CE8'
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return MusicDetails;
-}(_react2.default.Component);
-
-exports.default = MusicDetails;
-
-/***/ }),
-/* 264 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(34);
-
-var _Global = __webpack_require__(43);
-
-var _Global2 = _interopRequireDefault(_Global);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * 导航条组件
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
-
-var Navigation = function (_React$Component) {
-  _inherits(Navigation, _React$Component);
-
-  function Navigation() {
-    _classCallCheck(this, Navigation);
-
-    return _possibleConstructorReturn(this, (Navigation.__proto__ || Object.getPrototypeOf(Navigation)).apply(this, arguments));
-  }
-
-  _createClass(Navigation, [{
-    key: 'handleSearchSubmit',
-    value: function handleSearchSubmit(e) {
-      e.preventDefault();
-      var key = e.target.childNodes[0].value;
-      if (key) {
-        var path = 'search/' + key;
-        _reactRouter.hashHistory.push(path);
-        e.target.childNodes[0].value = '';
-      }
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'nav',
-        { className: 'navbar navbar-default navbar-fixed-top' },
-        _react2.default.createElement(
-          'div',
-          { className: 'container' },
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'navbar-header' },
-              _react2.default.createElement(
-                'button',
-                { type: 'button', className: 'navbar-toggle collapsed', 'data-toggle': 'collapse', 'data-target': '#navbar', 'aria-expanded': 'false', 'aria-controls': 'navbar' },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'sr-only' },
-                  'Toggle navigation'
-                ),
-                _react2.default.createElement('span', { className: 'icon-bar' }),
-                _react2.default.createElement('span', { className: 'icon-bar' }),
-                _react2.default.createElement('span', { className: 'icon-bar' })
-              ),
-              _react2.default.createElement(
-                'a',
-                { className: 'navbar-brand', href: '#' },
-                '\u751F\u6D3B\u767E\u79D1'
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { id: 'navbar', className: 'navbar-collapse collapse' },
-              _react2.default.createElement(
-                'ul',
-                { className: 'nav navbar-nav' },
-                _react2.default.createElement(
-                  'li',
-                  null,
-                  _react2.default.createElement(
-                    _reactRouter.IndexLink,
-                    { to: '/', activeClassName: 'active' },
-                    _react2.default.createElement('span', { className: 'glyphicon glyphicon-home', 'aria-hidden': 'true' }),
-                    '\xA0\u4E3B\u9875'
-                  )
-                ),
-                _react2.default.createElement(
-                  'li',
-                  null,
-                  _react2.default.createElement(
-                    _reactRouter.Link,
-                    { to: '/' + _Global2.default.BOOK + '/' + _Global2.default.BOOK_CATEGORY[0].category },
-                    _react2.default.createElement('span', { className: 'glyphicon glyphicon-book', 'aria-hidden': 'true' }),
-                    '\xA0\u56FE\u4E66'
-                  )
-                ),
-                _react2.default.createElement(
-                  'li',
-                  null,
-                  _react2.default.createElement(
-                    _reactRouter.Link,
-                    { to: '/' + _Global2.default.MUSIC + '/' + _Global2.default.MUSIC_CATEGORY[0].category },
-                    _react2.default.createElement('span', { className: 'glyphicon glyphicon-music', 'aria-hidden': 'true' }),
-                    '\xA0\u97F3\u4E50'
-                  )
-                ),
-                _react2.default.createElement(
-                  'li',
-                  null,
-                  _react2.default.createElement(
-                    _reactRouter.Link,
-                    { to: '/' + _Global2.default.FILM + '/' + _Global2.default.FILM_CATEGORY[0].category },
-                    _react2.default.createElement('span', { className: 'glyphicon glyphicon-film', 'aria-hidden': 'true' }),
-                    '\xA0\u7535\u5F71'
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                'ul',
-                { className: 'nav navbar-nav navbar-right' },
-                _react2.default.createElement(
-                  'li',
-                  null,
-                  _react2.default.createElement(
-                    'a',
-                    { href: '../navbar/' },
-                    '\u767B\u5F55'
-                  )
-                ),
-                _react2.default.createElement(
-                  'li',
-                  null,
-                  _react2.default.createElement(
-                    'a',
-                    { href: '../navbar-static-top/' },
-                    '\u6CE8\u518C'
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                'form',
-                { className: 'navbar-form navbar-right', onSubmit: this.handleSearchSubmit },
-                _react2.default.createElement('input', { type: 'text', className: 'form-control', placeholder: '\u641C\u7D22...' })
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return Navigation;
-}(_react2.default.Component);
-
-exports.default = Navigation;
-
-/***/ }),
-/* 265 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(34);
-
-var _jquery = __webpack_require__(267);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-var _Global = __webpack_require__(43);
-
-var _Global2 = _interopRequireDefault(_Global);
-
-var _utils = __webpack_require__(44);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Search = function (_React$Component) {
-  _inherits(Search, _React$Component);
-
-  function Search(props) {
-    _classCallCheck(this, Search);
-
-    var _this = _possibleConstructorReturn(this, (Search.__proto__ || Object.getPrototypeOf(Search)).call(this, props));
-
-    _this.state = {
-      books: [],
-      musics: [],
-      films: [],
-      books_count: 0,
-      musics_count: 0,
-      films_count: 0
-    };
-    return _this;
-  }
-
-  _createClass(Search, [{
-    key: 'componentWillMount',
-    value: function componentWillMount() {
-      this.initData();
-    }
-  }, {
-    key: 'componentWillReceiveProps',
-    value: function componentWillReceiveProps(nextProps) {
-      this.initData();
-    }
-
-    /**
-     * 初始化数据方法
-     */
-
-  }, {
-    key: 'initData',
-    value: function initData() {
-      var _this2 = this;
-
-      var key = this.props.params.key;
-      var params = (0, _utils.obj2uri)({ tag: key, count: 10 });
-
-      (0, _utils.fetchData)(_Global2.default.BOOK_SEARCH_BASE_URL + '?' + params + '&', {}, function (data) {
-        _this2.setState({
-          books: data.books,
-          books_count: data.count
-        });
-      });
-
-      (0, _utils.fetchData)(_Global2.default.MUSIC_SEARCH_BASE_URL + '?' + params + '&', {}, function (data) {
-        _this2.setState({
-          musics: data.musics,
-          musics_count: data.count
-        });
-      });
-
-      (0, _utils.fetchData)(_Global2.default.FILM_SEARCH_BASE_URL + '?' + params + '&', {}, function (data) {
-        _this2.setState({
-          films: data.subjects,
-          films_count: data.count
-        });
-      });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'container search' },
-        _react2.default.createElement(
-          'div',
-          { className: 'row' },
-          _react2.default.createElement(
-            'div',
-            { className: 'search-header col-md-12' },
-            _react2.default.createElement(
-              'div',
-              { className: 'search-info' },
-              _react2.default.createElement(
-                'p',
-                null,
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  '\u5173\u952E\u5B57\uFF1A',
-                  this.props.params.key
-                ),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  '\u603B\u6761\u76EE\uFF1A',
-                  this.state.books_count + this.state.musics_count + this.state.films_count
-                ),
-                _react2.default.createElement('br', null),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  '\u56FE\u4E66\uFF1A',
-                  this.state.books_count
-                ),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  '\u97F3\u4E50\uFF1A',
-                  this.state.musics_count
-                ),
-                _react2.default.createElement(
-                  'span',
-                  null,
-                  '\u7535\u5F71\uFF1A',
-                  this.state.films_count
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'ul',
-              { id: 'nav_search', className: 'nav nav-tabs nav-justified' },
-              _react2.default.createElement(
-                'li',
-                { className: 'active' },
-                _react2.default.createElement(
-                  'a',
-                  { href: '#tab1', 'data-toggle': 'tab' },
-                  'Book'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'a',
-                  { href: '#tab2', 'data-toggle': 'tab' },
-                  'Music'
-                )
-              ),
-              _react2.default.createElement(
-                'li',
-                null,
-                _react2.default.createElement(
-                  'a',
-                  { href: '#tab3', 'data-toggle': 'tab' },
-                  'Film'
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'search-body col-md-12 container' },
-            _react2.default.createElement(
-              'div',
-              { className: 'tab-content' },
-              _react2.default.createElement(
-                'div',
-                { className: 'tab-pane active row', id: 'tab1' },
-                _react2.default.createElement(
-                  'p',
-                  { className: 'text-center', style: { display: this.state.books.length != 0 ? 'none' : 'block' } },
-                  '\u6CA1\u627E\u5230"',
-                  this.props.params.key,
-                  '"\u7684\u76F8\u5173\u56FE\u4E66\u4FE1\u606F!'
-                ),
-                _react2.default.createElement(
-                  'ul',
-                  null,
-                  this.state.books.map(function (item, index) {
-                    var tags = '';
-                    for (var i = 0; i < item.tags.length; i++) {
-                      tags += item.tags[i].name + ' ';
-                    }
-                    return _react2.default.createElement(
-                      'li',
-                      { key: index, className: 'search-item col-md-6' },
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'media' },
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'media-left' },
-                          _react2.default.createElement(
-                            _reactRouter.Link,
-                            { to: '/book_details/' + item.id },
-                            _react2.default.createElement('img', { className: 'media-object dd', src: item.image, alt: item.title })
-                          )
-                        ),
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'media-body item-body' },
-                          _react2.default.createElement(
-                            _reactRouter.Link,
-                            { to: '/book_details/' + item.id, className: 'title' },
-                            item.title
-                          ),
-                          _react2.default.createElement(
-                            'p',
-                            { className: 'ellipsis' },
-                            '\u6807\u7B7E:',
-                            tags
-                          ),
-                          _react2.default.createElement(
-                            'p',
-                            null,
-                            '\u4F5C\u8005:',
-                            item.author
-                          ),
-                          _react2.default.createElement(
-                            'p',
-                            null,
-                            '\u51FA\u7248\u793E:',
-                            item.publisher
-                          )
-                        )
-                      )
-                    );
-                  })
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'tab-pane row', id: 'tab2' },
-                _react2.default.createElement(
-                  'p',
-                  { className: 'text-center', style: { display: this.state.musics.length != 0 ? 'none' : 'block' } },
-                  '\u6CA1\u627E\u5230"',
-                  this.props.params.key,
-                  '"\u7684\u76F8\u5173\u97F3\u4E50\u4FE1\u606F!'
-                ),
-                _react2.default.createElement(
-                  'ul',
-                  null,
-                  this.state.musics.map(function (item, index) {
-                    var tags = '';
-                    for (var i = 0; i < item.tags.length; i++) {
-                      tags += item.tags[i].name + ' ';
-                    }
-                    return _react2.default.createElement(
-                      'li',
-                      { key: index, className: 'search-item col-md-6' },
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'media' },
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'media-left' },
-                          _react2.default.createElement(
-                            _reactRouter.Link,
-                            { to: '/music_details/' + item.id },
-                            _react2.default.createElement('img', { className: 'media-object dd', src: item.image, alt: item.title })
-                          )
-                        ),
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'media-body item-body' },
-                          _react2.default.createElement(
-                            _reactRouter.Link,
-                            { to: '/music_details/' + item.id, className: 'title' },
-                            item.title
-                          ),
-                          _react2.default.createElement(
-                            'p',
-                            { className: 'ellipsis' },
-                            '\u6807\u7B7E:',
-                            tags
-                          ),
-                          _react2.default.createElement(
-                            'p',
-                            null,
-                            '\u53D1\u884C\u5E74\u4EFD:',
-                            item.attrs.pubdate
-                          ),
-                          _react2.default.createElement(
-                            'p',
-                            { className: 'ellipsis' },
-                            '\u4E13\u8F91\u97F3\u4E50:',
-                            item.attrs.tracks[0]
-                          )
-                        )
-                      )
-                    );
-                  })
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'tab-pane row', id: 'tab3' },
-                _react2.default.createElement(
-                  'p',
-                  { className: 'text-center', style: { display: this.state.films.length != 0 ? 'none' : 'block' } },
-                  '\u6CA1\u627E\u5230"',
-                  this.props.params.key,
-                  '"\u7684\u76F8\u5173\u7535\u5F71\u4FE1\u606F!'
-                ),
-                _react2.default.createElement(
-                  'ul',
-                  null,
-                  this.state.films.map(function (item, index) {
-                    var casts = '';
-                    for (var i = 0; i < item.casts.length; i++) {
-                      casts += item.casts[i].name + ' ';
-                    }
-                    var directors = '';
-                    for (var _i = 0; _i < item.directors.length; _i++) {
-                      directors += item.directors[_i].name + ' ';
-                    }
-                    return _react2.default.createElement(
-                      'li',
-                      { key: index, className: 'search-item col-md-6' },
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'media' },
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'media-left' },
-                          _react2.default.createElement(
-                            _reactRouter.Link,
-                            { to: '/film_details/' + item.id },
-                            _react2.default.createElement('img', { className: 'media-object dd', src: item.images.small, alt: item.title })
-                          )
-                        ),
-                        _react2.default.createElement(
-                          'div',
-                          { className: 'media-body item-body' },
-                          _react2.default.createElement(
-                            _reactRouter.Link,
-                            { to: '/film_details/' + item.id, className: 'title' },
-                            item.title
-                          ),
-                          _react2.default.createElement(
-                            'p',
-                            { className: 'ellipsis' },
-                            '\u5E74\u4EFD:',
-                            item.year
-                          ),
-                          _react2.default.createElement(
-                            'p',
-                            null,
-                            '\u6F14\u5458:',
-                            casts
-                          ),
-                          _react2.default.createElement(
-                            'p',
-                            null,
-                            '\u5BFC\u6F14:',
-                            directors
-                          )
-                        )
-                      )
-                    );
-                  })
-                )
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return Search;
-}(_react2.default.Component);
-
-exports.default = Search;
-
-/***/ }),
-/* 266 */,
-/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -40091,13 +37210,3006 @@ return jQuery;
 
 
 /***/ }),
-/* 268 */
+/* 243 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(242);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(271);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(275);
+
+
+/** Built-in value references. */
+var Symbol = __WEBPACK_IMPORTED_MODULE_0__root_js__["a" /* default */].Symbol;
+
+/* harmony default export */ __webpack_exports__["a"] = (Symbol);
+
+
+/***/ }),
+/* 244 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_Subscription__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__ = __webpack_require__(246);
+/* harmony export (immutable) */ __webpack_exports__["a"] = connectAdvanced;
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+
+
+
+
+
+
+
+var hotReloadingVersion = 0;
+var dummyState = {};
+function noop() {}
+function makeSelectorStateful(sourceSelector, store) {
+  // wrap the selector in an object that tracks its results between runs.
+  var selector = {
+    run: function runComponentSelector(props) {
+      try {
+        var nextProps = sourceSelector(store.getState(), props);
+        if (nextProps !== selector.props || selector.error) {
+          selector.shouldComponentUpdate = true;
+          selector.props = nextProps;
+          selector.error = null;
+        }
+      } catch (error) {
+        selector.shouldComponentUpdate = true;
+        selector.error = error;
+      }
+    }
+  };
+
+  return selector;
+}
+
+function connectAdvanced(
+/*
+  selectorFactory is a func that is responsible for returning the selector function used to
+  compute new props from state, props, and dispatch. For example:
+     export default connectAdvanced((dispatch, options) => (state, props) => ({
+      thing: state.things[props.thingId],
+      saveThing: fields => dispatch(actionCreators.saveThing(props.thingId, fields)),
+    }))(YourComponent)
+   Access to dispatch is provided to the factory so selectorFactories can bind actionCreators
+  outside of their selector as an optimization. Options passed to connectAdvanced are passed to
+  the selectorFactory, along with displayName and WrappedComponent, as the second argument.
+   Note that selectorFactory is responsible for all caching/memoization of inbound and outbound
+  props. Do not use connectAdvanced directly without memoizing results between calls to your
+  selector, otherwise the Connect component will re-render on every state or props change.
+*/
+selectorFactory) {
+  var _contextTypes, _childContextTypes;
+
+  var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
+      _ref$getDisplayName = _ref.getDisplayName,
+      getDisplayName = _ref$getDisplayName === undefined ? function (name) {
+    return 'ConnectAdvanced(' + name + ')';
+  } : _ref$getDisplayName,
+      _ref$methodName = _ref.methodName,
+      methodName = _ref$methodName === undefined ? 'connectAdvanced' : _ref$methodName,
+      _ref$renderCountProp = _ref.renderCountProp,
+      renderCountProp = _ref$renderCountProp === undefined ? undefined : _ref$renderCountProp,
+      _ref$shouldHandleStat = _ref.shouldHandleStateChanges,
+      shouldHandleStateChanges = _ref$shouldHandleStat === undefined ? true : _ref$shouldHandleStat,
+      _ref$storeKey = _ref.storeKey,
+      storeKey = _ref$storeKey === undefined ? 'store' : _ref$storeKey,
+      _ref$withRef = _ref.withRef,
+      withRef = _ref$withRef === undefined ? false : _ref$withRef,
+      connectOptions = _objectWithoutProperties(_ref, ['getDisplayName', 'methodName', 'renderCountProp', 'shouldHandleStateChanges', 'storeKey', 'withRef']);
+
+  var subscriptionKey = storeKey + 'Subscription';
+  var version = hotReloadingVersion++;
+
+  var contextTypes = (_contextTypes = {}, _contextTypes[storeKey] = __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__["a" /* storeShape */], _contextTypes[subscriptionKey] = __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__["b" /* subscriptionShape */], _contextTypes);
+  var childContextTypes = (_childContextTypes = {}, _childContextTypes[subscriptionKey] = __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__["b" /* subscriptionShape */], _childContextTypes);
+
+  return function wrapWithConnect(WrappedComponent) {
+    __WEBPACK_IMPORTED_MODULE_1_invariant___default()(typeof WrappedComponent == 'function', 'You must pass a component to the function returned by ' + ('connect. Instead received ' + JSON.stringify(WrappedComponent)));
+
+    var wrappedComponentName = WrappedComponent.displayName || WrappedComponent.name || 'Component';
+
+    var displayName = getDisplayName(wrappedComponentName);
+
+    var selectorFactoryOptions = _extends({}, connectOptions, {
+      getDisplayName: getDisplayName,
+      methodName: methodName,
+      renderCountProp: renderCountProp,
+      shouldHandleStateChanges: shouldHandleStateChanges,
+      storeKey: storeKey,
+      withRef: withRef,
+      displayName: displayName,
+      wrappedComponentName: wrappedComponentName,
+      WrappedComponent: WrappedComponent
+    });
+
+    var Connect = function (_Component) {
+      _inherits(Connect, _Component);
+
+      function Connect(props, context) {
+        _classCallCheck(this, Connect);
+
+        var _this = _possibleConstructorReturn(this, _Component.call(this, props, context));
+
+        _this.version = version;
+        _this.state = {};
+        _this.renderCount = 0;
+        _this.store = props[storeKey] || context[storeKey];
+        _this.propsMode = Boolean(props[storeKey]);
+        _this.setWrappedInstance = _this.setWrappedInstance.bind(_this);
+
+        __WEBPACK_IMPORTED_MODULE_1_invariant___default()(_this.store, 'Could not find "' + storeKey + '" in either the context or props of ' + ('"' + displayName + '". Either wrap the root component in a <Provider>, ') + ('or explicitly pass "' + storeKey + '" as a prop to "' + displayName + '".'));
+
+        _this.initSelector();
+        _this.initSubscription();
+        return _this;
+      }
+
+      Connect.prototype.getChildContext = function getChildContext() {
+        var _ref2;
+
+        // If this component received store from props, its subscription should be transparent
+        // to any descendants receiving store+subscription from context; it passes along
+        // subscription passed to it. Otherwise, it shadows the parent subscription, which allows
+        // Connect to control ordering of notifications to flow top-down.
+        var subscription = this.propsMode ? null : this.subscription;
+        return _ref2 = {}, _ref2[subscriptionKey] = subscription || this.context[subscriptionKey], _ref2;
+      };
+
+      Connect.prototype.componentDidMount = function componentDidMount() {
+        if (!shouldHandleStateChanges) return;
+
+        // componentWillMount fires during server side rendering, but componentDidMount and
+        // componentWillUnmount do not. Because of this, trySubscribe happens during ...didMount.
+        // Otherwise, unsubscription would never take place during SSR, causing a memory leak.
+        // To handle the case where a child component may have triggered a state change by
+        // dispatching an action in its componentWillMount, we have to re-run the select and maybe
+        // re-render.
+        this.subscription.trySubscribe();
+        this.selector.run(this.props);
+        if (this.selector.shouldComponentUpdate) this.forceUpdate();
+      };
+
+      Connect.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+        this.selector.run(nextProps);
+      };
+
+      Connect.prototype.shouldComponentUpdate = function shouldComponentUpdate() {
+        return this.selector.shouldComponentUpdate;
+      };
+
+      Connect.prototype.componentWillUnmount = function componentWillUnmount() {
+        if (this.subscription) this.subscription.tryUnsubscribe();
+        this.subscription = null;
+        this.notifyNestedSubs = noop;
+        this.store = null;
+        this.selector.run = noop;
+        this.selector.shouldComponentUpdate = false;
+      };
+
+      Connect.prototype.getWrappedInstance = function getWrappedInstance() {
+        __WEBPACK_IMPORTED_MODULE_1_invariant___default()(withRef, 'To access the wrapped instance, you need to specify ' + ('{ withRef: true } in the options argument of the ' + methodName + '() call.'));
+        return this.wrappedInstance;
+      };
+
+      Connect.prototype.setWrappedInstance = function setWrappedInstance(ref) {
+        this.wrappedInstance = ref;
+      };
+
+      Connect.prototype.initSelector = function initSelector() {
+        var sourceSelector = selectorFactory(this.store.dispatch, selectorFactoryOptions);
+        this.selector = makeSelectorStateful(sourceSelector, this.store);
+        this.selector.run(this.props);
+      };
+
+      Connect.prototype.initSubscription = function initSubscription() {
+        if (!shouldHandleStateChanges) return;
+
+        // parentSub's source should match where store came from: props vs. context. A component
+        // connected to the store via props shouldn't use subscription from context, or vice versa.
+        var parentSub = (this.propsMode ? this.props : this.context)[subscriptionKey];
+        this.subscription = new __WEBPACK_IMPORTED_MODULE_3__utils_Subscription__["a" /* default */](this.store, parentSub, this.onStateChange.bind(this));
+
+        // `notifyNestedSubs` is duplicated to handle the case where the component is  unmounted in
+        // the middle of the notification loop, where `this.subscription` will then be null. An
+        // extra null check every change can be avoided by copying the method onto `this` and then
+        // replacing it with a no-op on unmount. This can probably be avoided if Subscription's
+        // listeners logic is changed to not call listeners that have been unsubscribed in the
+        // middle of the notification loop.
+        this.notifyNestedSubs = this.subscription.notifyNestedSubs.bind(this.subscription);
+      };
+
+      Connect.prototype.onStateChange = function onStateChange() {
+        this.selector.run(this.props);
+
+        if (!this.selector.shouldComponentUpdate) {
+          this.notifyNestedSubs();
+        } else {
+          this.componentDidUpdate = this.notifyNestedSubsOnComponentDidUpdate;
+          this.setState(dummyState);
+        }
+      };
+
+      Connect.prototype.notifyNestedSubsOnComponentDidUpdate = function notifyNestedSubsOnComponentDidUpdate() {
+        // `componentDidUpdate` is conditionally implemented when `onStateChange` determines it
+        // needs to notify nested subs. Once called, it unimplements itself until further state
+        // changes occur. Doing it this way vs having a permanent `componentDidMount` that does
+        // a boolean check every time avoids an extra method call most of the time, resulting
+        // in some perf boost.
+        this.componentDidUpdate = undefined;
+        this.notifyNestedSubs();
+      };
+
+      Connect.prototype.isSubscribed = function isSubscribed() {
+        return Boolean(this.subscription) && this.subscription.isSubscribed();
+      };
+
+      Connect.prototype.addExtraProps = function addExtraProps(props) {
+        if (!withRef && !renderCountProp && !(this.propsMode && this.subscription)) return props;
+        // make a shallow copy so that fields added don't leak to the original selector.
+        // this is especially important for 'ref' since that's a reference back to the component
+        // instance. a singleton memoized selector would then be holding a reference to the
+        // instance, preventing the instance from being garbage collected, and that would be bad
+        var withExtras = _extends({}, props);
+        if (withRef) withExtras.ref = this.setWrappedInstance;
+        if (renderCountProp) withExtras[renderCountProp] = this.renderCount++;
+        if (this.propsMode && this.subscription) withExtras[subscriptionKey] = this.subscription;
+        return withExtras;
+      };
+
+      Connect.prototype.render = function render() {
+        var selector = this.selector;
+        selector.shouldComponentUpdate = false;
+
+        if (selector.error) {
+          throw selector.error;
+        } else {
+          return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2_react__["createElement"])(WrappedComponent, this.addExtraProps(selector.props));
+        }
+      };
+
+      return Connect;
+    }(__WEBPACK_IMPORTED_MODULE_2_react__["Component"]);
+
+    Connect.WrappedComponent = WrappedComponent;
+    Connect.displayName = displayName;
+    Connect.childContextTypes = childContextTypes;
+    Connect.contextTypes = contextTypes;
+    Connect.propTypes = contextTypes;
+
+    if (process.env.NODE_ENV !== 'production') {
+      Connect.prototype.componentWillUpdate = function componentWillUpdate() {
+        // We are hot reloading!
+        if (this.version !== version) {
+          this.version = version;
+          this.initSelector();
+
+          if (this.subscription) this.subscription.tryUnsubscribe();
+          this.initSubscription();
+          if (shouldHandleStateChanges) this.subscription.trySubscribe();
+        }
+      };
+    }
+
+    return __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics___default()(Connect, WrappedComponent);
+  };
+}
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
+
+/***/ }),
+/* 245 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(247);
+/* harmony export (immutable) */ __webpack_exports__["b"] = wrapMapToPropsConstant;
+/* unused harmony export getDependsOnOwnProps */
+/* harmony export (immutable) */ __webpack_exports__["a"] = wrapMapToPropsFunc;
+
+
+function wrapMapToPropsConstant(getConstant) {
+  return function initConstantSelector(dispatch, options) {
+    var constant = getConstant(dispatch, options);
+
+    function constantSelector() {
+      return constant;
+    }
+    constantSelector.dependsOnOwnProps = false;
+    return constantSelector;
+  };
+}
+
+// dependsOnOwnProps is used by createMapToPropsProxy to determine whether to pass props as args
+// to the mapToProps function being wrapped. It is also used by makePurePropsSelector to determine
+// whether mapToProps needs to be invoked when props have changed.
+// 
+// A length of one signals that mapToProps does not depend on props from the parent component.
+// A length of zero is assumed to mean mapToProps is getting args via arguments or ...args and
+// therefore not reporting its length accurately..
+function getDependsOnOwnProps(mapToProps) {
+  return mapToProps.dependsOnOwnProps !== null && mapToProps.dependsOnOwnProps !== undefined ? Boolean(mapToProps.dependsOnOwnProps) : mapToProps.length !== 1;
+}
+
+// Used by whenMapStateToPropsIsFunction and whenMapDispatchToPropsIsFunction,
+// this function wraps mapToProps in a proxy function which does several things:
+// 
+//  * Detects whether the mapToProps function being called depends on props, which
+//    is used by selectorFactory to decide if it should reinvoke on props changes.
+//    
+//  * On first call, handles mapToProps if returns another function, and treats that
+//    new function as the true mapToProps for subsequent calls.
+//    
+//  * On first call, verifies the first result is a plain object, in order to warn
+//    the developer that their mapToProps function is not returning a valid result.
+//    
+function wrapMapToPropsFunc(mapToProps, methodName) {
+  return function initProxySelector(dispatch, _ref) {
+    var displayName = _ref.displayName;
+
+    var proxy = function mapToPropsProxy(stateOrDispatch, ownProps) {
+      return proxy.dependsOnOwnProps ? proxy.mapToProps(stateOrDispatch, ownProps) : proxy.mapToProps(stateOrDispatch);
+    };
+
+    // allow detectFactoryAndVerify to get ownProps
+    proxy.dependsOnOwnProps = true;
+
+    proxy.mapToProps = function detectFactoryAndVerify(stateOrDispatch, ownProps) {
+      proxy.mapToProps = mapToProps;
+      proxy.dependsOnOwnProps = getDependsOnOwnProps(mapToProps);
+      var props = proxy(stateOrDispatch, ownProps);
+
+      if (typeof props === 'function') {
+        proxy.mapToProps = props;
+        proxy.dependsOnOwnProps = getDependsOnOwnProps(props);
+        props = proxy(stateOrDispatch, ownProps);
+      }
+
+      if (process.env.NODE_ENV !== 'production') __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__["a" /* default */])(props, displayName, methodName);
+
+      return props;
+    };
+
+    return proxy;
+  };
+}
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
+
+/***/ }),
+/* 246 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return subscriptionShape; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return storeShape; });
+
+
+var subscriptionShape = __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].shape({
+  trySubscribe: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].func.isRequired,
+  tryUnsubscribe: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].func.isRequired,
+  notifyNestedSubs: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].func.isRequired,
+  isSubscribed: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].func.isRequired
+});
+
+var storeShape = __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].shape({
+  subscribe: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].func.isRequired,
+  dispatch: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].func.isRequired,
+  getState: __WEBPACK_IMPORTED_MODULE_0_react__["PropTypes"].func.isRequired
+});
+
+/***/ }),
+/* 247 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__warning__ = __webpack_require__(212);
+/* harmony export (immutable) */ __webpack_exports__["a"] = verifyPlainObject;
+
+
+
+function verifyPlainObject(value, displayName, methodName) {
+  if (!__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__["a" /* default */])(value)) {
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__warning__["a" /* default */])(methodName + '() in ' + displayName + ' must return a plain object. Instead received ' + value + '.');
+  }
+}
+
+/***/ }),
+/* 248 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = compose;
+/**
+ * Composes single-argument functions from right to left. The rightmost
+ * function can take multiple arguments as it provides the signature for
+ * the resulting composite function.
+ *
+ * @param {...Function} funcs The functions to compose.
+ * @returns {Function} A function obtained by composing the argument functions
+ * from right to left. For example, compose(f, g, h) is identical to doing
+ * (...args) => f(g(h(...args))).
+ */
+
+function compose() {
+  for (var _len = arguments.length, funcs = Array(_len), _key = 0; _key < _len; _key++) {
+    funcs[_key] = arguments[_key];
+  }
+
+  if (funcs.length === 0) {
+    return function (arg) {
+      return arg;
+    };
+  }
+
+  if (funcs.length === 1) {
+    return funcs[0];
+  }
+
+  var last = funcs[funcs.length - 1];
+  var rest = funcs.slice(0, -1);
+  return function () {
+    return rest.reduceRight(function (composed, f) {
+      return f(composed);
+    }, last.apply(undefined, arguments));
+  };
+}
+
+/***/ }),
+/* 249 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_symbol_observable__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ActionTypes; });
+/* harmony export (immutable) */ __webpack_exports__["a"] = createStore;
+
+
+
+/**
+ * These are private action types reserved by Redux.
+ * For any unknown actions, you must return the current state.
+ * If the current state is undefined, you must return the initial state.
+ * Do not reference these action types directly in your code.
+ */
+var ActionTypes = {
+  INIT: '@@redux/INIT'
+};
+
+/**
+ * Creates a Redux store that holds the state tree.
+ * The only way to change the data in the store is to call `dispatch()` on it.
+ *
+ * There should only be a single store in your app. To specify how different
+ * parts of the state tree respond to actions, you may combine several reducers
+ * into a single reducer function by using `combineReducers`.
+ *
+ * @param {Function} reducer A function that returns the next state tree, given
+ * the current state tree and the action to handle.
+ *
+ * @param {any} [preloadedState] The initial state. You may optionally specify it
+ * to hydrate the state from the server in universal apps, or to restore a
+ * previously serialized user session.
+ * If you use `combineReducers` to produce the root reducer function, this must be
+ * an object with the same shape as `combineReducers` keys.
+ *
+ * @param {Function} enhancer The store enhancer. You may optionally specify it
+ * to enhance the store with third-party capabilities such as middleware,
+ * time travel, persistence, etc. The only store enhancer that ships with Redux
+ * is `applyMiddleware()`.
+ *
+ * @returns {Store} A Redux store that lets you read the state, dispatch actions
+ * and subscribe to changes.
+ */
+function createStore(reducer, preloadedState, enhancer) {
+  var _ref2;
+
+  if (typeof preloadedState === 'function' && typeof enhancer === 'undefined') {
+    enhancer = preloadedState;
+    preloadedState = undefined;
+  }
+
+  if (typeof enhancer !== 'undefined') {
+    if (typeof enhancer !== 'function') {
+      throw new Error('Expected the enhancer to be a function.');
+    }
+
+    return enhancer(createStore)(reducer, preloadedState);
+  }
+
+  if (typeof reducer !== 'function') {
+    throw new Error('Expected the reducer to be a function.');
+  }
+
+  var currentReducer = reducer;
+  var currentState = preloadedState;
+  var currentListeners = [];
+  var nextListeners = currentListeners;
+  var isDispatching = false;
+
+  function ensureCanMutateNextListeners() {
+    if (nextListeners === currentListeners) {
+      nextListeners = currentListeners.slice();
+    }
+  }
+
+  /**
+   * Reads the state tree managed by the store.
+   *
+   * @returns {any} The current state tree of your application.
+   */
+  function getState() {
+    return currentState;
+  }
+
+  /**
+   * Adds a change listener. It will be called any time an action is dispatched,
+   * and some part of the state tree may potentially have changed. You may then
+   * call `getState()` to read the current state tree inside the callback.
+   *
+   * You may call `dispatch()` from a change listener, with the following
+   * caveats:
+   *
+   * 1. The subscriptions are snapshotted just before every `dispatch()` call.
+   * If you subscribe or unsubscribe while the listeners are being invoked, this
+   * will not have any effect on the `dispatch()` that is currently in progress.
+   * However, the next `dispatch()` call, whether nested or not, will use a more
+   * recent snapshot of the subscription list.
+   *
+   * 2. The listener should not expect to see all state changes, as the state
+   * might have been updated multiple times during a nested `dispatch()` before
+   * the listener is called. It is, however, guaranteed that all subscribers
+   * registered before the `dispatch()` started will be called with the latest
+   * state by the time it exits.
+   *
+   * @param {Function} listener A callback to be invoked on every dispatch.
+   * @returns {Function} A function to remove this change listener.
+   */
+  function subscribe(listener) {
+    if (typeof listener !== 'function') {
+      throw new Error('Expected listener to be a function.');
+    }
+
+    var isSubscribed = true;
+
+    ensureCanMutateNextListeners();
+    nextListeners.push(listener);
+
+    return function unsubscribe() {
+      if (!isSubscribed) {
+        return;
+      }
+
+      isSubscribed = false;
+
+      ensureCanMutateNextListeners();
+      var index = nextListeners.indexOf(listener);
+      nextListeners.splice(index, 1);
+    };
+  }
+
+  /**
+   * Dispatches an action. It is the only way to trigger a state change.
+   *
+   * The `reducer` function, used to create the store, will be called with the
+   * current state tree and the given `action`. Its return value will
+   * be considered the **next** state of the tree, and the change listeners
+   * will be notified.
+   *
+   * The base implementation only supports plain object actions. If you want to
+   * dispatch a Promise, an Observable, a thunk, or something else, you need to
+   * wrap your store creating function into the corresponding middleware. For
+   * example, see the documentation for the `redux-thunk` package. Even the
+   * middleware will eventually dispatch plain object actions using this method.
+   *
+   * @param {Object} action A plain object representing “what changed”. It is
+   * a good idea to keep actions serializable so you can record and replay user
+   * sessions, or use the time travelling `redux-devtools`. An action must have
+   * a `type` property which may not be `undefined`. It is a good idea to use
+   * string constants for action types.
+   *
+   * @returns {Object} For convenience, the same action object you dispatched.
+   *
+   * Note that, if you use a custom middleware, it may wrap `dispatch()` to
+   * return something else (for example, a Promise you can await).
+   */
+  function dispatch(action) {
+    if (!__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__["a" /* default */])(action)) {
+      throw new Error('Actions must be plain objects. ' + 'Use custom middleware for async actions.');
+    }
+
+    if (typeof action.type === 'undefined') {
+      throw new Error('Actions may not have an undefined "type" property. ' + 'Have you misspelled a constant?');
+    }
+
+    if (isDispatching) {
+      throw new Error('Reducers may not dispatch actions.');
+    }
+
+    try {
+      isDispatching = true;
+      currentState = currentReducer(currentState, action);
+    } finally {
+      isDispatching = false;
+    }
+
+    var listeners = currentListeners = nextListeners;
+    for (var i = 0; i < listeners.length; i++) {
+      listeners[i]();
+    }
+
+    return action;
+  }
+
+  /**
+   * Replaces the reducer currently used by the store to calculate the state.
+   *
+   * You might need this if your app implements code splitting and you want to
+   * load some of the reducers dynamically. You might also need this if you
+   * implement a hot reloading mechanism for Redux.
+   *
+   * @param {Function} nextReducer The reducer for the store to use instead.
+   * @returns {void}
+   */
+  function replaceReducer(nextReducer) {
+    if (typeof nextReducer !== 'function') {
+      throw new Error('Expected the nextReducer to be a function.');
+    }
+
+    currentReducer = nextReducer;
+    dispatch({ type: ActionTypes.INIT });
+  }
+
+  /**
+   * Interoperability point for observable/reactive libraries.
+   * @returns {observable} A minimal observable of state changes.
+   * For more information, see the observable proposal:
+   * https://github.com/zenparsing/es-observable
+   */
+  function observable() {
+    var _ref;
+
+    var outerSubscribe = subscribe;
+    return _ref = {
+      /**
+       * The minimal observable subscription method.
+       * @param {Object} observer Any object that can be used as an observer.
+       * The observer object should have a `next` method.
+       * @returns {subscription} An object with an `unsubscribe` method that can
+       * be used to unsubscribe the observable from the store, and prevent further
+       * emission of values from the observable.
+       */
+      subscribe: function subscribe(observer) {
+        if (typeof observer !== 'object') {
+          throw new TypeError('Expected the observer to be an object.');
+        }
+
+        function observeState() {
+          if (observer.next) {
+            observer.next(getState());
+          }
+        }
+
+        observeState();
+        var unsubscribe = outerSubscribe(observeState);
+        return { unsubscribe: unsubscribe };
+      }
+    }, _ref[__WEBPACK_IMPORTED_MODULE_1_symbol_observable___default.a] = function () {
+      return this;
+    }, _ref;
+  }
+
+  // When a store is created, an "INIT" action is dispatched so that every
+  // reducer returns their initial state. This effectively populates
+  // the initial state tree.
+  dispatch({ type: ActionTypes.INIT });
+
+  return _ref2 = {
+    dispatch: dispatch,
+    subscribe: subscribe,
+    getState: getState,
+    replaceReducer: replaceReducer
+  }, _ref2[__WEBPACK_IMPORTED_MODULE_1_symbol_observable___default.a] = observable, _ref2;
+}
+
+/***/ }),
+/* 250 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = warning;
+/**
+ * Prints a warning in the console if it exists.
+ *
+ * @param {String} message The warning message.
+ * @returns {void}
+ */
+function warning(message) {
+  /* eslint-disable no-console */
+  if (typeof console !== 'undefined' && typeof console.error === 'function') {
+    console.error(message);
+  }
+  /* eslint-enable no-console */
+  try {
+    // This error was thrown as a convenience so that if you enable
+    // "break on all exceptions" in your console,
+    // it would pause the execution at this line.
+    throw new Error(message);
+    /* eslint-disable no-empty */
+  } catch (e) {}
+  /* eslint-enable no-empty */
+}
+
+/***/ }),
+/* 251 */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+/* 252 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _MainRouter = __webpack_require__(263);
+
+var _MainRouter2 = _interopRequireDefault(_MainRouter);
+
+var _Footer = __webpack_require__(115);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * 整个应用的父组件，包括了导航条，主体内容和脚注
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+
+
+var App = function (_React$Component) {
+  _inherits(App, _React$Component);
+
+  function App() {
+    _classCallCheck(this, App);
+
+    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+  }
+
+  _createClass(App, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(_MainRouter2.default, null);
+    }
+  }]);
+
+  return App;
+}(_react2.default.Component);
+
+exports.default = App;
+
+/***/ }),
+/* 253 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(278);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
+
+
+
+
+
+
+/***/ }),
+/* 254 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(114);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _redux = __webpack_require__(241);
+
+var _reactRedux = __webpack_require__(253);
+
+var _App = __webpack_require__(252);
+
+var _App2 = _interopRequireDefault(_App);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+__webpack_require__(112); /**
+                              * 程序主入口，包括引用，渲染组件。
+                              */
+
+__webpack_require__(113);
+
+var render = function render() {
+  _reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('app'));
+};
+
+render();
+
+/***/ }),
+/* 255 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(34);
+
+var _jquery = __webpack_require__(242);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _SubNavigation = __webpack_require__(118);
+
+var _SubNavigation2 = _interopRequireDefault(_SubNavigation);
+
+var _Global = __webpack_require__(43);
+
+var _Global2 = _interopRequireDefault(_Global);
+
+var _utils = __webpack_require__(44);
+
+var _Footer = __webpack_require__(115);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
+var _BackToTop = __webpack_require__(117);
+
+var _BackToTop2 = _interopRequireDefault(_BackToTop);
+
+var _LoadMore = __webpack_require__(261);
+
+var _LoadMore2 = _interopRequireDefault(_LoadMore);
+
+var _book = __webpack_require__(293);
+
+var _book2 = _interopRequireDefault(_book);
+
+var _book3 = __webpack_require__(294);
+
+var _book4 = _interopRequireDefault(_book3);
+
+var _book5 = __webpack_require__(295);
+
+var _book6 = _interopRequireDefault(_book5);
+
+var _book7 = __webpack_require__(296);
+
+var _book8 = _interopRequireDefault(_book7);
+
+var _book9 = __webpack_require__(297);
+
+var _book10 = _interopRequireDefault(_book9);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var data = [_book2.default, _book4.default, _book6.default, _book8.default, _book10.default];
+
+var Book = function (_React$Component) {
+  _inherits(Book, _React$Component);
+
+  function Book(props) {
+    _classCallCheck(this, Book);
+
+    var _this = _possibleConstructorReturn(this, (Book.__proto__ || Object.getPrototypeOf(Book)).call(this, props));
+
+    _this.loadMoreTop = 0;
+    _this.start = 0;
+    _this.state = {
+      books: []
+    };
+    return _this;
+  }
+
+  _createClass(Book, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      this.initBooks();
+    }
+  }, {
+    key: 'componentWillReceiveProps',
+    value: function componentWillReceiveProps(nextProps) {
+      this.initBooks();
+      this.initLoadMore();
+    }
+  }, {
+    key: 'initBooks',
+    value: function initBooks() {
+      var category = this.props.params.category;
+      for (var i = 0; i < _Global2.default.BOOK_CATEGORY.length; i++) {
+        var item = _Global2.default.BOOK_CATEGORY[i];
+        if (item.category == category) {
+          // fetchData(item.baseURL, {}, (data) => {
+          //   console.log(data);
+          //   this.setState({
+          //     books: data.books
+          //   })
+          // });
+          this.setState({
+            books: data[i].books
+          });
+        }
+      }
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.initLoadMore();
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate(prevProps, prevState) {
+      this.loadMoreTop = (0, _jquery2.default)('#loadMore').offset().top;
+    }
+  }, {
+    key: 'initLoadMore',
+    value: function initLoadMore() {
+      var _this2 = this;
+
+      var that = this;
+      var height = (0, _jquery2.default)(window).height();
+      var isLoadMore = true;
+      (0, _jquery2.default)(window).on('scroll', function (e) {
+        if (isLoadMore) {
+          if (_this2.loadMoreTop - (0, _jquery2.default)(window).scrollTop() <= height) {
+            isLoadMore = false;
+            setTimeout(function () {
+              // fetchData(Global.BOOK_CATEGORY[0].baseURL, {}, (data) => {
+              //   let arr = that.state.books;
+              //   arr.push(...data.books);
+              //   this.setState({
+              //     books: arr
+              //   })
+              // });
+              var arr = that.state.books;
+              // arr.push(...book1.books);
+              arr.push(_book2.default.books[_this2.start++ % 4]);
+              _this2.setState({
+                books: arr
+              });
+              isLoadMore = true;
+            }, 1000);
+          }
+        }
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'container' },
+        _react2.default.createElement(
+          'div',
+          { className: 'row' },
+          _react2.default.createElement(_SubNavigation2.default, { category: _Global2.default.BOOK, list: _Global2.default.BOOK_CATEGORY }),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-xs-12 col-sm-9 col-sm-offset-2 col-md-8 col-md-offset-1 list-content' },
+            _react2.default.createElement(
+              'ul',
+              null,
+              this.state.books.map(function (item, index) {
+                var tags = '';
+                for (var i = 0; i < item.tags.length; i++) {
+                  tags += item.tags[i].name + ' ';
+                }
+                return _react2.default.createElement(
+                  'li',
+                  { key: index, className: 'list-item' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'media' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'media-left' },
+                      _react2.default.createElement(
+                        _reactRouter.Link,
+                        { to: '/book_details/' + item.id },
+                        _react2.default.createElement('img', { className: 'media-object dd', src: item.image, alt: item.title })
+                      )
+                    ),
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'media-body item-body' },
+                      _react2.default.createElement(
+                        _reactRouter.Link,
+                        { to: '/book_details/' + item.id, className: 'title' },
+                        item.title
+                      ),
+                      _react2.default.createElement(
+                        'p',
+                        { className: 'ellipsis' },
+                        '\u6807\u7B7E:',
+                        tags
+                      ),
+                      _react2.default.createElement(
+                        'p',
+                        null,
+                        '\u4F5C\u8005:',
+                        item.author
+                      ),
+                      _react2.default.createElement(
+                        'p',
+                        null,
+                        '\u51FA\u7248\u793E:',
+                        item.publisher
+                      )
+                    )
+                  )
+                );
+              })
+            ),
+            _react2.default.createElement(_LoadMore2.default, null)
+          ),
+          _react2.default.createElement(_Footer2.default, null),
+          _react2.default.createElement(_BackToTop2.default, null)
+        )
+      );
+    }
+  }]);
+
+  return Book;
+}(_react2.default.Component);
+
+exports.default = Book;
+
+/***/ }),
+/* 256 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _utils = __webpack_require__(44);
+
+var _Global = __webpack_require__(43);
+
+var _Global2 = _interopRequireDefault(_Global);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var BookDetails = function (_React$Component) {
+  _inherits(BookDetails, _React$Component);
+
+  function BookDetails(props) {
+    _classCallCheck(this, BookDetails);
+
+    var _this = _possibleConstructorReturn(this, (BookDetails.__proto__ || Object.getPrototypeOf(BookDetails)).call(this, props));
+
+    _this.state = {
+      book: {
+        rating: {
+          numRaters: 0
+        },
+        title: '',
+        images: {
+          large: ''
+        },
+        author: [],
+        tags: []
+      }
+    };
+    return _this;
+  }
+
+  _createClass(BookDetails, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      var that = this;
+      var id = this.props.params.id;
+      var url = _Global2.default.BOOK_DETAILS_BASE_URL + id;
+      (0, _utils.fetchData)(url, {}, function (data) {
+        console.log(data);
+        that.setState({
+          book: data
+        });
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var book = this.state.book;
+      var author = '';
+      for (var i = 0; i < book.author.length; i++) {
+        author += book.author[i] + ' ';
+      }
+      var tags = '';
+      for (var _i = 0; _i < book.tags.length; _i++) {
+        tags += book.tags[_i].name + ' ';
+      }
+      return _react2.default.createElement(
+        'div',
+        { className: 'container details' },
+        _react2.default.createElement(
+          'div',
+          { className: 'details-jumbotron' },
+          _react2.default.createElement(
+            'div',
+            { className: 'media' },
+            _react2.default.createElement(
+              'div',
+              { className: 'media-left' },
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                _react2.default.createElement('img', { className: 'media-object', src: book.images.large, alt: book.title })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'media-body' },
+              _react2.default.createElement(
+                'span',
+                { className: 'badge badge-details' },
+                _react2.default.createElement('span', { className: 'glyphicon glyphicon-thumbs-up', 'aria-hidden': 'true' }),
+                _react2.default.createElement(
+                  'span',
+                  { title: '\u6536\u85CF\u6570' },
+                  '\xA0',
+                  book.rating.numRaters
+                )
+              ),
+              _react2.default.createElement(
+                'h1',
+                null,
+                book.title
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-bold' },
+                  '\u6807\u7B7E\uFF1A'
+                ),
+                tags
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-bold' },
+                  '\u4F5C\u8005\uFF1A'
+                ),
+                author
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-bold' },
+                  '\u51FA\u7248\u65E5\u671F\uFF1A'
+                ),
+                book.pubdate
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-bold' },
+                  '\u603B\u9875\u6570\uFF1A'
+                ),
+                book.pages
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-bold' },
+                  '\u552E\u4EF7\uFF1A'
+                ),
+                book.price
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-bold' },
+                  '\u51FA\u7248\u793E\uFF1A'
+                ),
+                book.publisher
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-bold' },
+                  '\u6458\u8981\uFF1A'
+                ),
+                book.summary
+              ),
+              _react2.default.createElement(
+                'button',
+                { className: 'btn btn-focus btn-lg' },
+                '\u5173\xA0\xA0\u6CE8'
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return BookDetails;
+}(_react2.default.Component);
+
+exports.default = BookDetails;
+
+/***/ }),
+/* 257 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Category = function (_React$Component) {
+  _inherits(Category, _React$Component);
+
+  function Category() {
+    _classCallCheck(this, Category);
+
+    return _possibleConstructorReturn(this, (Category.__proto__ || Object.getPrototypeOf(Category)).apply(this, arguments));
+  }
+
+  _createClass(Category, [{
+    key: 'render',
+    value: function render() {
+      var category = this.props.params.category;
+    }
+  }]);
+
+  return Category;
+}(_react2.default.Component);
+
+exports.default = Category;
+
+/***/ }),
+/* 258 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(34);
+
+var _SubNavigation = __webpack_require__(118);
+
+var _SubNavigation2 = _interopRequireDefault(_SubNavigation);
+
+var _Global = __webpack_require__(43);
+
+var _Global2 = _interopRequireDefault(_Global);
+
+var _utils = __webpack_require__(44);
+
+var _Footer = __webpack_require__(115);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
+var _BackToTop = __webpack_require__(117);
+
+var _BackToTop2 = _interopRequireDefault(_BackToTop);
+
+var _film = __webpack_require__(298);
+
+var _film2 = _interopRequireDefault(_film);
+
+var _film3 = __webpack_require__(299);
+
+var _film4 = _interopRequireDefault(_film3);
+
+var _film5 = __webpack_require__(300);
+
+var _film6 = _interopRequireDefault(_film5);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var data = [_film2.default, _film4.default, _film6.default];
+
+var Film = function (_React$Component) {
+  _inherits(Film, _React$Component);
+
+  function Film(props) {
+    _classCallCheck(this, Film);
+
+    var _this = _possibleConstructorReturn(this, (Film.__proto__ || Object.getPrototypeOf(Film)).call(this, props));
+
+    _this.state = {
+      films: []
+    };
+    return _this;
+  }
+
+  _createClass(Film, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      this.initFilms();
+    }
+  }, {
+    key: 'componentWillReceiveProps',
+    value: function componentWillReceiveProps() {
+      this.initFilms();
+    }
+  }, {
+    key: 'initFilms',
+    value: function initFilms() {
+      var category = this.props.params.category;
+      for (var i = 0; i < _Global2.default.FILM_CATEGORY.length; i++) {
+        var item = _Global2.default.FILM_CATEGORY[i];
+        if (item.category == category) {
+          // fetchData(item.baseURL, {}, (data) => {
+          //   console.log(data);
+          //   this.setState({
+          //     films: data.subjects
+          //   })
+          // });
+          this.setState({
+            films: data[i].subjects
+          });
+        }
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'container' },
+        _react2.default.createElement(
+          'div',
+          { className: 'row' },
+          _react2.default.createElement(_SubNavigation2.default, { category: _Global2.default.FILM, list: _Global2.default.FILM_CATEGORY }),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-xs-12 col-sm-9 col-sm-offset-2 col-md-8 col-md-offset-1 list-content' },
+            _react2.default.createElement(
+              'ul',
+              null,
+              this.state.films.map(function (item, index) {
+                var casts = '';
+                for (var i = 0; i < item.casts.length; i++) {
+                  casts += item.casts[i].name + ' ';
+                }
+                var directors = '';
+                for (var _i = 0; _i < item.directors.length; _i++) {
+                  directors += item.directors[_i].name + ' ';
+                }
+                return _react2.default.createElement(
+                  'li',
+                  { key: index, className: 'list-item' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'media' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'media-left' },
+                      _react2.default.createElement(
+                        _reactRouter.Link,
+                        { to: '/film_details/' + item.id },
+                        _react2.default.createElement('img', { className: 'media-object dd', src: item.images.small, alt: item.title })
+                      )
+                    ),
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'media-body item-body' },
+                      _react2.default.createElement(
+                        _reactRouter.Link,
+                        { to: '/film_details/' + item.id, className: 'title' },
+                        item.title
+                      ),
+                      _react2.default.createElement(
+                        'p',
+                        { className: 'ellipsis' },
+                        '\u5E74\u4EFD:',
+                        item.year
+                      ),
+                      _react2.default.createElement(
+                        'p',
+                        null,
+                        '\u6F14\u5458:',
+                        casts
+                      ),
+                      _react2.default.createElement(
+                        'p',
+                        null,
+                        '\u5BFC\u6F14:',
+                        directors
+                      )
+                    )
+                  )
+                );
+              })
+            )
+          ),
+          _react2.default.createElement(_Footer2.default, null),
+          _react2.default.createElement(_BackToTop2.default, null)
+        )
+      );
+    }
+  }]);
+
+  return Film;
+}(_react2.default.Component);
+
+exports.default = Film;
+
+/***/ }),
+/* 259 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _utils = __webpack_require__(44);
+
+var _Global = __webpack_require__(43);
+
+var _Global2 = _interopRequireDefault(_Global);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var FilmDetails = function (_React$Component) {
+  _inherits(FilmDetails, _React$Component);
+
+  function FilmDetails(props) {
+    _classCallCheck(this, FilmDetails);
+
+    var _this = _possibleConstructorReturn(this, (FilmDetails.__proto__ || Object.getPrototypeOf(FilmDetails)).call(this, props));
+
+    _this.state = {
+      film: {
+        reviews_count: 0,
+        wish_count: 0,
+        year: '',
+        images: { large: '' },
+        title: '',
+        countries: [],
+        genres: [],
+        casts: [],
+        summary: '',
+        directors: [{ name: '' }],
+        ratings_count: 0
+      }
+    };
+    return _this;
+  }
+
+  _createClass(FilmDetails, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      var that = this;
+      var id = this.props.params.id;
+      var url = _Global2.default.FILM_DETAILS_BASE_URL + id;
+      (0, _utils.fetchData)(url, {}, function (data) {
+        console.log(data);
+        that.setState({
+          film: data
+        });
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var film = this.state.film;
+      var casts = '';
+      for (var i = 0; i < film.casts.length; i++) {
+        casts += film.casts[i].name + ' ';
+      }
+      var genres = '';
+      for (var _i = 0; _i < film.genres.length; _i++) {
+        genres += film.genres[_i] + ' ';
+      }
+      return _react2.default.createElement(
+        'div',
+        { className: 'container details' },
+        _react2.default.createElement(
+          'div',
+          { className: 'details-jumbotron' },
+          _react2.default.createElement(
+            'div',
+            { className: 'media' },
+            _react2.default.createElement(
+              'div',
+              { className: 'media-left' },
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                _react2.default.createElement('img', { className: 'media-object', src: film.images.large, alt: film.title })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'media-body' },
+              _react2.default.createElement(
+                'span',
+                { className: 'badge badge-details' },
+                _react2.default.createElement('span', { className: 'glyphicon glyphicon-thumbs-up', 'aria-hidden': 'true' }),
+                _react2.default.createElement(
+                  'span',
+                  { title: '\u6536\u85CF\u6570' },
+                  '\xA0',
+                  film.ratings_count
+                )
+              ),
+              _react2.default.createElement(
+                'h1',
+                null,
+                film.title
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-bold' },
+                  '\u5BFC\u6F14\uFF1A'
+                ),
+                film.directors[0].name
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-bold' },
+                  '\u6F14\u5458\uFF1A'
+                ),
+                casts
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-bold' },
+                  '\u4E0A\u6620\u65E5\u671F\uFF1A'
+                ),
+                film.year
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-bold' },
+                  '\u7C7B\u578B\uFF1A'
+                ),
+                genres
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-bold' },
+                  '\u6458\u8981\uFF1A'
+                ),
+                film.summary
+              ),
+              _react2.default.createElement(
+                'button',
+                { className: 'btn btn-focus btn-lg' },
+                '\u5173\xA0\xA0\u6CE8'
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return FilmDetails;
+}(_react2.default.Component);
+
+exports.default = FilmDetails;
+
+/***/ }),
+/* 260 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Home = function (_React$Component) {
+  _inherits(Home, _React$Component);
+
+  function Home() {
+    _classCallCheck(this, Home);
+
+    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+  }
+
+  _createClass(Home, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        { className: "container" },
+        _react2.default.createElement(
+          "h1",
+          null,
+          "Home"
+        )
+      );
+    }
+  }]);
+
+  return Home;
+}(_react2.default.Component);
+
+exports.default = Home;
+
+/***/ }),
+/* 261 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var LoadMore = function (_React$Component) {
+  _inherits(LoadMore, _React$Component);
+
+  function LoadMore() {
+    _classCallCheck(this, LoadMore);
+
+    return _possibleConstructorReturn(this, (LoadMore.__proto__ || Object.getPrototypeOf(LoadMore)).apply(this, arguments));
+  }
+
+  _createClass(LoadMore, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        { id: "loadMore" },
+        _react2.default.createElement(
+          "div",
+          { className: "spinner" },
+          _react2.default.createElement("div", { className: "rect1" }),
+          _react2.default.createElement("div", { className: "rect2" }),
+          _react2.default.createElement("div", { className: "rect3" }),
+          _react2.default.createElement("div", { className: "rect4" }),
+          _react2.default.createElement("div", { className: "rect5" })
+        )
+      );
+    }
+  }]);
+
+  return LoadMore;
+}(_react2.default.Component);
+
+exports.default = LoadMore;
+
+/***/ }),
+/* 262 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Navigation = __webpack_require__(266);
+
+var _Navigation2 = _interopRequireDefault(_Navigation);
+
+var _reactRouter = __webpack_require__(34);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * 路由入口组件
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * 包括了导航栏组件和主体组件
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+
+var Main = function (_React$Component) {
+  _inherits(Main, _React$Component);
+
+  function Main() {
+    _classCallCheck(this, Main);
+
+    return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
+  }
+
+  _createClass(Main, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(_Navigation2.default, null),
+        this.props.children
+      );
+    }
+  }]);
+
+  return Main;
+}(_react2.default.Component);
+
+exports.default = Main;
+
+/***/ }),
+/* 263 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(34);
+
+var _Main = __webpack_require__(262);
+
+var _Main2 = _interopRequireDefault(_Main);
+
+var _Home = __webpack_require__(260);
+
+var _Home2 = _interopRequireDefault(_Home);
+
+var _Book = __webpack_require__(255);
+
+var _Book2 = _interopRequireDefault(_Book);
+
+var _Music = __webpack_require__(264);
+
+var _Music2 = _interopRequireDefault(_Music);
+
+var _Film = __webpack_require__(258);
+
+var _Film2 = _interopRequireDefault(_Film);
+
+var _Category = __webpack_require__(257);
+
+var _Category2 = _interopRequireDefault(_Category);
+
+var _Search = __webpack_require__(267);
+
+var _Search2 = _interopRequireDefault(_Search);
+
+var _BookDetails = __webpack_require__(256);
+
+var _BookDetails2 = _interopRequireDefault(_BookDetails);
+
+var _MusicDetails = __webpack_require__(265);
+
+var _MusicDetails2 = _interopRequireDefault(_MusicDetails);
+
+var _FilmDetails = __webpack_require__(259);
+
+var _FilmDetails2 = _interopRequireDefault(_FilmDetails);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * 路由
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+
+
+var MainRouter = function (_React$Component) {
+  _inherits(MainRouter, _React$Component);
+
+  function MainRouter() {
+    _classCallCheck(this, MainRouter);
+
+    return _possibleConstructorReturn(this, (MainRouter.__proto__ || Object.getPrototypeOf(MainRouter)).apply(this, arguments));
+  }
+
+  _createClass(MainRouter, [{
+    key: 'render',
+    value: function render() {
+      var routes = _react2.default.createElement(
+        _reactRouter.Route,
+        { path: '/', component: _Main2.default },
+        _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'book(/:category)', component: _Book2.default }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'music(/:category)', component: _Music2.default }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'film(/:category)', component: _Film2.default }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'book_details/:id', component: _BookDetails2.default, onEnter: function onEnter(nextState, replace) {
+            console.log(nextState);
+          } }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'music_details/:id', component: _MusicDetails2.default }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'film_details/:id', component: _FilmDetails2.default }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'search/:key', component: _Search2.default })
+      );
+      return _react2.default.createElement(_reactRouter.Router, { routes: routes, history: _reactRouter.hashHistory });
+    }
+  }]);
+
+  return MainRouter;
+}(_react2.default.Component);
+
+exports.default = MainRouter;
+
+/***/ }),
+/* 264 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(34);
+
+var _SubNavigation = __webpack_require__(118);
+
+var _SubNavigation2 = _interopRequireDefault(_SubNavigation);
+
+var _Global = __webpack_require__(43);
+
+var _Global2 = _interopRequireDefault(_Global);
+
+var _utils = __webpack_require__(44);
+
+var _Footer = __webpack_require__(115);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
+var _BackToTop = __webpack_require__(117);
+
+var _BackToTop2 = _interopRequireDefault(_BackToTop);
+
+var _music = __webpack_require__(301);
+
+var _music2 = _interopRequireDefault(_music);
+
+var _music3 = __webpack_require__(302);
+
+var _music4 = _interopRequireDefault(_music3);
+
+var _music5 = __webpack_require__(303);
+
+var _music6 = _interopRequireDefault(_music5);
+
+var _music7 = __webpack_require__(304);
+
+var _music8 = _interopRequireDefault(_music7);
+
+var _music9 = __webpack_require__(305);
+
+var _music10 = _interopRequireDefault(_music9);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var data = [_music2.default, _music4.default, _music6.default, _music8.default, _music10.default];
+
+var Music = function (_React$Component) {
+  _inherits(Music, _React$Component);
+
+  function Music(props) {
+    _classCallCheck(this, Music);
+
+    var _this = _possibleConstructorReturn(this, (Music.__proto__ || Object.getPrototypeOf(Music)).call(this, props));
+
+    _this.state = {
+      musics: []
+    };
+    return _this;
+  }
+
+  _createClass(Music, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      this.initMusics();
+    }
+  }, {
+    key: 'componentWillReceiveProps',
+    value: function componentWillReceiveProps() {
+      this.initMusics();
+    }
+  }, {
+    key: 'initMusics',
+    value: function initMusics() {
+      var category = this.props.params.category;
+      for (var i = 0; i < _Global2.default.MUSIC_CATEGORY.length; i++) {
+        var item = _Global2.default.MUSIC_CATEGORY[i];
+        if (item.category == category) {
+          // fetchData(item.baseURL, {}, (data) => {
+          //   console.log(data);
+          //   this.setState({
+          //     musics: data.musics
+          //   })
+          // });
+          this.setState({
+            musics: data[i].musics
+          });
+        }
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'container' },
+        _react2.default.createElement(
+          'div',
+          { className: 'row' },
+          _react2.default.createElement(_SubNavigation2.default, { category: _Global2.default.MUSIC, list: _Global2.default.MUSIC_CATEGORY }),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-xs-12 col-sm-9 col-sm-offset-2 col-md-8 col-md-offset-1 list-content' },
+            _react2.default.createElement(
+              'ul',
+              null,
+              this.state.musics.map(function (item, index) {
+                var tags = '';
+                for (var i = 0; i < item.tags.length; i++) {
+                  tags += item.tags[i].name + ' ';
+                }
+                return _react2.default.createElement(
+                  'li',
+                  { key: index, className: 'list-item' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'media' },
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'media-left' },
+                      _react2.default.createElement(
+                        _reactRouter.Link,
+                        { to: '/music_details/' + item.id },
+                        _react2.default.createElement('img', { className: 'media-object dd', src: item.image, alt: item.title })
+                      )
+                    ),
+                    _react2.default.createElement(
+                      'div',
+                      { className: 'media-body item-body' },
+                      _react2.default.createElement(
+                        _reactRouter.Link,
+                        { to: '/music_details/' + item.id, className: 'title' },
+                        item.title
+                      ),
+                      _react2.default.createElement(
+                        'p',
+                        { className: 'ellipsis' },
+                        '\u6807\u7B7E:',
+                        tags
+                      ),
+                      _react2.default.createElement(
+                        'p',
+                        null,
+                        '\u53D1\u884C\u5E74\u4EFD:',
+                        item.attrs.pubdate
+                      ),
+                      _react2.default.createElement(
+                        'p',
+                        { className: 'ellipsis' },
+                        '\u4E13\u8F91\u97F3\u4E50:',
+                        item.attrs.tracks[0]
+                      )
+                    )
+                  )
+                );
+              })
+            )
+          ),
+          _react2.default.createElement(_Footer2.default, null),
+          _react2.default.createElement(_BackToTop2.default, null)
+        )
+      );
+    }
+  }]);
+
+  return Music;
+}(_react2.default.Component);
+
+exports.default = Music;
+
+/***/ }),
+/* 265 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _utils = __webpack_require__(44);
+
+var _Global = __webpack_require__(43);
+
+var _Global2 = _interopRequireDefault(_Global);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var MusicDetails = function (_React$Component) {
+  _inherits(MusicDetails, _React$Component);
+
+  function MusicDetails(props) {
+    _classCallCheck(this, MusicDetails);
+
+    var _this = _possibleConstructorReturn(this, (MusicDetails.__proto__ || Object.getPrototypeOf(MusicDetails)).call(this, props));
+
+    _this.state = {
+      music: {
+        rating: {
+          numRaters: 0
+        },
+        title: '',
+        image: '',
+        summary: '',
+        author: [],
+        tags: [],
+        attrs: {
+          pubdate: [''],
+          tracks: [''],
+          publisher: ['']
+        }
+      }
+    };
+    return _this;
+  }
+
+  _createClass(MusicDetails, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      var that = this;
+      var id = this.props.params.id;
+      var url = _Global2.default.MUSIC_DETAILS_BASE_URL + id;
+      (0, _utils.fetchData)(url, {}, function (data) {
+        console.log(data);
+        that.setState({
+          music: data
+        });
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var music = this.state.music;
+      var author = '';
+      for (var i = 0; i < music.author.length; i++) {
+        author += music.author[i].name + ' ';
+      }
+      var tags = '';
+      for (var _i = 0; _i < music.tags.length; _i++) {
+        tags += music.tags[_i].name + ' ';
+      }
+      return _react2.default.createElement(
+        'div',
+        { className: 'container details' },
+        _react2.default.createElement(
+          'div',
+          { className: 'details-jumbotron' },
+          _react2.default.createElement(
+            'div',
+            { className: 'media' },
+            _react2.default.createElement(
+              'div',
+              { className: 'media-left' },
+              _react2.default.createElement(
+                'a',
+                { href: '#' },
+                _react2.default.createElement('img', { className: 'media-object', src: music.image, alt: music.title })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'media-body' },
+              _react2.default.createElement(
+                'span',
+                { className: 'badge badge-details' },
+                _react2.default.createElement('span', { className: 'glyphicon glyphicon-thumbs-up', 'aria-hidden': 'true' }),
+                _react2.default.createElement(
+                  'span',
+                  { title: '\u6536\u85CF\u6570' },
+                  '\xA0',
+                  music.rating.numRaters
+                )
+              ),
+              _react2.default.createElement(
+                'h1',
+                null,
+                music.title
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-bold' },
+                  '\u6807\u7B7E\uFF1A'
+                ),
+                tags
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-bold' },
+                  '\u4F5C\u8005\uFF1A'
+                ),
+                author
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-bold' },
+                  '\u51FA\u7248\u65E5\u671F\uFF1A'
+                ),
+                music.attrs.pubdate[0]
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-bold' },
+                  '\u51FA\u7248\u5546\uFF1A'
+                ),
+                music.attrs.publisher[0]
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-bold' },
+                  '\u6458\u8981\uFF1A'
+                ),
+                music.summary
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-bold' },
+                  '\u4E13\u8F91\u97F3\u4E50\uFF1A'
+                ),
+                music.attrs.tracks[0]
+              ),
+              _react2.default.createElement(
+                'button',
+                { className: 'btn btn-focus btn-lg' },
+                '\u5173\xA0\xA0\u6CE8'
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return MusicDetails;
+}(_react2.default.Component);
+
+exports.default = MusicDetails;
+
+/***/ }),
+/* 266 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(34);
+
+var _Global = __webpack_require__(43);
+
+var _Global2 = _interopRequireDefault(_Global);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * 导航条组件
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+
+
+var Navigation = function (_React$Component) {
+  _inherits(Navigation, _React$Component);
+
+  function Navigation() {
+    _classCallCheck(this, Navigation);
+
+    return _possibleConstructorReturn(this, (Navigation.__proto__ || Object.getPrototypeOf(Navigation)).apply(this, arguments));
+  }
+
+  _createClass(Navigation, [{
+    key: 'handleSearchSubmit',
+    value: function handleSearchSubmit(e) {
+      e.preventDefault();
+      var key = e.target.childNodes[0].value;
+      if (key) {
+        var path = 'search/' + key;
+        _reactRouter.hashHistory.push(path);
+        e.target.childNodes[0].value = '';
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'nav',
+        { className: 'navbar navbar-default navbar-fixed-top' },
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(
+              'div',
+              { className: 'navbar-header' },
+              _react2.default.createElement(
+                'button',
+                { type: 'button', className: 'navbar-toggle collapsed', 'data-toggle': 'collapse', 'data-target': '#navbar', 'aria-expanded': 'false', 'aria-controls': 'navbar' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'sr-only' },
+                  'Toggle navigation'
+                ),
+                _react2.default.createElement('span', { className: 'icon-bar' }),
+                _react2.default.createElement('span', { className: 'icon-bar' }),
+                _react2.default.createElement('span', { className: 'icon-bar' })
+              ),
+              _react2.default.createElement(
+                'a',
+                { className: 'navbar-brand', href: '#' },
+                '\u751F\u6D3B\u767E\u79D1'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { id: 'navbar', className: 'navbar-collapse collapse' },
+              _react2.default.createElement(
+                'ul',
+                { className: 'nav navbar-nav' },
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  _react2.default.createElement(
+                    _reactRouter.IndexLink,
+                    { to: '/', activeClassName: 'active' },
+                    _react2.default.createElement('span', { className: 'glyphicon glyphicon-home', 'aria-hidden': 'true' }),
+                    '\xA0\u4E3B\u9875'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  _react2.default.createElement(
+                    _reactRouter.Link,
+                    { to: '/' + _Global2.default.BOOK + '/' + _Global2.default.BOOK_CATEGORY[0].category },
+                    _react2.default.createElement('span', { className: 'glyphicon glyphicon-book', 'aria-hidden': 'true' }),
+                    '\xA0\u56FE\u4E66'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  _react2.default.createElement(
+                    _reactRouter.Link,
+                    { to: '/' + _Global2.default.MUSIC + '/' + _Global2.default.MUSIC_CATEGORY[0].category },
+                    _react2.default.createElement('span', { className: 'glyphicon glyphicon-music', 'aria-hidden': 'true' }),
+                    '\xA0\u97F3\u4E50'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  _react2.default.createElement(
+                    _reactRouter.Link,
+                    { to: '/' + _Global2.default.FILM + '/' + _Global2.default.FILM_CATEGORY[0].category },
+                    _react2.default.createElement('span', { className: 'glyphicon glyphicon-film', 'aria-hidden': 'true' }),
+                    '\xA0\u7535\u5F71'
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'ul',
+                { className: 'nav navbar-nav navbar-right' },
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  _react2.default.createElement(
+                    'a',
+                    { href: '../navbar/' },
+                    '\u767B\u5F55'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  null,
+                  _react2.default.createElement(
+                    'a',
+                    { href: '../navbar-static-top/' },
+                    '\u6CE8\u518C'
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'form',
+                { className: 'navbar-form navbar-right', onSubmit: this.handleSearchSubmit },
+                _react2.default.createElement('input', { type: 'text', className: 'form-control', placeholder: '\u641C\u7D22...' })
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Navigation;
+}(_react2.default.Component);
+
+exports.default = Navigation;
+
+/***/ }),
+/* 267 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(34);
+
+var _jquery = __webpack_require__(242);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _Global = __webpack_require__(43);
+
+var _Global2 = _interopRequireDefault(_Global);
+
+var _utils = __webpack_require__(44);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Search = function (_React$Component) {
+  _inherits(Search, _React$Component);
+
+  function Search(props) {
+    _classCallCheck(this, Search);
+
+    var _this = _possibleConstructorReturn(this, (Search.__proto__ || Object.getPrototypeOf(Search)).call(this, props));
+
+    _this.state = {
+      books: [],
+      musics: [],
+      films: [],
+      books_count: 0,
+      musics_count: 0,
+      films_count: 0
+    };
+    return _this;
+  }
+
+  _createClass(Search, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      this.initData();
+    }
+  }, {
+    key: 'componentWillReceiveProps',
+    value: function componentWillReceiveProps(nextProps) {
+      this.initData();
+    }
+
+    /**
+     * 初始化数据方法
+     */
+
+  }, {
+    key: 'initData',
+    value: function initData() {
+      var _this2 = this;
+
+      var key = this.props.params.key;
+      var params = (0, _utils.obj2uri)({ tag: key, count: 10 });
+
+      (0, _utils.fetchData)(_Global2.default.BOOK_SEARCH_BASE_URL + '?' + params + '&', {}, function (data) {
+        _this2.setState({
+          books: data.books,
+          books_count: data.count
+        });
+      });
+
+      (0, _utils.fetchData)(_Global2.default.MUSIC_SEARCH_BASE_URL + '?' + params + '&', {}, function (data) {
+        _this2.setState({
+          musics: data.musics,
+          musics_count: data.count
+        });
+      });
+
+      (0, _utils.fetchData)(_Global2.default.FILM_SEARCH_BASE_URL + '?' + params + '&', {}, function (data) {
+        _this2.setState({
+          films: data.subjects,
+          films_count: data.count
+        });
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'container search' },
+        _react2.default.createElement(
+          'div',
+          { className: 'row' },
+          _react2.default.createElement(
+            'div',
+            { className: 'search-header col-md-12' },
+            _react2.default.createElement(
+              'div',
+              { className: 'search-info' },
+              _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '\u5173\u952E\u5B57\uFF1A',
+                  this.props.params.key
+                ),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '\u603B\u6761\u76EE\uFF1A',
+                  this.state.books_count + this.state.musics_count + this.state.films_count
+                ),
+                _react2.default.createElement('br', null),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '\u56FE\u4E66\uFF1A',
+                  this.state.books_count
+                ),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '\u97F3\u4E50\uFF1A',
+                  this.state.musics_count
+                ),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '\u7535\u5F71\uFF1A',
+                  this.state.films_count
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'ul',
+              { id: 'nav_search', className: 'nav nav-tabs nav-justified' },
+              _react2.default.createElement(
+                'li',
+                { className: 'active' },
+                _react2.default.createElement(
+                  'a',
+                  { href: '#tab1', 'data-toggle': 'tab' },
+                  'Book'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#tab2', 'data-toggle': 'tab' },
+                  'Music'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#tab3', 'data-toggle': 'tab' },
+                  'Film'
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'search-body col-md-12 container' },
+            _react2.default.createElement(
+              'div',
+              { className: 'tab-content' },
+              _react2.default.createElement(
+                'div',
+                { className: 'tab-pane active row', id: 'tab1' },
+                _react2.default.createElement(
+                  'p',
+                  { className: 'text-center', style: { display: this.state.books.length != 0 ? 'none' : 'block' } },
+                  '\u6CA1\u627E\u5230"',
+                  this.props.params.key,
+                  '"\u7684\u76F8\u5173\u56FE\u4E66\u4FE1\u606F!'
+                ),
+                _react2.default.createElement(
+                  'ul',
+                  null,
+                  this.state.books.map(function (item, index) {
+                    var tags = '';
+                    for (var i = 0; i < item.tags.length; i++) {
+                      tags += item.tags[i].name + ' ';
+                    }
+                    return _react2.default.createElement(
+                      'li',
+                      { key: index, className: 'search-item col-md-6' },
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'media' },
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'media-left' },
+                          _react2.default.createElement(
+                            _reactRouter.Link,
+                            { to: '/book_details/' + item.id },
+                            _react2.default.createElement('img', { className: 'media-object dd', src: item.image, alt: item.title })
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'media-body item-body' },
+                          _react2.default.createElement(
+                            _reactRouter.Link,
+                            { to: '/book_details/' + item.id, className: 'title' },
+                            item.title
+                          ),
+                          _react2.default.createElement(
+                            'p',
+                            { className: 'ellipsis' },
+                            '\u6807\u7B7E:',
+                            tags
+                          ),
+                          _react2.default.createElement(
+                            'p',
+                            null,
+                            '\u4F5C\u8005:',
+                            item.author
+                          ),
+                          _react2.default.createElement(
+                            'p',
+                            null,
+                            '\u51FA\u7248\u793E:',
+                            item.publisher
+                          )
+                        )
+                      )
+                    );
+                  })
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'tab-pane row', id: 'tab2' },
+                _react2.default.createElement(
+                  'p',
+                  { className: 'text-center', style: { display: this.state.musics.length != 0 ? 'none' : 'block' } },
+                  '\u6CA1\u627E\u5230"',
+                  this.props.params.key,
+                  '"\u7684\u76F8\u5173\u97F3\u4E50\u4FE1\u606F!'
+                ),
+                _react2.default.createElement(
+                  'ul',
+                  null,
+                  this.state.musics.map(function (item, index) {
+                    var tags = '';
+                    for (var i = 0; i < item.tags.length; i++) {
+                      tags += item.tags[i].name + ' ';
+                    }
+                    return _react2.default.createElement(
+                      'li',
+                      { key: index, className: 'search-item col-md-6' },
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'media' },
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'media-left' },
+                          _react2.default.createElement(
+                            _reactRouter.Link,
+                            { to: '/music_details/' + item.id },
+                            _react2.default.createElement('img', { className: 'media-object dd', src: item.image, alt: item.title })
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'media-body item-body' },
+                          _react2.default.createElement(
+                            _reactRouter.Link,
+                            { to: '/music_details/' + item.id, className: 'title' },
+                            item.title
+                          ),
+                          _react2.default.createElement(
+                            'p',
+                            { className: 'ellipsis' },
+                            '\u6807\u7B7E:',
+                            tags
+                          ),
+                          _react2.default.createElement(
+                            'p',
+                            null,
+                            '\u53D1\u884C\u5E74\u4EFD:',
+                            item.attrs.pubdate
+                          ),
+                          _react2.default.createElement(
+                            'p',
+                            { className: 'ellipsis' },
+                            '\u4E13\u8F91\u97F3\u4E50:',
+                            item.attrs.tracks !== undefined ? item.attrs.tracks[0] : '无'
+                          )
+                        )
+                      )
+                    );
+                  })
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'tab-pane row', id: 'tab3' },
+                _react2.default.createElement(
+                  'p',
+                  { className: 'text-center', style: { display: this.state.films.length != 0 ? 'none' : 'block' } },
+                  '\u6CA1\u627E\u5230"',
+                  this.props.params.key,
+                  '"\u7684\u76F8\u5173\u7535\u5F71\u4FE1\u606F!'
+                ),
+                _react2.default.createElement(
+                  'ul',
+                  null,
+                  this.state.films.map(function (item, index) {
+                    var casts = '';
+                    for (var i = 0; i < item.casts.length; i++) {
+                      casts += item.casts[i].name + ' ';
+                    }
+                    var directors = '';
+                    for (var _i = 0; _i < item.directors.length; _i++) {
+                      directors += item.directors[_i].name + ' ';
+                    }
+                    return _react2.default.createElement(
+                      'li',
+                      { key: index, className: 'search-item col-md-6' },
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'media' },
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'media-left' },
+                          _react2.default.createElement(
+                            _reactRouter.Link,
+                            { to: '/film_details/' + item.id },
+                            _react2.default.createElement('img', { className: 'media-object dd', src: item.images.small, alt: item.title })
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'media-body item-body' },
+                          _react2.default.createElement(
+                            _reactRouter.Link,
+                            { to: '/film_details/' + item.id, className: 'title' },
+                            item.title
+                          ),
+                          _react2.default.createElement(
+                            'p',
+                            { className: 'ellipsis' },
+                            '\u5E74\u4EFD:',
+                            item.year
+                          ),
+                          _react2.default.createElement(
+                            'p',
+                            null,
+                            '\u6F14\u5458:',
+                            casts
+                          ),
+                          _react2.default.createElement(
+                            'p',
+                            null,
+                            '\u5BFC\u6F14:',
+                            directors
+                          )
+                        )
+                      )
+                    );
+                  })
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Search;
+}(_react2.default.Component);
+
+exports.default = Search;
+
+/***/ }),
+/* 268 */,
+/* 269 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(273);
 
 
 
@@ -40129,7 +40241,7 @@ function baseGetTag(value) {
 
 
 /***/ }),
-/* 269 */
+/* 270 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -40138,14 +40250,14 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 
 /* harmony default export */ __webpack_exports__["a"] = (freeGlobal);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(250)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(251)))
 
 /***/ }),
-/* 270 */
+/* 271 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(274);
 
 
 /** Built-in value references. */
@@ -40155,11 +40267,11 @@ var getPrototype = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__overArg_js
 
 
 /***/ }),
-/* 271 */
+/* 272 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(243);
 
 
 /** Used for built-in method references. */
@@ -40209,7 +40321,7 @@ function getRawTag(value) {
 
 
 /***/ }),
-/* 272 */
+/* 273 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -40238,7 +40350,7 @@ function objectToString(value) {
 
 
 /***/ }),
-/* 273 */
+/* 274 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -40260,11 +40372,11 @@ function overArg(func, transform) {
 
 
 /***/ }),
-/* 274 */
+/* 275 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(270);
 
 
 /** Detect free variable `self`. */
@@ -40277,7 +40389,7 @@ var root = __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__["a" /* default */] || fr
 
 
 /***/ }),
-/* 275 */
+/* 276 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -40313,13 +40425,13 @@ function isObjectLike(value) {
 
 
 /***/ }),
-/* 276 */
+/* 277 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_PropTypes__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_PropTypes__ = __webpack_require__(246);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(212);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Provider; });
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -40392,16 +40504,16 @@ Provider.displayName = 'Provider';
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 277 */
+/* 278 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_connectAdvanced__ = __webpack_require__(243);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_shallowEqual__ = __webpack_require__(284);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mapDispatchToProps__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mapStateToProps__ = __webpack_require__(279);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mergeProps__ = __webpack_require__(280);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__selectorFactory__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_connectAdvanced__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_shallowEqual__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mapDispatchToProps__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mapStateToProps__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mergeProps__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__selectorFactory__ = __webpack_require__(282);
 /* unused harmony export createConnect */
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -40508,12 +40620,12 @@ function createConnect() {
 /* harmony default export */ __webpack_exports__["a"] = (createConnect());
 
 /***/ }),
-/* 278 */
+/* 279 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__(241);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wrapMapToProps__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wrapMapToProps__ = __webpack_require__(245);
 /* unused harmony export whenMapDispatchToPropsIsFunction */
 /* unused harmony export whenMapDispatchToPropsIsMissing */
 /* unused harmony export whenMapDispatchToPropsIsObject */
@@ -40539,11 +40651,11 @@ function whenMapDispatchToPropsIsObject(mapDispatchToProps) {
 /* harmony default export */ __webpack_exports__["a"] = ([whenMapDispatchToPropsIsFunction, whenMapDispatchToPropsIsMissing, whenMapDispatchToPropsIsObject]);
 
 /***/ }),
-/* 279 */
+/* 280 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wrapMapToProps__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wrapMapToProps__ = __webpack_require__(245);
 /* unused harmony export whenMapStateToPropsIsFunction */
 /* unused harmony export whenMapStateToPropsIsMissing */
 
@@ -40561,11 +40673,11 @@ function whenMapStateToPropsIsMissing(mapStateToProps) {
 /* harmony default export */ __webpack_exports__["a"] = ([whenMapStateToPropsIsFunction, whenMapStateToPropsIsMissing]);
 
 /***/ }),
-/* 280 */
+/* 281 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(246);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(247);
 /* unused harmony export defaultMergeProps */
 /* unused harmony export wrapMergePropsFunc */
 /* unused harmony export whenMergePropsIsFunction */
@@ -40618,11 +40730,11 @@ function whenMergePropsIsOmitted(mergeProps) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 281 */
+/* 282 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__verifySubselectors__ = __webpack_require__(282);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__verifySubselectors__ = __webpack_require__(283);
 /* unused harmony export impureFinalPropsSelectorFactory */
 /* unused harmony export pureFinalPropsSelectorFactory */
 /* harmony export (immutable) */ __webpack_exports__["a"] = finalPropsSelectorFactory;
@@ -40731,7 +40843,7 @@ function finalPropsSelectorFactory(dispatch, _ref2) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 282 */
+/* 283 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -40756,7 +40868,7 @@ function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, dis
 }
 
 /***/ }),
-/* 283 */
+/* 284 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -40852,7 +40964,7 @@ var Subscription = function () {
 
 
 /***/ }),
-/* 284 */
+/* 285 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -40889,11 +41001,11 @@ function shallowEqual(objA, objB) {
 }
 
 /***/ }),
-/* 285 */
+/* 286 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compose__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compose__ = __webpack_require__(248);
 /* harmony export (immutable) */ __webpack_exports__["a"] = applyMiddleware;
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -40945,7 +41057,7 @@ function applyMiddleware() {
 }
 
 /***/ }),
-/* 286 */
+/* 287 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -40999,13 +41111,13 @@ function bindActionCreators(actionCreators, dispatch) {
 }
 
 /***/ }),
-/* 287 */
+/* 288 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(248);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(249);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_es_isPlainObject__ = __webpack_require__(139);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(250);
 /* harmony export (immutable) */ __webpack_exports__["a"] = combineReducers;
 
 
@@ -41139,14 +41251,14 @@ function combineReducers(reducers) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 288 */
+/* 289 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(289);
+module.exports = __webpack_require__(290);
 
 
 /***/ }),
-/* 289 */
+/* 290 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41156,7 +41268,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ponyfill = __webpack_require__(290);
+var _ponyfill = __webpack_require__(291);
 
 var _ponyfill2 = _interopRequireDefault(_ponyfill);
 
@@ -41179,10 +41291,10 @@ if (typeof self !== 'undefined') {
 
 var result = (0, _ponyfill2['default'])(root);
 exports['default'] = result;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(250), __webpack_require__(291)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(251), __webpack_require__(292)(module)))
 
 /***/ }),
-/* 290 */
+/* 291 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41211,7 +41323,7 @@ function symbolObservablePonyfill(root) {
 };
 
 /***/ }),
-/* 291 */
+/* 292 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -41239,7 +41351,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 292 */
+/* 293 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -41470,7 +41582,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 293 */
+/* 294 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -41720,7 +41832,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 294 */
+/* 295 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -41958,7 +42070,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 295 */
+/* 296 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -42217,7 +42329,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 296 */
+/* 297 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -42474,7 +42586,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 297 */
+/* 298 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -42703,7 +42815,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 298 */
+/* 299 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -42920,7 +43032,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 299 */
+/* 300 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -43139,7 +43251,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 300 */
+/* 301 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -43388,7 +43500,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 301 */
+/* 302 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -43637,7 +43749,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 302 */
+/* 303 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -43886,7 +43998,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 303 */
+/* 304 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -44136,7 +44248,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 304 */
+/* 305 */
 /***/ (function(module, exports) {
 
 module.exports = {

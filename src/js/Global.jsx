@@ -6,11 +6,11 @@ const BOOK = 'book';
 const MUSIC = 'music';
 const FILM = 'film';
 const BOOK_CATEGORY = [
-  { name: '童话', category: 'fairy_tale', baseURL: 'https://api.douban.com/v2/book/search?q=童话&start=0&count=3&' },
-  { name: '小说', category: 'novel', baseURL: 'https://api.douban.com/v2/book/search?q=小说&start=0&count=3&' },
-  { name: '寓言神话', category: 'fable_myth', baseURL: 'https://api.douban.com/v2/book/search?q=寓言神话&start=0&count=3&' },
-  { name: '散文诗歌', category: 'prose_poetry', baseURL: 'https://api.douban.com/v2/book/search?q=散文诗歌&start=0&count=3&' },
-  { name: '名人传记', category: 'biography', baseURL: 'https://api.douban.com/v2/book/search?q=名人传记&start=0&count=3&' },
+  { name: '童话', category: 'fairy_tale', baseURL: 'https://api.douban.com/v2/book/search?tag=童话&start=0&count=3&' },
+  { name: '小说', category: 'novel', baseURL: 'https://api.douban.com/v2/book/search?tag=小说&start=0&count=3&' },
+  { name: '寓言神话', category: 'fable_myth', baseURL: 'https://api.douban.com/v2/book/search?tag=寓言神话&start=0&count=3&' },
+  { name: '散文诗歌', category: 'prose_poetry', baseURL: 'https://api.douban.com/v2/book/search?tag=散文诗歌&start=0&count=3&' },
+  { name: '名人传记', category: 'biography', baseURL: 'https://api.douban.com/v2/book/search?tag=名人传记&start=0&count=3&' },
 ]
 const MUSIC_CATEGORY = [
   { name: '周杰伦', category: 'Jay_Chou', baseURL: 'https://api.douban.com/v2/music/search?tag=周杰伦&start=0&count=3&' },

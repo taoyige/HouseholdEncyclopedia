@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+import $ from 'jquery';
+
 import SubNavigation from './SubNavigation.jsx';
 import Global from '../Global.jsx';
 import { fetchData } from '../utils.jsx';
 
 import Footer from './Footer.jsx';
 import BackToTop from './BackToTop.jsx';
+import LoadMore from './LoadMore.jsx';
 
 import book1 from '../../json/book1.json';
 import book2 from '../../json/book2.json';
@@ -20,6 +23,8 @@ const data = [book1, book2, book3, book4, book5];
 class Book extends React.Component {
   constructor(props) {
     super(props);
+    this.loadMoreTop = 0;
+    this.start = 0;
     this.state = {
       books: [],
     };
@@ -31,6 +36,7 @@ class Book extends React.Component {
 
   componentWillReceiveProps (nextProps) {
     this.initBooks();
+    this.initLoadMore();
   }
 
   initBooks () {
@@ -49,6 +55,43 @@ class Book extends React.Component {
         })
       }
     }
+  }
+
+  componentDidMount () {
+    this.initLoadMore();
+  }
+
+  componentDidUpdate(prevProps, prevState){
+    this.loadMoreTop= $('#loadMore').offset().top;
+  }
+
+  initLoadMore () {
+    let that = this;
+    let height = $(window).height();
+    let isLoadMore = true;
+    $(window).on('scroll', (e) => {
+      if(isLoadMore) {
+        if(this.loadMoreTop - $(window).scrollTop() <= height) {
+          isLoadMore = false;
+          setTimeout(() => {
+            // fetchData(Global.BOOK_CATEGORY[0].baseURL, {}, (data) => {
+            //   let arr = that.state.books;
+            //   arr.push(...data.books);
+            //   this.setState({
+            //     books: arr
+            //   })
+            // });
+            let arr = that.state.books;
+            // arr.push(...book1.books);
+            arr.push(book1.books[this.start++ % 4]);
+            this.setState({
+              books: arr
+            })
+            isLoadMore = true;
+          }, 1000)
+        }
+      }
+    })
   }
 
   render () {
@@ -85,6 +128,7 @@ class Book extends React.Component {
                 })
               }
             </ul>
+            <LoadMore/>
           </div>
           <Footer/>
           <BackToTop/>
