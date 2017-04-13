@@ -6,6 +6,7 @@ class Login extends React.Component {
     super(props);
 
     this.handleCloseClick = this.handleCloseClick.bind(this);
+    this.handleLoginSubmit = this.handleLoginSubmit.bind(this);
   }
 
 	handleCloseClick (e) {
@@ -13,22 +14,28 @@ class Login extends React.Component {
 		this.props.handleCloseClick();
 	}
 
+	handleLoginSubmit (e) {
+		e.preventDefault();
+		let username = this.refs.username.value;
+		let password = this.refs.password.value;
+	}
+
   render () {
     return (
       <div id="login" className="login" style={{ display: this.props.showLogin?'block':'none' }}>
         <div className="mask"></div>
         <div className="content">
-        	<form className="form-horizontal">
+        	<form className="form-horizontal" onSubmit={this.handleLoginSubmit}>
 					  <div className="form-group">
-					    <label htmlFor="inputEmail3" className="col-sm-2 control-label">账号:</label>
+					    <label htmlFor="username" className="col-sm-2 control-label">账号:</label>
 					    <div className="col-sm-10">
-					      <input type="email" className="form-control" id="inputEmail3" placeholder="Username"></input>
+					      <input ref="username" type="text" className="form-control" id="username" placeholder="Username"></input>
 					    </div>
 					  </div>
 					  <div className="form-group">
-					    <label htmlFor="inputPassword3" className="col-sm-2 control-label">密码:</label>
+					    <label htmlFor="password" className="col-sm-2 control-label">密码:</label>
 					    <div className="col-sm-10">
-					      <input type="password" className="form-control" id="inputPassword3" placeholder="Password"></input>
+					      <input ref="password" type="password" className="form-control" id="password" placeholder="Password"></input>
 					    </div>
 					  </div>
 					  <div className="form-group">
@@ -43,7 +50,7 @@ class Login extends React.Component {
 					  <div className="form-group">
 					    <div className="col-sm-offset-2 col-sm-10">
 					      <button type="submit" className="btn btn-primary">登&nbsp;&nbsp;录</button>
-					      <button type="submit" className="btn btn-default">注&nbsp;&nbsp;册</button>
+					      <button onClick={this.props.handleRegisterClick} className="btn btn-default">注&nbsp;&nbsp;册</button>
 					    </div>
 					  </div>
 					  <a onClick={this.handleCloseClick} className="close-login">

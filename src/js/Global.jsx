@@ -6,23 +6,23 @@ const BOOK = 'book';
 const MUSIC = 'music';
 const FILM = 'film';
 const BOOK_CATEGORY = [
-  { name: '童话', category: 'fairy_tale', baseURL: 'https://api.douban.com/v2/book/search?tag=童话&start=0&count=3&' },
-  { name: '小说', category: 'novel', baseURL: 'https://api.douban.com/v2/book/search?tag=小说&start=0&count=3&' },
-  { name: '寓言神话', category: 'fable_myth', baseURL: 'https://api.douban.com/v2/book/search?tag=寓言神话&start=0&count=3&' },
-  { name: '散文诗歌', category: 'prose_poetry', baseURL: 'https://api.douban.com/v2/book/search?tag=散文诗歌&start=0&count=3&' },
-  { name: '名人传记', category: 'biography', baseURL: 'https://api.douban.com/v2/book/search?tag=名人传记&start=0&count=3&' },
+  { name: '童话', category: 'fairy_tale', baseURL: 'https://api.douban.com/v2/book/search?tag=童话&count=5&' },
+  { name: '小说', category: 'novel', baseURL: 'https://api.douban.com/v2/book/search?tag=小说&count=5&' },
+  { name: '寓言神话', category: 'fable_myth', baseURL: 'https://api.douban.com/v2/book/search?tag=寓言神话&count=5&' },
+  { name: '散文诗歌', category: 'prose_poetry', baseURL: 'https://api.douban.com/v2/book/search?tag=散文诗歌&count=5&' },
+  { name: '名人传记', category: 'biography', baseURL: 'https://api.douban.com/v2/book/search?tag=名人传记&count=5&' },
 ]
 const MUSIC_CATEGORY = [
-  { name: '周杰伦', category: 'Jay_Chou', baseURL: 'https://api.douban.com/v2/music/search?tag=周杰伦&start=0&count=3&' },
-  { name: '陈奕迅', category: 'Eason_Chan', baseURL: 'https://api.douban.com/v2/music/search?tag=陈奕迅&start=0&count=3&' },
-  { name: '薛之谦', category: 'Joker_Xue', baseURL: 'https://api.douban.com/v2/music/search?tag=薛之谦&start=0&count=3&' },
-  { name: '容祖儿', category: 'Joey_Yung', baseURL: 'https://api.douban.com/v2/music/search?tag=容祖儿&start=0&count=3&' },
-  { name: '杨千嬅', category: 'Miriam_Yeung', baseURL: 'https://api.douban.com/v2/music/search?tag=杨千嬅&start=0&count=3&' },
+  { name: '周杰伦', category: 'Jay_Chou', baseURL: 'https://api.douban.com/v2/music/search?tag=周杰伦&count=5&' },
+  { name: '陈奕迅', category: 'Eason_Chan', baseURL: 'https://api.douban.com/v2/music/search?tag=陈奕迅&count=5&' },
+  { name: '薛之谦', category: 'Joker_Xue', baseURL: 'https://api.douban.com/v2/music/search?tag=薛之谦&count=5&' },
+  { name: '容祖儿', category: 'Joey_Yung', baseURL: 'https://api.douban.com/v2/music/search?tag=容祖儿&count=5&' },
+  { name: '杨千嬅', category: 'Miriam_Yeung', baseURL: 'https://api.douban.com/v2/music/search?tag=杨千嬅&count=5&' },
 ]
 const FILM_CATEGORY = [
-  { name: '正在热映', category: 'in_theaters', baseURL: 'https://api.douban.com/v2/movie/in_theaters?start=0&count=3&' },
-  { name: '即将上映', category: 'coming_soon', baseURL: 'https://api.douban.com/v2/movie/coming_soon?start=0&count=3&' },
-  { name: 'TOP250', category: 'top250', baseURL: 'https://api.douban.com/v2/movie/top250?start=0&count=3&' },
+  { name: '正在热映', category: 'in_theaters', baseURL: 'https://api.douban.com/v2/movie/in_theaters?count=5&' },
+  { name: '即将上映', category: 'coming_soon', baseURL: 'https://api.douban.com/v2/movie/coming_soon?count=5&' },
+  { name: 'TOP250', category: 'top250', baseURL: 'https://api.douban.com/v2/movie/top250?count=5&' },
 ]
 
 const BOOK_DETAILS_BASE_URL = 'https://api.douban.com/v2/book/';

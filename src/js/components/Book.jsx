@@ -44,8 +44,7 @@ class Book extends React.Component {
     for(let i=0; i<Global.BOOK_CATEGORY.length; i++){
       let item = Global.BOOK_CATEGORY[i];
       if(item.category == category){
-        // fetchData(item.baseURL, {}, (data) => {
-        //   console.log(data);
+        // fetchData(`${item.baseURL}&start=${this.start}&`, {}, (data) => {
         //   this.setState({
         //     books: data.books
         //   })
@@ -82,7 +81,6 @@ class Book extends React.Component {
             //   })
             // });
             let arr = that.state.books;
-            // arr.push(...book1.books);
             arr.push(book1.books[this.start++ % 4]);
             this.setState({
               books: arr

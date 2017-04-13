@@ -7,16 +7,19 @@ import Global from '../Global.jsx';
 import { hashHistory } from 'react-router'
 
 import Login from './Login.jsx';
+import Register from './Register.jsx';
 
 class Navigation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       books: [],
-      showLogin: true,
+      showLogin: false,
+      showRegister: false,
     };
 
     this.handleLoginClick = this.handleLoginClick.bind(this);
+    this.handleRegisterClick = this.handleRegisterClick.bind(this);
     this.handleCloseClick = this.handleCloseClick.bind(this);
   } 
 
@@ -33,13 +36,21 @@ class Navigation extends React.Component {
   handleLoginClick (e) {
     e.preventDefault();
     this.setState({
-      showLogin: true
+      showLogin: true,
+    })
+  }
+
+  handleRegisterClick (e) {
+    e.preventDefault();
+    this.setState({
+      showRegister: true,
     })
   }
 
   handleCloseClick (e) {
     this.setState({
-      showLogin: false
+      showLogin: false,
+      showRegister: false,
     })
   }
 
@@ -86,7 +97,7 @@ class Navigation extends React.Component {
             </ul>
             <ul className="nav navbar-nav navbar-right">
               <li><a onClick={this.handleLoginClick}>登录</a></li>
-              <li><a href="../navbar-static-top/">注册</a></li>
+              <li><a onClick={this.handleRegisterClick}>注册</a></li>
             </ul>
             <form className="navbar-form navbar-right" onSubmit={this.handleSearchSubmit}>
               <input type="text" className="form-control" placeholder="搜索..."></input>
@@ -94,7 +105,8 @@ class Navigation extends React.Component {
           </div>
           </div>
         </div>
-        <Login showLogin={this.state.showLogin} handleCloseClick={this.handleCloseClick}/>
+        <Login showLogin={this.state.showLogin} handleCloseClick={this.handleCloseClick} handleRegisterClick={this.handleRegisterClick}/>
+        <Register showRegister={this.state.showRegister} handleCloseClick={this.handleCloseClick}/>
       </nav>
     )
   }
