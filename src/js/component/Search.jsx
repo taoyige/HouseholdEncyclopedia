@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 import $ from 'jquery';
 
 import Global from '../Global.jsx';
-import { obj2uri, fetchData } from '../utils.jsx';
+import { obj2uri, fetchData } from '../util/utils.jsx';
 
 class Search extends React.Component {
 

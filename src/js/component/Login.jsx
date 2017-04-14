@@ -27,19 +27,19 @@ class Login extends React.Component {
         <div className="content">
         	<form className="form-horizontal" onSubmit={this.handleLoginSubmit}>
 					  <div className="form-group">
-					    <label htmlFor="username" className="col-sm-2 control-label">账号:</label>
-					    <div className="col-sm-10">
+					    <label htmlFor="username" className="col-xs-2 col-sm-2 control-label">账号:</label>
+					    <div className="col-xs-10 col-sm-10">
 					      <input ref="username" type="text" className="form-control" id="username" placeholder="Username"></input>
 					    </div>
 					  </div>
 					  <div className="form-group">
-					    <label htmlFor="password" className="col-sm-2 control-label">密码:</label>
-					    <div className="col-sm-10">
+					    <label htmlFor="password" className="col-xs-2 col-sm-2 control-label">密码:</label>
+					    <div className="col-xs-10 col-sm-10">
 					      <input ref="password" type="password" className="form-control" id="password" placeholder="Password"></input>
 					    </div>
 					  </div>
 					  <div className="form-group">
-					    <div className="col-sm-offset-2 col-sm-10">
+					    <div className="col-xs-offset-2 col-xs-10 col-sm-offset-2 col-sm-10">
 					      <div className="checkbox">
 					        <label>
 					          <input type="checkbox"></input>记住密码
@@ -48,7 +48,7 @@ class Login extends React.Component {
 					    </div>
 					  </div>
 					  <div className="form-group">
-					    <div className="col-sm-offset-2 col-sm-10">
+					    <div className="col-xs-offset-2 col-xs-10 col-sm-offset-2 col-sm-10">
 					      <button type="submit" className="btn btn-primary">登&nbsp;&nbsp;录</button>
 					      <button onClick={this.props.handleRegisterClick} className="btn btn-default">注&nbsp;&nbsp;册</button>
 					    </div>

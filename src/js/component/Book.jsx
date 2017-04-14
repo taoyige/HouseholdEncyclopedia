@@ -5,7 +5,7 @@ import $ from 'jquery';
 
 import SubNavigation from './SubNavigation.jsx';
 import Global from '../Global.jsx';
-import { fetchData } from '../utils.jsx';
+import { fetchData } from '../util/utils.jsx';
 
 import Footer from './Footer.jsx';
 import BackToTop from './BackToTop.jsx';

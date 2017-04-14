@@ -399,7 +399,7 @@ body {
 }
 .register .content {
   width: 450px;
-  height: 333px;
+  height: 300px;
   margin-left: -225px;
   padding: 45px;
   border-radius: 10px;
@@ -421,4 +421,15 @@ body {
 }
 .register .content .close-register:hover {
   color: #428bba;
+}
+.register .content .registed-successful .logo {
+  margin-top: 10px;
+  font-size: 40px;
+}
+.register .content .registed-successful .info {
+  font-size: 20px;
+}
+.register .content .registed-successful .to-login {
+  width: 200px;
+  margin: 30px auto 0;
 }

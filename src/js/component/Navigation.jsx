@@ -15,7 +15,7 @@ class Navigation extends React.Component {
     this.state = {
       books: [],
       showLogin: false,
-      showRegister: false,
+      showRegister: true,
     };
 
     this.handleLoginClick = this.handleLoginClick.bind(this);
@@ -34,15 +34,17 @@ class Navigation extends React.Component {
   }
 
   handleLoginClick (e) {
-    e.preventDefault();
+    e ? e.preventDefault() : null;
     this.setState({
       showLogin: true,
+      showRegister: false,
     })
   }
 
   handleRegisterClick (e) {
     e.preventDefault();
     this.setState({
+      showLogin: false,
       showRegister: true,
     })
   }
@@ -106,7 +108,7 @@ class Navigation extends React.Component {
           </div>
         </div>
         <Login showLogin={this.state.showLogin} handleCloseClick={this.handleCloseClick} handleRegisterClick={this.handleRegisterClick}/>
-        <Register showRegister={this.state.showRegister} handleCloseClick={this.handleCloseClick}/>
+        <Register handleLoginClick={this.handleLoginClick} showRegister={this.state.showRegister} handleCloseClick={this.handleCloseClick}/>
       </nav>
     )
   }

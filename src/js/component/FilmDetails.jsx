@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { fetchData } from '../utils.jsx';
+import { fetchData } from '../util/utils.jsx';
 
 import Global from '../Global.jsx';
 
