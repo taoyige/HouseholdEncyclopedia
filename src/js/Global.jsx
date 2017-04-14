@@ -2,6 +2,9 @@
  * 全局静态变量
  */
 
+const APPLICATION_ID = 'cb3ba145277bf36c0e899c432cc6cce7';
+const REST_API_KEY = '4962df6128294bb610ccb5d8307638d9';
+
 const BOOK = 'book';
 const MUSIC = 'music';
 const FILM = 'film';
@@ -34,6 +37,8 @@ const MUSIC_SEARCH_BASE_URL = 'https://api.douban.com/v2/music/search';
 const FILM_SEARCH_BASE_URL = 'https://api.douban.com/v2/movie/search';
 
 const Global = { 
+  APPLICATION_ID,
+  REST_API_KEY,
   BOOK,
   MUSIC,
   FILM,

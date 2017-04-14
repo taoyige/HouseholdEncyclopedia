@@ -15,7 +15,7 @@ class Navigation extends React.Component {
     this.state = {
       books: [],
       showLogin: false,
-      showRegister: true,
+      showRegister: false,
     };
 
     this.handleLoginClick = this.handleLoginClick.bind(this);

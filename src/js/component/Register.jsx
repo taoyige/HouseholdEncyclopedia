@@ -67,7 +67,7 @@ class Register extends React.Component {
       console.log('注册失败', e);
     }
 
-    BmobUtils.addUser(username, password, email, success, fail);
+    BmobUtils.register(username, password, email, success, fail);
   }
 
   /**

@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
-import Main from './Main.jsx';
+import VisibleMain from './Main.jsx';
 import Home from './Home.jsx';
 import Book from './Book.jsx';
 import Music from './Music.jsx';
@@ -18,7 +18,7 @@ import FilmDetails from './FilmDetails.jsx';
 class MainRouter extends React.Component {
 
   render () {
-    const routes = <Route path="/" component={Main}>
+    const routes = <Route path="/" component={VisibleMain}>
         <IndexRoute component={Home}/>
         <Route path="book(/:category)" component={Book}/>
         <Route path="music(/:category)" component={Music}/>
