@@ -1,8 +1,10 @@
 import React from 'react';
 
 import { fetchData } from '../util/utils.jsx';
+import { connect } from 'react-redux';
 
 import Global from '../Global.jsx';
+import Action from '../Action.jsx';
 
 class BookDetails extends React.Component {
 	constructor(props) {
@@ -20,6 +22,8 @@ class BookDetails extends React.Component {
         tags: [],
       },
     }
+
+    this.handleCollectionClick = this.handleCollectionClick.bind(this);
   }
 
   componentWillMount () {
@@ -32,6 +36,10 @@ class BookDetails extends React.Component {
         book: data,
       })
     });
+  }
+
+  handleCollectionClick () {
+    this.props.onCollectionClick(this.props.currentUserBookCollection);
   }
 
   render () {
@@ -66,7 +74,7 @@ class BookDetails extends React.Component {
               <p><span className="text-bold">售价：</span>{book.price}</p>
               <p><span className="text-bold">出版社：</span>{book.publisher}</p>
               <p><span className="text-bold">摘要：</span>{book.summary}</p>
-              <button className="btn btn-focus btn-lg">关&nbsp;&nbsp;注</button>
+              <button onClick={this.handleCollectionClick} className="btn btn-focus btn-lg">收&nbsp;&nbsp;藏</button>
             </div>
           </div>
         </div>
@@ -75,4 +83,31 @@ class BookDetails extends React.Component {
   }
 }
 
-export default BookDetails;
+const mapStateToProps = (state) => {
+  return {
+    currentUser: state.currentUser,
+    currentUserBookCollection: state.currentUserBookCollection,
+  }
+}
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    onCollectionClick: (currentUserBookCollection) => { 
+      if(currentUserBookCollection.indexOf(ownProps.params.id) == -1){
+        dispatch({
+          type: Action.BOOK_COLLECTION, 
+          payload: {
+            bookId: ownProps.params.id
+          }
+        })
+      }
+    }
+  }
+}
+
+const VisibleBookDetails = connect(
+  mapStateToProps,
+  mapDispatchToProps
+  )(BookDetails);
+
+
+export default VisibleBookDetails;

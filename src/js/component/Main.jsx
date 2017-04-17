@@ -12,7 +12,6 @@ class Main extends React.Component {
   render () {
     return (
       <div>
-     		<button onClick={this.props.onClick}>我在这里</button>
         <Navigation/>
         { this.props.children }
       </div>
@@ -29,7 +28,6 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (state, ownProps) => {
 	return {
 		onClick: () => { 
-			console.log('mapDispatchToProps'); 
 			store.dispatch({
 				type:0x1, 
 				payload: {

@@ -66,7 +66,7 @@ class FilmDetails extends React.Component {
               <p><span className="text-bold">上映日期：</span>{film.year}</p>
               <p><span className="text-bold">类型：</span>{genres}</p>
               <p><span className="text-bold">摘要：</span>{film.summary}</p>
-              <button className="btn btn-focus btn-lg">关&nbsp;&nbsp;注</button>
+              <button className="btn btn-focus btn-lg">收&nbsp;&nbsp;藏</button>
             </div>
           </div>
         </div>

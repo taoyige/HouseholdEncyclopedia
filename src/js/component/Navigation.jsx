@@ -5,7 +5,9 @@ import React from 'react';
 import { IndexLink, Link } from 'react-router';
 import Global from '../Global.jsx';
 import { hashHistory } from 'react-router'
+import { connect } from 'react-redux';
 
+import BmobUtils from '../util/bombUtils.jsx';
 import Login from './Login.jsx';
 import Register from './Register.jsx';
 
@@ -13,7 +15,6 @@ class Navigation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      books: [],
       showLogin: false,
       showRegister: false,
     };
@@ -21,6 +22,7 @@ class Navigation extends React.Component {
     this.handleLoginClick = this.handleLoginClick.bind(this);
     this.handleRegisterClick = this.handleRegisterClick.bind(this);
     this.handleCloseClick = this.handleCloseClick.bind(this);
+    this.handleLogoutClick = this.handleLogoutClick.bind(this);
   } 
 
   handleSearchSubmit (e) {
@@ -56,7 +58,14 @@ class Navigation extends React.Component {
     })
   }
 
+  handleLogoutClick (e) {
+    e.preventDefault();
+    this.props.onLogoutClick();
+    BmobUtils.logout();
+  }
+
   render () {
+    let currentUser = this.props.currentUser;
     return (
       <nav className="navbar navbar-default navbar-fixed-top">
         <div className="container">
@@ -97,9 +106,13 @@ class Navigation extends React.Component {
                 </Link>
               </li>
             </ul>
-            <ul className="nav navbar-nav navbar-right">
+            <ul style={{display:currentUser==null?'block':'none'}} className="nav navbar-nav navbar-right">
               <li><a onClick={this.handleLoginClick}>登录</a></li>
               <li><a onClick={this.handleRegisterClick}>注册</a></li>
+            </ul>
+            <ul style={{display:currentUser==null?'none':'block'}} className="nav navbar-nav navbar-right">
+              <li><a onClick={this.handleRegisterClick}>{currentUser!=null?currentUser.attributes.username:''}</a></li>
+              <li><a onClick={this.handleLogoutClick}>注销</a></li>
             </ul>
             <form className="navbar-form navbar-right" onSubmit={this.handleSearchSubmit}>
               <input type="text" className="form-control" placeholder="搜索..."></input>
@@ -115,4 +128,27 @@ class Navigation extends React.Component {
 
 }
 
-export default Navigation;
+const mapStateToProps = (state) => {
+  return {
+    currentUser: state.currentUser,
+  }
+}
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    onLogoutClick: () => { 
+      dispatch({
+        type:0x2, 
+        payload: {
+          currentUser: null
+        }
+      })
+    }
+  }
+}
+
+const VisibleNavigation = connect(
+  mapStateToProps,
+  mapDispatchToProps
+  )(Navigation);
+
+export default VisibleNavigation;

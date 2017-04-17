@@ -69,7 +69,7 @@ class MusicDetails extends React.Component {
               <p><span className="text-bold">出版商：</span>{music.attrs.publisher[0]}</p>
               <p><span className="text-bold">摘要：</span>{music.summary}</p>
               <p><span className="text-bold">专辑音乐：</span>{music.attrs.tracks[0]}</p>
-              <button className="btn btn-focus btn-lg">关&nbsp;&nbsp;注</button>
+              <button className="btn btn-focus btn-lg">收&nbsp;&nbsp;藏</button>
             </div>
           </div>
         </div>

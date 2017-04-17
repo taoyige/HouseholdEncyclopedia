@@ -1,6 +1,8 @@
 import React from 'react';
 
 import BmobUtils from '../util/bombUtils.jsx';
+import { connect } from 'react-redux';
+import Action from '../Action.jsx';
 
 class Login extends React.Component {
 
@@ -63,7 +65,8 @@ class Login extends React.Component {
 
 	login (username, password) {
 		const success = (user) => {
-			console.log('登录成功', user);
+      this.props.onLoginSuccess(user);
+      this.props.handleCloseClick();
 		}
 
 		const fail = (user, e) => {
@@ -127,4 +130,28 @@ class Login extends React.Component {
 
 }
 
-export default Login;
+
+const mapStateToProps = (state) => {
+  return {
+    currentUser: state.currentUser
+  }
+}
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    onLoginSuccess: (user) => { 
+      dispatch({
+        type: Action.LOGOUT, 
+        payload: {
+          currentUser: user
+        }
+      })
+    }
+  }
+}
+
+const VisibleLogin = connect(
+  mapStateToProps,
+  mapDispatchToProps
+  )(Login);
+
+export default VisibleLogin;

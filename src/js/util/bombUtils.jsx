@@ -44,10 +44,40 @@ const getCurrentUser = () => {
   return currentUser;
 }
 
+/**
+ * 注销用户
+ */
+const logout = () => {
+  console.log(Bmob.User.logOut());
+}
+
+
+/**
+ *  添加Book收藏
+ */
+const addBookCollection = (username, bookId) => {
+  let BookCollection = Bmob.Object.extend("BookCollection");
+  let bookCollection = new BookCollection();
+  bookCollection.set('bookId', bookId);
+  bookCollection.save(null, {
+    success: (bookCollection) => {
+      console.log('success');
+    },
+    error: (bookCollection, error) => {
+      console.log(error);
+    },
+  })
+}
+
+
+
+
 const BmobUtils = {
   register,
   login,
+  logout,
   getCurrentUser,
+  addBookCollection,
 }
 
 export default BmobUtils;
