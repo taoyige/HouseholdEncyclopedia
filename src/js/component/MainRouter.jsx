@@ -17,6 +17,13 @@ import FilmDetails from './FilmDetails.jsx';
 
 class MainRouter extends React.Component {
 
+  /**
+   * 无论什么时候，顶层路由都不应该发生改变
+   */
+  shouldComponentUpdate(){
+     return false;
+  }
+
   render () {
     const routes = <Route path="/" component={VisibleMain}>
         <IndexRoute component={Home}/>

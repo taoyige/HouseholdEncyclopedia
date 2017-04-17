@@ -53,10 +53,9 @@ const store = createStore(reducer);
 
 const render = () => {
   ReactDOM.render(
-  		<Provider store={store}>
-  	<MainRouter>
-  	</MainRouter>
-  		</Provider>
+  	<Provider store={store}>
+  	 <MainRouter/>
+  	</Provider>
   	,
     document.getElementById('app')
   )
