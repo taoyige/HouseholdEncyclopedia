@@ -6,6 +6,7 @@ import { IndexLink, Link } from 'react-router';
 import Global from '../Global.jsx';
 import { hashHistory } from 'react-router'
 import { connect } from 'react-redux';
+import Action from '../Action.jsx';
 
 import BmobUtils from '../util/bombUtils.jsx';
 import Login from './Login.jsx';
@@ -24,6 +25,19 @@ class Navigation extends React.Component {
     this.handleCloseClick = this.handleCloseClick.bind(this);
     this.handleLogoutClick = this.handleLogoutClick.bind(this);
   } 
+
+  componentWillMount () {
+    this.props.initBookCollectionData();
+    this.props.initMusicCollectionData();
+    this.props.initFilmCollectionData();
+  }
+
+  shouldComponentUpdate () {
+    this.props.initBookCollectionData();
+    this.props.initMusicCollectionData();
+    this.props.initFilmCollectionData();
+    return true;
+  }
 
   handleSearchSubmit (e) {
     e.preventDefault();
@@ -139,9 +153,42 @@ const mapDispatchToProps = (dispatch, ownProps) => {
       dispatch({
         type:0x2, 
         payload: {
-          currentUser: null
+          currentUser: null,
+          currentUserBookCollection: [],
+          currentUserMusicCollection: [],
+          currentUserFilmCollection: [],
         }
       })
+    },
+    initBookCollectionData: () => {
+      BmobUtils.getCurrentUserBookCollection((results) => {
+        dispatch({
+          type: Action.INIT_BOOK_COLLECTION,
+          payload: {
+            bookCollection: results
+          }
+        })
+      });
+    },
+    initMusicCollectionData: () => {
+      BmobUtils.getCurrentUserMusicCollection((results) => {
+        dispatch({
+          type: Action.INIT_MUSIC_COLLECTION,
+          payload: {
+            musicCollection: results
+          }
+        })
+      });
+    },
+    initFilmCollectionData: () => {
+      BmobUtils.getCurrentUserFilmCollection((results) => {
+        dispatch({
+          type: Action.INIT_FILM_COLLECTION,
+          payload: {
+            filmCollection: results
+          }
+        })
+      });
     }
   }
 }

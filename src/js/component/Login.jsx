@@ -17,6 +17,19 @@ class Login extends React.Component {
     this.handleLoginSubmit = this.handleLoginSubmit.bind(this);
   }
 
+  shouldComponentUpdate () {
+    this.clearInput();
+    return true
+  }
+  
+  clearInput () {
+    this.refs.username.value = '';
+    this.refs.password.value = '';
+    this.setState({
+      loginInfo: ''
+    })
+  }
+
 	handleCloseClick (e) {
 		e.preventDefault();
 		this.props.handleCloseClick();
@@ -42,6 +55,7 @@ class Login extends React.Component {
       loginInfo: loginInfo,
     })
 	}
+
 
 	/**
    * 检查输入的用户名合法性

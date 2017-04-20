@@ -3,6 +3,7 @@ import React from 'react';
 import { fetchData } from '../util/utils.jsx';
 import { connect } from 'react-redux';
 
+import BmobUtils from '../util/bombUtils.jsx';
 import Global from '../Global.jsx';
 import Action from '../Action.jsx';
 
@@ -24,6 +25,7 @@ class BookDetails extends React.Component {
     }
 
     this.handleCollectionClick = this.handleCollectionClick.bind(this);
+    this.handleCancelCollectionClick = this.handleCancelCollectionClick.bind(this);
   }
 
   componentWillMount () {
@@ -31,7 +33,6 @@ class BookDetails extends React.Component {
     let id = this.props.params.id;
     let url = Global.BOOK_DETAILS_BASE_URL + id;
     fetchData(url, {}, (data) => {
-      console.log(data);
       that.setState({
         book: data,
       })
@@ -39,7 +40,11 @@ class BookDetails extends React.Component {
   }
 
   handleCollectionClick () {
-    this.props.onCollectionClick(this.props.currentUserBookCollection);
+    this.props.onCollectionClick(this.props.currentUser, this.props.currentUserBookCollection);
+  }
+
+  handleCancelCollectionClick () {
+    this.props.onCancelCollectionClick(this.props.currentUser, this.props.currentUserBookCollection);
   }
 
   render () {
@@ -51,6 +56,12 @@ class BookDetails extends React.Component {
     let tags = '';
     for(let i=0; i<book.tags.length; i++){
       tags += book.tags[i].name + ' ';
+    }
+    let hasCollection = false;
+    for(let i=0; i<this.props.currentUserBookCollection.length; i++){
+      if(this.props.currentUserBookCollection[i].attributes.bookId == this.props.params.id){
+        hasCollection = true;
+      }
     }
     return (
       <div className="container details">
@@ -74,7 +85,12 @@ class BookDetails extends React.Component {
               <p><span className="text-bold">售价：</span>{book.price}</p>
               <p><span className="text-bold">出版社：</span>{book.publisher}</p>
               <p><span className="text-bold">摘要：</span>{book.summary}</p>
-              <button onClick={this.handleCollectionClick} className="btn btn-focus btn-lg">收&nbsp;&nbsp;藏</button>
+              <button style={{display:hasCollection==false?'inline-block':'none'}} onClick={this.handleCollectionClick} className="btn btn-focus btn-lg">
+                收&nbsp;&nbsp;藏
+              </button>
+              <button style={{display:hasCollection==true?'inline-block':'none'}} onClick={this.handleCancelCollectionClick} className="btn btn-default btn-lg">
+                取消收藏
+              </button>
             </div>
           </div>
         </div>
@@ -91,14 +107,40 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onCollectionClick: (currentUserBookCollection) => { 
-      if(currentUserBookCollection.indexOf(ownProps.params.id) == -1){
-        dispatch({
-          type: Action.BOOK_COLLECTION, 
-          payload: {
-            bookId: ownProps.params.id
+    onCollectionClick: (currentUser, currentUserBookCollection) => { 
+      if(currentUser){
+        if(currentUserBookCollection.indexOf(ownProps.params.id) == -1){
+          BmobUtils.addBookCollection(currentUser.attributes.username, ownProps.params.id, (bookCollection) => {
+            dispatch({
+              type: Action.ADD_BOOK_COLLECTION, 
+              payload: {
+                bookCollection: bookCollection
+              }
+            })
+          }, (error) => {
+            console.log(error);
+          });
+        }
+      }
+    },
+    onCancelCollectionClick: (currentUser, currentUserBookCollection) => {
+      if(currentUser){
+        let bookCollection = null;
+        for(let i=0; i<currentUserBookCollection.length; i++){
+          if(currentUserBookCollection[i].attributes.bookId == ownProps.params.id){
+            bookCollection = currentUserBookCollection[i];
           }
-        })
+        }
+        BmobUtils.removeBookCollection(bookCollection, () => {
+          dispatch({
+            type: Action.REMOVE_BOOK_COLLECTION, 
+            payload: {
+              bookCollectionId: bookCollection.id
+            }
+          })
+        }, (error) => {
+          console.log(error);
+        });
       }
     }
   }

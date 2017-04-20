@@ -1,8 +1,11 @@
 import React from 'react';
 
 import { fetchData } from '../util/utils.jsx';
+import { connect } from 'react-redux';
 
+import BmobUtils from '../util/bombUtils.jsx';
 import Global from '../Global.jsx';
+import Action from '../Action.jsx';
 
 class MusicDetails extends React.Component {
 	constructor(props) {
@@ -24,6 +27,17 @@ class MusicDetails extends React.Component {
         },
       },
     };
+
+    this.handleCollectionClick = this.handleCollectionClick.bind(this);
+    this.handleCancelCollectionClick = this.handleCancelCollectionClick.bind(this);
+  }
+
+  handleCollectionClick () {
+    this.props.onCollectionClick(this.props.currentUser, this.props.currentUserMusicCollection);
+  }
+
+  handleCancelCollectionClick () {
+    this.props.onCancelCollectionClick(this.props.currentUser, this.props.currentUserMusicCollection);
   }
 
   componentWillMount () {
@@ -48,6 +62,12 @@ class MusicDetails extends React.Component {
     for(let i=0; i<music.tags.length; i++){
       tags += music.tags[i].name + ' ';
     }
+    let hasCollection = false;
+    for(let i=0; i<this.props.currentUserMusicCollection.length; i++){
+      if(this.props.currentUserMusicCollection[i].attributes.musicId == this.props.params.id){
+        hasCollection = true;
+      }
+    }
     return (
       <div className="container details">
         <div className="details-jumbotron">
@@ -69,7 +89,12 @@ class MusicDetails extends React.Component {
               <p><span className="text-bold">出版商：</span>{music.attrs.publisher[0]}</p>
               <p><span className="text-bold">摘要：</span>{music.summary}</p>
               <p><span className="text-bold">专辑音乐：</span>{music.attrs.tracks[0]}</p>
-              <button className="btn btn-focus btn-lg">收&nbsp;&nbsp;藏</button>
+              <button style={{display:hasCollection==false?'inline-block':'none'}} onClick={this.handleCollectionClick} className="btn btn-focus btn-lg">
+                收&nbsp;&nbsp;藏
+              </button>
+              <button style={{display:hasCollection==true?'inline-block':'none'}} onClick={this.handleCancelCollectionClick} className="btn btn-default btn-lg">
+                取消收藏
+              </button>
             </div>
           </div>
         </div>
@@ -78,4 +103,58 @@ class MusicDetails extends React.Component {
   }
 }
 
-export default MusicDetails;
+const mapStateToProps = (state) => {
+  return {
+    currentUser: state.currentUser,
+    currentUserMusicCollection: state.currentUserMusicCollection,
+  }
+}
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    onCollectionClick: (currentUser, currentUserMusicCollection) => { 
+      if(currentUser){
+        if(currentUserMusicCollection.indexOf(ownProps.params.id) == -1){
+          BmobUtils.addMusicCollection(currentUser.attributes.username, ownProps.params.id, (musicCollection) => {
+            dispatch({
+              type: Action.ADD_MUSIC_COLLECTION, 
+              payload: {
+                musicCollection: musicCollection
+              }
+            })
+          }, (error) => {
+            console.log(error);
+          });
+        }
+      }
+    },
+    onCancelCollectionClick: (currentUser, currentUserMusicCollection) => {
+      if(currentUser){
+        let musicCollection = null;
+        for(let i=0; i<currentUserMusicCollection.length; i++){
+          if(currentUserMusicCollection[i].attributes.musicId == ownProps.params.id){
+            musicCollection = currentUserMusicCollection[i];
+          }
+        }
+        BmobUtils.removeMusicCollection(musicCollection, () => {
+          dispatch({
+            type: Action.REMOVE_MUSIC_COLLECTION, 
+            payload: {
+              musicCollectionId: musicCollection.id
+            }
+          })
+        }, (error) => {
+          console.log(error);
+        });
+      }
+    }
+  }
+}
+
+const VisibleMusicDetails = connect(
+  mapStateToProps,
+  mapDispatchToProps
+  )(MusicDetails);
+
+
+
+export default VisibleMusicDetails;

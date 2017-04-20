@@ -6,9 +6,10 @@
 import React from 'react';
 import Navigation from './Navigation.jsx';
 import { connect, Provider } from 'react-redux';
-import store from '../app.jsx';
-class Main extends React.Component {
+import BmobUtils from '../util/bombUtils.jsx';
+import Action from '../Action.jsx';
 
+class Main extends React.Component {
   render () {
     return (
       <div>
@@ -22,19 +23,49 @@ class Main extends React.Component {
 
 const mapStateToProps = (state) => {
 	return {
-		currentUser: state.currentUser
+		currentUser: state.currentUser,
 	}
 }
-const mapDispatchToProps = (state, ownProps) => {
+const mapDispatchToProps = (dispatch, ownProps) => {
 	return {
 		onClick: () => { 
-			store.dispatch({
+			dispatch({
 				type:0x1, 
 				payload: {
 					currentUser: Bmob.User.current()
 				}
 			})
-		}
+		},
+    initBookCollectionData: () => {
+      BmobUtils.getCurrentUserBookCollection((results) => {
+        dispatch({
+          type: Action.INIT_BOOK_COLLECTION,
+          payload: {
+            bookCollection: results
+          }
+        })
+      });
+    },
+    initMusicCollectionData: () => {
+      BmobUtils.getCurrentUserMusicCollection((results) => {
+        dispatch({
+          type: Action.INIT_MUSIC_COLLECTION,
+          payload: {
+            musicCollection: results
+          }
+        })
+      });
+    },
+    initFilmCollectionData: () => {
+      BmobUtils.getCurrentUserFilmCollection((results) => {
+        dispatch({
+          type: Action.INIT_FILM_COLLECTION,
+          payload: {
+            filmCollection: results
+          }
+        })
+      });
+    }
 	}
 }
 

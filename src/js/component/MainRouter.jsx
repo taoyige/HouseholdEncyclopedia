@@ -30,7 +30,7 @@ class MainRouter extends React.Component {
         <Route path="book(/:category)" component={Book}/>
         <Route path="music(/:category)" component={Music}/>
         <Route path="film(/:category)" component={Film}/>
-        <Route path="book_details/:id" component={BookDetails} onEnter={(nextState, replace)=>{console.log(nextState);}}/>
+        <Route path="book_details/:id" component={BookDetails}/>
         <Route path="music_details/:id" component={MusicDetails}/>
         <Route path="film_details/:id" component={FilmDetails}/>
         <Route path="search/:key" component={Search}/>

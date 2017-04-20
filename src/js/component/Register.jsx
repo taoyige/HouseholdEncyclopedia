@@ -18,6 +18,21 @@ class Register extends React.Component {
     this.handleToLogin = this.handleToLogin.bind(this);
   }
 
+  shouldComponentUpdate () {
+    this.clearInput();
+    return true
+  }
+
+  clearInput () {
+    this.refs.username.value = '';
+    this.refs.password.value = '';
+    this.refs.passwordConfirm.value = '';
+    this.refs.email.value = '';
+    this.setState({
+      registerInfo: '',
+    })
+  }
+
   handleCloseClick (e) {
     e.preventDefault();
     this.props.handleCloseClick();
