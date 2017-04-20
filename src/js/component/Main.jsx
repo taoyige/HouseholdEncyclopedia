@@ -6,7 +6,7 @@
 import React from 'react';
 import Navigation from './Navigation.jsx';
 import { connect, Provider } from 'react-redux';
-import BmobUtils from '../util/bombUtils.jsx';
+import BmobUtils from '../util/bmobUtils.jsx';
 import Action from '../Action.jsx';
 
 class Main extends React.Component {

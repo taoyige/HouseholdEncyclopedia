@@ -8,12 +8,13 @@ import Home from './Home.jsx';
 import Book from './Book.jsx';
 import Music from './Music.jsx';
 import Film from './Film.jsx';
-import Category from './Category.jsx';
 import Search from './Search.jsx';
 
 import BookDetails from './BookDetails.jsx';
 import MusicDetails from './MusicDetails.jsx';
 import FilmDetails from './FilmDetails.jsx';
+
+import UserCollection from './UserCollection.jsx';
 
 class MainRouter extends React.Component {
 
@@ -27,6 +28,7 @@ class MainRouter extends React.Component {
   render () {
     const routes = <Route path="/" component={VisibleMain}>
         <IndexRoute component={Home}/>
+        <Route path="user_collection" component={UserCollection}/>
         <Route path="book(/:category)" component={Book}/>
         <Route path="music(/:category)" component={Music}/>
         <Route path="film(/:category)" component={Film}/>

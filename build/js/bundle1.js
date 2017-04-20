@@ -1277,7 +1277,7 @@ var CallbackQueue = __webpack_require__(84);
 var PooledClass = __webpack_require__(19);
 var ReactFeatureFlags = __webpack_require__(89);
 var ReactReconciler = __webpack_require__(24);
-var Transaction = __webpack_require__(41);
+var Transaction = __webpack_require__(42);
 
 var invariant = __webpack_require__(1);
 
@@ -2832,7 +2832,7 @@ var _warning2 = _interopRequireDefault(_warning);
 
 var _PathUtils = __webpack_require__(15);
 
-var _Actions = __webpack_require__(36);
+var _Actions = __webpack_require__(37);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2925,7 +2925,7 @@ var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a
 
 
 var DOMNamespaces = __webpack_require__(54);
-var setInnerHTML = __webpack_require__(43);
+var setInnerHTML = __webpack_require__(44);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(61);
 var setTextContent = __webpack_require__(102);
@@ -3625,7 +3625,7 @@ module.exports = emptyObject;
 
 var _prodInvariant = __webpack_require__(3);
 
-var EventPluginRegistry = __webpack_require__(38);
+var EventPluginRegistry = __webpack_require__(39);
 var EventPluginUtils = __webpack_require__(55);
 var ReactErrorUtils = __webpack_require__(59);
 
@@ -4191,57 +4191,6 @@ var routes = oneOfType([route, arrayOf(route)]);
 
 /***/ }),
 /* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-/**
- * 全局静态变量
- */
-
-var APPLICATION_ID = 'cb3ba145277bf36c0e899c432cc6cce7';
-var REST_API_KEY = '4962df6128294bb610ccb5d8307638d9';
-
-var BOOK = 'book';
-var MUSIC = 'music';
-var FILM = 'film';
-var BOOK_CATEGORY = [{ name: '童话', category: 'fairy_tale', baseURL: 'https://api.douban.com/v2/book/search?tag=童话&count=5&' }, { name: '小说', category: 'novel', baseURL: 'https://api.douban.com/v2/book/search?tag=小说&count=5&' }, { name: '寓言神话', category: 'fable_myth', baseURL: 'https://api.douban.com/v2/book/search?tag=寓言神话&count=5&' }, { name: '散文诗歌', category: 'prose_poetry', baseURL: 'https://api.douban.com/v2/book/search?tag=散文诗歌&count=5&' }, { name: '名人传记', category: 'biography', baseURL: 'https://api.douban.com/v2/book/search?tag=名人传记&count=5&' }];
-var MUSIC_CATEGORY = [{ name: '周杰伦', category: 'Jay_Chou', baseURL: 'https://api.douban.com/v2/music/search?tag=周杰伦&count=5&' }, { name: '陈奕迅', category: 'Eason_Chan', baseURL: 'https://api.douban.com/v2/music/search?tag=陈奕迅&count=5&' }, { name: '薛之谦', category: 'Joker_Xue', baseURL: 'https://api.douban.com/v2/music/search?tag=薛之谦&count=5&' }, { name: '容祖儿', category: 'Joey_Yung', baseURL: 'https://api.douban.com/v2/music/search?tag=容祖儿&count=5&' }, { name: '杨千嬅', category: 'Miriam_Yeung', baseURL: 'https://api.douban.com/v2/music/search?tag=杨千嬅&count=5&' }];
-var FILM_CATEGORY = [{ name: '正在热映', category: 'in_theaters', baseURL: 'https://api.douban.com/v2/movie/in_theaters?count=5&' }, { name: '即将上映', category: 'coming_soon', baseURL: 'https://api.douban.com/v2/movie/coming_soon?count=5&' }, { name: 'TOP250', category: 'top250', baseURL: 'https://api.douban.com/v2/movie/top250?count=5&' }];
-
-var BOOK_DETAILS_BASE_URL = 'https://api.douban.com/v2/book/';
-var MUSIC_DETAILS_BASE_URL = 'https://api.douban.com/v2/music/';
-var FILM_DETAILS_BASE_URL = 'https://api.douban.com/v2/movie/subject/';
-
-var BOOK_SEARCH_BASE_URL = 'https://api.douban.com/v2/book/search';
-var MUSIC_SEARCH_BASE_URL = 'https://api.douban.com/v2/music/search';
-var FILM_SEARCH_BASE_URL = 'https://api.douban.com/v2/movie/search';
-
-var Global = {
-  APPLICATION_ID: APPLICATION_ID,
-  REST_API_KEY: REST_API_KEY,
-  BOOK: BOOK,
-  MUSIC: MUSIC,
-  FILM: FILM,
-  BOOK_CATEGORY: BOOK_CATEGORY,
-  MUSIC_CATEGORY: MUSIC_CATEGORY,
-  FILM_CATEGORY: FILM_CATEGORY,
-  BOOK_DETAILS_BASE_URL: BOOK_DETAILS_BASE_URL,
-  MUSIC_DETAILS_BASE_URL: MUSIC_DETAILS_BASE_URL,
-  FILM_DETAILS_BASE_URL: FILM_DETAILS_BASE_URL,
-  BOOK_SEARCH_BASE_URL: BOOK_SEARCH_BASE_URL,
-  MUSIC_SEARCH_BASE_URL: MUSIC_SEARCH_BASE_URL,
-  FILM_SEARCH_BASE_URL: FILM_SEARCH_BASE_URL
-};
-
-exports.default = Global;
-
-/***/ }),
-/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4330,7 +4279,382 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/**
+ * 全局静态变量
+ */
+
+var APPLICATION_ID = 'cb3ba145277bf36c0e899c432cc6cce7';
+var REST_API_KEY = '4962df6128294bb610ccb5d8307638d9';
+
+var BOOK = 'book';
+var MUSIC = 'music';
+var FILM = 'film';
+var BOOK_CATEGORY = [{ name: '童话', category: 'fairy_tale', baseURL: 'https://api.douban.com/v2/book/search?tag=童话&count=5&' }, { name: '小说', category: 'novel', baseURL: 'https://api.douban.com/v2/book/search?tag=小说&count=5&' }, { name: '寓言神话', category: 'fable_myth', baseURL: 'https://api.douban.com/v2/book/search?tag=寓言神话&count=5&' }, { name: '散文诗歌', category: 'prose_poetry', baseURL: 'https://api.douban.com/v2/book/search?tag=散文诗歌&count=5&' }, { name: '名人传记', category: 'biography', baseURL: 'https://api.douban.com/v2/book/search?tag=名人传记&count=5&' }];
+var MUSIC_CATEGORY = [{ name: '周杰伦', category: 'Jay_Chou', baseURL: 'https://api.douban.com/v2/music/search?tag=周杰伦&count=5&' }, { name: '陈奕迅', category: 'Eason_Chan', baseURL: 'https://api.douban.com/v2/music/search?tag=陈奕迅&count=5&' }, { name: '薛之谦', category: 'Joker_Xue', baseURL: 'https://api.douban.com/v2/music/search?tag=薛之谦&count=5&' }, { name: '容祖儿', category: 'Joey_Yung', baseURL: 'https://api.douban.com/v2/music/search?tag=容祖儿&count=5&' }, { name: '杨千嬅', category: 'Miriam_Yeung', baseURL: 'https://api.douban.com/v2/music/search?tag=杨千嬅&count=5&' }];
+var FILM_CATEGORY = [{ name: '正在热映', category: 'in_theaters', baseURL: 'https://api.douban.com/v2/movie/in_theaters?count=5&' }, { name: '即将上映', category: 'coming_soon', baseURL: 'https://api.douban.com/v2/movie/coming_soon?count=5&' }, { name: 'TOP250', category: 'top250', baseURL: 'https://api.douban.com/v2/movie/top250?count=5&' }];
+
+var BOOK_DETAILS_BASE_URL = 'https://api.douban.com/v2/book/';
+var MUSIC_DETAILS_BASE_URL = 'https://api.douban.com/v2/music/';
+var FILM_DETAILS_BASE_URL = 'https://api.douban.com/v2/movie/subject/';
+
+var BOOK_SEARCH_BASE_URL = 'https://api.douban.com/v2/book/search';
+var MUSIC_SEARCH_BASE_URL = 'https://api.douban.com/v2/music/search';
+var FILM_SEARCH_BASE_URL = 'https://api.douban.com/v2/movie/search';
+
+var Global = {
+  APPLICATION_ID: APPLICATION_ID,
+  REST_API_KEY: REST_API_KEY,
+  BOOK: BOOK,
+  MUSIC: MUSIC,
+  FILM: FILM,
+  BOOK_CATEGORY: BOOK_CATEGORY,
+  MUSIC_CATEGORY: MUSIC_CATEGORY,
+  FILM_CATEGORY: FILM_CATEGORY,
+  BOOK_DETAILS_BASE_URL: BOOK_DETAILS_BASE_URL,
+  MUSIC_DETAILS_BASE_URL: MUSIC_DETAILS_BASE_URL,
+  FILM_DETAILS_BASE_URL: FILM_DETAILS_BASE_URL,
+  BOOK_SEARCH_BASE_URL: BOOK_SEARCH_BASE_URL,
+  MUSIC_SEARCH_BASE_URL: MUSIC_SEARCH_BASE_URL,
+  FILM_SEARCH_BASE_URL: FILM_SEARCH_BASE_URL
+};
+
+exports.default = Global;
+
+/***/ }),
 /* 36 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/**
+ * 定义Bmob的相关操作的工具类
+ */
+
+/**
+ * 用户注册
+ */
+var register = function register(username, password, email, _success, fail) {
+  var user = new Bmob.User();
+  user.set('username', username);
+  user.set('password', password);
+  user.set('email', email);
+
+  user.signUp(null, {
+    success: function success(user) {
+      _success(user);
+    },
+    error: function error(user, e) {
+      fail(user, e);
+    }
+  });
+};
+
+/**
+ * 用户登录
+ */
+var login = function login(username, password, _success2, fail) {
+  Bmob.User.logIn(username, password, {
+    success: function success(user) {
+      _success2(user);
+    },
+    error: function error(user, _error) {
+      fail(user, _error);
+    }
+  });
+};
+
+/**
+ * 得到当前成功登录的用户
+ */
+var getCurrentUser = function getCurrentUser() {
+  var currentUser = Bmob.User.current();
+  return currentUser;
+};
+
+/**
+ * 注销用户
+ */
+var logout = function logout() {
+  console.log(Bmob.User.logOut());
+};
+
+/**
+ * 得到当前用户的图书收藏
+ */
+var getCurrentUserBookCollection = function getCurrentUserBookCollection(_success3) {
+  var currentUser = getCurrentUser();
+  if (!currentUser) {
+    _success3([]);
+    return;
+  }
+  var BookCollection = Bmob.Object.extend("BookCollection");
+  var query = new Bmob.Query(BookCollection);
+  query.equalTo("username", currentUser.attributes.username);
+  query.find({
+    success: function success(results) {
+      if (results) {
+        _success3(results);
+      } else {
+        _success3([]);
+      }
+    },
+    error: function error(_error2) {
+      console.log(_error2);
+    }
+  });
+};
+
+/**
+ * 得到当前用户的音乐收藏
+ */
+var getCurrentUserMusicCollection = function getCurrentUserMusicCollection(_success4) {
+  var currentUser = getCurrentUser();
+  if (!currentUser) {
+    _success4([]);
+    return;
+  }
+  var MusicCollection = Bmob.Object.extend("MusicCollection");
+  var query = new Bmob.Query(MusicCollection);
+  query.equalTo("username", currentUser.attributes.username);
+  query.find({
+    success: function success(results) {
+      if (results) {
+        _success4(results);
+      } else {
+        _success4([]);
+      }
+    },
+    error: function error(_error3) {
+      console.log(_error3);
+    }
+  });
+};
+
+/**
+ * 得到当前用户的电影收藏
+ */
+var getCurrentUserFilmCollection = function getCurrentUserFilmCollection(_success5) {
+  var currentUser = getCurrentUser();
+  if (!currentUser) {
+    _success5([]);
+    return;
+  }
+  var FilmCollection = Bmob.Object.extend("FilmCollection");
+  var query = new Bmob.Query(FilmCollection);
+  query.equalTo("username", currentUser.attributes.username);
+  query.find({
+    success: function success(results) {
+      if (results) {
+        _success5(results);
+      } else {
+        _success5([]);
+      }
+    },
+    error: function error(_error4) {
+      console.log(_error4);
+    }
+  });
+};
+
+/**
+ * 添加Book收藏
+ */
+var addBookCollection = function addBookCollection(username, bookId, book, _success6, fail) {
+  var BookCollection = Bmob.Object.extend("BookCollection");
+  var promise = new Promise(function (resolve, reject) {
+    var query = new Bmob.Query(BookCollection);
+    query.equalTo("username", username);
+    query.equalTo("bookId", bookId);
+    query.find({
+      success: function success(results) {
+        resolve(results);
+      },
+      error: function error(_error5) {
+        console.log(_error5);
+        reject(_error5);
+      }
+    });
+  });
+
+  promise.then(function (results) {
+    if (!results.length) {
+      var bookCollection = new BookCollection();
+      bookCollection.set('bookId', bookId);
+      bookCollection.set('username', username);
+      bookCollection.set('book', JSON.stringify(book));
+      bookCollection.save(null, {
+        success: function success(bookCollection) {
+          _success6(bookCollection);
+        },
+        error: function error(bookCollection, _error6) {
+          console.log(_error6);
+          fail(_error6);
+        }
+      });
+    }
+  }).catch(function (error) {
+    console.log('catch error:', error);
+  });
+};
+
+/**
+ * 删除Book收藏
+ */
+var removeBookCollection = function removeBookCollection(bookCollection, _success7, fail) {
+  bookCollection.destroy({
+    success: function success() {
+      _success7();
+    },
+    error: function error(_error7) {
+      console.log(_error7);
+    }
+  });
+};
+
+/**
+ * 添加Book收藏
+ */
+var addMusicCollection = function addMusicCollection(username, musicId, music, _success8, fail) {
+  var MusicCollection = Bmob.Object.extend("MusicCollection");
+  var promise = new Promise(function (resolve, reject) {
+    var query = new Bmob.Query(MusicCollection);
+    query.equalTo("username", username);
+    query.equalTo("musicId", musicId);
+    query.find({
+      success: function success(results) {
+        resolve(results);
+      },
+      error: function error(_error8) {
+        console.log(_error8);
+        reject(_error8);
+      }
+    });
+  });
+
+  promise.then(function (results) {
+    if (!results.length) {
+      var musicCollection = new MusicCollection();
+      musicCollection.set('musicId', musicId);
+      musicCollection.set('username', username);
+      musicCollection.set('music', JSON.stringify(music));
+      musicCollection.save(null, {
+        success: function success(musicCollection) {
+          _success8(musicCollection);
+        },
+        error: function error(musicCollection, _error9) {
+          console.log(_error9);
+          fail(_error9);
+        }
+      });
+    }
+  }).catch(function (error) {
+    console.log('catch error:', error);
+  });
+};
+
+/**
+ * 删除Music收藏
+ */
+var removeMusicCollection = function removeMusicCollection(musicCollection, _success9, fail) {
+  musicCollection.destroy({
+    success: function success() {
+      console.log('remove success');
+      _success9();
+    },
+    error: function error(_error10) {
+      console.log(_error10);
+    }
+  });
+};
+
+/**
+ * 添加Film收藏
+ */
+var addFilmCollection = function addFilmCollection(username, filmId, film, _success10, fail) {
+  var FilmCollection = Bmob.Object.extend("FilmCollection");
+  var promise = new Promise(function (resolve, reject) {
+    var query = new Bmob.Query(FilmCollection);
+    query.equalTo("username", username);
+    query.equalTo("filmId", filmId);
+    query.find({
+      success: function success(results) {
+        resolve(results);
+      },
+      error: function error(_error11) {
+        console.log(_error11);
+        reject(_error11);
+      }
+    });
+  });
+
+  promise.then(function (results) {
+    if (!results.length) {
+      var filmCollection = new FilmCollection();
+      filmCollection.set('filmId', filmId);
+      filmCollection.set('username', username);
+      filmCollection.set('film', JSON.stringify(film));
+      filmCollection.save(null, {
+        success: function success(filmCollection) {
+          _success10(filmCollection);
+        },
+        error: function error(filmCollection, _error12) {
+          console.log(_error12);
+          fail(_error12);
+        }
+      });
+    }
+  }).catch(function (error) {
+    console.log('catch error:', error);
+  });
+};
+
+/**
+ * 删除Film收藏
+ */
+var removeFilmCollection = function removeFilmCollection(filmCollection, _success11, fail) {
+  filmCollection.destroy({
+    success: function success() {
+      _success11();
+    },
+    error: function error(_error13) {
+      console.log(_error13);
+    }
+  });
+};
+
+var BmobUtils = {
+  register: register,
+  login: login,
+  logout: logout,
+  getCurrentUser: getCurrentUser,
+  addBookCollection: addBookCollection,
+  removeBookCollection: removeBookCollection,
+  addMusicCollection: addMusicCollection,
+  removeMusicCollection: removeMusicCollection,
+  addFilmCollection: addFilmCollection,
+  removeFilmCollection: removeFilmCollection,
+  getCurrentUserBookCollection: getCurrentUserBookCollection,
+  getCurrentUserMusicCollection: getCurrentUserMusicCollection,
+  getCurrentUserFilmCollection: getCurrentUserFilmCollection
+};
+
+exports.default = BmobUtils;
+
+/***/ }),
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4358,7 +4682,7 @@ var REPLACE = exports.REPLACE = 'REPLACE';
 var POP = exports.POP = 'POP';
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4413,7 +4737,7 @@ var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isE
 };
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4674,7 +4998,7 @@ module.exports = EventPluginRegistry;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4692,7 +5016,7 @@ module.exports = EventPluginRegistry;
 
 var _assign = __webpack_require__(5);
 
-var EventPluginRegistry = __webpack_require__(38);
+var EventPluginRegistry = __webpack_require__(39);
 var ReactEventEmitterMixin = __webpack_require__(176);
 var ViewportMetrics = __webpack_require__(95);
 
@@ -5007,7 +5331,7 @@ var ReactBrowserEventEmitter = _assign({}, ReactEventEmitterMixin, {
 module.exports = ReactBrowserEventEmitter;
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5084,7 +5408,7 @@ SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 module.exports = SyntheticMouseEvent;
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5315,7 +5639,7 @@ module.exports = TransactionImpl;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5443,7 +5767,7 @@ function escapeTextContentForBrowser(text) {
 module.exports = escapeTextContentForBrowser;
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5546,337 +5870,25 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = setInnerHTML;
 
 /***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 45 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(281);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-/**
- * 定义Bmob的相关操作的工具类
- */
 
-/**
- * 用户注册
- */
-var register = function register(username, password, email, _success, fail) {
-  console.log(username);
-  var user = new Bmob.User();
-  user.set('username', username);
-  user.set('password', password);
-  user.set('email', email);
 
-  user.signUp(null, {
-    success: function success(user) {
-      _success(user);
-    },
-    error: function error(user, e) {
-      fail(user, e);
-    }
-  });
-};
 
-/**
- * 用户登录
- */
-var login = function login(username, password, _success2, fail) {
-  Bmob.User.logIn(username, password, {
-    success: function success(user) {
-      _success2(user);
-    },
-    error: function error(user, _error) {
-      fail(user, _error);
-    }
-  });
-};
-
-/**
- * 得到当前成功登录的用户
- */
-var getCurrentUser = function getCurrentUser() {
-  var currentUser = Bmob.User.current();
-  return currentUser;
-};
-
-/**
- * 注销用户
- */
-var logout = function logout() {
-  console.log(Bmob.User.logOut());
-};
-
-/**
- * 得到当前用户的图书收藏
- */
-var getCurrentUserBookCollection = function getCurrentUserBookCollection(_success3) {
-  var currentUser = getCurrentUser();
-  if (!currentUser) {
-    return;
-  }
-  var BookCollection = Bmob.Object.extend("BookCollection");
-  var query = new Bmob.Query(BookCollection);
-  query.equalTo("username", currentUser.attributes.username);
-  query.find({
-    success: function success(results) {
-      if (results) {
-        _success3(results);
-      } else {
-        _success3([]);
-      }
-    },
-    error: function error(_error2) {
-      console.log(_error2);
-    }
-  });
-};
-
-/**
- * 得到当前用户的音乐收藏
- */
-var getCurrentUserMusicCollection = function getCurrentUserMusicCollection(_success4) {
-  var currentUser = getCurrentUser();
-  if (!currentUser) {
-    return;
-  }
-  var MusicCollection = Bmob.Object.extend("MusicCollection");
-  var query = new Bmob.Query(MusicCollection);
-  query.equalTo("username", currentUser.attributes.username);
-  query.find({
-    success: function success(results) {
-      if (results) {
-        _success4(results);
-      } else {
-        _success4([]);
-      }
-    },
-    error: function error(_error3) {
-      console.log(_error3);
-    }
-  });
-};
-
-/**
- * 得到当前用户的电影收藏
- */
-var getCurrentUserFilmCollection = function getCurrentUserFilmCollection(_success5) {
-  var currentUser = getCurrentUser();
-  if (!currentUser) {
-    return;
-  }
-  var FilmCollection = Bmob.Object.extend("FilmCollection");
-  var query = new Bmob.Query(FilmCollection);
-  query.equalTo("username", currentUser.attributes.username);
-  query.find({
-    success: function success(results) {
-      if (results) {
-        _success5(results);
-      } else {
-        _success5([]);
-      }
-    },
-    error: function error(_error4) {
-      console.log(_error4);
-    }
-  });
-};
-
-/**
- * 添加Book收藏
- */
-var addBookCollection = function addBookCollection(username, bookId, _success6, fail) {
-  var BookCollection = Bmob.Object.extend("BookCollection");
-  var promise = new Promise(function (resolve, reject) {
-    var query = new Bmob.Query(BookCollection);
-    query.equalTo("username", username);
-    query.equalTo("bookId", bookId);
-    query.find({
-      success: function success(results) {
-        console.log('results', results);
-        resolve(results);
-      },
-      error: function error(_error5) {
-        console.log(_error5);
-        reject(_error5);
-      }
-    });
-  });
-
-  promise.then(function (results) {
-    if (!results.length) {
-      var bookCollection = new BookCollection();
-      bookCollection.set('bookId', bookId);
-      bookCollection.set('username', username);
-      bookCollection.save(null, {
-        success: function success(bookCollection) {
-          console.log('success', bookCollection);
-          _success6(bookCollection);
-        },
-        error: function error(bookCollection, _error6) {
-          console.log(_error6);
-          fail(_error6);
-        }
-      });
-    }
-  }).catch(function (error) {
-    console.log('catch error:', error);
-  });
-};
-
-/**
- * 删除Book收藏
- */
-var removeBookCollection = function removeBookCollection(bookCollection, _success7, fail) {
-  console.log('removeBookCollection');
-  bookCollection.destroy({
-    success: function success() {
-      console.log('remove success');
-      _success7();
-    },
-    error: function error(_error7) {
-      console.log(_error7);
-    }
-  });
-};
-
-/**
- * 添加Book收藏
- */
-var addMusicCollection = function addMusicCollection(username, musicId, _success8, fail) {
-  var MusicCollection = Bmob.Object.extend("MusicCollection");
-  var promise = new Promise(function (resolve, reject) {
-    var query = new Bmob.Query(MusicCollection);
-    query.equalTo("username", username);
-    query.equalTo("musicId", musicId);
-    query.find({
-      success: function success(results) {
-        console.log('results', results);
-        resolve(results);
-      },
-      error: function error(_error8) {
-        console.log(_error8);
-        reject(_error8);
-      }
-    });
-  });
-
-  promise.then(function (results) {
-    if (!results.length) {
-      var musicCollection = new MusicCollection();
-      musicCollection.set('musicId', musicId);
-      musicCollection.set('username', username);
-      musicCollection.save(null, {
-        success: function success(musicCollection) {
-          console.log('success', musicCollection);
-          _success8(musicCollection);
-        },
-        error: function error(musicCollection, _error9) {
-          console.log(_error9);
-          fail(_error9);
-        }
-      });
-    }
-  }).catch(function (error) {
-    console.log('catch error:', error);
-  });
-};
-
-/**
- * 删除Music收藏
- */
-var removeMusicCollection = function removeMusicCollection(musicCollection, _success9, fail) {
-  console.log('removeMisucCollection');
-  musicCollection.destroy({
-    success: function success() {
-      console.log('remove success');
-      _success9();
-    },
-    error: function error(_error10) {
-      console.log(_error10);
-    }
-  });
-};
-
-/**
- * 添加Film收藏
- */
-var addFilmCollection = function addFilmCollection(username, filmId, _success10, fail) {
-  var FilmCollection = Bmob.Object.extend("FilmCollection");
-  var promise = new Promise(function (resolve, reject) {
-    var query = new Bmob.Query(FilmCollection);
-    query.equalTo("username", username);
-    query.equalTo("filmId", filmId);
-    query.find({
-      success: function success(results) {
-        console.log('results', results);
-        resolve(results);
-      },
-      error: function error(_error11) {
-        console.log(_error11);
-        reject(_error11);
-      }
-    });
-  });
-
-  promise.then(function (results) {
-    if (!results.length) {
-      var filmCollection = new FilmCollection();
-      filmCollection.set('filmId', filmId);
-      filmCollection.set('username', username);
-      filmCollection.save(null, {
-        success: function success(filmCollection) {
-          console.log('success', filmCollection);
-          _success10(filmCollection);
-        },
-        error: function error(filmCollection, _error12) {
-          console.log(_error12);
-          fail(_error12);
-        }
-      });
-    }
-  }).catch(function (error) {
-    console.log('catch error:', error);
-  });
-};
-
-/**
- * 删除Film收藏
- */
-var removeFilmCollection = function removeFilmCollection(filmCollection, _success11, fail) {
-  console.log('removefilmCollection');
-  filmCollection.destroy({
-    success: function success() {
-      console.log('remove success');
-      _success11();
-    },
-    error: function error(_error13) {
-      console.log(_error13);
-    }
-  });
-};
-
-var BmobUtils = {
-  register: register,
-  login: login,
-  logout: logout,
-  getCurrentUser: getCurrentUser,
-  addBookCollection: addBookCollection,
-  removeBookCollection: removeBookCollection,
-  addMusicCollection: addMusicCollection,
-  removeMusicCollection: removeMusicCollection,
-  addFilmCollection: addFilmCollection,
-  removeFilmCollection: removeFilmCollection,
-  getCurrentUserBookCollection: getCurrentUserBookCollection,
-  getCurrentUserMusicCollection: getCurrentUserMusicCollection,
-  getCurrentUserFilmCollection: getCurrentUserFilmCollection
-};
-
-exports.default = BmobUtils;
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5916,24 +5928,6 @@ var Action = {
 };
 
 exports.default = Action;
-
-/***/ }),
-/* 46 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(280);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(247);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(281);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
-
-
-
-
-
 
 /***/ }),
 /* 47 */
@@ -6100,7 +6094,7 @@ exports.go = exports.replaceLocation = exports.pushLocation = exports.startListe
 
 var _LocationUtils = __webpack_require__(22);
 
-var _DOMUtils = __webpack_require__(37);
+var _DOMUtils = __webpack_require__(38);
 
 var _DOMStateStorage = __webpack_require__(80);
 
@@ -6220,7 +6214,7 @@ var _runTransitionHook = __webpack_require__(52);
 
 var _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);
 
-var _Actions = __webpack_require__(36);
+var _Actions = __webpack_require__(37);
 
 var _LocationUtils = __webpack_require__(22);
 
@@ -6438,7 +6432,7 @@ var ReactDOMComponentTree = __webpack_require__(6);
 var ReactInstrumentation = __webpack_require__(10);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(61);
-var setInnerHTML = __webpack_require__(43);
+var setInnerHTML = __webpack_require__(44);
 var setTextContent = __webpack_require__(102);
 
 function getNodeAfter(parentNode, node) {
@@ -10409,7 +10403,7 @@ var _prodInvariant = __webpack_require__(3);
 var DOMLazyTree = __webpack_require__(23);
 var DOMProperty = __webpack_require__(16);
 var React = __webpack_require__(27);
-var ReactBrowserEventEmitter = __webpack_require__(39);
+var ReactBrowserEventEmitter = __webpack_require__(40);
 var ReactCurrentOwner = __webpack_require__(13);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDOMContainerInfo = __webpack_require__(159);
@@ -10425,7 +10419,7 @@ var ReactUpdates = __webpack_require__(12);
 var emptyObject = __webpack_require__(28);
 var instantiateReactComponent = __webpack_require__(100);
 var invariant = __webpack_require__(1);
-var setInnerHTML = __webpack_require__(43);
+var setInnerHTML = __webpack_require__(44);
 var shouldUpdateReactComponent = __webpack_require__(66);
 var warning = __webpack_require__(2);
 
@@ -11412,8 +11406,8 @@ module.exports = isTextInputElement;
 
 
 var ExecutionEnvironment = __webpack_require__(7);
-var escapeTextContentForBrowser = __webpack_require__(42);
-var setInnerHTML = __webpack_require__(43);
+var escapeTextContentForBrowser = __webpack_require__(43);
+var setInnerHTML = __webpack_require__(44);
 
 /**
  * Set the textContent property of a node, ensuring that whitespace is preserved
@@ -12753,7 +12747,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(35);
+var _reactRouter = __webpack_require__(34);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13635,7 +13629,7 @@ var _warning2 = _interopRequireDefault(_warning);
 
 var _LocationUtils = __webpack_require__(22);
 
-var _DOMUtils = __webpack_require__(37);
+var _DOMUtils = __webpack_require__(38);
 
 var _DOMStateStorage = __webpack_require__(80);
 
@@ -13815,7 +13809,7 @@ var _RefreshProtocol = __webpack_require__(138);
 
 var RefreshProtocol = _interopRequireWildcard(_RefreshProtocol);
 
-var _DOMUtils = __webpack_require__(37);
+var _DOMUtils = __webpack_require__(38);
 
 var _createHistory = __webpack_require__(51);
 
@@ -13911,7 +13905,7 @@ var _invariant2 = _interopRequireDefault(_invariant);
 
 var _ExecutionEnvironment = __webpack_require__(50);
 
-var _DOMUtils = __webpack_require__(37);
+var _DOMUtils = __webpack_require__(38);
 
 var _HashProtocol = __webpack_require__(137);
 
@@ -14071,7 +14065,7 @@ var _createHistory = __webpack_require__(51);
 
 var _createHistory2 = _interopRequireDefault(_createHistory);
 
-var _Actions = __webpack_require__(36);
+var _Actions = __webpack_require__(37);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15616,7 +15610,7 @@ module.exports = DefaultEventPluginOrder;
 
 var EventPropagators = __webpack_require__(30);
 var ReactDOMComponentTree = __webpack_require__(6);
-var SyntheticMouseEvent = __webpack_require__(40);
+var SyntheticMouseEvent = __webpack_require__(41);
 
 var eventTypes = {
   mouseEnter: {
@@ -17268,8 +17262,8 @@ var DOMNamespaces = __webpack_require__(54);
 var DOMProperty = __webpack_require__(16);
 var DOMPropertyOperations = __webpack_require__(85);
 var EventPluginHub = __webpack_require__(29);
-var EventPluginRegistry = __webpack_require__(38);
-var ReactBrowserEventEmitter = __webpack_require__(39);
+var EventPluginRegistry = __webpack_require__(39);
+var ReactBrowserEventEmitter = __webpack_require__(40);
 var ReactDOMComponentFlags = __webpack_require__(86);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDOMInput = __webpack_require__(163);
@@ -17281,7 +17275,7 @@ var ReactMultiChild = __webpack_require__(182);
 var ReactServerRenderingTransaction = __webpack_require__(187);
 
 var emptyFunction = __webpack_require__(11);
-var escapeTextContentForBrowser = __webpack_require__(42);
+var escapeTextContentForBrowser = __webpack_require__(43);
 var invariant = __webpack_require__(1);
 var isEventSupported = __webpack_require__(65);
 var shallowEqual = __webpack_require__(48);
@@ -19215,7 +19209,7 @@ var DOMChildrenOperations = __webpack_require__(53);
 var DOMLazyTree = __webpack_require__(23);
 var ReactDOMComponentTree = __webpack_require__(6);
 
-var escapeTextContentForBrowser = __webpack_require__(42);
+var escapeTextContentForBrowser = __webpack_require__(43);
 var invariant = __webpack_require__(1);
 var validateDOMNesting = __webpack_require__(67);
 
@@ -19687,7 +19681,7 @@ module.exports = {
 
 
 var DOMProperty = __webpack_require__(16);
-var EventPluginRegistry = __webpack_require__(38);
+var EventPluginRegistry = __webpack_require__(39);
 var ReactComponentTreeHook = __webpack_require__(9);
 
 var warning = __webpack_require__(2);
@@ -20174,7 +20168,7 @@ module.exports = ReactDebugTool;
 var _assign = __webpack_require__(5);
 
 var ReactUpdates = __webpack_require__(12);
-var Transaction = __webpack_require__(41);
+var Transaction = __webpack_require__(42);
 
 var emptyFunction = __webpack_require__(11);
 
@@ -20602,7 +20596,7 @@ var EventPluginHub = __webpack_require__(29);
 var EventPluginUtils = __webpack_require__(55);
 var ReactComponentEnvironment = __webpack_require__(58);
 var ReactEmptyComponent = __webpack_require__(88);
-var ReactBrowserEventEmitter = __webpack_require__(39);
+var ReactBrowserEventEmitter = __webpack_require__(40);
 var ReactHostComponent = __webpack_require__(90);
 var ReactUpdates = __webpack_require__(12);
 
@@ -21325,10 +21319,10 @@ var _assign = __webpack_require__(5);
 
 var CallbackQueue = __webpack_require__(84);
 var PooledClass = __webpack_require__(19);
-var ReactBrowserEventEmitter = __webpack_require__(39);
+var ReactBrowserEventEmitter = __webpack_require__(40);
 var ReactInputSelection = __webpack_require__(91);
 var ReactInstrumentation = __webpack_require__(10);
-var Transaction = __webpack_require__(41);
+var Transaction = __webpack_require__(42);
 var ReactUpdateQueue = __webpack_require__(60);
 
 /**
@@ -21602,7 +21596,7 @@ module.exports = ReactRef;
 var _assign = __webpack_require__(5);
 
 var PooledClass = __webpack_require__(19);
-var Transaction = __webpack_require__(41);
+var Transaction = __webpack_require__(42);
 var ReactInstrumentation = __webpack_require__(10);
 var ReactServerUpdateQueue = __webpack_require__(188);
 
@@ -22373,7 +22367,7 @@ var SyntheticClipboardEvent = __webpack_require__(194);
 var SyntheticEvent = __webpack_require__(14);
 var SyntheticFocusEvent = __webpack_require__(197);
 var SyntheticKeyboardEvent = __webpack_require__(199);
-var SyntheticMouseEvent = __webpack_require__(40);
+var SyntheticMouseEvent = __webpack_require__(41);
 var SyntheticDragEvent = __webpack_require__(196);
 var SyntheticTouchEvent = __webpack_require__(200);
 var SyntheticTransitionEvent = __webpack_require__(201);
@@ -22724,7 +22718,7 @@ module.exports = SyntheticCompositionEvent;
 
 
 
-var SyntheticMouseEvent = __webpack_require__(40);
+var SyntheticMouseEvent = __webpack_require__(41);
 
 /**
  * @interface DragEvent
@@ -23031,7 +23025,7 @@ module.exports = SyntheticTransitionEvent;
 
 
 
-var SyntheticMouseEvent = __webpack_require__(40);
+var SyntheticMouseEvent = __webpack_require__(41);
 
 /**
  * @interface WheelEvent
@@ -23829,7 +23823,7 @@ module.exports = getVendorPrefixedEventName;
 
 
 
-var escapeTextContentForBrowser = __webpack_require__(42);
+var escapeTextContentForBrowser = __webpack_require__(43);
 
 /**
  * Escapes attribute value to prevent scripting attacks.
@@ -24801,7 +24795,7 @@ function isActive(_ref, indexOnly, currentLocation, routes, params) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_Actions__ = __webpack_require__(36);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_Actions__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_Actions___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_history_lib_Actions__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
@@ -38397,13 +38391,13 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(35);
+var _reactRouter = __webpack_require__(34);
 
-var _Main = __webpack_require__(265);
+var _Main = __webpack_require__(264);
 
 var _Main2 = _interopRequireDefault(_Main);
 
-var _Home = __webpack_require__(262);
+var _Home = __webpack_require__(261);
 
 var _Home2 = _interopRequireDefault(_Home);
 
@@ -38411,19 +38405,15 @@ var _Book = __webpack_require__(257);
 
 var _Book2 = _interopRequireDefault(_Book);
 
-var _Music = __webpack_require__(266);
+var _Music = __webpack_require__(265);
 
 var _Music2 = _interopRequireDefault(_Music);
 
-var _Film = __webpack_require__(260);
+var _Film = __webpack_require__(259);
 
 var _Film2 = _interopRequireDefault(_Film);
 
-var _Category = __webpack_require__(259);
-
-var _Category2 = _interopRequireDefault(_Category);
-
-var _Search = __webpack_require__(270);
+var _Search = __webpack_require__(269);
 
 var _Search2 = _interopRequireDefault(_Search);
 
@@ -38431,13 +38421,17 @@ var _BookDetails = __webpack_require__(258);
 
 var _BookDetails2 = _interopRequireDefault(_BookDetails);
 
-var _MusicDetails = __webpack_require__(267);
+var _MusicDetails = __webpack_require__(266);
 
 var _MusicDetails2 = _interopRequireDefault(_MusicDetails);
 
-var _FilmDetails = __webpack_require__(261);
+var _FilmDetails = __webpack_require__(260);
 
 var _FilmDetails2 = _interopRequireDefault(_FilmDetails);
+
+var _UserCollection = __webpack_require__(270);
+
+var _UserCollection2 = _interopRequireDefault(_UserCollection);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -38476,6 +38470,7 @@ var MainRouter = function (_React$Component) {
         _reactRouter.Route,
         { path: '/', component: _Main2.default },
         _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'user_collection', component: _UserCollection2.default }),
         _react2.default.createElement(_reactRouter.Route, { path: 'book(/:category)', component: _Book2.default }),
         _react2.default.createElement(_reactRouter.Route, { path: 'music(/:category)', component: _Music2.default }),
         _react2.default.createElement(_reactRouter.Route, { path: 'film(/:category)', component: _Film2.default }),
@@ -38514,19 +38509,19 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _redux = __webpack_require__(244);
 
-var _reactRedux = __webpack_require__(46);
+var _reactRedux = __webpack_require__(45);
 
-var _Global = __webpack_require__(34);
+var _Global = __webpack_require__(35);
 
 var _Global2 = _interopRequireDefault(_Global);
 
-var _Action = __webpack_require__(45);
+var _Action = __webpack_require__(46);
 
 var _Action2 = _interopRequireDefault(_Action);
 
-var _bombUtils = __webpack_require__(44);
+var _bmobUtils = __webpack_require__(36);
 
-var _bombUtils2 = _interopRequireDefault(_bombUtils);
+var _bmobUtils2 = _interopRequireDefault(_bmobUtils);
 
 var _MainRouter = __webpack_require__(255);
 
@@ -38553,7 +38548,7 @@ Bmob.initialize(_Global2.default.APPLICATION_ID, _Global2.default.REST_API_KEY);
  * reducer函数
  */
 var defaultState = {
-  currentUser: _bombUtils2.default.getCurrentUser(),
+  currentUser: _bmobUtils2.default.getCurrentUser(),
   currentUserBookCollection: [],
   currentUserMusicCollection: [],
   currentUserFilmCollection: []
@@ -38678,7 +38673,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(35);
+var _reactRouter = __webpack_require__(34);
 
 var _jquery = __webpack_require__(245);
 
@@ -38688,7 +38683,7 @@ var _SubNavigation = __webpack_require__(121);
 
 var _SubNavigation2 = _interopRequireDefault(_SubNavigation);
 
-var _Global = __webpack_require__(34);
+var _Global = __webpack_require__(35);
 
 var _Global2 = _interopRequireDefault(_Global);
 
@@ -38702,7 +38697,7 @@ var _BackToTop = __webpack_require__(119);
 
 var _BackToTop2 = _interopRequireDefault(_BackToTop);
 
-var _LoadMore = __webpack_require__(263);
+var _LoadMore = __webpack_require__(262);
 
 var _LoadMore2 = _interopRequireDefault(_LoadMore);
 
@@ -38922,17 +38917,17 @@ var _react2 = _interopRequireDefault(_react);
 
 var _utils = __webpack_require__(47);
 
-var _reactRedux = __webpack_require__(46);
+var _reactRedux = __webpack_require__(45);
 
-var _bombUtils = __webpack_require__(44);
+var _bmobUtils = __webpack_require__(36);
 
-var _bombUtils2 = _interopRequireDefault(_bombUtils);
+var _bmobUtils2 = _interopRequireDefault(_bmobUtils);
 
-var _Global = __webpack_require__(34);
+var _Global = __webpack_require__(35);
 
 var _Global2 = _interopRequireDefault(_Global);
 
-var _Action = __webpack_require__(45);
+var _Action = __webpack_require__(46);
 
 var _Action2 = _interopRequireDefault(_Action);
 
@@ -38978,7 +38973,7 @@ var BookDetails = function (_React$Component) {
       var id = this.props.params.id;
       var url = _Global2.default.BOOK_DETAILS_BASE_URL + id;
       (0, _utils.fetchData)(url, {}, function (data) {
-        that.setState({
+        if (that.refs.myRef) that.setState({
           book: data
         });
       });
@@ -38986,7 +38981,7 @@ var BookDetails = function (_React$Component) {
   }, {
     key: 'handleCollectionClick',
     value: function handleCollectionClick() {
-      this.props.onCollectionClick(this.props.currentUser, this.props.currentUserBookCollection);
+      this.props.onCollectionClick(this.props.currentUser, this.state.book, this.props.currentUserBookCollection);
     }
   }, {
     key: 'handleCancelCollectionClick',
@@ -39013,7 +39008,7 @@ var BookDetails = function (_React$Component) {
       }
       return _react2.default.createElement(
         'div',
-        { className: 'container details' },
+        { className: 'container details', ref: 'myRef' },
         _react2.default.createElement(
           'div',
           { className: 'details-jumbotron' },
@@ -39146,10 +39141,10 @@ var mapStateToProps = function mapStateToProps(state) {
 };
 var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
   return {
-    onCollectionClick: function onCollectionClick(currentUser, currentUserBookCollection) {
+    onCollectionClick: function onCollectionClick(currentUser, book, currentUserBookCollection) {
       if (currentUser) {
         if (currentUserBookCollection.indexOf(ownProps.params.id) == -1) {
-          _bombUtils2.default.addBookCollection(currentUser.attributes.username, ownProps.params.id, function (bookCollection) {
+          _bmobUtils2.default.addBookCollection(currentUser.attributes.username, book.id, book, function (bookCollection) {
             dispatch({
               type: _Action2.default.ADD_BOOK_COLLECTION,
               payload: {
@@ -39170,7 +39165,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
             bookCollection = currentUserBookCollection[i];
           }
         }
-        _bombUtils2.default.removeBookCollection(bookCollection, function () {
+        _bmobUtils2.default.removeBookCollection(bookCollection, function () {
           dispatch({
             type: _Action2.default.REMOVE_BOOK_COLLECTION,
             payload: {
@@ -39206,59 +39201,13 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Category = function (_React$Component) {
-  _inherits(Category, _React$Component);
-
-  function Category() {
-    _classCallCheck(this, Category);
-
-    return _possibleConstructorReturn(this, (Category.__proto__ || Object.getPrototypeOf(Category)).apply(this, arguments));
-  }
-
-  _createClass(Category, [{
-    key: 'render',
-    value: function render() {
-      var category = this.props.params.category;
-    }
-  }]);
-
-  return Category;
-}(_react2.default.Component);
-
-exports.default = Category;
-
-/***/ }),
-/* 260 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(35);
+var _reactRouter = __webpack_require__(34);
 
 var _SubNavigation = __webpack_require__(121);
 
 var _SubNavigation2 = _interopRequireDefault(_SubNavigation);
 
-var _Global = __webpack_require__(34);
+var _Global = __webpack_require__(35);
 
 var _Global2 = _interopRequireDefault(_Global);
 
@@ -39422,7 +39371,7 @@ var Film = function (_React$Component) {
 exports.default = Film;
 
 /***/ }),
-/* 261 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39440,17 +39389,17 @@ var _react2 = _interopRequireDefault(_react);
 
 var _utils = __webpack_require__(47);
 
-var _reactRedux = __webpack_require__(46);
+var _reactRedux = __webpack_require__(45);
 
-var _bombUtils = __webpack_require__(44);
+var _bmobUtils = __webpack_require__(36);
 
-var _bombUtils2 = _interopRequireDefault(_bombUtils);
+var _bmobUtils2 = _interopRequireDefault(_bmobUtils);
 
-var _Global = __webpack_require__(34);
+var _Global = __webpack_require__(35);
 
 var _Global2 = _interopRequireDefault(_Global);
 
-var _Action = __webpack_require__(45);
+var _Action = __webpack_require__(46);
 
 var _Action2 = _interopRequireDefault(_Action);
 
@@ -39498,7 +39447,7 @@ var FilmDetails = function (_React$Component) {
       var id = this.props.params.id;
       var url = _Global2.default.FILM_DETAILS_BASE_URL + id;
       (0, _utils.fetchData)(url, {}, function (data) {
-        that.setState({
+        if (that.refs.myRef) that.setState({
           film: data
         });
       });
@@ -39506,7 +39455,7 @@ var FilmDetails = function (_React$Component) {
   }, {
     key: 'handleCollectionClick',
     value: function handleCollectionClick() {
-      this.props.onCollectionClick(this.props.currentUser, this.props.currentUserFilmCollection);
+      this.props.onCollectionClick(this.props.currentUser, this.state.film, this.props.currentUserFilmCollection);
     }
   }, {
     key: 'handleCancelCollectionClick',
@@ -39526,7 +39475,6 @@ var FilmDetails = function (_React$Component) {
         genres += film.genres[_i] + ' ';
       }
       var hasCollection = false;
-      console.log(this.props.currentUserFilmCollection);
       for (var _i2 = 0; _i2 < this.props.currentUserFilmCollection.length; _i2++) {
         if (this.props.currentUserFilmCollection[_i2].attributes.filmId == this.props.params.id) {
           hasCollection = true;
@@ -39534,7 +39482,7 @@ var FilmDetails = function (_React$Component) {
       }
       return _react2.default.createElement(
         'div',
-        { className: 'container details' },
+        { className: 'container details', ref: 'myRef' },
         _react2.default.createElement(
           'div',
           { className: 'details-jumbotron' },
@@ -39647,10 +39595,10 @@ var mapStateToProps = function mapStateToProps(state) {
 };
 var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
   return {
-    onCollectionClick: function onCollectionClick(currentUser, currentUserFilmCollection) {
+    onCollectionClick: function onCollectionClick(currentUser, film, currentUserFilmCollection) {
       if (currentUser) {
         if (currentUserFilmCollection.indexOf(ownProps.params.id) == -1) {
-          _bombUtils2.default.addFilmCollection(currentUser.attributes.username, ownProps.params.id, function (filmCollection) {
+          _bmobUtils2.default.addFilmCollection(currentUser.attributes.username, film.id, film, function (filmCollection) {
             dispatch({
               type: _Action2.default.ADD_FILM_COLLECTION,
               payload: {
@@ -39671,7 +39619,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
             filmCollection = currentUserFilmCollection[i];
           }
         }
-        _bombUtils2.default.removeFilmCollection(filmCollection, function () {
+        _bmobUtils2.default.removeFilmCollection(filmCollection, function () {
           dispatch({
             type: _Action2.default.REMOVE_FILM_COLLECTION,
             payload: {
@@ -39691,7 +39639,7 @@ var VisibleFilmDetails = (0, _reactRedux.connect)(mapStateToProps, mapDispatchTo
 exports.default = VisibleFilmDetails;
 
 /***/ }),
-/* 262 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39745,7 +39693,7 @@ var Home = function (_React$Component) {
 exports.default = Home;
 
 /***/ }),
-/* 263 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39803,7 +39751,7 @@ var LoadMore = function (_React$Component) {
 exports.default = LoadMore;
 
 /***/ }),
-/* 264 */
+/* 263 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39819,13 +39767,13 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _bombUtils = __webpack_require__(44);
+var _bmobUtils = __webpack_require__(36);
 
-var _bombUtils2 = _interopRequireDefault(_bombUtils);
+var _bmobUtils2 = _interopRequireDefault(_bmobUtils);
 
-var _reactRedux = __webpack_require__(46);
+var _reactRedux = __webpack_require__(45);
 
-var _Action = __webpack_require__(45);
+var _Action = __webpack_require__(46);
 
 var _Action2 = _interopRequireDefault(_Action);
 
@@ -39946,7 +39894,7 @@ var Login = function (_React$Component) {
         });
       };
 
-      _bombUtils2.default.login(username, password, success, fail);
+      _bmobUtils2.default.login(username, password, success, fail);
     }
   }, {
     key: 'render',
@@ -40067,7 +40015,7 @@ var VisibleLogin = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)
 exports.default = VisibleLogin;
 
 /***/ }),
-/* 265 */
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40083,17 +40031,17 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Navigation = __webpack_require__(268);
+var _Navigation = __webpack_require__(267);
 
 var _Navigation2 = _interopRequireDefault(_Navigation);
 
-var _reactRedux = __webpack_require__(46);
+var _reactRedux = __webpack_require__(45);
 
-var _bombUtils = __webpack_require__(44);
+var _bmobUtils = __webpack_require__(36);
 
-var _bombUtils2 = _interopRequireDefault(_bombUtils);
+var _bmobUtils2 = _interopRequireDefault(_bmobUtils);
 
-var _Action = __webpack_require__(45);
+var _Action = __webpack_require__(46);
 
 var _Action2 = _interopRequireDefault(_Action);
 
@@ -40148,7 +40096,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
       });
     },
     initBookCollectionData: function initBookCollectionData() {
-      _bombUtils2.default.getCurrentUserBookCollection(function (results) {
+      _bmobUtils2.default.getCurrentUserBookCollection(function (results) {
         dispatch({
           type: _Action2.default.INIT_BOOK_COLLECTION,
           payload: {
@@ -40158,7 +40106,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
       });
     },
     initMusicCollectionData: function initMusicCollectionData() {
-      _bombUtils2.default.getCurrentUserMusicCollection(function (results) {
+      _bmobUtils2.default.getCurrentUserMusicCollection(function (results) {
         dispatch({
           type: _Action2.default.INIT_MUSIC_COLLECTION,
           payload: {
@@ -40168,7 +40116,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
       });
     },
     initFilmCollectionData: function initFilmCollectionData() {
-      _bombUtils2.default.getCurrentUserFilmCollection(function (results) {
+      _bmobUtils2.default.getCurrentUserFilmCollection(function (results) {
         dispatch({
           type: _Action2.default.INIT_FILM_COLLECTION,
           payload: {
@@ -40185,7 +40133,7 @@ var VisibleMain = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(
 exports.default = VisibleMain;
 
 /***/ }),
-/* 266 */
+/* 265 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40201,13 +40149,13 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(35);
+var _reactRouter = __webpack_require__(34);
 
 var _SubNavigation = __webpack_require__(121);
 
 var _SubNavigation2 = _interopRequireDefault(_SubNavigation);
 
-var _Global = __webpack_require__(34);
+var _Global = __webpack_require__(35);
 
 var _Global2 = _interopRequireDefault(_Global);
 
@@ -40375,7 +40323,7 @@ var Music = function (_React$Component) {
 exports.default = Music;
 
 /***/ }),
-/* 267 */
+/* 266 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40393,17 +40341,17 @@ var _react2 = _interopRequireDefault(_react);
 
 var _utils = __webpack_require__(47);
 
-var _reactRedux = __webpack_require__(46);
+var _reactRedux = __webpack_require__(45);
 
-var _bombUtils = __webpack_require__(44);
+var _bmobUtils = __webpack_require__(36);
 
-var _bombUtils2 = _interopRequireDefault(_bombUtils);
+var _bmobUtils2 = _interopRequireDefault(_bmobUtils);
 
-var _Global = __webpack_require__(34);
+var _Global = __webpack_require__(35);
 
 var _Global2 = _interopRequireDefault(_Global);
 
-var _Action = __webpack_require__(45);
+var _Action = __webpack_require__(46);
 
 var _Action2 = _interopRequireDefault(_Action);
 
@@ -40449,7 +40397,7 @@ var MusicDetails = function (_React$Component) {
   _createClass(MusicDetails, [{
     key: 'handleCollectionClick',
     value: function handleCollectionClick() {
-      this.props.onCollectionClick(this.props.currentUser, this.props.currentUserMusicCollection);
+      this.props.onCollectionClick(this.props.currentUser, this.state.music, this.props.currentUserMusicCollection);
     }
   }, {
     key: 'handleCancelCollectionClick',
@@ -40463,8 +40411,7 @@ var MusicDetails = function (_React$Component) {
       var id = this.props.params.id;
       var url = _Global2.default.MUSIC_DETAILS_BASE_URL + id;
       (0, _utils.fetchData)(url, {}, function (data) {
-        console.log(data);
-        that.setState({
+        if (that.refs.myRef) that.setState({
           music: data
         });
       });
@@ -40489,7 +40436,7 @@ var MusicDetails = function (_React$Component) {
       }
       return _react2.default.createElement(
         'div',
-        { className: 'container details' },
+        { className: 'container details', ref: 'myRef' },
         _react2.default.createElement(
           'div',
           { className: 'details-jumbotron' },
@@ -40612,10 +40559,10 @@ var mapStateToProps = function mapStateToProps(state) {
 };
 var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
   return {
-    onCollectionClick: function onCollectionClick(currentUser, currentUserMusicCollection) {
+    onCollectionClick: function onCollectionClick(currentUser, music, currentUserMusicCollection) {
       if (currentUser) {
         if (currentUserMusicCollection.indexOf(ownProps.params.id) == -1) {
-          _bombUtils2.default.addMusicCollection(currentUser.attributes.username, ownProps.params.id, function (musicCollection) {
+          _bmobUtils2.default.addMusicCollection(currentUser.attributes.username, music.id, music, function (musicCollection) {
             dispatch({
               type: _Action2.default.ADD_MUSIC_COLLECTION,
               payload: {
@@ -40636,7 +40583,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
             musicCollection = currentUserMusicCollection[i];
           }
         }
-        _bombUtils2.default.removeMusicCollection(musicCollection, function () {
+        _bmobUtils2.default.removeMusicCollection(musicCollection, function () {
           dispatch({
             type: _Action2.default.REMOVE_MUSIC_COLLECTION,
             payload: {
@@ -40656,7 +40603,7 @@ var VisibleMusicDetails = (0, _reactRedux.connect)(mapStateToProps, mapDispatchT
 exports.default = VisibleMusicDetails;
 
 /***/ }),
-/* 268 */
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40672,27 +40619,27 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(35);
+var _reactRouter = __webpack_require__(34);
 
-var _Global = __webpack_require__(34);
+var _Global = __webpack_require__(35);
 
 var _Global2 = _interopRequireDefault(_Global);
 
-var _reactRedux = __webpack_require__(46);
+var _reactRedux = __webpack_require__(45);
 
-var _Action = __webpack_require__(45);
+var _Action = __webpack_require__(46);
 
 var _Action2 = _interopRequireDefault(_Action);
 
-var _bombUtils = __webpack_require__(44);
+var _bmobUtils = __webpack_require__(36);
 
-var _bombUtils2 = _interopRequireDefault(_bombUtils);
+var _bmobUtils2 = _interopRequireDefault(_bmobUtils);
 
-var _Login = __webpack_require__(264);
+var _Login = __webpack_require__(263);
 
 var _Login2 = _interopRequireDefault(_Login);
 
-var _Register = __webpack_require__(269);
+var _Register = __webpack_require__(268);
 
 var _Register2 = _interopRequireDefault(_Register);
 
@@ -40784,7 +40731,7 @@ var Navigation = function (_React$Component) {
     value: function handleLogoutClick(e) {
       e.preventDefault();
       this.props.onLogoutClick();
-      _bombUtils2.default.logout();
+      _bmobUtils2.default.logout();
     }
   }, {
     key: 'render',
@@ -40896,8 +40843,8 @@ var Navigation = function (_React$Component) {
                   'li',
                   null,
                   _react2.default.createElement(
-                    'a',
-                    { onClick: this.handleRegisterClick },
+                    _reactRouter.Link,
+                    { to: '/user_collection' },
                     currentUser != null ? currentUser.attributes.username : ''
                   )
                 ),
@@ -40947,7 +40894,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
       });
     },
     initBookCollectionData: function initBookCollectionData() {
-      _bombUtils2.default.getCurrentUserBookCollection(function (results) {
+      _bmobUtils2.default.getCurrentUserBookCollection(function (results) {
         dispatch({
           type: _Action2.default.INIT_BOOK_COLLECTION,
           payload: {
@@ -40957,7 +40904,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
       });
     },
     initMusicCollectionData: function initMusicCollectionData() {
-      _bombUtils2.default.getCurrentUserMusicCollection(function (results) {
+      _bmobUtils2.default.getCurrentUserMusicCollection(function (results) {
         dispatch({
           type: _Action2.default.INIT_MUSIC_COLLECTION,
           payload: {
@@ -40967,7 +40914,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
       });
     },
     initFilmCollectionData: function initFilmCollectionData() {
-      _bombUtils2.default.getCurrentUserFilmCollection(function (results) {
+      _bmobUtils2.default.getCurrentUserFilmCollection(function (results) {
         dispatch({
           type: _Action2.default.INIT_FILM_COLLECTION,
           payload: {
@@ -40984,7 +40931,7 @@ var VisibleNavigation = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToP
 exports.default = VisibleNavigation;
 
 /***/ }),
-/* 269 */
+/* 268 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41000,9 +40947,9 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _bombUtils = __webpack_require__(44);
+var _bmobUtils = __webpack_require__(36);
 
-var _bombUtils2 = _interopRequireDefault(_bombUtils);
+var _bmobUtils2 = _interopRequireDefault(_bmobUtils);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -41095,7 +41042,6 @@ var Register = function (_React$Component) {
       var _this2 = this;
 
       var success = function success(user) {
-        console.log('注册成功', user);
         _this2.setState({
           isRegistedSuccessful: true
         });
@@ -41105,7 +41051,7 @@ var Register = function (_React$Component) {
         console.log('注册失败', e);
       };
 
-      _bombUtils2.default.register(username, password, email, success, fail);
+      _bmobUtils2.default.register(username, password, email, success, fail);
     }
 
     /**
@@ -41264,7 +41210,7 @@ var Register = function (_React$Component) {
 exports.default = Register;
 
 /***/ }),
-/* 270 */
+/* 269 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41280,13 +41226,13 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(35);
+var _reactRouter = __webpack_require__(34);
 
 var _jquery = __webpack_require__(245);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _Global = __webpack_require__(34);
+var _Global = __webpack_require__(35);
 
 var _Global2 = _interopRequireDefault(_Global);
 
@@ -41662,6 +41608,425 @@ var Search = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Search;
+
+/***/ }),
+/* 270 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(34);
+
+var _reactRedux = __webpack_require__(45);
+
+var _bmobUtils = __webpack_require__(36);
+
+var _bmobUtils2 = _interopRequireDefault(_bmobUtils);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var UserCollection = function (_React$Component) {
+  _inherits(UserCollection, _React$Component);
+
+  function UserCollection(props) {
+    _classCallCheck(this, UserCollection);
+
+    var _this = _possibleConstructorReturn(this, (UserCollection.__proto__ || Object.getPrototypeOf(UserCollection)).call(this, props));
+
+    _this.state = {
+      books: [],
+      musics: [],
+      films: [],
+      books_count: 0,
+      musics_count: 0,
+      films_count: 0
+    };
+    return _this;
+  }
+
+  // componentWillMount () {
+  //   this.initData();
+  // }
+
+  _createClass(UserCollection, [{
+    key: 'componentWillReceiveProps',
+    value: function componentWillReceiveProps(nextProps) {
+      this.initData();
+    }
+
+    /**
+     * 初始化数据
+     */
+
+  }, {
+    key: 'initData',
+    value: function initData() {
+      var _this2 = this;
+
+      _bmobUtils2.default.getCurrentUserBookCollection(function (results) {
+        var books = [];
+        for (var i = 0; i < results.length; i++) {
+          var json = JSON.parse(results[i].attributes.book);
+          books.push(json);
+        }
+        _this2.setState({
+          books: books,
+          books_count: books.length
+        });
+      });
+      _bmobUtils2.default.getCurrentUserMusicCollection(function (results) {
+        var musics = [];
+        for (var i = 0; i < results.length; i++) {
+          var json = JSON.parse(results[i].attributes.music);
+          musics.push(json);
+        }
+        _this2.setState({
+          musics: musics,
+          musics_count: musics.length
+        });
+      });
+      _bmobUtils2.default.getCurrentUserFilmCollection(function (results) {
+        var films = [];
+        for (var i = 0; i < results.length; i++) {
+          var json = JSON.parse(results[i].attributes.film);
+          films.push(json);
+        }
+        _this2.setState({
+          films: films,
+          films_count: films.length
+        });
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'container search' },
+        _react2.default.createElement(
+          'div',
+          { className: 'row' },
+          _react2.default.createElement(
+            'div',
+            { className: 'search-header col-md-12' },
+            _react2.default.createElement(
+              'div',
+              { className: 'search-info' },
+              _react2.default.createElement(
+                'p',
+                { style: { display: this.props.currentUser != null ? 'block' : 'none' } },
+                '\u5C0A\u656C\u7684\uFF1A',
+                _react2.default.createElement(
+                  'span',
+                  { className: 'text-important' },
+                  this.props.currentUser != null ? this.props.currentUser.attributes.username : ''
+                ),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '\u60A8\u4E00\u5171\u6536\u85CF\u4E86\uFF1A',
+                  this.state.books_count + this.state.musics_count + this.state.films_count,
+                  '\u4E2A\u6761\u76EE'
+                ),
+                _react2.default.createElement('br', null),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '\u56FE\u4E66\uFF1A',
+                  this.state.books_count
+                ),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '\u97F3\u4E50\uFF1A',
+                  this.state.musics_count
+                ),
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  '\u7535\u5F71\uFF1A',
+                  this.state.films_count
+                )
+              ),
+              _react2.default.createElement(
+                'p',
+                { style: { display: this.props.currentUser == null ? 'block' : 'none' }, className: 'text-important' },
+                '\u4F60\u8FD8\u6CA1\u767B\u5F55\u5462\uFF01'
+              )
+            ),
+            _react2.default.createElement(
+              'ul',
+              { id: 'nav_search', className: 'nav nav-tabs nav-justified' },
+              _react2.default.createElement(
+                'li',
+                { className: 'active' },
+                _react2.default.createElement(
+                  'a',
+                  { href: '#tab1', 'data-toggle': 'tab' },
+                  'Book'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#tab2', 'data-toggle': 'tab' },
+                  'Music'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: '#tab3', 'data-toggle': 'tab' },
+                  'Film'
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'search-body col-md-12 container' },
+            _react2.default.createElement(
+              'div',
+              { className: 'tab-content' },
+              _react2.default.createElement(
+                'div',
+                { className: 'tab-pane active row', id: 'tab1' },
+                _react2.default.createElement(
+                  'p',
+                  { className: 'text-center', style: { display: this.state.books.length != 0 ? 'none' : 'block' } },
+                  '\u4F60\u8FD8\u6CA1\u6709\u6536\u85CF\u4E00\u672C\u56FE\u4E66\u5462\uFF01'
+                ),
+                _react2.default.createElement(
+                  'ul',
+                  null,
+                  this.state.books.map(function (item, index) {
+                    var tags = '';
+                    for (var i = 0; i < item.tags.length; i++) {
+                      tags += item.tags[i].name + ' ';
+                    }
+                    return _react2.default.createElement(
+                      'li',
+                      { key: index, className: 'search-item col-md-6' },
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'media' },
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'media-left' },
+                          _react2.default.createElement(
+                            _reactRouter.Link,
+                            { to: '/book_details/' + item.id },
+                            _react2.default.createElement('img', { className: 'media-object dd', src: item.image, alt: item.title })
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'media-body item-body' },
+                          _react2.default.createElement(
+                            _reactRouter.Link,
+                            { to: '/book_details/' + item.id, className: 'title' },
+                            item.title
+                          ),
+                          _react2.default.createElement(
+                            'p',
+                            { className: 'ellipsis' },
+                            '\u6807\u7B7E:',
+                            tags
+                          ),
+                          _react2.default.createElement(
+                            'p',
+                            null,
+                            '\u4F5C\u8005:',
+                            item.author
+                          ),
+                          _react2.default.createElement(
+                            'p',
+                            null,
+                            '\u51FA\u7248\u793E:',
+                            item.publisher
+                          )
+                        )
+                      )
+                    );
+                  })
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'tab-pane row', id: 'tab2' },
+                _react2.default.createElement(
+                  'p',
+                  { className: 'text-center', style: { display: this.state.musics.length != 0 ? 'none' : 'block' } },
+                  '\u4F60\u8FD8\u6CA1\u6709\u6536\u85CF\u4E00\u9996\u97F3\u4E50\u5462\uFF01'
+                ),
+                _react2.default.createElement(
+                  'ul',
+                  null,
+                  this.state.musics.map(function (item, index) {
+                    var tags = '';
+                    for (var i = 0; i < item.tags.length; i++) {
+                      tags += item.tags[i].name + ' ';
+                    }
+                    return _react2.default.createElement(
+                      'li',
+                      { key: index, className: 'search-item col-md-6' },
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'media' },
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'media-left' },
+                          _react2.default.createElement(
+                            _reactRouter.Link,
+                            { to: '/music_details/' + item.id },
+                            _react2.default.createElement('img', { className: 'media-object dd', src: item.image, alt: item.title })
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'media-body item-body' },
+                          _react2.default.createElement(
+                            _reactRouter.Link,
+                            { to: '/music_details/' + item.id, className: 'title' },
+                            item.title
+                          ),
+                          _react2.default.createElement(
+                            'p',
+                            { className: 'ellipsis' },
+                            '\u6807\u7B7E:',
+                            tags
+                          ),
+                          _react2.default.createElement(
+                            'p',
+                            null,
+                            '\u53D1\u884C\u5E74\u4EFD:',
+                            item.attrs.pubdate
+                          ),
+                          _react2.default.createElement(
+                            'p',
+                            { className: 'ellipsis' },
+                            '\u4E13\u8F91\u97F3\u4E50:',
+                            item.attrs.tracks !== undefined ? item.attrs.tracks[0] : '无'
+                          )
+                        )
+                      )
+                    );
+                  })
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'tab-pane row', id: 'tab3' },
+                _react2.default.createElement(
+                  'p',
+                  { className: 'text-center', style: { display: this.state.films.length != 0 ? 'none' : 'block' } },
+                  '\u4F60\u8FD8\u6CA1\u6709\u6536\u85CF\u4E00\u90E8\u7535\u5F71\u5462\uFF01'
+                ),
+                _react2.default.createElement(
+                  'ul',
+                  null,
+                  this.state.films.map(function (item, index) {
+                    var casts = '';
+                    for (var i = 0; i < item.casts.length; i++) {
+                      casts += item.casts[i].name + ' ';
+                    }
+                    var directors = '';
+                    for (var _i = 0; _i < item.directors.length; _i++) {
+                      directors += item.directors[_i].name + ' ';
+                    }
+                    return _react2.default.createElement(
+                      'li',
+                      { key: index, className: 'search-item col-md-6' },
+                      _react2.default.createElement(
+                        'div',
+                        { className: 'media' },
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'media-left' },
+                          _react2.default.createElement(
+                            _reactRouter.Link,
+                            { to: '/film_details/' + item.id },
+                            _react2.default.createElement('img', { className: 'media-object dd', src: item.images.small, alt: item.title })
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'div',
+                          { className: 'media-body item-body' },
+                          _react2.default.createElement(
+                            _reactRouter.Link,
+                            { to: '/film_details/' + item.id, className: 'title' },
+                            item.title
+                          ),
+                          _react2.default.createElement(
+                            'p',
+                            { className: 'ellipsis' },
+                            '\u5E74\u4EFD:',
+                            item.year
+                          ),
+                          _react2.default.createElement(
+                            'p',
+                            null,
+                            '\u6F14\u5458:',
+                            casts
+                          ),
+                          _react2.default.createElement(
+                            'p',
+                            null,
+                            '\u5BFC\u6F14:',
+                            directors
+                          )
+                        )
+                      )
+                    );
+                  })
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return UserCollection;
+}(_react2.default.Component);
+
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    currentUser: state.currentUser,
+    currentUserBookCollection: state.currentUserBookCollection,
+    currentUserMusicCollection: state.currentUserMusicCollection,
+    currentUserFilmCollection: state.currentUserFilmCollection
+  };
+};
+var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
+  return {};
+};
+
+var VisibleUserCollection = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(UserCollection);
+
+exports.default = VisibleUserCollection;
 
 /***/ }),
 /* 271 */,

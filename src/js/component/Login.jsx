@@ -1,6 +1,6 @@
 import React from 'react';
 
-import BmobUtils from '../util/bombUtils.jsx';
+import BmobUtils from '../util/bmobUtils.jsx';
 import { connect } from 'react-redux';
 import Action from '../Action.jsx';
 

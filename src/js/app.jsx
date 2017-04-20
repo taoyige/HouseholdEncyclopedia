@@ -8,7 +8,7 @@ import { connect, Provider } from 'react-redux';
 
 import Global from './Global.jsx';
 import Action from './Action.jsx';
-import BmobUtils from './util/bombUtils.jsx';
+import BmobUtils from './util/bmobUtils.jsx';
 
 import MainRouter from './component/MainRouter.jsx';
 require('../css/style.css');

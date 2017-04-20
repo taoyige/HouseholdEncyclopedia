@@ -3,7 +3,7 @@ import React from 'react';
 import { fetchData } from '../util/utils.jsx';
 import { connect } from 'react-redux';
 
-import BmobUtils from '../util/bombUtils.jsx';
+import BmobUtils from '../util/bmobUtils.jsx';
 import Global from '../Global.jsx';
 import Action from '../Action.jsx';
 
@@ -33,7 +33,7 @@ class MusicDetails extends React.Component {
   }
 
   handleCollectionClick () {
-    this.props.onCollectionClick(this.props.currentUser, this.props.currentUserMusicCollection);
+    this.props.onCollectionClick(this.props.currentUser, this.state.music, this.props.currentUserMusicCollection);
   }
 
   handleCancelCollectionClick () {
@@ -45,7 +45,7 @@ class MusicDetails extends React.Component {
     let id = this.props.params.id;
     let url = Global.MUSIC_DETAILS_BASE_URL + id;
     fetchData(url, {}, (data) => {
-      console.log(data);
+      if(that.refs.myRef)
       that.setState({
         music: data,
       })
@@ -69,7 +69,7 @@ class MusicDetails extends React.Component {
       }
     }
     return (
-      <div className="container details">
+      <div className="container details" ref="myRef">
         <div className="details-jumbotron">
           <div className="media">
             <div className="media-left">
@@ -111,10 +111,10 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onCollectionClick: (currentUser, currentUserMusicCollection) => { 
+    onCollectionClick: (currentUser, music, currentUserMusicCollection) => { 
       if(currentUser){
         if(currentUserMusicCollection.indexOf(ownProps.params.id) == -1){
-          BmobUtils.addMusicCollection(currentUser.attributes.username, ownProps.params.id, (musicCollection) => {
+          BmobUtils.addMusicCollection(currentUser.attributes.username, music.id, music, (musicCollection) => {
             dispatch({
               type: Action.ADD_MUSIC_COLLECTION, 
               payload: {

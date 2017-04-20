@@ -1,6 +1,6 @@
 import React from 'react';
  
-import BmobUtils from '../util/bombUtils.jsx';
+import BmobUtils from '../util/bmobUtils.jsx';
 
 
 class Register extends React.Component {
@@ -72,7 +72,6 @@ class Register extends React.Component {
    */
   register (username, password, email) {
     const success = (user) => {
-      console.log('注册成功', user);
       this.setState({
         isRegistedSuccessful: true,
       })

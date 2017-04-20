@@ -433,3 +433,6 @@ body {
   width: 200px;
   margin: 30px auto 0;
 }
+.text-important {
+  color: #ff0000;
+}

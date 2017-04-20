@@ -3,7 +3,7 @@ import React from 'react';
 import { fetchData } from '../util/utils.jsx';
 import { connect } from 'react-redux';
 
-import BmobUtils from '../util/bombUtils.jsx';
+import BmobUtils from '../util/bmobUtils.jsx';
 import Global from '../Global.jsx';
 import Action from '../Action.jsx';
 
@@ -35,6 +35,7 @@ class FilmDetails extends React.Component {
     let id = this.props.params.id;
     let url = Global.FILM_DETAILS_BASE_URL + id;
     fetchData(url, {}, (data) => {
+      if(that.refs.myRef)
       that.setState({
         film: data,
       })
@@ -42,7 +43,7 @@ class FilmDetails extends React.Component {
   }
 
   handleCollectionClick () {
-    this.props.onCollectionClick(this.props.currentUser, this.props.currentUserFilmCollection);
+    this.props.onCollectionClick(this.props.currentUser, this.state.film, this.props.currentUserFilmCollection);
   }
 
   handleCancelCollectionClick () {
@@ -60,14 +61,13 @@ class FilmDetails extends React.Component {
       genres += film.genres[i] + ' ';
     }
     let hasCollection = false;
-    console.log(this.props.currentUserFilmCollection);
     for(let i=0; i<this.props.currentUserFilmCollection.length; i++){
       if(this.props.currentUserFilmCollection[i].attributes.filmId == this.props.params.id){
         hasCollection = true;
       }
     }
     return (
-      <div className="container details">
+      <div className="container details" ref="myRef">
         <div className="details-jumbotron">
           <div className="media">
             <div className="media-left">
@@ -108,10 +108,10 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onCollectionClick: (currentUser, currentUserFilmCollection) => { 
+    onCollectionClick: (currentUser, film, currentUserFilmCollection) => { 
       if(currentUser){
         if(currentUserFilmCollection.indexOf(ownProps.params.id) == -1){
-          BmobUtils.addFilmCollection(currentUser.attributes.username, ownProps.params.id, (filmCollection) => {
+          BmobUtils.addFilmCollection(currentUser.attributes.username, film.id, film, (filmCollection) => {
             dispatch({
               type: Action.ADD_FILM_COLLECTION, 
               payload: {

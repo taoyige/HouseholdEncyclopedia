@@ -6,7 +6,6 @@
  * 用户注册
  */
 const register = (username, password, email, success, fail) => {
-  console.log(username);
   let user = new Bmob.User();
   user.set('username', username);
   user.set('password', password);
@@ -57,6 +56,7 @@ const logout = () => {
 const getCurrentUserBookCollection = (success) => {
   let currentUser = getCurrentUser();
   if(!currentUser){
+    success([]);
     return ;
   }
   let BookCollection = Bmob.Object.extend("BookCollection");
@@ -82,6 +82,7 @@ const getCurrentUserBookCollection = (success) => {
 const getCurrentUserMusicCollection = (success) => {
   let currentUser = getCurrentUser();
   if(!currentUser){
+    success([]);
     return ;
   }
   let MusicCollection = Bmob.Object.extend("MusicCollection");
@@ -107,6 +108,7 @@ const getCurrentUserMusicCollection = (success) => {
 const getCurrentUserFilmCollection = (success) => {
   let currentUser = getCurrentUser();
   if(!currentUser){
+    success([]);
     return ;
   }
   let FilmCollection = Bmob.Object.extend("FilmCollection");
@@ -130,21 +132,20 @@ const getCurrentUserFilmCollection = (success) => {
 /**
  * 添加Book收藏
  */
-const addBookCollection = (username, bookId, success, fail) => {
+const addBookCollection = (username, bookId, book, success, fail) => {
   let BookCollection = Bmob.Object.extend("BookCollection");
   let promise = new Promise((resolve, reject) => {
-    let query = new Bmob.Query(BookCollection);
-    query.equalTo("username", username);
-    query.equalTo("bookId", bookId);
-    query.find({
-      success: (results) => {
-        console.log('results', results);
-        resolve(results);
-      },
-      error: (error) => {
-        console.log(error);
-        reject(error);
-      }
+  let query = new Bmob.Query(BookCollection);
+  query.equalTo("username", username);
+  query.equalTo("bookId", bookId);
+  query.find({
+    success: (results) => {
+      resolve(results);
+    },
+    error: (error) => {
+      console.log(error);
+      reject(error);
+    }
     })
   })
 
@@ -153,9 +154,9 @@ const addBookCollection = (username, bookId, success, fail) => {
       let bookCollection = new BookCollection();
       bookCollection.set('bookId', bookId);
       bookCollection.set('username', username);
+      bookCollection.set('book', JSON.stringify(book));
       bookCollection.save(null, {
         success: (bookCollection) => {
-          console.log('success', bookCollection);
           success(bookCollection);
         },
         error: (bookCollection, error) => {
@@ -175,10 +176,8 @@ const addBookCollection = (username, bookId, success, fail) => {
  * 删除Book收藏
  */
 const removeBookCollection = (bookCollection, success, fail) => {
-  console.log('removeBookCollection');
   bookCollection.destroy({
     success: () => {
-      console.log('remove success');
       success();
     },
     error: (error) => {
@@ -191,7 +190,7 @@ const removeBookCollection = (bookCollection, success, fail) => {
 /**
  * 添加Book收藏
  */
-const addMusicCollection = (username, musicId, success, fail) => {
+const addMusicCollection = (username, musicId, music, success, fail) => {
   let MusicCollection = Bmob.Object.extend("MusicCollection");
   let promise = new Promise((resolve, reject) => {
     let query = new Bmob.Query(MusicCollection);
@@ -199,7 +198,6 @@ const addMusicCollection = (username, musicId, success, fail) => {
     query.equalTo("musicId", musicId);
     query.find({
       success: (results) => {
-        console.log('results', results);
         resolve(results);
       },
       error: (error) => {
@@ -214,9 +212,9 @@ const addMusicCollection = (username, musicId, success, fail) => {
       let musicCollection = new MusicCollection();
       musicCollection.set('musicId', musicId);
       musicCollection.set('username', username);
+      musicCollection.set('music', JSON.stringify(music));
       musicCollection.save(null, {
         success: (musicCollection) => {
-          console.log('success', musicCollection);
           success(musicCollection);
         },
         error: (musicCollection, error) => {
@@ -236,7 +234,6 @@ const addMusicCollection = (username, musicId, success, fail) => {
  * 删除Music收藏
  */
 const removeMusicCollection = (musicCollection, success, fail) => {
-  console.log('removeMisucCollection');
   musicCollection.destroy({
     success: () => {
       console.log('remove success');
@@ -251,7 +248,7 @@ const removeMusicCollection = (musicCollection, success, fail) => {
 /**
  * 添加Film收藏
  */
-const addFilmCollection = (username, filmId, success, fail) => {
+const addFilmCollection = (username, filmId, film, success, fail) => {
   let FilmCollection = Bmob.Object.extend("FilmCollection");
   let promise = new Promise((resolve, reject) => {
     let query = new Bmob.Query(FilmCollection);
@@ -259,7 +256,6 @@ const addFilmCollection = (username, filmId, success, fail) => {
     query.equalTo("filmId", filmId);
     query.find({
       success: (results) => {
-        console.log('results', results);
         resolve(results);
       },
       error: (error) => {
@@ -274,9 +270,9 @@ const addFilmCollection = (username, filmId, success, fail) => {
       let filmCollection = new FilmCollection();
       filmCollection.set('filmId', filmId);
       filmCollection.set('username', username);
+      filmCollection.set('film', JSON.stringify(film));
       filmCollection.save(null, {
         success: (filmCollection) => {
-          console.log('success', filmCollection);
           success(filmCollection);
         },
         error: (filmCollection, error) => {
@@ -296,10 +292,8 @@ const addFilmCollection = (username, filmId, success, fail) => {
  * 删除Film收藏
  */
 const removeFilmCollection = (filmCollection, success, fail) => {
-  console.log('removefilmCollection');
   filmCollection.destroy({
     success: () => {
-      console.log('remove success');
       success();
     },
     error: (error) => {

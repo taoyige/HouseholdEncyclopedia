@@ -8,7 +8,7 @@ import { hashHistory } from 'react-router'
 import { connect } from 'react-redux';
 import Action from '../Action.jsx';
 
-import BmobUtils from '../util/bombUtils.jsx';
+import BmobUtils from '../util/bmobUtils.jsx';
 import Login from './Login.jsx';
 import Register from './Register.jsx';
 
@@ -125,7 +125,7 @@ class Navigation extends React.Component {
               <li><a onClick={this.handleRegisterClick}>注册</a></li>
             </ul>
             <ul style={{display:currentUser==null?'none':'block'}} className="nav navbar-nav navbar-right">
-              <li><a onClick={this.handleRegisterClick}>{currentUser!=null?currentUser.attributes.username:''}</a></li>
+              <li><Link to={`/user_collection`}>{currentUser!=null?currentUser.attributes.username:''}</Link></li>
               <li><a onClick={this.handleLogoutClick}>注销</a></li>
             </ul>
             <form className="navbar-form navbar-right" onSubmit={this.handleSearchSubmit}>

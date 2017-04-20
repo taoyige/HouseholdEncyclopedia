@@ -3,7 +3,7 @@ import React from 'react';
 import { fetchData } from '../util/utils.jsx';
 import { connect } from 'react-redux';
 
-import BmobUtils from '../util/bombUtils.jsx';
+import BmobUtils from '../util/bmobUtils.jsx';
 import Global from '../Global.jsx';
 import Action from '../Action.jsx';
 
@@ -33,6 +33,7 @@ class BookDetails extends React.Component {
     let id = this.props.params.id;
     let url = Global.BOOK_DETAILS_BASE_URL + id;
     fetchData(url, {}, (data) => {
+      if(that.refs.myRef)
       that.setState({
         book: data,
       })
@@ -40,7 +41,7 @@ class BookDetails extends React.Component {
   }
 
   handleCollectionClick () {
-    this.props.onCollectionClick(this.props.currentUser, this.props.currentUserBookCollection);
+    this.props.onCollectionClick(this.props.currentUser, this.state.book, this.props.currentUserBookCollection);
   }
 
   handleCancelCollectionClick () {
@@ -64,7 +65,7 @@ class BookDetails extends React.Component {
       }
     }
     return (
-      <div className="container details">
+      <div className="container details" ref="myRef">
         <div className="details-jumbotron">
           <div className="media">
             <div className="media-left">
@@ -107,10 +108,10 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onCollectionClick: (currentUser, currentUserBookCollection) => { 
+    onCollectionClick: (currentUser, book, currentUserBookCollection) => { 
       if(currentUser){
         if(currentUserBookCollection.indexOf(ownProps.params.id) == -1){
-          BmobUtils.addBookCollection(currentUser.attributes.username, ownProps.params.id, (bookCollection) => {
+          BmobUtils.addBookCollection(currentUser.attributes.username, book.id, book, (bookCollection) => {
             dispatch({
               type: Action.ADD_BOOK_COLLECTION, 
               payload: {
