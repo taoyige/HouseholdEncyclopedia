@@ -1,13 +1,13 @@
 {
-    "count": 3,
+    "count": 5,
     "start": 0,
-    "total": 35,
+    "total": 38,
     "musics": [
         {
             "rating": {
                 "max": 10,
                 "average": "8.4",
-                "numRaters": 4123,
+                "numRaters": 4215,
                 "min": 0
             },
             "author": [
@@ -19,35 +19,35 @@
             "image": "https://img1.doubanio.com/spic/s28105787.jpg",
             "tags": [
                 {
-                    "count": 911,
+                    "count": 937,
                     "name": "薛之谦"
                 },
                 {
-                    "count": 424,
+                    "count": 439,
                     "name": "华语"
                 },
                 {
-                    "count": 310,
+                    "count": 320,
                     "name": "内地"
                 },
                 {
-                    "count": 284,
+                    "count": 297,
                     "name": "流行"
                 },
                 {
-                    "count": 247,
+                    "count": 253,
                     "name": "2015"
                 },
                 {
-                    "count": 174,
-                    "name": "Pop"
-                },
-                {
-                    "count": 170,
+                    "count": 179,
                     "name": "国语"
                 },
                 {
-                    "count": 157,
+                    "count": 179,
+                    "name": "Pop"
+                },
+                {
+                    "count": 164,
                     "name": "男歌手"
                 }
             ],
@@ -86,7 +86,7 @@
             "rating": {
                 "max": 10,
                 "average": "7.3",
-                "numRaters": 2739,
+                "numRaters": 2799,
                 "min": 0
             },
             "author": [
@@ -98,35 +98,35 @@
             "image": "https://img1.doubanio.com/spic/s28903779.jpg",
             "tags": [
                 {
-                    "count": 653,
+                    "count": 667,
                     "name": "薛之谦"
                 },
                 {
-                    "count": 293,
+                    "count": 301,
                     "name": "华语"
                 },
                 {
-                    "count": 238,
+                    "count": 244,
                     "name": "流行"
                 },
                 {
-                    "count": 232,
+                    "count": 236,
                     "name": "2016"
                 },
                 {
-                    "count": 229,
+                    "count": 233,
                     "name": "内地"
                 },
                 {
-                    "count": 164,
+                    "count": 171,
                     "name": "男歌手"
                 },
                 {
-                    "count": 157,
+                    "count": 161,
                     "name": "男声"
                 },
                 {
-                    "count": 134,
+                    "count": 137,
                     "name": "Pop"
                 }
             ],
@@ -165,7 +165,7 @@
             "rating": {
                 "max": 10,
                 "average": "7.4",
-                "numRaters": 1757,
+                "numRaters": 1787,
                 "min": 0
             },
             "author": [
@@ -177,11 +177,11 @@
             "image": "https://img1.doubanio.com/spic/s2174238.jpg",
             "tags": [
                 {
-                    "count": 494,
+                    "count": 506,
                     "name": "薛之谦"
                 },
                 {
-                    "count": 181,
+                    "count": 182,
                     "name": "内地"
                 },
                 {
@@ -189,15 +189,15 @@
                     "name": "Pop"
                 },
                 {
-                    "count": 100,
-                    "name": "流行"
-                },
-                {
-                    "count": 99,
+                    "count": 103,
                     "name": "认真的雪"
                 },
                 {
-                    "count": 80,
+                    "count": 101,
+                    "name": "流行"
+                },
+                {
+                    "count": 81,
                     "name": "华语"
                 },
                 {
@@ -239,6 +239,161 @@
             "title": "薛之谦",
             "alt": "https://music.douban.com/subject/1795183/",
             "id": "1795183"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": "7.5",
+                "numRaters": 1813,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "薛之谦"
+                }
+            ],
+            "alt_title": "",
+            "image": "https://img3.doubanio.com/spic/s27133394.jpg",
+            "tags": [
+                {
+                    "count": 440,
+                    "name": "薛之谦"
+                },
+                {
+                    "count": 181,
+                    "name": "内地"
+                },
+                {
+                    "count": 176,
+                    "name": "华语"
+                },
+                {
+                    "count": 127,
+                    "name": "2013"
+                },
+                {
+                    "count": 127,
+                    "name": "Pop"
+                },
+                {
+                    "count": 123,
+                    "name": "流行"
+                },
+                {
+                    "count": 106,
+                    "name": "男声"
+                },
+                {
+                    "count": 72,
+                    "name": "大陆"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/25744776/",
+            "attrs": {
+                "publisher": [
+                    "海蝶音乐"
+                ],
+                "singer": [
+                    "薛之谦"
+                ],
+                "version": [
+                    "专辑"
+                ],
+                "pubdate": [
+                    "2013-10-12"
+                ],
+                "title": [
+                    "意外"
+                ],
+                "media": [
+                    "CD"
+                ],
+                "tracks": [
+                    "1.丑八怪\n2.意外\n3.你还要我怎样\n4.有没有\n5.潮流季\n6.等我回家\n7.我想起你了\n8.其实\n9.方圆几里\n10.方圆几里 / 吉他版"
+                ],
+                "discs": [
+                    "1"
+                ]
+            },
+            "title": "意外",
+            "alt": "https://music.douban.com/subject/25744776/",
+            "id": "25744776"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": "5.7",
+                "numRaters": 1299,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "薛之谦"
+                }
+            ],
+            "alt_title": "",
+            "image": "https://img3.doubanio.com/spic/s29402441.jpg",
+            "tags": [
+                {
+                    "count": 427,
+                    "name": "薛之谦"
+                },
+                {
+                    "count": 151,
+                    "name": "华语"
+                },
+                {
+                    "count": 134,
+                    "name": "2017"
+                },
+                {
+                    "count": 127,
+                    "name": "灵魂"
+                },
+                {
+                    "count": 112,
+                    "name": "单曲"
+                },
+                {
+                    "count": 111,
+                    "name": "流行"
+                },
+                {
+                    "count": 98,
+                    "name": "中国"
+                },
+                {
+                    "count": 89,
+                    "name": "自嘲歌"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/26987137/",
+            "attrs": {
+                "publisher": [
+                    "海蝶音乐"
+                ],
+                "singer": [
+                    "薛之谦"
+                ],
+                "pubdate": [
+                    "2017-03-17"
+                ],
+                "title": [
+                    "高尚"
+                ],
+                "media": [
+                    "数字(Digital)"
+                ],
+                "tracks": [
+                    "高尚"
+                ],
+                "version": [
+                    "单曲"
+                ]
+            },
+            "title": "高尚",
+            "alt": "https://music.douban.com/subject/26987137/",
+            "id": "26987137"
         }
     ]
 }

@@ -303,6 +303,22 @@ const removeFilmCollection = (filmCollection, success, fail) => {
 }
 
 
+/**
+ * 获取轮播图数据
+ */
+const fetchCarouselData = (success) => {
+  let Carousel = Bmob.Object.extend("Carousel");
+  let query = new Bmob.Query(Carousel);
+  query.find({
+    success: (results) => {
+      success(results);
+    },
+    error: (error) => {
+
+    }
+  })
+}
+
 
 const BmobUtils = {
   register,
@@ -318,6 +334,7 @@ const BmobUtils = {
   getCurrentUserBookCollection,
   getCurrentUserMusicCollection,
   getCurrentUserFilmCollection,
+  fetchCarouselData,
 }
 
 export default BmobUtils;

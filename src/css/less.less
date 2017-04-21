@@ -19,6 +19,10 @@ a, button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 // 重写导航当前路由样式
 .navbar-default .navbar-nav > li > a.active,
 .navbar-default .navbar-nav > li > a:active, 
@@ -542,4 +546,51 @@ body {
 }
 
 .container .carousel-indicators li.active {
+}
+
+/**
+ * 友情链接
+ */
+.friends-link{
+  
+}
+
+.module {
+  border-top: 2px solid @mainColor;
+  background-color: #f4f5f6;
+  margin-bottom: 16px;
+}
+
+.module .link-head {
+  color: #222;
+  padding-top: 15px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.module .link-conent {
+  padding-left: 20px;
+}
+
+.module .link-conent ul {
+  margin: 0;
+  padding: 0;
+}
+
+.module .link-conent li {
+  float: left;
+  margin-right: 10px;
+}
+
+.module .link-conent li a {
+  color: #777;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.module .link-conent li a:hover {
+  color: @mainColor;
+  text-decoration: none;
 }

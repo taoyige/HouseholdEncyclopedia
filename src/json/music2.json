@@ -1,5 +1,5 @@
 {
-    "count": 3,
+    "count": 5,
     "start": 0,
     "total": 200,
     "musics": [
@@ -7,7 +7,7 @@
             "rating": {
                 "max": 10,
                 "average": "8.3",
-                "numRaters": 29395,
+                "numRaters": 29416,
                 "min": 0
             },
             "author": [
@@ -16,14 +16,14 @@
                 }
             ],
             "alt_title": "Don't Want to Let Go",
-            "image": "https://img5.doubanio.com/spic/s3146476.jpg",
+            "image": "https://img3.doubanio.com/spic/s3146476.jpg",
             "tags": [
                 {
-                    "count": 8469,
+                    "count": 8474,
                     "name": "陈奕迅"
                 },
                 {
-                    "count": 3415,
+                    "count": 3414,
                     "name": "Eason"
                 },
                 {
@@ -31,11 +31,11 @@
                     "name": "不想放手"
                 },
                 {
-                    "count": 2504,
+                    "count": 2507,
                     "name": "香港"
                 },
                 {
-                    "count": 1347,
+                    "count": 1348,
                     "name": "Pop"
                 },
                 {
@@ -43,7 +43,7 @@
                     "name": "2008"
                 },
                 {
-                    "count": 804,
+                    "count": 805,
                     "name": "流行"
                 },
                 {
@@ -86,7 +86,7 @@
             "rating": {
                 "max": 10,
                 "average": "9.4",
-                "numRaters": 34924,
+                "numRaters": 34953,
                 "min": 0
             },
             "author": [
@@ -95,14 +95,14 @@
                 }
             ],
             "alt_title": "",
-            "image": "https://img5.doubanio.com/spic/s3169796.jpg",
+            "image": "https://img3.doubanio.com/spic/s3169796.jpg",
             "tags": [
                 {
-                    "count": 8250,
+                    "count": 8253,
                     "name": "陈奕迅"
                 },
                 {
-                    "count": 2653,
+                    "count": 2654,
                     "name": "七"
                 },
                 {
@@ -110,7 +110,7 @@
                     "name": "eason"
                 },
                 {
-                    "count": 2341,
+                    "count": 2342,
                     "name": "香港"
                 },
                 {
@@ -118,7 +118,7 @@
                     "name": "POP"
                 },
                 {
-                    "count": 938,
+                    "count": 939,
                     "name": "流行"
                 },
                 {
@@ -126,7 +126,7 @@
                     "name": "华语"
                 },
                 {
-                    "count": 740,
+                    "count": 741,
                     "name": "精选"
                 }
             ],
@@ -165,7 +165,7 @@
             "rating": {
                 "max": 10,
                 "average": "8.5",
-                "numRaters": 35755,
+                "numRaters": 35781,
                 "min": 0
             },
             "author": [
@@ -177,35 +177,35 @@
             "image": "https://img3.doubanio.com/spic/s3666735.jpg",
             "tags": [
                 {
-                    "count": 7989,
+                    "count": 7994,
                     "name": "陈奕迅"
                 },
                 {
-                    "count": 3660,
+                    "count": 3662,
                     "name": "Eason"
                 },
                 {
-                    "count": 2909,
+                    "count": 2913,
                     "name": "香港"
                 },
                 {
-                    "count": 2681,
+                    "count": 2686,
                     "name": "粤语"
                 },
                 {
-                    "count": 1378,
+                    "count": 1381,
                     "name": "H3M"
                 },
                 {
-                    "count": 1339,
+                    "count": 1340,
                     "name": "Pop"
                 },
                 {
-                    "count": 1042,
+                    "count": 1043,
                     "name": "2009"
                 },
                 {
-                    "count": 851,
+                    "count": 852,
                     "name": "陳奕迅"
                 }
             ],
@@ -239,6 +239,164 @@
             "title": "H³M",
             "alt": "https://music.douban.com/subject/3603814/",
             "id": "3603814"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": "8.7",
+                "numRaters": 26211,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "陈奕迅"
+                }
+            ],
+            "alt_title": "Admit it",
+            "image": "https://img1.doubanio.com/spic/s3947069.jpg",
+            "tags": [
+                {
+                    "count": 7135,
+                    "name": "陈奕迅"
+                },
+                {
+                    "count": 2494,
+                    "name": "EASON"
+                },
+                {
+                    "count": 1995,
+                    "name": "香港"
+                },
+                {
+                    "count": 1527,
+                    "name": "认了吧"
+                },
+                {
+                    "count": 1038,
+                    "name": "Pop"
+                },
+                {
+                    "count": 863,
+                    "name": "好久不见"
+                },
+                {
+                    "count": 739,
+                    "name": "流行"
+                },
+                {
+                    "count": 632,
+                    "name": "陳奕迅"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/2052256/",
+            "attrs": {
+                "publisher": [
+                    "新藝寶"
+                ],
+                "singer": [
+                    "陈奕迅"
+                ],
+                "version": [
+                    "专辑"
+                ],
+                "pubdate": [
+                    "2007-04-24"
+                ],
+                "title": [
+                    "认了吧"
+                ],
+                "media": [
+                    "CD"
+                ],
+                "tracks": [
+                    "1. 烟味\n2. 淘汰\n3. 快乐男生\n4. 红玫瑰\n5. 月黑风高\n6. 爱情转移\n7. 好久不见\n8. 爱是一本书\n9. 第一个雅皮士\n10. 白色球鞋\n11. 月球上的人 (粤语)"
+                ],
+                "discs": [
+                    "1"
+                ]
+            },
+            "title": "认了吧",
+            "alt": "https://music.douban.com/subject/2052256/",
+            "id": "2052256"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": "8.0",
+                "numRaters": 20607,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "陈奕迅"
+                }
+            ],
+            "alt_title": "问号",
+            "image": "https://img1.doubanio.com/spic/s6988468.jpg",
+            "tags": [
+                {
+                    "count": 6896,
+                    "name": "陈奕迅"
+                },
+                {
+                    "count": 3212,
+                    "name": "Eason"
+                },
+                {
+                    "count": 1984,
+                    "name": "香港"
+                },
+                {
+                    "count": 1559,
+                    "name": "2011"
+                },
+                {
+                    "count": 1248,
+                    "name": "？"
+                },
+                {
+                    "count": 889,
+                    "name": "国语"
+                },
+                {
+                    "count": 722,
+                    "name": "Pop"
+                },
+                {
+                    "count": 711,
+                    "name": "陳奕迅"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/6903119/",
+            "attrs": {
+                "publisher": [
+                    "环球"
+                ],
+                "singer": [
+                    "陈奕迅"
+                ],
+                "version": [
+                    "专辑"
+                ],
+                "pubdate": [
+                    "2011-11-11"
+                ],
+                "title": [
+                    "？"
+                ],
+                "media": [
+                    "CD"
+                ],
+                "tracks": [
+                    "1. 孤独患者 (国)\n2. 哎呀咿呀 (国)\n3. 看穿 (国)\n4. 吟游诗人 (国)\n5. 张氏情歌\n6. Baby Song (国)\n7. 听一千遍后 (国)\n8. 内疚 (国)\n9. 还要不要走 (国)\n10. 积木 (国)\n11. 神奇化妆师\n12. Muffin Man (英)"
+                ],
+                "discs": [
+                    "2"
+                ]
+            },
+            "title": "？",
+            "alt": "https://music.douban.com/subject/6903119/",
+            "id": "6903119"
         }
     ]
 }

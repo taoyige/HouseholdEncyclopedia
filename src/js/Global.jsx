@@ -11,7 +11,6 @@ const FILM = 'film';
 const BOOK_CATEGORY = [
   { name: '童话', category: 'fairy_tale', baseURL: 'https://api.douban.com/v2/book/search?tag=童话&count=5&' },
   { name: '小说', category: 'novel', baseURL: 'https://api.douban.com/v2/book/search?tag=小说&count=5&' },
-  { name: '寓言神话', category: 'fable_myth', baseURL: 'https://api.douban.com/v2/book/search?tag=寓言神话&count=5&' },
   { name: '散文诗歌', category: 'prose_poetry', baseURL: 'https://api.douban.com/v2/book/search?tag=散文诗歌&count=5&' },
   { name: '名人传记', category: 'biography', baseURL: 'https://api.douban.com/v2/book/search?tag=名人传记&count=5&' },
 ]
@@ -21,6 +20,7 @@ const MUSIC_CATEGORY = [
   { name: '薛之谦', category: 'Joker_Xue', baseURL: 'https://api.douban.com/v2/music/search?tag=薛之谦&count=5&' },
   { name: '容祖儿', category: 'Joey_Yung', baseURL: 'https://api.douban.com/v2/music/search?tag=容祖儿&count=5&' },
   { name: '杨千嬅', category: 'Miriam_Yeung', baseURL: 'https://api.douban.com/v2/music/search?tag=杨千嬅&count=5&' },
+  { name: 'Adele', category: 'Adele', baseURL: 'https://api.douban.com/v2/music/search?tag=adele&count=5&' },
 ]
 const FILM_CATEGORY = [
   { name: '正在热映', category: 'in_theaters', baseURL: 'https://api.douban.com/v2/movie/in_theaters?count=5&' },

@@ -7,6 +7,7 @@ import { fetchData } from '../util/utils.jsx';
 
 import Footer from './Footer.jsx';
 import BackToTop from './BackToTop.jsx';
+import LoadMore from './LoadMore.jsx';
 
 import film1 from '../../json/film1.json';
 import film2 from '../../json/film2.json';
@@ -17,6 +18,8 @@ const data = [film1, film2, film3];
 class Film extends React.Component {
   constructor(props) {
     super(props);
+    this.loadMoreTop = 0;
+    this.start = 0;
     this.state = {
       films: [],
     };
@@ -46,6 +49,55 @@ class Film extends React.Component {
         })
       }
     }
+  }
+
+  componentDidMount () {
+    this.initLoadMore();
+  }
+
+  componentDidUpdate(prevProps, prevState){
+    this.loadMoreTop = $('#loadMore').offset().top;
+  }
+
+  initLoadMore () {
+    let that = this;
+    let height = $(window).height();
+    let isLoadMore = true;
+    $(window).on('scroll', (e) => {
+      if(isLoadMore) {
+        if(this.loadMoreTop - $(window).scrollTop() <= height) {
+          isLoadMore = false;
+          setTimeout(() => {
+            // let category = this.props.params.category;
+            // for(let i=0; i<Global.FILM_CATEGORY.length; i++){
+            //   let item = Global.FILM_CATEGORY[i];
+            //   if(item.category == category){
+            //     fetchData(Global.FILM_CATEGORY[i].baseURL, {start: this.start}, (data) => {
+            //       let arr = that.state.films;
+            //       arr.push(...data.subjects);
+            //       this.setState({
+            //         films: arr
+            //       })
+            //       this.start += 5;
+            //     });
+            //   }
+            // }
+            let category = this.props.params.category;
+            for(let i=0; i<Global.FILM_CATEGORY.length; i++){
+              let item = Global.FILM_CATEGORY[i];
+              if(item.category == category){
+                let arr = that.state.films;
+                arr.push(data[i].subjects[this.start++ % 4]);
+                this.setState({
+                  films: arr
+                })
+              }
+            }
+            isLoadMore = true;
+          }, 1000)
+        }
+      }
+    })
   }
 
   render () {
@@ -86,6 +138,7 @@ class Film extends React.Component {
                 })
               }
             </ul>
+            <LoadMore/>
           </div>
           <Footer/>
           <BackToTop/>

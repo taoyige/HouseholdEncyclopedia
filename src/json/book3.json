@@ -1,233 +1,391 @@
 {
-    "count": 3,
+    "count": 5,
     "start": 0,
-    "total": 17,
+    "total": 78,
     "books": [
         {
             "rating": {
                 "max": 10,
-                "numRaters": 51,
-                "average": "7.8",
+                "numRaters": 19858,
+                "average": "8.4",
                 "min": 0
             },
             "subtitle": "",
             "author": [
-                "丹尼尔・史普博"
+                "[美] 梭罗"
             ],
-            "pubdate": "2004-2-1",
+            "pubdate": "2006-8",
             "tags": [
                 {
-                    "count": 93,
-                    "name": "经济学",
-                    "title": "经济学"
+                    "count": 6498,
+                    "name": "梭罗",
+                    "title": "梭罗"
                 },
                 {
-                    "count": 16,
-                    "name": "经济",
-                    "title": "经济"
+                    "count": 6285,
+                    "name": "瓦尔登湖",
+                    "title": "瓦尔登湖"
                 },
                 {
-                    "count": 10,
-                    "name": "寓言",
-                    "title": "寓言"
+                    "count": 3939,
+                    "name": "外国文学",
+                    "title": "外国文学"
                 },
                 {
-                    "count": 9,
-                    "name": "新制度经济学",
-                    "title": "新制度经济学"
+                    "count": 3064,
+                    "name": "散文",
+                    "title": "散文"
                 },
                 {
-                    "count": 8,
-                    "name": "市场失灵",
-                    "title": "市场失灵"
+                    "count": 2620,
+                    "name": "纯净",
+                    "title": "纯净"
                 },
                 {
-                    "count": 8,
-                    "name": "自由",
-                    "title": "自由"
+                    "count": 2061,
+                    "name": "随笔",
+                    "title": "随笔"
                 },
                 {
-                    "count": 7,
-                    "name": "经济学的著名寓言--市场失灵的神话",
-                    "title": "经济学的著名寓言--市场失灵的神话"
-                },
-                {
-                    "count": 5,
+                    "count": 1755,
                     "name": "美国",
                     "title": "美国"
+                },
+                {
+                    "count": 1539,
+                    "name": "文学",
+                    "title": "文学"
                 }
             ],
-            "origin_title": "Famous Fables of Economics",
-            "image": "https://img3.doubanio.com/mpic/s1175593.jpg",
+            "origin_title": "walden",
+            "image": "https://img1.doubanio.com/mpic/s1999119.jpg",
             "binding": "平装",
             "translator": [
-                "余晖等"
+                "徐迟"
             ],
-            "catalog": "中文版序言\n导论：经济学寓言和公共政策\n第一章 经济学中的灯塔\n第二章 公共产品的民间提供？美国早期的收费公路公司\n第三章 蜜蜂的寓言：一项经济调查\n第四章 键盘的寓言\n第五章 Beta，Macintosh和其他离奇传说\n第六章 英国的公路和铁路煤炭运输：“愚蠢的短尾巴小煤车”的效率\n第七章 通用汽车公司收购费雪车体公司案\n第八章 费雪车体的寓言\n第九章 分成租佃制\n第十章 掠夺性降价：标准石油（N.J.）的例子\n第十一章 重新审视美洲铝业：提高竞争对手的成本并不能够改变问题的结论\n第十二章 自由轮船商学到了多少？一个旧案例中的新证据\n第十三章 金融传奇",
-            "pages": "359",
+            "catalog": "经济篇\n补充诗篇\n我生活的地方；我为何生活\n阅读\n声\n寂寞\n访客\n种豆\n村子\n湖\n倍克田庄\n更高的规律\n禽兽为邻\n室内的的取暖\n旧居民；冬天的访客\n冬天的禽兽\n冬天的湖\n春天\n结束语",
+            "pages": "292",
             "images": {
-                "small": "https://img3.doubanio.com/spic/s1175593.jpg",
-                "large": "https://img3.doubanio.com/lpic/s1175593.jpg",
-                "medium": "https://img3.doubanio.com/mpic/s1175593.jpg"
+                "small": "https://img1.doubanio.com/spic/s1999119.jpg",
+                "large": "https://img1.doubanio.com/lpic/s1999119.jpg",
+                "medium": "https://img1.doubanio.com/mpic/s1999119.jpg"
             },
-            "alt": "https://book.douban.com/subject/1005416/",
-            "id": "1005416",
-            "publisher": "上海人民出版社",
-            "isbn10": "7208048797",
-            "isbn13": "9787208048799",
-            "title": "经济学的著名寓言：市场失灵的神话",
-            "url": "https://api.douban.com/v2/book/1005416",
-            "alt_title": "Famous Fables of Economics",
-            "author_intro": "",
-            "summary": "本书是由诸多经济学家的著名论文选编而成的论文集。这些论文探讨了经济学领域的市场失灵现象，对经济学领域耳熟能详的寓言进行了重新检验，这些寓言一直被用来证明某个经济学理论或现象，从而对政府政策的制定产生了很大的影响。本书收录的论文对这些寓言进行了严谨的考察，发现它们实质上是不准确的，甚至是谬误，这有助于人们更好地理解经济学理论如何应用于社会实践，以及如何看待现实社会中的经济现象和经济政策。\n本书辑录的论文是当代经济史上大师级学者的经典之作，对于经济学的老师和学生而言，这是一本极有价值的参考书。",
-            "price": "38.00"
+            "alt": "https://book.douban.com/subject/1865089/",
+            "id": "1865089",
+            "publisher": "上海译文出版社",
+            "isbn10": "7532739570",
+            "isbn13": "9787532739578",
+            "title": "瓦尔登湖",
+            "url": "https://api.douban.com/v2/book/1865089",
+            "alt_title": "walden",
+            "author_intro": "亨利·戴维·梭罗（1817-1862），美国超验主义作家。他于1845年春天，在老家康科德城的瓦尔登湖边建起一座木屋，过起自耕自食的生活，并在那里写下了著名的《瓦尔登湖》一书。",
+            "summary": "这本书的思想是崇尚简朴生活，热爱大自然的风光，内容丰厚，意义深远，语言生动，意境深邃，就像是个智慧的老人，闪现哲理灵光，又有高山流水那样的境界。\n书中记录了作者隐居瓦尔登湖畔，与大自然水乳交融、在田园生活中感知自然重塑自我的奇异历程。读本书，能引领人进入一个澄明、恬美、素雅的世界。",
+            "series": {
+                "id": "1018",
+                "title": "译文名著文库"
+            },
+            "price": "11.00元"
         },
         {
             "rating": {
                 "max": 10,
-                "numRaters": 9,
-                "average": "0.0",
+                "numRaters": 74,
+                "average": "8.2",
                 "min": 0
             },
             "subtitle": "",
-            "pubdate": "1979",
-            "image": "https://img5.doubanio.com/mpic/s3236246.jpg",
-            "binding": "平装",
-            "images": {
-                "small": "https://img5.doubanio.com/spic/s3236246.jpg",
-                "large": "https://img5.doubanio.com/lpic/s3236246.jpg",
-                "medium": "https://img5.doubanio.com/mpic/s3236246.jpg"
-            },
-            "alt": "https://book.douban.com/subject/2979008/",
-            "id": "2979008",
-            "title": "古代神话寓言选读",
-            "author_intro": "",
+            "author": [],
+            "pubdate": "2012-1",
             "tags": [
                 {
-                    "count": 2,
-                    "name": "童年",
-                    "title": "童年"
+                    "count": 60,
+                    "name": "席慕容",
+                    "title": "席慕容"
                 },
                 {
-                    "count": 2,
-                    "name": "儿时读物",
-                    "title": "儿时读物"
+                    "count": 41,
+                    "name": "散文",
+                    "title": "散文"
                 },
                 {
-                    "count": 2,
-                    "name": "启蒙读物（童年记忆）",
-                    "title": "启蒙读物（童年记忆）"
+                    "count": 26,
+                    "name": "优美",
+                    "title": "优美"
                 },
                 {
-                    "count": 2,
-                    "name": "神话",
-                    "title": "神话"
+                    "count": 21,
+                    "name": "散文诗歌",
+                    "title": "散文诗歌"
+                },
+                {
+                    "count": 13,
+                    "name": "当代文学",
+                    "title": "当代文学"
+                },
+                {
+                    "count": 11,
+                    "name": "女性",
+                    "title": "女性"
+                },
+                {
+                    "count": 10,
+                    "name": "纯粹",
+                    "title": "纯粹"
+                },
+                {
+                    "count": 8,
+                    "name": "生命的滋味",
+                    "title": "生命的滋味"
+                }
+            ],
+            "origin_title": "",
+            "image": "https://img3.doubanio.com/mpic/s10911800.jpg",
+            "binding": "",
+            "translator": [],
+            "catalog": "",
+            "pages": "",
+            "images": {
+                "small": "https://img3.doubanio.com/spic/s10911800.jpg",
+                "large": "https://img3.doubanio.com/lpic/s10911800.jpg",
+                "medium": "https://img3.doubanio.com/mpic/s10911800.jpg"
+            },
+            "alt": "https://book.douban.com/subject/11497839/",
+            "id": "11497839",
+            "publisher": "",
+            "isbn10": "7507125998",
+            "isbn13": "9787507125993",
+            "title": "席慕容散文集",
+            "url": "https://api.douban.com/v2/book/11497839",
+            "alt_title": "",
+            "author_intro": "",
+            "summary": "",
+            "price": ""
+        },
+        {
+            "rating": {
+                "max": 10,
+                "numRaters": 21,
+                "average": "8.1",
+                "min": 0
+            },
+            "subtitle": "",
+            "author": [
+                "林清玄"
+            ],
+            "pubdate": "1999",
+            "tags": [
+                {
+                    "count": 20,
+                    "name": "林清玄",
+                    "title": "林清玄"
+                },
+                {
+                    "count": 8,
+                    "name": "作品集",
+                    "title": "作品集"
+                },
+                {
+                    "count": 8,
+                    "name": "散文",
+                    "title": "散文"
+                },
+                {
+                    "count": 7,
+                    "name": "散文随笔",
+                    "title": "散文随笔"
+                },
+                {
+                    "count": 6,
+                    "name": "励志",
+                    "title": "励志"
+                },
+                {
+                    "count": 3,
+                    "name": "散文诗歌",
+                    "title": "散文诗歌"
                 },
                 {
                     "count": 1,
                     "name": "中国",
                     "title": "中国"
-                },
-                {
-                    "count": 1,
-                    "name": "童书",
-                    "title": "童书"
-                },
-                {
-                    "count": 1,
-                    "name": "私藏书",
-                    "title": "私藏书"
-                },
-                {
-                    "count": 1,
-                    "name": "王子藏书",
-                    "title": "王子藏书"
                 }
             ],
             "origin_title": "",
-            "price": "0.20元",
-            "translator": [
-                "谭家健"
-            ],
+            "image": "https://img3.doubanio.com/mpic/s7024335.jpg",
+            "binding": "",
+            "translator": [],
             "catalog": "",
-            "pages": "90",
-            "publisher": "中国少年儿童出版社",
-            "isbn10": "SH10056-415",
+            "pages": "",
+            "images": {
+                "small": "https://img3.doubanio.com/spic/s7024335.jpg",
+                "large": "https://img3.doubanio.com/lpic/s7024335.jpg",
+                "medium": "https://img3.doubanio.com/mpic/s7024335.jpg"
+            },
+            "alt": "https://book.douban.com/subject/3450403/",
+            "id": "3450403",
+            "publisher": "云南人民出版社",
+            "isbn10": "722202526X",
+            "isbn13": "9787222025264",
+            "title": "林清玄作品集",
+            "url": "https://api.douban.com/v2/book/3450403",
             "alt_title": "",
-            "url": "https://api.douban.com/v2/book/2979008",
-            "author": [],
-            "summary": ""
+            "author_intro": "",
+            "summary": "恬淡自然，蕴涵佛理，是林清玄散文的最大特色。他的文章有如远方走来的一位女子，初时，不能让人有惊艳之感，再看，就如一道山泉，缓缓地向我们的心中渗透。他的文字犹如一股真淳的凉风,读完之后，能让人心平如水。如此智慧清新的散文，在如今的文坛并不多见。他主张人心应“如水”、“如镜”，在这个浮躁的社会，对涤人心上的尘土，开启人性的灵智很有益处。\n读林清玄会让我们看清很多事情，会让我们变得坦然。他的文字有种淡淡的香，看完之后会有感恩与善良的感觉。常常与他一起进入那富有禅意的世界，以他的散文净化自己的心灵，让我们的内心充满宁静与关爱。他别样的文字，犹如混沌人世间的一片净土，一缕莲花的馨香。\n林清玄的书，小故事里有大智慧，平淡而隽永，值得一遍遍的去回味，轻松自然，平凡的人，平凡的事，在最细腻的内心感觉中把你打动。",
+            "price": "26"
         },
         {
             "rating": {
                 "max": 10,
-                "numRaters": 0,
-                "average": "0.0",
+                "numRaters": 61657,
+                "average": "7.8",
                 "min": 0
             },
             "subtitle": "",
             "author": [
-                "胡怀琛"
+                "余秋雨"
             ],
-            "pubdate": "2013-2-1",
+            "pubdate": "2001-4",
             "tags": [
                 {
-                    "count": 1,
-                    "name": "*北京·知识产权出版社*",
-                    "title": "*北京·知识产权出版社*"
+                    "count": 15917,
+                    "name": "余秋雨",
+                    "title": "余秋雨"
                 },
                 {
-                    "count": 1,
-                    "name": "M",
-                    "title": "M"
+                    "count": 10608,
+                    "name": "散文",
+                    "title": "散文"
                 },
                 {
-                    "count": 1,
-                    "name": "学术史",
-                    "title": "学术史"
+                    "count": 6307,
+                    "name": "文化苦旅",
+                    "title": "文化苦旅"
                 },
                 {
-                    "count": 1,
-                    "name": "工具书",
-                    "title": "工具书"
+                    "count": 4818,
+                    "name": "随笔",
+                    "title": "随笔"
                 },
                 {
-                    "count": 1,
-                    "name": "民俗学",
-                    "title": "民俗学"
+                    "count": 3868,
+                    "name": "文化",
+                    "title": "文化"
                 },
                 {
-                    "count": 1,
-                    "name": "近代",
-                    "title": "近代"
+                    "count": 3385,
+                    "name": "中国文学",
+                    "title": "中国文学"
+                },
+                {
+                    "count": 3246,
+                    "name": "游记",
+                    "title": "游记"
+                },
+                {
+                    "count": 2048,
+                    "name": "旅行",
+                    "title": "旅行"
                 }
             ],
             "origin_title": "",
-            "image": "https://img1.doubanio.com/mpic/s28601759.jpg",
+            "image": "https://img3.doubanio.com/mpic/s2166670.jpg",
             "binding": "平装",
             "translator": [],
-            "catalog": "中国寓言研究\n第一章 何谓寓言\n第二章 寓言的效用如何\n第三章 全世界寓言的产生地印度、希腊、中国\n第四章 中国寓言产生的时代\n第五章 战国前後寓言的传播\n第六章 汉魏以後寓言的变迁\n第七章 汉魏以来的韵文的寓言\n第八章 近二十年来寓言的复活\n中国神话\n黄帝游华胥国\n龙伯国大人钓鳌\n穆天子见西王母\n后羿射日与嫦娥奔月\n女娲补天\n愚公移山\n斑竹的来历\n蚕的来历\n穿胸国\n风生兽和火浣布\n左元放的幻术\n细腰\n狐狸与华表\n园客\n懒妇\n紫姑神\n杨宝救黄雀\n丁令威化鹤\n端午吃粽子的来历\n鹅笼书生\n牵牛织女的故事\n吴刚砍桂树\n月下老人\n锺馗吃鬼\n蚂蚁国\n编後记",
-            "pages": "114",
+            "catalog": "自序\n一 道士塔\n二 莫高窟\n三 阳关雪\n四 沙原隐泉\n五 柳侯祠\n六 白莲洞\n七 都江堰\n八 三峡\n九 洞庭一角\n十 庐山\n十一 贵池傩\n十二 青云谱随想\n十三 白发苏州\n十四 江南小镇\n十五 寂寞天柱山",
+            "pages": "376",
             "images": {
-                "small": "https://img1.doubanio.com/spic/s28601759.jpg",
-                "large": "https://img1.doubanio.com/lpic/s28601759.jpg",
-                "medium": "https://img1.doubanio.com/mpic/s28601759.jpg"
+                "small": "https://img3.doubanio.com/spic/s2166670.jpg",
+                "large": "https://img3.doubanio.com/lpic/s2166670.jpg",
+                "medium": "https://img3.doubanio.com/mpic/s2166670.jpg"
             },
-            "alt": "https://book.douban.com/subject/24713686/",
-            "id": "24713686",
-            "publisher": "知识产权出版社",
-            "isbn10": "7513015082",
-            "isbn13": "9787513015080",
-            "title": "中国寓言与神话",
-            "url": "https://api.douban.com/v2/book/24713686",
+            "alt": "https://book.douban.com/subject/1050339/",
+            "id": "1050339",
+            "publisher": "东方出版中心",
+            "isbn10": "780627698X",
+            "isbn13": "9787806276983",
+            "title": "文化苦旅",
+            "url": "https://api.douban.com/v2/book/1050339",
             "alt_title": "",
-            "author_intro": "胡怀琛(1886～1938年)，原名有忭，字季仁；后名怀琛，字寄尘。安徽泾县人。30年代寓亚尔培路步高里(今陕西南路287弄)。自幼习诗，厌科举。清光绪二十四年(1898年)游学上海，后任《神州日报》编辑。清宣统二年(1910年)，加入南社。与柳亚子共主《警报》、《太平洋报》笔政，并相交相知，义结金兰。民国5年(1916年)辞京奉铁路科员职，执教沪上大学，兼卖文为生。民国21年，被聘为上海市通志馆编纂。早晚伏案，十分勤苦。其时，搜集整理一批上海地方史志珍贵资料并予初步研究，卓有贡献。抗战爆发，通志馆暂时解散。面对时局，忧国忧民，逝于胃疾。其对新旧体诗歌和儿童诗歌均有成就，所评“宋诗如西洋油画，善刻划；唐诗如中国水墨山水，善写意”，被学术界视为公论。著有《大江集》《新诗概说》《中国文学史概要》《国学概论》《南社始末》等。",
-            "summary": "",
-            "series": {
-                "id": "18424",
-                "title": "民国文存"
+            "author_intro": "余秋雨，1946年生，汉族，浙江人。文化史学家、艺术学教授、博士生导师。现任上海戏剧学院教授上海写作学会会长。十余年来越野历险万公里，实地考察了中华文化在内的人类各大文明的兴衰脉络，沿途写下了《文化苦旅》、《山居笔记》、《霜冷长河》、《千年一叹》、《行者无疆》等著作。这些著作出版后，一直位居全球华文书排行榜前列。",
+            "summary": "《文化苦旅》是余秋雨的第一部散文合集，所收作品主要包括两部分，一部分是历史、文化散文，散点论述，探寻文化；另一部分是回忆散文。",
+            "price": "22.00元"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "numRaters": 67,
+                "average": "7.9",
+                "min": 0
             },
-            "price": "CNY 30.00"
+            "subtitle": "",
+            "author": [
+                "李碧華"
+            ],
+            "pubdate": "2000",
+            "tags": [
+                {
+                    "count": 15,
+                    "name": "李碧华",
+                    "title": "李碧华"
+                },
+                {
+                    "count": 10,
+                    "name": "散文",
+                    "title": "散文"
+                },
+                {
+                    "count": 8,
+                    "name": "李碧華",
+                    "title": "李碧華"
+                },
+                {
+                    "count": 6,
+                    "name": "香港",
+                    "title": "香港"
+                },
+                {
+                    "count": 2,
+                    "name": "散文诗歌",
+                    "title": "散文诗歌"
+                },
+                {
+                    "count": 1,
+                    "name": "**港·T天地圖書*",
+                    "title": "**港·T天地圖書*"
+                },
+                {
+                    "count": 1,
+                    "name": "河川映画",
+                    "title": "河川映画"
+                },
+                {
+                    "count": 1,
+                    "name": "私人定制",
+                    "title": "私人定制"
+                }
+            ],
+            "origin_title": "",
+            "image": "https://img3.doubanio.com/mpic/s1434931.jpg",
+            "binding": "",
+            "translator": [],
+            "catalog": "",
+            "pages": "241",
+            "images": {
+                "small": "https://img3.doubanio.com/spic/s1434931.jpg",
+                "large": "https://img3.doubanio.com/lpic/s1434931.jpg",
+                "medium": "https://img3.doubanio.com/mpic/s1434931.jpg"
+            },
+            "alt": "https://book.douban.com/subject/1421980/",
+            "id": "1421980",
+            "publisher": "天地圖書有限公司",
+            "isbn10": "9629932148",
+            "isbn13": "9789629932145",
+            "title": "水雲散髮",
+            "url": "https://api.douban.com/v2/book/1421980",
+            "alt_title": "",
+            "author_intro": "",
+            "summary": "從吟詠如水雲散髮的短歌，他想起了，那天的早晨……",
+            "price": "49"
         }
     ]
 }

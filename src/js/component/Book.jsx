@@ -15,9 +15,8 @@ import book1 from '../../json/book1.json';
 import book2 from '../../json/book2.json';
 import book3 from '../../json/book3.json';
 import book4 from '../../json/book4.json';
-import book5 from '../../json/book5.json';
 
-const data = [book1, book2, book3, book4, book5];
+const data = [book1, book2, book3, book4];
 
 
 class Book extends React.Component {
@@ -36,7 +35,7 @@ class Book extends React.Component {
 
   componentWillReceiveProps (nextProps) {
     this.initBooks();
-    this.initLoadMore();
+    // this.initLoadMore();
   }
 
   initBooks () {
@@ -61,7 +60,7 @@ class Book extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState){
-    this.loadMoreTop= $('#loadMore').offset().top;
+    this.loadMoreTop = $('#loadMore').offset().top;
   }
 
   initLoadMore () {
@@ -73,18 +72,31 @@ class Book extends React.Component {
         if(this.loadMoreTop - $(window).scrollTop() <= height) {
           isLoadMore = false;
           setTimeout(() => {
-            // fetchData(Global.BOOK_CATEGORY[0].baseURL, {}, (data) => {
-            //   let arr = that.state.books;
-            //   arr.push(...data.books);
-            //   this.setState({
-            //     books: arr
-            //   })
-            // });
-            let arr = that.state.books;
-            arr.push(book1.books[this.start++ % 4]);
-            this.setState({
-              books: arr
-            })
+            // let category = this.props.params.category;
+            // for(let i=0; i<Global.BOOK_CATEGORY.length; i++){
+            //   let item = Global.BOOK_CATEGORY[i];
+            //   if(item.category == category){
+            //     fetchData(Global.BOOK_CATEGORY[i].baseURL, {start: this.start}, (data) => {
+            //       let arr = that.state.books;
+            //       arr.push(...data.books);
+            //       this.setState({
+            //         books: arr
+            //       })
+            //       this.start += 5;
+            //     });
+            //   }
+            // }
+            let category = this.props.params.category;
+            for(let i=0; i<Global.BOOK_CATEGORY.length; i++){
+              let item = Global.BOOK_CATEGORY[i];
+              if(item.category == category){
+                let arr = that.state.books;
+                arr.push(data[i].books[this.start++ % 4]);
+                this.setState({
+                  books: arr
+                })
+              }
+            }
             isLoadMore = true;
           }, 1000)
         }

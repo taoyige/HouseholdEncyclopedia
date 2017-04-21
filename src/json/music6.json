@@ -1,0 +1,399 @@
+{
+    "count": 5,
+    "start": 0,
+    "total": 66,
+    "musics": [
+        {
+            "rating": {
+                "max": 10,
+                "average": "9.0",
+                "numRaters": 45290,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "Adele"
+                }
+            ],
+            "alt_title": "",
+            "image": "https://img3.doubanio.com/spic/s4527315.jpg",
+            "tags": [
+                {
+                    "count": 16777215,
+                    "name": "JAZZ"
+                },
+                {
+                    "count": 16777215,
+                    "name": "POP"
+                },
+                {
+                    "count": 16777214,
+                    "name": "soul"
+                },
+                {
+                    "count": 8887,
+                    "name": "adele"
+                },
+                {
+                    "count": 5483,
+                    "name": "英国"
+                },
+                {
+                    "count": 4584,
+                    "name": "Adele"
+                },
+                {
+                    "count": 2995,
+                    "name": "欧美"
+                },
+                {
+                    "count": 2673,
+                    "name": "Soul"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/5351500/",
+            "attrs": {
+                "publisher": [
+                    "XL Recordings"
+                ],
+                "singer": [
+                    "Adele"
+                ],
+                "version": [
+                    "专辑"
+                ],
+                "pubdate": [
+                    "2011-02-01"
+                ],
+                "title": [
+                    "21"
+                ],
+                "media": [
+                    "CD"
+                ],
+                "tracks": [
+                    "01. Rolling in the Deep\n02. Rumour Has It\n03. Turning Tables\n04. Don’t You Remember\n05. Set the Fire to Rain\n06. He Won’t Go\n07. Take It All\n08. I’ll Be Waiting\n09. One and Only\n10. Lovesong\n11. Someone Like You\n12. I Found a Boy (Bonus Track)\n13. Turning Tables (Live Acoustic)\n14. Don't You Remember (Live Acoustic)\n15. Someone Like You (Live Acoustic)"
+                ],
+                "discs": [
+                    "1"
+                ]
+            },
+            "title": "21",
+            "alt": "https://music.douban.com/subject/5351500/",
+            "id": "5351500"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": "9.2",
+                "numRaters": 2577,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "Adele"
+                }
+            ],
+            "alt_title": "",
+            "image": "https://img3.doubanio.com/spic/s4609661.jpg",
+            "tags": [
+                {
+                    "count": 781,
+                    "name": "adele"
+                },
+                {
+                    "count": 282,
+                    "name": "英国"
+                },
+                {
+                    "count": 269,
+                    "name": "女声"
+                },
+                {
+                    "count": 268,
+                    "name": "欧美"
+                },
+                {
+                    "count": 206,
+                    "name": "JAZZ"
+                },
+                {
+                    "count": 156,
+                    "name": "soul"
+                },
+                {
+                    "count": 105,
+                    "name": "R&B/Soul"
+                },
+                {
+                    "count": 100,
+                    "name": "2011"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/5935746/",
+            "attrs": {
+                "publisher": [
+                    "ホステス"
+                ],
+                "singer": [
+                    "Adele"
+                ],
+                "version": [
+                    "专辑"
+                ],
+                "pubdate": [
+                    "2011-01-19"
+                ],
+                "title": [
+                    "21 [JP Edition]"
+                ],
+                "media": [
+                    "CD"
+                ],
+                "tracks": [
+                    "1.Rolling In the Deep\n2.Rumour Has It\n3.Turning Tables\n4.Don't You Remember\n5.Set Fire to the Rain\n6.He Won't Go\n7.Take It All\n8.I'll Be Waiting\n9.One and Only\n10.Lovesong\n11.Someone Like You\n12.I Found a Boy (Bonus Track)\n13.Turning Tables (Live Acoustic)\n14.Don't You Remember (Live Acoustic)\n15.Someone Like You (Live Acoustic)"
+                ],
+                "discs": [
+                    "1"
+                ]
+            },
+            "title": "21 [JP Edition]",
+            "alt": "https://music.douban.com/subject/5935746/",
+            "id": "5935746"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": "9.7",
+                "numRaters": 1670,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "Adele"
+                }
+            ],
+            "alt_title": "",
+            "image": "https://img1.doubanio.com/spic/s4637608.jpg",
+            "tags": [
+                {
+                    "count": 356,
+                    "name": "adele"
+                },
+                {
+                    "count": 178,
+                    "name": "Live"
+                },
+                {
+                    "count": 172,
+                    "name": "英国"
+                },
+                {
+                    "count": 117,
+                    "name": "Soul"
+                },
+                {
+                    "count": 108,
+                    "name": "Adele"
+                },
+                {
+                    "count": 82,
+                    "name": "欧美"
+                },
+                {
+                    "count": 66,
+                    "name": "2011"
+                },
+                {
+                    "count": 52,
+                    "name": "UK"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/5979961/",
+            "attrs": {
+                "publisher": [
+                    "BRIT Awards Limited"
+                ],
+                "singer": [
+                    "Adele"
+                ],
+                "version": [
+                    "单曲"
+                ],
+                "pubdate": [
+                    "2011-02-16"
+                ],
+                "title": [
+                    "Someone Like You: Live from the BRITs"
+                ],
+                "media": [
+                    "数字(Digital)"
+                ],
+                "tracks": [
+                    "01. Someone Like You: Live from the BRITs"
+                ],
+                "discs": [
+                    "1"
+                ]
+            },
+            "title": "Someone Like You: Live from the BRITs",
+            "alt": "https://music.douban.com/subject/5979961/",
+            "id": "5979961"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": "9.5",
+                "numRaters": 22594,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "Adele"
+                }
+            ],
+            "alt_title": "另觅沧海",
+            "image": "https://img3.doubanio.com/spic/s4689205.jpg",
+            "tags": [
+                {
+                    "count": 8492,
+                    "name": "Adele"
+                },
+                {
+                    "count": 2758,
+                    "name": "英国"
+                },
+                {
+                    "count": 2258,
+                    "name": "欧美"
+                },
+                {
+                    "count": 1915,
+                    "name": "Soul"
+                },
+                {
+                    "count": 1663,
+                    "name": "女声"
+                },
+                {
+                    "count": 921,
+                    "name": "Jazz"
+                },
+                {
+                    "count": 646,
+                    "name": "UK"
+                },
+                {
+                    "count": 623,
+                    "name": "2011"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/6064884/",
+            "attrs": {
+                "publisher": [
+                    "XL Recordings"
+                ],
+                "singer": [
+                    "Adele"
+                ],
+                "pubdate": [
+                    "2011-01-24"
+                ],
+                "title": [
+                    "Someone Like You"
+                ],
+                "media": [
+                    "数字(Digital)"
+                ],
+                "tracks": [
+                    "Someone Like You\nSomeone Like You (Live from the BRITs)"
+                ],
+                "version": [
+                    "单曲"
+                ]
+            },
+            "title": "Someone Like You",
+            "alt": "https://music.douban.com/subject/6064884/",
+            "id": "6064884"
+        },
+        {
+            "rating": {
+                "max": 10,
+                "average": "8.3",
+                "numRaters": 28368,
+                "min": 0
+            },
+            "author": [
+                {
+                    "name": "Adele"
+                }
+            ],
+            "alt_title": "",
+            "image": "https://img3.doubanio.com/spic/s2841982.jpg",
+            "tags": [
+                {
+                    "count": 8099,
+                    "name": "Adele"
+                },
+                {
+                    "count": 3753,
+                    "name": "jazz"
+                },
+                {
+                    "count": 2680,
+                    "name": "英伦"
+                },
+                {
+                    "count": 2158,
+                    "name": "英国"
+                },
+                {
+                    "count": 2098,
+                    "name": "女声"
+                },
+                {
+                    "count": 1496,
+                    "name": "soul"
+                },
+                {
+                    "count": 1123,
+                    "name": "19"
+                },
+                {
+                    "count": 1044,
+                    "name": "Pop"
+                }
+            ],
+            "mobile_link": "https://m.douban.com/music/subject/2347182/",
+            "attrs": {
+                "publisher": [
+                    "Xl Recordings UK"
+                ],
+                "singer": [
+                    "Adele"
+                ],
+                "version": [
+                    "Import"
+                ],
+                "pubdate": [
+                    "2008-01-28"
+                ],
+                "title": [
+                    "19"
+                ],
+                "media": [
+                    "Audio CD"
+                ],
+                "tracks": [
+                    "01. Daydreams\n02. Best For Last\n03. Chasing Pavements\n04. Cold Shoulder\n05. Crazy For You\n06. Melt My Heart To Stone\n07. First Love\n08. Right As Rain\n09. Make You Feel My Love\n10. My Same\n11. Tired\n12. Hometown Glory"
+                ],
+                "discs": [
+                    "1"
+                ]
+            },
+            "title": "19",
+            "alt": "https://music.douban.com/subject/2347182/",
+            "id": "2347182"
+        }
+    ]
+}
