@@ -1,3 +1,6 @@
+import $ from 'jquery';
+import Global from '../Global.jsx';
+
 const uuid = () => {
   let i, random;
   let uuid = '';
@@ -71,5 +74,38 @@ const fetchData = (url, data, callback) => {
 }
 
 
+/**
+ * 获取当前地理位置的天气
+ */
+const fetchLocalWeather = (success) => {
+  let promise = new Promise((resolve, reject) => {
+    $.getScript(Global.SINA_LOACTION_URL, function(_result) {
+      if (remote_ip_info.ret == '1') {
+        resolve(remote_ip_info.city);
+      } else {
+        reject('没有找到匹配的IP地址信息！');
+      }
+    });
+  })
 
-export {uuid, obj2uri, fetchData};
+  promise.then((city)=> {
+    fetchDestinationWeather(city, success);
+  }).catch((error) => {
+    console.log(error);
+  });
+}
+
+/**
+ * 获取指定地点天气
+ */
+const fetchDestinationWeather = (city, success) => {
+  fetchData(Global.BAIDU_WEATCHER_URL, 
+    { location:city, output:'json', ak:Global.BAIDU_AK }, 
+    (data) => {
+      console.log(data);
+      if(data.error === 0)
+        success(data);
+  });
+}
+
+export {uuid, obj2uri, fetchData, fetchLocalWeather, fetchDestinationWeather};

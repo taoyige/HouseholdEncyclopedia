@@ -36,6 +36,10 @@ const BOOK_SEARCH_BASE_URL = 'https://api.douban.com/v2/book/search';
 const MUSIC_SEARCH_BASE_URL = 'https://api.douban.com/v2/music/search';
 const FILM_SEARCH_BASE_URL = 'https://api.douban.com/v2/movie/search';
 
+const SINA_LOACTION_URL = 'http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js';
+const BAIDU_WEATCHER_URL = 'http://api.map.baidu.com/telematics/v3/weather';
+const BAIDU_AK = 'UUKsMTP8kZUXnjAmcBuNkx2LbhldkTd7';
+
 const Global = { 
   APPLICATION_ID,
   REST_API_KEY,
@@ -51,6 +55,9 @@ const Global = {
   BOOK_SEARCH_BASE_URL,
   MUSIC_SEARCH_BASE_URL,
   FILM_SEARCH_BASE_URL,
+  SINA_LOACTION_URL,
+  BAIDU_WEATCHER_URL,
+  BAIDU_AK,
 }
 
 export default Global;
