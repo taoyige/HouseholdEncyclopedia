@@ -40085,9 +40085,11 @@ var Home = function (_React$Component) {
         toggle_on: !this.state.toggle_on
       });
       if (this.state.toggle_on) {
-        (0, _jquery2.default)('.weather_detail').hide('slow');
+        (0, _jquery2.default)('.weather_detail').removeClass('animated fadeInDown');
+        (0, _jquery2.default)('.weather_detail').addClass('animated zoomOut');
       } else {
-        (0, _jquery2.default)('.weather_detail').show('slow');
+        (0, _jquery2.default)('.weather_detail').removeClass('animated zoomOut');
+        (0, _jquery2.default)('.weather_detail').addClass('animated fadeInDown');
       }
     }
   }, {
@@ -40112,7 +40114,7 @@ var Home = function (_React$Component) {
       var list = this.state.carousel_list;
       return _react2.default.createElement(
         'div',
-        { className: 'container' },
+        { className: 'container home' },
         _react2.default.createElement(
           'div',
           { className: 'row weather' },
@@ -40347,7 +40349,7 @@ var Login = function (_React$Component) {
   }, {
     key: 'checkInputUsername',
     value: function checkInputUsername(username) {
-      if (username.match(/^[a-zA-Z][A-Za-z0-9]{2,8}$/)) {
+      if (username.match(/^[a-zA-Z][A-Za-z0-9]{2,5}$/)) {
         return true;
       }
       return false;
@@ -40360,7 +40362,7 @@ var Login = function (_React$Component) {
   }, {
     key: 'checkInputPassword',
     value: function checkInputPassword(password) {
-      if (password.match(/^[a-zA-Z][A-Za-z0-9]{2,8}$/)) {
+      if (password.match(/^[a-zA-Z][A-Za-z0-9]{2,5}$/)) {
         return true;
       }
       return false;

@@ -54,9 +54,11 @@ class Home extends React.Component {
       toggle_on: !this.state.toggle_on,
     })
     if(this.state.toggle_on){
-      $('.weather_detail').hide('slow');
+      $('.weather_detail').removeClass('animated fadeInDown');
+      $('.weather_detail').addClass('animated zoomOut');
     }else {
-      $('.weather_detail').show('slow');
+      $('.weather_detail').removeClass('animated zoomOut');
+      $('.weather_detail').addClass('animated fadeInDown');
     }
   }
 
@@ -76,7 +78,7 @@ class Home extends React.Component {
   render () {
     let list = this.state.carousel_list;
     return (
-      <div className="container">
+      <div className="container home">
         <div className="row weather">
           <div className="col-xs-1 col-md-1 weather-header"> 
             <p className="text-center">{this.state.weather_info.results[0].currentCity}天气</p>
