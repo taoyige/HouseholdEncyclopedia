@@ -54,11 +54,13 @@ class Home extends React.Component {
       toggle_on: !this.state.toggle_on,
     })
     if(this.state.toggle_on){
-      $('.weather_detail').removeClass('animated fadeInDown');
-      $('.weather_detail').addClass('animated zoomOut');
+      // $('.weather_detail').removeClass('animated filpInX');
+      // $('.weather_detail').addClass('animated filpOutX');
+      $('.weather_detail').hide();
     }else {
-      $('.weather_detail').removeClass('animated zoomOut');
-      $('.weather_detail').addClass('animated fadeInDown');
+      // $('.weather_detail').removeClass('animated filpOutX');
+      // $('.weather_detail').addClass('animated filpInX');
+      $('.weather_detail').show();
     }
   }
 
@@ -79,7 +81,7 @@ class Home extends React.Component {
     let list = this.state.carousel_list;
     return (
       <div className="container home">
-        <div className="row weather">
+        <div className="row weather hidden-xs hidden-sm">
           <div className="col-xs-1 col-md-1 weather-header"> 
             <p className="text-center">{this.state.weather_info.results[0].currentCity}天气</p>
             <p className="text-center">PM2.5：{this.state.weather_info.results[0].pm25}</p>
@@ -103,7 +105,7 @@ class Home extends React.Component {
             <span className={this.state.toggle_on==false?'glyphicon glyphicon-chevron-down':'glyphicon glyphicon-chevron-up'} aria-hidden="true"></span>
           </div>
         </div>
-        <div className='row weather weather_detail'>
+        <div className='row weather weather_detail hidden-xs hidden-sm'>
           <div className="col-xs-1 col-md-1"></div>
           {
             this.state.weather_info.results[0].index.map((item, index) => {

@@ -128,7 +128,7 @@ class Navigation extends React.Component {
               <li><Link to={`/user_collection`}>{currentUser!=null?currentUser.attributes.username:''}</Link></li>
               <li><a onClick={this.handleLogoutClick}>注销</a></li>
             </ul>
-            <form className="navbar-form navbar-right" onSubmit={this.handleSearchSubmit}>
+            <form className="navbar-form navbar-right hidden-sm" onSubmit={this.handleSearchSubmit}>
               <input type="text" className="form-control" placeholder="搜索..."></input>
             </form>
           </div>

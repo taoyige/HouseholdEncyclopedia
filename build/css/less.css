@@ -587,7 +587,7 @@ body {
   transform-origin: top;
   position: absolute;
   z-index: 1001;
-  opacity: 0;
+  display: none;
 }
 .wt_fc_c0_i_tipt,
 .wt_fc_c0_i_title,
@@ -596,9 +596,9 @@ body {
   margin: 0;
 }
 .wt_fc_c0_i_tipt {
-  height: 34px;
-  line-height: 34px;
-  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
   color: #cbcbcb;
   text-align: center;
   font-family: "arial";

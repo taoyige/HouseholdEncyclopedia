@@ -61,7 +61,7 @@ class Login extends React.Component {
    * 检查输入的用户名合法性
    */
   checkInputUsername (username) {
-    if(username.match(/^[a-zA-Z][A-Za-z0-9]{2,5}$/)) {
+    if(username.match(/^[a-zA-Z][A-Za-z0-9]{2,6}$/)) {
       return true;
     }
     return false;
@@ -71,7 +71,7 @@ class Login extends React.Component {
    * 检查输入的密码合法性
    */
   checkInputPassword (password) {
-    if(password.match(/^[a-zA-Z][A-Za-z0-9]{2,5}$/)) {
+    if(password.match(/^[a-zA-Z][A-Za-z0-9]{2,6}$/)) {
       return true;
     }
     return false;
@@ -81,6 +81,9 @@ class Login extends React.Component {
 		const success = (user) => {
       this.props.onLoginSuccess(user);
       this.props.handleCloseClick();
+      this.setState({
+        isLogining: false,
+      })
 		}
 
 		const fail = (user, e) => {
@@ -118,15 +121,6 @@ class Login extends React.Component {
 					    <label htmlFor="password" className="col-xs-2 col-sm-2 control-label">密码:</label>
 					    <div className="col-xs-10 col-sm-10">
 					      <input ref="password" type="password" className="form-control" id="password" placeholder="Password"></input>
-					    </div>
-					  </div>
-					  <div className="form-group">
-					    <div className="col-xs-offset-2 col-xs-10 col-sm-offset-2 col-sm-10">
-					      <div className="checkbox">
-					        <label>
-					          <input type="checkbox"></input>记住密码
-					        </label>
-					      </div>
 					    </div>
 					  </div>
 					  <div className="form-group">
